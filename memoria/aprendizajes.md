@@ -2,6 +2,7 @@
 
 Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo aplicarlo.`
 
+- 2026-11-07 · [voz] «API» con `eleven_v4`: la grafía «Api» ganó de oído a la IPA en línea (`/ˈapi/`, que no se lee en voz alta pero no mejoró), aunque de tres frases una salió deletreada. La transcripción escribe «API» en ambos casos; lo que la delata es la duración: 0,18 y 0,26 s dicha como palabra, 0,46 s deletreada. `check_voice.py` avisa cuando una palabra escrita como tal en el guion sale en mayúsculas a más de 0,12 s por letra; en 12 tomas de prueba, solo saltó en la mala.
 - 2026-11-07 · [verificación] `scripts/check_voice.py` (WhisperX 3.8.6, `large-v3-turbo`, CPU int8) compara la voz con el guion. Probado: detecta una palabra quitada en el segundo exacto y deja limpia una copia recodificada; en un final de 8 min con música, 3 min de proceso y 3 avisos reales. No detecta un corte limpio de 150 ms dentro de una palabra (detect_glitches.py tampoco), y comparar duraciones de palabras con el alineador da hasta 0,3 s de ruido. Instalar en un entorno aparte: `uv venv ~/.local/share/haividio/whisperx --python 3.12` y `uv pip install whisperx==3.8.6` (unos 1 GB); los avisos de torchcodec al arrancar no afectan.
 
 - 2026-11-07 · [web] `haividio.dev` es una página estática en `site/`, servida por un Worker de Cloudflare con la configuración de `wrangler.jsonc`. Se publica sola al fusionar en `main` (GitHub Actions, necesita los secretos de `docs/web.md`); a mano, `just deploy`.
