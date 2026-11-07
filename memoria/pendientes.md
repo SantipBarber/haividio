@@ -14,7 +14,7 @@ Dos investigaciones independientes (un subagente de Claude y pi con gpt-6-luna) 
 Ya:
 - [x] **WhisperX** ([repo](https://github.com/m-bain/whisperX), BSD-2, v3.8.6): `scripts/check_voice.py` compara la voz con el guion y guarda el instante real de cada palabra (07-11). Detectar cortes por duración de palabras no funcionó (ver aprendizajes).
 - [ ] **Cortes limpios dentro de una palabra**: ni `check_voice.py` ni `detect_glitches.py` los ven. Probar a alinear el audio final con la toma original por MFCC y DTW: un corte debería verse como un salto en el camino. Caso de prueba: quitar 150 ms en mitad de una palabra de una toma aprobada.
-- [ ] **Pronunciación escrita en `eleven_v4`**: IPA entre barras (`/ˈapi/`) y alias en el diccionario ([guía](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices)). Probar con «API». La documentación se contradice sobre qué modelos admiten etiquetas phoneme: hay que oírlo.
+- [x] **Pronunciación escrita en `eleven_v4`**: probada la IPA entre barras (`/ˈapi/`) con «API»; ganó la grafía «Api» (ver aprendizajes del 07-11). Queda por probar el alias en un diccionario de pronunciación ([guía](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices)).
 
 Después:
 - [ ] Revisión visual: un fotograma por plano con [PySceneDetect](https://www.scenedetect.com) (BSD-3) y OCR ([PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), Apache-2.0, o `ocrmac` en Mac) para comparar rótulos esperados, texto cortado, legibilidad a 360 px de ancho y desfase rótulo-voz (OCR a 10 fps contra los tiempos de WhisperX).
