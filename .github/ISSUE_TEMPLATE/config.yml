@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Problema de seguridad / Security issue
+    url: https://github.com/SantipBarber/haividio/security/advisories/new
+    about: Claves filtradas o datos privados, en privado. / Leaked keys or private data, privately.

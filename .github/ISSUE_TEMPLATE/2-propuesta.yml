@@ -1,0 +1,28 @@
+name: Propuesta / Proposal
+description: Un workflow, skill, herramienta o cambio grande, antes de programarlo. / A workflow, skill, tool or big change, before building it.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema / Problem
+      description: Qué falta o qué cuesta hoy al hacer un vídeo. / What is missing or hard today when making a video.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta / Proposal
+      description: Qué propones y por qué. Si es una herramienta, su licencia y precio, con fecha. / What you suggest and why. For a tool, its license and price, dated.
+    validations:
+      required: true
+  - type: dropdown
+    id: hacerlo
+    attributes:
+      label: ¿Lo harías tú? / Would you build it?
+      options:
+        - Sí / Yes
+        - Con ayuda / With help
+        - No
+    validations:
+      required: true

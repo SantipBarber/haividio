@@ -111,6 +111,9 @@ El núcleo es multiplataforma, pero HyperFrames en Windows aún está por probar
 ```text
 AGENTS.md                    Instrucciones para cualquier agente
 CLAUDE.md                    Punto de entrada para Claude Code
+CONTRIBUTING.md              Cómo contribuir (también en inglés)
+CODE_OF_CONDUCT.md           Código de conducta (Contributor Covenant 3.0)
+.github/                     Plantillas de issues y PR, publicación de la página
 .agents/skills               Enlace a las skills para Codex, OpenCode, pi y Cursor
 .claude/skills               Enlace a las skills para Claude Code
 package.json                 Paquete de pi (pi install)
@@ -141,6 +144,10 @@ videos/
 Para empezar un vídeo nuevo, copia `videos/_plantilla/` a `videos/AAAA-MM-DD-slug/` y dile al agente qué quieres hacer.
 
 </details>
+
+## Contribuir
+
+Se agradecen sobre todo pruebas y aprendizajes con herramientas, agentes y sistemas, en español o en inglés. Lee [CONTRIBUTING.md](CONTRIBUTING.md) ([English](CONTRIBUTING.en.md)) antes de abrir un PR. Quien participa acepta el [código de conducta](CODE_OF_CONDUCT.md).
 
 ## Licencia
 

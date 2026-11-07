@@ -1,0 +1,25 @@
+name: Prueba o aprendizaje / Test or finding
+description: Probaste una herramienta, un agente o un sistema y quieres contarlo. / You tried a tool, agent or system and want to share it.
+labels: [documentation]
+body:
+  - type: input
+    id: que
+    attributes:
+      label: Qué probaste / What you tested
+      placeholder: Codex con la skill video-sin-cara / Codex with the video-sin-cara skill
+    validations:
+      required: true
+  - type: input
+    id: entorno
+    attributes:
+      label: Con qué y cuándo / Environment and date
+      placeholder: 2026-11-07, Windows 11, Codex 1.x, ffmpeg 8.0
+    validations:
+      required: true
+  - type: textarea
+    id: resultado
+    attributes:
+      label: Resultado / Result
+      description: Qué funcionó, qué no y cómo lo resolviste. Si hubo audio o vídeo, ¿lo escuchaste o viste? / What worked, what did not and how you solved it. If there was audio or video, did you listen to or watch it?
+    validations:
+      required: true

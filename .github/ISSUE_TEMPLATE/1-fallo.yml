@@ -1,0 +1,31 @@
+name: Fallo / Bug
+description: Algo de Haividio no funciona como dice la documentación. / Something does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Breve y con tus palabras. Sin claves, datos privados ni rutas personales.
+        Short and in your own words. No keys, private data or personal paths.
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué pasa / What happens
+      description: Qué hiciste, qué esperabas y qué pasó. / What you did, what you expected and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: donde
+    attributes:
+      label: Dónde / Where
+      description: Skill, workflow, script o guía. / Skill, workflow, script or guide.
+    validations:
+      required: true
+  - type: input
+    id: entorno
+    attributes:
+      label: Con qué / Environment
+      description: Agente y modelo, sistema, versión de la herramienta. / Agent and model, OS, tool version.
+      placeholder: Claude Code 2.x, macOS 27, ffmpeg 8.0
+    validations:
+      required: true
