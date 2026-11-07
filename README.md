@@ -2,7 +2,9 @@
 
 ![Licencia MIT](https://img.shields.io/badge/licencia-MIT-D4FF3A?style=flat-square&labelColor=0F1116)
 ![Agentes: Claude Code, Codex, OpenCode, pi, Cursor](https://img.shields.io/badge/agentes-Claude_Code_%C2%B7_Codex_%C2%B7_OpenCode_%C2%B7_pi_%C2%B7_Cursor-D4FF3A?style=flat-square&labelColor=0F1116)
-![Idioma: español](https://img.shields.io/badge/idioma-espa%C3%B1ol-D4FF3A?style=flat-square&labelColor=0F1116)
+![Idiomas: español e inglés](https://img.shields.io/badge/idiomas-espa%C3%B1ol_%C2%B7_English-D4FF3A?style=flat-square&labelColor=0F1116)
+
+[English version](README.en.md)
 
 Un manual y un espacio de trabajo para producir vídeos con agentes de IA. Abres la terminal aquí y el agente ya sabe qué herramienta usar, cómo se trabaja y qué falló la última vez.
 
@@ -111,6 +113,7 @@ El núcleo es multiplataforma, pero HyperFrames en Windows aún está por probar
 ```text
 AGENTS.md                    Instrucciones para cualquier agente
 CLAUDE.md                    Punto de entrada para Claude Code
+README.en.md                 Este README en inglés
 .agents/skills               Enlace a las skills para Codex, OpenCode, pi y Cursor
 .claude/skills               Enlace a las skills para Claude Code
 package.json                 Paquete de pi (pi install)
@@ -128,7 +131,7 @@ docs/
   otros-agentes.md           Codex, OpenCode, pi y Cursor
   windows.md                 Instalación y límites en Windows
   workflows/                 Un flujo por tipo de vídeo
-site/                        Página de haividio.dev (docs/web.md)
+site/                        Página de haividio.dev, con /en en inglés (docs/web.md)
 scripts/
   splice_voice.py            Sustituye frases o palabras de una locución sin regenerarla
   detect_glitches.py         Busca clics, huecos y congelaciones en un vídeo

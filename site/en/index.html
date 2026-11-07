@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haividio · Make videos with AI agents</title>
+<meta name="description" content="An open manual and workspace for making videos with AI agents: script, voice, animation and publishing.">
+<meta name="theme-color" content="#07080B">
+<link rel="canonical" href="https://haividio.dev/en/">
+<link rel="alternate" hreflang="es" href="https://haividio.dev/">
+<link rel="alternate" hreflang="en" href="https://haividio.dev/en/">
+<link rel="alternate" hreflang="x-default" href="https://haividio.dev/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Haividio">
+<meta property="og:description" content="Script, voice, animation and publishing, directed by your AI agent.">
+<meta property="og:url" content="https://haividio.dev/en/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://haividio.dev/assets/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/geist.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Geist;src:url(/assets/geist.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url(/assets/geist-mono.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#07080B;--panel:#0F1116;--line:#232733;--bar:#3A4050;--text:#F4F5F7;--muted:#9EA3B3;--lime:#D4FF3A;--pad:clamp(20px,5.6vw,72px);--ease:cubic-bezier(.16,1,.3,1);color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scrollbar-color:var(--bar) var(--bg);scroll-behavior:smooth}
+body{margin:0;color:var(--text);font:400 clamp(17px,1.25vw,19px)/1.55 Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased;background-image:radial-gradient(#1C2029 1.2px,transparent 1.3px);background-size:40px 40px;background-position:8px 8px;background-attachment:local}
+::selection{background:var(--lime);color:var(--bg)}
+a{color:inherit;text-underline-offset:.22em;text-decoration-color:var(--bar);text-decoration-thickness:1px;transition:text-decoration-color .2s}
+a:hover{text-decoration-color:var(--lime)}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:var(--pad)}
+header{padding-block:clamp(36px,6vh,72px) 0;min-height:100svh;display:flex;flex-direction:column}
+nav{display:flex;justify-content:flex-end;gap:28px;font-size:16px;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--text)}
+h1{font-weight:800;font-size:clamp(72px,22vw,288px);line-height:.95;letter-spacing:-.02em;margin:clamp(20px,5vh,56px) 0 0 -.04em;text-wrap:balance}
+.tag{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 32px;margin-top:clamp(14px,2.4vh,24px)}
+.tag p{margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.25;color:var(--muted);text-wrap:balance}
+.tag span{font:500 clamp(15px,1.5vw,20px)/1.3 "Geist Mono",monospace;color:var(--lime);white-space:nowrap}
+.voice{margin-top:auto;padding-block:clamp(24px,5vh,56px) clamp(20px,4vh,36px)}
+.voice svg{display:block;width:100%;height:clamp(110px,24vh,230px);overflow:visible}
+.voice rect{fill:var(--bar);transition:fill .22s var(--ease)}
+.voice rect.on{fill:var(--lime);transition-duration:.05s}
+.track{position:relative;height:50px;border-top:1px solid var(--line);margin-top:clamp(10px,2vh,20px);font:400 clamp(13px,1.4vw,18px)/1 "Geist Mono",monospace;color:var(--muted)}
+.track i{position:absolute;top:0;font-style:normal;padding:0 0 0 0;white-space:nowrap;transition:color .22s var(--ease)}
+.track i::before{content:"";display:block;width:1.5px;height:9px;margin:-5px 0 11px;background:var(--bar);transition:background .22s var(--ease)}
+.track i.on{color:var(--lime);font-weight:600}.track i.on::before{background:var(--lime)}
+.note{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;justify-content:space-between;color:var(--muted);font-size:15px;line-height:1.4}
+.note p{margin:0;max-width:44em}
+.btn{all:unset;cursor:pointer;font:500 15px/1 "Geist Mono",monospace;color:var(--text);padding:9px 0;border-bottom:1px solid var(--bar);transition:color .2s,border-color .2s;white-space:nowrap}
+.btn:hover{color:var(--lime);border-color:var(--lime)}.btn:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.lead{padding-block:clamp(64px,12vh,128px) 0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.lead p{grid-column:1/10;margin:0;font-size:clamp(26px,3.6vw,46px);line-height:1.18;letter-spacing:-.018em;font-weight:500;text-wrap:pretty}
+.lead .cta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:36px;align-items:center}
+#empezar .cta{display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:36px;align-items:center}
+.primary{display:inline-block;background:var(--lime);color:var(--bg);font-weight:600;padding:14px 22px;border-radius:4px;text-decoration:none;font-size:17px;transition:transform .35s var(--ease)}
+.primary:hover{transform:translateY(-2px)}
+h2{font-weight:700;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.025em;margin:0}
+section{padding-block:clamp(72px,13vh,140px) 0}
+.picks{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
+.picks a{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:4px 24px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding-left .35s var(--ease),color .2s}
+.picks a:hover{padding-left:12px;color:var(--lime)}
+.picks b{font-weight:600;font-size:clamp(19px,2vw,25px);line-height:1.25;letter-spacing:-.01em}
+.picks span{color:var(--muted);font:400 15px/1.45 "Geist Mono",monospace}
+.scars{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(36px,6vh,64px) 24px;margin-top:40px}
+.scars article{grid-column:span 6;max-width:34em}
+.scars article:nth-child(even){margin-top:clamp(0px,5vw,64px)}
+.scars h3{font-size:clamp(21px,2.2vw,27px);line-height:1.2;letter-spacing:-.012em;font-weight:700;margin:0 0 8px}
+.scars p{margin:0;color:var(--muted)}
+.scars a{color:var(--text)}
+.after{margin:18px 0 0;color:var(--muted);max-width:44em}
+.after code{font-family:"Geist Mono",monospace;font-size:.88em;color:var(--text)}
+footer.wrap{margin-top:clamp(72px,13vh,140px);border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:15px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px}
+footer p{margin:0}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media (max-width:760px){
+ nav{justify-content:flex-start;flex-wrap:wrap;gap:8px 20px}
+ .track i:not(.show){display:none}
+ .track i.show{left:0!important}
+ .lead p{grid-column:1/-1}
+ .picks a{grid-template-columns:1fr}
+ .scars article{grid-column:1/-1}.scars article:nth-child(even){margin-top:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav aria-label="Main">
+    <a href="#pick">Pick your video</a>
+    <a href="#start">Get started</a>
+    <a href="https://github.com/SantipBarber/haividio">GitHub</a>
+    <a href="/" hreflang="es" lang="es">Español</a>
+  </nav>
+  <h1>Haividio</h1>
+  <div class="tag">
+    <p>Script, voice, animation and publishing, directed by your AI agent.</p>
+    <span>¿hay vídeo? hi, video.</span>
+  </div>
+  <figure class="voice" style="margin-inline:0;margin-bottom:0">
+    <svg id="wave" viewBox="0 0 1136 200" preserveAspectRatio="none" role="img" aria-label="Waveform of a spoken Spanish sentence, with each word marked at its moment"></svg>
+    <div class="track" id="track" aria-hidden="true"></div>
+    <figcaption class="note">
+      <p>Real voice with its real timings, in Spanish: each word knows when it sounds, and everything else is placed from there.</p>
+      <button class="btn" id="replay" type="button">Pause</button>
+    </figcaption>
+  </figure>
+</header>
+
+<main class="wrap">
+  <div class="lead">
+    <p>An open manual and a workspace. Open the terminal in the repository and the agent already knows which tool to use, how the work is done and what failed last time.</p>
+    <div class="cta">
+      <a class="primary" href="https://github.com/SantipBarber/haividio/blob/main/README.en.md#get-started">Star it and get started</a>
+    </div>
+  </div>
+
+  <section id="pick">
+    <h2>Pick your video</h2>
+    <ul class="picks">
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/01-video-hablado.md"><b>Talking head, without silences or filler words</b><span>video-use</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/02-animaciones.md"><b>Animations over your explanation</b><span>video-use + HyperFrames or Remotion</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/03-video-sin-cara.md"><b>Faceless explainer, with voice-over</b><span>HyperFrames or Remotion + ElevenLabs</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/05-demo-de-producto.md"><b>Product demo, with a cloned voice</b><span>Playwright + ffmpeg + HyperFrames</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/04-publicar-youtube.md"><b>Publish to YouTube</b><span>youtubeuploader</span></a></li>
+    </ul>
+  </section>
+
+  <section id="learned">
+    <h2>What we already learned the hard way</h2>
+    <div class="scars">
+      <article>
+        <h3>The agent cannot hear</h3>
+        <p>A transcript tells you which words are there, not how they sound. Every delivery comes with a list of minutes a person has to listen to. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/voz-clonada.md">Voice guide</a></p>
+      </article>
+      <article>
+        <h3>Approve the take, not the spelling</h3>
+        <p>Three sentences with the same spelling sounded different. The fix was to cut a single approved take and paste it into all of them, without spending credits. <a href="https://github.com/SantipBarber/haividio/blob/main/scripts/splice_voice.py">splice_voice.py</a></p>
+      </article>
+      <article>
+        <h3>Search for phrases, not words</h3>
+        <p>Anchoring a caption to a repeated word made it appear 10 seconds early. Search for the exact phrase, and fail if it appears twice. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/montaje-y-verificacion.md">Editing guide</a></p>
+      </article>
+      <article>
+        <h3>There is not always silence between two words</h3>
+        <p>9 of 99 cuts landed mid-voice and could be heard. Look for the lowest level near the cut and fade 15 ms on each side. <a href="https://github.com/SantipBarber/haividio/blob/main/scripts/detect_glitches.py">detect_glitches.py</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="start">
+    <h2>Get started</h2>
+    <p class="after">Clone the repository and open your agent in the folder: Claude Code, Codex, OpenCode, pi or Cursor. It reads <code>AGENTS.md</code> and finds the skills, with nothing else to install. The only paid service is ElevenLabs. The guides are in Spanish for now; your agent reads them and answers in your language.</p>
+    <div class="cta">
+      <a class="primary" href="https://github.com/SantipBarber/haividio/blob/main/README.en.md#get-started">Star it and get started</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Open source, <a href="https://github.com/SantipBarber/haividio/blob/main/LICENSE">MIT</a> license.</p>
+  <p><a href="https://github.com/SantipBarber/haividio">github.com/SantipBarber/haividio</a></p>
+</footer>
+
+<script>
+const A=[0,0,.01,.23,.82,.7,.68,.76,.95,.81,.3,.18,.1,.17,.7,.72,.27,.13,.05,.49,.88,.77,.63,.43,.66,.75,.75,.41,.15,.07,.03,.04,.6,.7,.76,.78,.64,.45,.16,.05,.05,.03,.01,.01,.03,.23,1,.95,.85,.78,.69,.46,.31,.13,.09,.06,.03,.01,.01,.01,0,0,0,0,0,0,0,.57,.92,.77,.65,.5,.38,.43,.42,.43,.42,.37,.31,.36,.59,.67,.46,.44,.44,.47,.63,.46,.19,.16,.06,.03,.03,.03,.16,.48,.57,.4,.15,.24,.1,.21,.41,.37,.25,.27,.32,.35,.35,.39,.39,.4,.38,.34,.36,.31,.1,.03,.13,.49,.41,.42,.31,.24,.16,.15,.08,.06,.14,.42,.39,.49,.45,.48,.46,.42,.45,.44,.41,.51,.53,.62,.58,.52,.45,.31,.26,.16,.08,.08];
+const W=[["El",0,.14],["equipo",.17,.41],["de",.45,.51],["Claude",.55,.76],["Code,",.79,1.08],["una",1.23,1.42],["de",1.46,1.52],["las",1.57,1.68],["herramientas",1.75,2.31],["de",2.37,2.45],["IA",2.5,2.76]];
+const T=2.763,V=1136,H=200,svg=document.getElementById("wave"),track=document.getElementById("track"),NS="http://www.w3.org/2000/svg",step=V/A.length;
+const bars=A.map((a,i)=>{const r=document.createElementNS(NS,"rect"),h=Math.max(a*H,3);r.setAttribute("x",i*step);r.setAttribute("y",(H-h)/2);r.setAttribute("width",Math.max(step-3,2));r.setAttribute("height",h);r.setAttribute("rx",2);svg.append(r);return r});
+const labels=W.map(([w,s])=>{const e=document.createElement("i");e.textContent=w;e.style.left=s/T*100+"%";track.append(e);return e});
+const paint=t=>{const k=W.findIndex(([,s,e])=>t>=s&&t<=e+.04);bars.forEach((r,i)=>{const m=(i+.5)/A.length*T;r.classList.toggle("on",k>=0&&m>=W[k][1]&&m<=W[k][2])});labels.forEach((e,i)=>{e.classList.toggle("on",i===k);e.classList.toggle("show",i===k)})};
+const still=()=>{paint(2);labels[8].classList.add("show")};
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,btn=document.getElementById("replay");
+let playing=!reduce,start=null,offset=0,raf;
+const LOOP=(T+1.4)*1000,SLOW=1.5;
+const tick=now=>{if(!playing)return;start??=now-offset;const ms=((now-start)/SLOW)%LOOP;offset=now-start;const t=ms/1000;t<=T?paint(t):still();raf=requestAnimationFrame(tick)};
+const set=p=>{playing=p;btn.textContent=p?"Pause":"Play";if(p){start=null;raf=requestAnimationFrame(tick)}else{cancelAnimationFrame(raf);still()}};
+btn.addEventListener("click",()=>set(!playing));
+document.addEventListener("visibilitychange",()=>{if(document.hidden)cancelAnimationFrame(raf);else if(playing){start=null;raf=requestAnimationFrame(tick)}});
+set(playing);
+</script>
+</body>
+</html>
