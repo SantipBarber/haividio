@@ -1,0 +1,12 @@
+// Página de haividio.dev: estáticos de site/ servidos por un Worker de Cloudflare.
+// Se publica sola al fusionar en main (.github/workflows/web.yml); a mano, `just deploy`.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "haividio",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./site" },
+  "routes": [
+    { "pattern": "haividio.dev", "custom_domain": true },
+    { "pattern": "www.haividio.dev", "custom_domain": true }
+  ]
+}

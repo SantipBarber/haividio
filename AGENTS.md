@@ -24,6 +24,10 @@ Al empezar cualquier sesión, lee `memoria/aprendizajes.md`, `memoria/preferenci
 - En cada entrega, deja una lista de qué revisar (`videos/_plantilla/REVIEW.md`). El agente no puede oír el audio: di qué no se ha oído ni visto en movimiento.
 - Las herramientas evolucionan rápido: si algo de `docs/herramientas.md` tiene más de unos meses, verifica en la web antes de dar por bueno un precio, requisito o comando.
 
+## La página
+
+`site/` es haividio.dev. Se publica sola al fusionar en `main`; si hace falta a mano, `just deploy`. Detalles en `docs/web.md`.
+
 ## Al terminar un vídeo
 
 - Completa `videos/<carpeta>/README.md`: resumen, guion final, herramientas usadas, decisiones, problemas, enlace de YouTube.

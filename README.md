@@ -114,6 +114,8 @@ CLAUDE.md                    Punto de entrada para Claude Code
 .agents/skills               Enlace a las skills para Codex, OpenCode, pi y Cursor
 .claude/skills               Enlace a las skills para Claude Code
 package.json                 Paquete de pi (pi install)
+justfile                     Recetas: just deploy publica la página
+wrangler.jsonc               Configuración de la página en Cloudflare
 memoria/                     Aprendizajes, preferencias y pendientes
 .claude-plugin/              Marketplace de plugins
 plugins/video-studio/        Plugin de Claude Code con las skills
@@ -126,7 +128,7 @@ docs/
   otros-agentes.md           Codex, OpenCode, pi y Cursor
   windows.md                 Instalación y límites en Windows
   workflows/                 Un flujo por tipo de vídeo
-site/                        Página de haividio.dev
+site/                        Página de haividio.dev (docs/web.md)
 scripts/
   splice_voice.py            Sustituye frases o palabras de una locución sin regenerarla
   detect_glitches.py         Busca clics, huecos y congelaciones en un vídeo
