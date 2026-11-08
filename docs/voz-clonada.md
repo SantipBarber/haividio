@@ -8,7 +8,7 @@ Ninguna medida sustituye a oírlo. Una transcripción dice si **las palabras** s
 
 | Comprobación | Sirve para | No sirve para |
 |---|---|---|
-| Transcripción contra el guion: [`scripts/check_voice.py`](../scripts/check_voice.py) (WhisperX, local y gratis) o Scribe | Palabras cambiadas, perdidas o que se entienden mal («Medí acierto» salía «Medía cierto»; se arregló cambiando el texto) | Acento: normaliza y escribe «API» o «Odoo» se digan como se digan. Tampoco ve un corte limpio dentro de una palabra |
+| Transcripción contra el guion: [`scripts/check_voice.py`](../scripts/check_voice.py) (WhisperX, local y gratis) o Scribe | Palabras cambiadas, perdidas o que se entienden mal («Medí acierto» salía «Medía cierto»; se arregló cambiando el texto) | Acento: normaliza y escribe «API» o «Odoo» se digan como se digan. Avisa, eso sí, de una sigla escrita como palabra («Api») que dura demasiado y parece deletreada. Tampoco ve un corte limpio dentro de una palabra |
 | Duración y nivel de cada palabra | Palabras truncadas, tiempos raros | Saber si una pronunciación es buena: 5 apariciones mal dichas no se distinguían de las otras 15 |
 | Correlación contra la toma aprobada | Saber que la toma elegida es la que acabó en el vídeo | Juzgar si esa toma suena bien |
 | Oído de una persona | Todo lo demás | — |
@@ -68,7 +68,7 @@ Lo que eligió de oído un hablante de español de España, como punto de partid
 |---|---|---|
 | Odoo | Odú | |
 | IA | í-a | No siempre: en dos frases sonó «I» y hubo que elegir por frase |
-| API | Api | Como palabra, no letra a letra |
+| API | Api | Como palabra, no letra a letra. Ganó de oído a la IPA (`/ˈapi/`), pero de tres tomas una salió deletreada: `check_voice.py` lo avisa |
 | OCR | oce erre | «ocerre» no valió |
 | CIF | zif | |
 | NIF, IBAN | sin cambios | Con `language_code: es` no se deletrean |

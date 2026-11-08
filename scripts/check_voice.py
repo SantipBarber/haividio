@@ -9,7 +9,10 @@ Guarda además los tiempos reales de cada palabra (formato {"w","start","end"}),
 que sirven para medir el desfase entre rótulos y voz en el vídeo final.
 
 No decide si algo suena bien: la transcripción normaliza, y «API» dicha de dos
-formas sale igual. Tampoco ve un corte limpio dentro de una palabra: en una
+formas sale igual. Sí avisa de una sigla que debía decirse como palabra y
+parece deletreada: el guion la escribe así («Api»), la transcripción la da en
+mayúsculas («API») y dura demasiado para sus letras (en una prueba, «api» duró
+0,18 y 0,26 s, y la toma deletreada, 0,46 s). Tampoco ve un corte limpio dentro de una palabra: en una
 prueba, 150 ms quitados en mitad de «proveedor» no cambiaron la transcripción
 (y comparar duraciones de palabras con el alineador dio hasta 0,3 s de ruido
 en una copia sana, así que no sirve para eso).
@@ -85,6 +88,27 @@ def transcribe(path, model_name, language):
     return words, len(audio) / 16000
 
 
+# Segundos por letra a partir de los cuales una sigla parece deletreada. Dicha
+# como palabra, «API» dio 0,06-0,09 s por letra; deletreada, 0,15.
+SPELLED_SECONDS_PER_LETTER = 0.12
+
+
+def spelled_acronyms(pairs):
+    """Siglas escritas como palabra en el guion que suenan deletreadas."""
+    out = []
+    for raw_exp, word in pairs:
+        heard_raw = re.sub(r"[^\wñÑ]", "", word["w"])
+        if not (2 <= len(heard_raw) <= 5 and heard_raw.isupper() and heard_raw.isalpha()):
+            continue
+        if re.sub(r"[^\wñÑ]", "", raw_exp).isupper():
+            continue  # el guion ya la escribe como sigla: deletrearla puede ser lo buscado
+        dur = word["end"] - word["start"]
+        if dur / len(heard_raw) > SPELLED_SECONDS_PER_LETTER:
+            out.append({"tipo": "deletreada", "esperado": raw_exp, "oido": word["w"],
+                        "t": word["start"], "duracion": round(dur, 3)})
+    return out
+
+
 def compare_text(expected, heard):
     exp = tokens(expected)
     got = [(w["w"], norm(w["w"]), w) for w in heard if norm(w["w"])]
@@ -92,6 +116,8 @@ def compare_text(expected, heard):
     issues = []
     for op, a0, a1, b0, b1 in sm.get_opcodes():
         if op == "equal":
+            pairs = [(exp[a0 + k][0], got[b0 + k][2]) for k in range(a1 - a0)]
+            issues.extend(spelled_acronyms(pairs))
             continue
         at = got[b0][2]["start"] if b0 < len(got) else (got[-1][2]["end"] if got else 0)
         heard_text = " ".join(g[0] for g in got[b0:b1])
@@ -105,6 +131,7 @@ def compare_text(expected, heard):
             "oido": heard_text,
             "t": at,
         })
+    issues.sort(key=lambda x: x["t"])
     return issues, exp, got
 
 
@@ -143,7 +170,8 @@ def main():
     numbers = [x for x in issues if x["tipo"] == "número"]
     print(f"Diferencias: {len(main_issues)}" + ("" if main_issues else " (ninguna)"))
     for x in main_issues:
-        print(f"  {x['t']:7.2f}s  {x['tipo']:8}  esperado «{x['esperado']}»  oído «{x['oido']}»")
+        extra = f"  ({x['duracion']:.2f} s: escúchala)" if x["tipo"] == "deletreada" else ""
+        print(f"  {x['t']:7.2f}s  {x['tipo']:10}  esperado «{x['esperado']}»  oído «{x['oido']}»{extra}")
     if numbers:
         print(f"Números escritos en cifras: {len(numbers)} (escúchalos solo si importa cómo se leen)")
         for x in numbers:

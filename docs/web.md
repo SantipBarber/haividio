@@ -2,6 +2,8 @@
 
 La página son los ficheros estáticos de `site/`, servidos por un Worker de Cloudflare. La configuración está en `wrangler.jsonc`: nombre, carpeta y dominios.
 
+Hay dos versiones: `site/index.html` en español y `site/en/index.html` en inglés (haividio.dev/en/), enlazadas entre sí con `hreflang` y un enlace en el menú. Si cambias el texto de una, cambia también la otra.
+
 ## Publicar
 
 - **Sola:** al fusionar en `main` un cambio de `site/` o de `wrangler.jsonc`, GitHub Actions la publica (`.github/workflows/web.yml`). También se puede lanzar a mano desde la pestaña *Actions*, con *Run workflow*.
