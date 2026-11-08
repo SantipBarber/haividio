@@ -26,7 +26,7 @@ Al empezar cualquier sesión, lee `memoria/aprendizajes.md`, `memoria/preferenci
 
 ## La página
 
-`site/` es haividio.dev. Se publica sola al fusionar en `main`; si hace falta a mano, `just deploy`. Detalles en `docs/web.md`.
+`site/` es haividio.dev, en español (`site/index.html`) y en inglés (`site/en/index.html`): un cambio de texto va en las dos. Se publica sola al fusionar en `main`; si hace falta a mano, `just deploy`. Detalles en `docs/web.md`.
 
 ## Al terminar un vídeo
 
