@@ -6,7 +6,7 @@ body:
     id: que
     attributes:
       label: Qué probaste / What you tested
-      placeholder: Codex con la skill video-sin-cara / Codex with the video-sin-cara skill
+      placeholder: Codex con la skill faceless-video / Codex with the faceless-video skill
     validations:
       required: true
   - type: input

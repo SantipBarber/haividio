@@ -89,13 +89,15 @@ The core is cross-platform, but HyperFrames on Windows is still untested and som
 
 ## Skills
 
+They have English names and trigger whether you ask in English or in Spanish; the agent replies in your language. If you linked them by hand before 0.2.0, link them again: they used to have Spanish names.
+
 | Skill | What for |
 |---|---|
-| `elegir-herramienta-video` | Picks the tool for the kind of video |
-| `video-hablado` | Edits takes: cuts, subtitles and synced animations |
-| `video-sin-cara` | Research, script, voice, animation and render |
-| `identidad-visual` | Applies the channel's visual identity and avoids generic looks |
-| `publicar-youtube` | Title, chapters, thumbnail and upload as private |
+| `choose-video-tool` | Picks the tool for the kind of video |
+| `talking-video` | Edits takes: cuts, subtitles and synced animations |
+| `faceless-video` | Research, script, voice, animation and render |
+| `visual-identity` | Applies the channel's visual identity and avoids generic looks |
+| `publish-youtube` | Title, chapters, thumbnail and upload as private |
 
 ## Guides
 

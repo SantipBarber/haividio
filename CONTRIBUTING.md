@@ -32,7 +32,7 @@ Este proyecto se hace con agentes, así que usarlos para contribuir es lo normal
 
 ## Cómo enviar un PR
 
-1. Haz un fork y crea una rama con un nombre que diga qué cambia (`docs/whisperx-windows`, `skill/video-hablado-subtitulos`).
+1. Haz un fork y crea una rama con un nombre que diga qué cambia (`docs/whisperx-windows`, `skill/talking-video-subtitulos`).
 2. Un PR, un tema. Mejor dos PR pequeños que uno grande.
 3. Si cambias una skill, sube la versión en `plugins/video-studio/.claude-plugin/plugin.json`.
 4. Si cambias la página (`site/`), comprueba que se ve bien en el móvil. Se publica sola al fusionar.

@@ -9,10 +9,12 @@
 - [x] Publicar haividio.dev sola al fusionar en `main`, y `just deploy` a mano (07-11, `docs/web.md`).
 - [x] Guía para contribuir, código de conducta (Contributor Covenant 3.0), plantillas de issue y PR, y avisos privados de seguridad (08-11). Contacto: info@haividio.dev, reenviado con Email Routing.
 - [x] README y página en inglés (08-11): `README.en.md` y haividio.dev/en/.
-- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/voz-clonada.md`, `docs/otros-agentes.md`) y las skills, o decidir que se quedan en español. Relacionado con la tarea de pasar nombres a inglés (más abajo).
+- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/voz-clonada.md`, `docs/otros-agentes.md`). Las skills ya están en inglés con activación en los dos idiomas (08-11, 0.2.0). Relacionado con la tarea de pasar nombres a inglés (más abajo).
 - [ ] El perfil de comunidad de GitHub marca las plantillas de issue como ausentes aunque existen (son formularios `.yml`). Ver si basta con eso o hace falta otra cosa.
 - [ ] Probar Codex y Cursor con las skills (siguen sin probar).
-- [ ] Mejoras pedidas por compañeros: recogerlas en el próximo hilo y apuntarlas aquí.
+- [x] Mejoras pedidas por compañeros (08-11):
+  - Demos de aplicaciones de gestión (un ERP) para clientes, con voz clonada o con la voz grabada de quien las presenta. Sirve el workflow 5; no se incorpora otro motor de grabación. Si la voz es grabada, se graba primero por escenas y la toma se ajusta a esas duraciones.
+  - Skills en inglés y en español (hecho, 0.2.0).
 
 ## Verificación automática (investigación del 07-11)
 
@@ -91,4 +93,4 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 - **Biblioteca de vídeos de ingeniería de IA para la empresa de Santi** (01-11): `docs/biblioteca-ingenieria-ia.md`. Late chunking, para aplicarlo en sus proyectos: `videos/2026-10-31-rag-2026/aplicar-en-proyectos.md`.
 
 - Crear una pequeña librería de componentes reutilizables (barra de pasos, tarjeta de fragmento, panel de dispersión, caja LLM) para no rehacerlos en cada vídeo.
-- Workflow `05-pencil-a-hyperframes.md` y añadir la clonación de voz a la skill `video-sin-cara`.
+- Workflow `05-pencil-a-hyperframes.md` y añadir la clonación de voz a la skill `faceless-video`.

@@ -4,14 +4,14 @@
     "name": "Santiago Pérez Barber"
   },
   "metadata": {
-    "description": "Skills para producir vídeos con agentes de IA"
+    "description": "Skills to produce videos with AI agents / Skills para producir vídeos con agentes de IA"
   },
   "plugins": [
     {
       "name": "video-studio",
       "source": "./plugins/video-studio",
-      "description": "Elige la herramienta adecuada para cada tipo de vídeo y guía el flujo completo: edición, animación, vídeo sin cara, identidad visual y publicación en YouTube.",
-      "version": "0.1.0"
+      "description": "Picks the right tool for each kind of video and guides the whole workflow: editing, animation, faceless video, visual identity and publishing to YouTube. / Elige la herramienta adecuada para cada tipo de vídeo y guía el flujo completo: edición, animación, vídeo sin cara, identidad visual y publicación en YouTube.",
+      "version": "0.2.0"
     }
   ]
 }

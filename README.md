@@ -87,13 +87,15 @@ El núcleo es multiplataforma, pero HyperFrames en Windows aún está por probar
 
 ## Skills
 
+Tienen nombre en inglés y se activan igual si pides las cosas en español o en inglés; el agente responde en tu idioma. Si las enlazaste a mano antes de la 0.2.0, vuelve a enlazarlas: antes se llamaban en español.
+
 | Skill | Para qué |
 |---|---|
-| `elegir-herramienta-video` | Decide qué herramienta usar según el tipo de vídeo |
-| `video-hablado` | Edita tomas: cortes, subtítulos y animaciones sincronizadas |
-| `video-sin-cara` | Investigación, guion, voz, animación y render |
-| `identidad-visual` | Aplica la identidad del canal y evita lo genérico |
-| `publicar-youtube` | Título, capítulos, miniatura y subida como privado |
+| `choose-video-tool` | Decide qué herramienta usar según el tipo de vídeo |
+| `talking-video` | Edita tomas: cortes, subtítulos y animaciones sincronizadas |
+| `faceless-video` | Investigación, guion, voz, animación y render |
+| `visual-identity` | Aplica la identidad del canal y evita lo genérico |
+| `publish-youtube` | Título, capítulos, miniatura y subida como privado |
 
 ## Guías
 
