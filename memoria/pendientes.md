@@ -6,6 +6,13 @@
 - [ ] Producir un vídeo entero con un agente que no sea Claude Code y anotar qué falla.
 - [ ] Publicar con youtubeuploader (07-11, workflow 4): crear el proyecto de Google Cloud y subir un vídeo corto de prueba como **oculto** para ver si un proyecto sin auditar lo deja privado y bloqueado.
 - [x] Subir la imagen como vista previa social en los ajustes de GitHub (07-11).
+- [x] Publicar haividio.dev sola al fusionar en `main`, y `just deploy` a mano (07-11, `docs/web.md`).
+- [x] Guía para contribuir, código de conducta (Contributor Covenant 3.0), plantillas de issue y PR, y avisos privados de seguridad (08-11). Contacto: info@haividio.dev, reenviado con Email Routing.
+- [x] README y página en inglés (08-11): `README.en.md` y haividio.dev/en/.
+- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/voz-clonada.md`, `docs/otros-agentes.md`) y las skills, o decidir que se quedan en español. Relacionado con la tarea de pasar nombres a inglés (más abajo).
+- [ ] El perfil de comunidad de GitHub marca las plantillas de issue como ausentes aunque existen (son formularios `.yml`). Ver si basta con eso o hace falta otra cosa.
+- [ ] Probar Codex y Cursor con las skills (siguen sin probar).
+- [ ] Mejoras pedidas por compañeros: recogerlas en el próximo hilo y apuntarlas aquí.
 
 ## Verificación automática (investigación del 07-11)
 
