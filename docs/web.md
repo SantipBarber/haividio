@@ -18,3 +18,7 @@ Hay dos versiones: `site/index.html` en español y `site/en/index.html` en ingl�
 3. Lanza el flujo a mano una vez (*Actions → Publicar haividio.dev → Run workflow*) y comprueba la página.
 
 Sin el token, el flujo no falla: avisa de que falta y no publica.
+
+## Correo
+
+`info@haividio.dev` es el contacto público (código de conducta). No hay buzón: Email Routing de Cloudflare lo reenvía al correo del mantenedor. Se gestiona en el panel de Cloudflare, en *Email → Email Routing* de la zona; la dirección de destino tiene que estar verificada en la cuenta.
