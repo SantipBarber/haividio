@@ -1,5 +1,7 @@
 # Catálogo de herramientas (investigación de octubre 2026)
 
+*[English](tools.en.md)*
+
 Herramientas para editar y producir vídeo con Claude Code mediante MCP, skills o plugins. Las marcadas con ⚠️ no se pudieron verificar en su repositorio oficial.
 
 ## 1. Editores de escritorio con MCP (estilo pencil.dev: app con timeline + Claude Code la controla)

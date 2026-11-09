@@ -1,5 +1,7 @@
 # Workflow 3 — Vídeo sin cara (explicativo animado con voz en off)
 
+*[English](03-faceless-video.en.md)*
+
 Ejemplo: "Cómo funciona RAG y qué tecnologías RAG son las más punteras ahora".
 
 Herramientas: [HyperFrames](https://github.com/heygen-com/hyperframes) (o [Remotion](https://www.remotion.dev/docs/ai/skills)) + ElevenLabs TTS + youtubeuploader. video-use solo entra si la voz la grabas tú (para limpiarla y cortarla).

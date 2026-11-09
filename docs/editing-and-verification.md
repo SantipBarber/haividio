@@ -1,5 +1,7 @@
 # Montaje con tiempos de voz y verificación
 
+*[English](editing-and-verification.en.md)*
+
 Técnicas probadas al montar una demo de producto con voz clonada. El flujo completo está en el [workflow 5](workflows/05-product-demo.md).
 
 ## ffmpeg + HyperFrames

@@ -1,5 +1,7 @@
 # Windows
 
+*[English](windows.en.md)*
+
 Cómo producir vídeo con este repo desde Windows. El núcleo del flujo es el mismo que en macOS; aquí van las herramientas de instalación, las diferencias de comandos y qué hacer con lo que es solo de Mac.
 
 ## Qué funciona igual

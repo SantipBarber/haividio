@@ -9,7 +9,7 @@
 - [x] Publicar haividio.dev sola al fusionar en `main`, y `just deploy` a mano (07-11, `docs/web.md`).
 - [x] Guía para contribuir, código de conducta (Contributor Covenant 3.0), plantillas de issue y PR, y avisos privados de seguridad (08-11). Contacto: info@haividio.dev, reenviado con Email Routing.
 - [x] README y página en inglés (08-11): `README.en.md` y haividio.dev/en/.
-- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/cloned-voice.md`, `docs/other-agents.md`). Las skills ya están en inglés con activación en los dos idiomas (08-11, 0.2.0). Relacionado con la tarea de pasar nombres a inglés (más abajo).
+- [x] Guías en inglés (09-11): los workflows, `windows`, `cloned-voice`, `editing-and-verification`, `other-agents`, `tools`, `style/identity` y `open-resources` tienen su `.en.md`. Sin traducir, a propósito: `clonify`, `ai-engineering-library`, `voice-sample-text` (es texto para leer en español) y `web` (interna).
 - [ ] El perfil de comunidad de GitHub marca las plantillas de issue como ausentes aunque existen (son formularios `.yml`). Ver si basta con eso o hace falta otra cosa.
 - [ ] Probar Codex y Cursor con las skills (siguen sin probar).
 - [x] Mejoras pedidas por compañeros (08-11):

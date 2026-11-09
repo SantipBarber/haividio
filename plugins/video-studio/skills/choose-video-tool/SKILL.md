@@ -71,4 +71,4 @@ claude mcp add --transport http palmier-pro http://127.0.0.1:19789/mcp   # macOS
 
 - Check prices and requirements on the web if the information is more than a few months old: this ecosystem changes every month.
 - Recommend a single main option and at most one alternative; do not list the whole catalogue.
-- If the work is in the `haividio` repo, each tool is detailed in `docs/tools.md` and the workflows in `docs/workflows/` (in Spanish).
+- If the work is in the `haividio` repo, each tool is detailed in `docs/tools.md` and the workflows in `docs/workflows/`; every guide has an English version (`.en.md`) next to the Spanish one.

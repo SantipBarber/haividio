@@ -1,5 +1,7 @@
 # Workflow 4 — Publicar en YouTube
 
+*[English](04-publish-youtube.en.md)*
+
 Herramienta: [youtubeuploader](https://github.com/porjo/youtubeuploader) (Apache-2.0, YouTube Data API v3). Es una CLI, así que la usa cualquier agente sin configurar nada. Hay versión para Mac, Windows y Linux. Sube como **privado** por defecto, o como oculto (no listado), con miniatura, subtítulos SRT, lista de reproducción y título, descripción y etiquetas en un JSON.
 
 Alternativa si prefieres un MCP: [youtube-uploader-mcp](https://github.com/anwerj/youtube-uploader-mcp) (MIT). Hace lo mismo, cambia la visibilidad de un vídeo ya subido y permite marcar el contenido como alterado o sintético. Tiene menos usuarios: revisa el código antes de darle acceso al canal.

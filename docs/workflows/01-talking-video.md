@@ -1,5 +1,7 @@
 # Workflow 1 — Vídeo hablado: quitar errores, silencios y muletillas
 
+*[English](01-talking-video.en.md)*
+
 Herramienta: [video-use](https://github.com/browser-use/video-use) (skill para Claude Code, MIT).
 
 ## Instalación (una vez)
