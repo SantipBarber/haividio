@@ -18,11 +18,11 @@ A manual and a workspace for making videos with AI agents. Open the terminal her
 
 | You want to make | With | Guide |
 |---|---|---|
-| Talking-head video: remove silences, mistakes and filler words | [video-use](https://github.com/browser-use/video-use) | [Workflow 1](docs/workflows/01-talking-video.md) |
-| Animations over your explanation | video-use + HyperFrames or Remotion | [Workflow 2](docs/workflows/02-animations.md) |
-| Faceless explainer with voice-over | [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-faceless-video.md) |
-| Product demo: screen recording and cloned voice | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-product-demo.md) |
-| Publish to YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publish-youtube.md) |
+| Talking-head video: remove silences, mistakes and filler words | [video-use](https://github.com/browser-use/video-use) | [Workflow 1](docs/workflows/01-talking-video.en.md) |
+| Animations over your explanation | video-use + HyperFrames or Remotion | [Workflow 2](docs/workflows/02-animations.en.md) |
+| Faceless explainer with voice-over | [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-faceless-video.en.md) |
+| Product demo: screen recording and cloned voice | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-product-demo.en.md) |
+| Publish to YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publish-youtube.en.md) |
 
 It works with Claude Code, Codex, OpenCode, pi and Cursor. The only paid service is ElevenLabs.
 
@@ -36,7 +36,7 @@ claude    # or codex, opencode, pi, Cursor…
 
 Your agent reads `AGENTS.md` and finds the skills (in `.agents/skills`, or `.claude/skills` in Claude Code): there is nothing else to install. Tell it what video you want; it picks the workflow and proposes a plan before rendering anything.
 
-To use the skills in other projects (Claude Code plugin, `pi install` or `~/.agents/skills`) and to see what has been tested with each agent: [docs/other-agents.md](docs/other-agents.md).
+To use the skills in other projects (Claude Code plugin, `pi install` or `~/.agents/skills`) and to see what has been tested with each agent: [docs/other-agents.en.md](docs/other-agents.en.md).
 
 Keys (ElevenLabs, Google) go in a `.env` at the root; it is in `.gitignore`. Heavy video and audio files are not committed.
 
@@ -83,7 +83,7 @@ npx hyperframes preview          # preview in Chrome or Edge
 npx hyperframes render -o $HOME\Desktop\scene-03.mp4
 ```
 
-The core is cross-platform, but HyperFrames on Windows is still untested and some tools are macOS-only. The rest is in [docs/windows.md](docs/windows.md).
+The core is cross-platform, but HyperFrames on Windows is still untested and some tools are macOS-only. The rest is in [docs/windows.en.md](docs/windows.en.md).
 
 </details>
 
@@ -101,14 +101,12 @@ They have English names and trigger whether you ask in English or in Spanish; th
 
 ## Guides
 
-In Spanish for now.
-
-- [Cloned voice](docs/cloned-voice.md): models, pronunciation, takes and splicing.
-- [Editing and checks](docs/editing-and-verification.md): sync, clean cuts, mixing and what each check proves.
-- [Other agents](docs/other-agents.md): Codex, OpenCode, pi and Cursor, inside and outside the repository.
-- [Tool catalogue](docs/tools.md): editors, MCP servers and skills, with their cost.
-- [Visual identity](docs/style/identity.md): palette, typography and motion.
-- [Open resources](docs/open-resources.md): docs, icons, fonts and audio, with their licenses.
+- [Cloned voice](docs/cloned-voice.en.md): models, pronunciation, takes and splicing.
+- [Editing and checks](docs/editing-and-verification.en.md): sync, clean cuts, mixing and what each check proves.
+- [Other agents](docs/other-agents.en.md): Codex, OpenCode, pi and Cursor, inside and outside the repository.
+- [Tool catalogue](docs/tools.en.md): editors, MCP servers and skills, with their cost.
+- [Visual identity](docs/style/identity.en.md): palette, typography and motion.
+- [Open resources](docs/open-resources.en.md): docs, icons, fonts and audio, with their licenses.
 - [Memory](memory/): lessons and failures, dated.
 
 ## Contributing

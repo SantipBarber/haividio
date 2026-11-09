@@ -1,5 +1,7 @@
 # Usar Haividio con otros agentes
 
+*[English](other-agents.en.md)*
+
 Haividio no depende de ningún agente concreto. Las instrucciones están en `AGENTS.md` y las skills siguen el formato abierto [Agent Skills](https://agentskills.io/specification), así que cualquier agente que lea ese formato puede usarlas.
 
 Las skills viven en `plugins/video-studio/skills/`. El repositorio tiene dos enlaces simbólicos que apuntan a esa carpeta: `.agents/skills`, la ruta que buscan Codex, OpenCode, pi y Cursor, y `.claude/skills`, la que busca Claude Code. No hay que copiar nada.

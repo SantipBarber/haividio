@@ -1,5 +1,7 @@
 # Recursos abiertos para los vídeos
 
+*[English](open-resources.en.md)*
+
 Fuentes de información, datos y material visual que se pueden usar como referencia o directamente en los vídeos. **Comprueba siempre la licencia** del recurso concreto antes de usarlo y cítalo en la descripción.
 
 ## Información y documentación técnica

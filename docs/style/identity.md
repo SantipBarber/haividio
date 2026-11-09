@@ -1,5 +1,7 @@
 # Identidad visual del canal
 
+*[English](identity.en.md)*
+
 > **Estado:** propuesta, pendiente de elegir dirección. Cuando se elija, se borran las otras dos y esta pasa a ser la guía oficial que aplica la skill `visual-identity`.
 
 ## Prioridad

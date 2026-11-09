@@ -1,5 +1,7 @@
 # Workflow 2 — Animaciones y efectos sobre tu explicación
 
+*[English](02-animations.en.md)*
+
 Herramientas: video-use + HyperFrames o Remotion.
 
 ## Idea

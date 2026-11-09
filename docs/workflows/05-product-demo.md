@@ -1,5 +1,7 @@
 # Workflow 5 — Demo de producto: grabación de pantalla con voz clonada
 
+*[English](05-product-demo.en.md)*
+
 Vídeo de 5 a 15 minutos sobre una aplicación real: se ve la pantalla, un cursor señala lo que cuenta la voz y unos rótulos o esquemas explican lo que la pantalla no enseña.
 
 Herramientas: Playwright (toma), ElevenLabs (voz), ffmpeg (preparar la imagen) y HyperFrames (componer). Detalle en [voz clonada](../cloned-voice.md) y [montaje y verificación](../editing-and-verification.md).

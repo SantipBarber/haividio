@@ -7,7 +7,7 @@ Thanks for wanting to help. Haividio is a knowledge base for making videos with 
 ## What helps most
 
 - **What you learned using a tool**: a bug, a trick, a price or version change. It goes in `docs/` and, in one line, in `memory/learnings.md`.
-- **Tests with other agents and systems.** Codex and Cursor are untested, and Windows barely tested. Write it up in `docs/other-agents.md` or `docs/windows.md`.
+- **Tests with other agents and systems.** Codex and Cursor are untested, and Windows barely tested. Write it up in `docs/other-agents.en.md` or `docs/windows.en.md`.
 - **Improvements to skills, workflows and scripts**, with the test you ran.
 - **New tools**, open source and free ones first.
 

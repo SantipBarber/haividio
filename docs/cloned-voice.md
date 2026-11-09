@@ -1,5 +1,7 @@
 # Voz clonada con ElevenLabs: lo que hemos medido
 
+*[English](cloned-voice.en.md)*
+
 Datos de noviembre de 2026, de un solo proyecto en español con una voz de clonación instantánea. Precios y modelos cambian: verifica antes de fiarte.
 
 ## Lo primero: Claude no puede oír

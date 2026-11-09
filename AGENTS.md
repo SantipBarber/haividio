@@ -24,6 +24,10 @@ Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/preferences.md`
 - En cada entrega, deja una lista de qué revisar (`videos/_template/REVIEW.md`). El agente no puede oír el audio: di qué no se ha oído ni visto en movimiento.
 - Las herramientas evolucionan rápido: si algo de `docs/tools.md` tiene más de unos meses, verifica en la web antes de dar por bueno un precio, requisito o comando.
 
+## Guías en dos idiomas
+
+Las guías de `docs/` tienen su versión en inglés al lado (`nombre.en.md`), igual que `README.en.md`. Un cambio en una guía va en las dos.
+
 ## Si contribuyes desde fuera
 
 Sigue [CONTRIBUTING.md](CONTRIBUTING.md): un PR por tema, qué se probó y con qué, y la descripción breve y escrita por la persona.
