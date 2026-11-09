@@ -32,7 +32,7 @@ This project is built with agents, so using them to contribute is normal. The co
 
 ## How to send a PR
 
-1. Fork the repository and create a branch whose name says what changes (`docs/whisperx-windows`, `skill/video-hablado-subtitulos`).
+1. Fork the repository and create a branch whose name says what changes (`docs/whisperx-windows`, `skill/talking-video-subtitulos`).
 2. One PR, one topic. Two small PRs are better than a big one.
 3. If you change a skill, bump the version in `plugins/video-studio/.claude-plugin/plugin.json`.
 4. If you change the website (`site/`), check that it looks right on a phone. It publishes itself on merge.

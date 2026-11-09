@@ -11,7 +11,7 @@ Al empezar cualquier sesión, lee `memoria/aprendizajes.md`, `memoria/preferenci
 1. Lee `README.md` (tabla de herramientas) y `docs/herramientas.md`.
 2. Identifica el caso de uso y lee el workflow correspondiente en `docs/workflows/`.
 3. Revisa `videos/README.md` por si hay vídeos anteriores relacionados (reutiliza estilo, escenas, guiones).
-4. Si hay animaciones o miniatura, aplica `docs/estilo/identidad.md` (skill `identidad-visual`, en `plugins/video-studio/skills/`).
+4. Si hay animaciones o miniatura, aplica `docs/estilo/identidad.md` (skill `visual-identity`, en `plugins/video-studio/skills/`).
 5. Crea la carpeta del vídeo copiando `videos/_plantilla/` → `videos/AAAA-MM-DD-slug/`.
 
 ## Reglas
