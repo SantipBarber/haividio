@@ -27,13 +27,13 @@ Y=~/.config/youtubeuploader
 youtubeuploader \
   -secrets $Y/client_secrets.json -cache $Y/request.token \
   -filename video.mp4 \
-  -metaJSON publicacion.json \
+  -metaJSON publishing.json \
   -thumbnail miniatura.png \
-  -caption subtitulos.srt \
+  -caption subtitles.srt \
   -privacy private        # o unlisted
 ```
 
-`publicacion.json` lleva título, descripción con capítulos, etiquetas, idioma y, si quieres programarlo, la fecha de publicación (`publishAt`). Formato en el [README de la herramienta](https://github.com/porjo/youtubeuploader#metadata).
+`publishing.json` lleva título, descripción con capítulos, etiquetas, idioma y, si quieres programarlo, la fecha de publicación (`publishAt`). Formato en el [README de la herramienta](https://github.com/porjo/youtubeuploader#metadata).
 
 **Nunca público directamente.** Sube como privado u oculto y revísalo en YouTube Studio antes de publicarlo.
 
@@ -52,7 +52,7 @@ Si el vídeo usa voz clonada u otro contenido realista generado con IA, YouTube 
 
 ## Checklist antes de publicar
 
-- [ ] Título y descripción revisados (`videos/<carpeta>/publicacion.md`)
+- [ ] Título y descripción revisados (`videos/<carpeta>/publishing.md`)
 - [ ] Miniatura final
 - [ ] Subtítulos subidos o quemados
 - [ ] Capítulos (timestamps) en la descripción

@@ -4,7 +4,7 @@
 
 ## Prioridad
 
-Que el vídeo sea **visual, potente y moderno**. No pasa nada porque se note que está hecho con IA; lo que queremos es que no se vea genérico ni de plantilla. Mejor datos y recursos reales (ver `docs/recursos-abiertos.md`) que ilustraciones de relleno.
+Que el vídeo sea **visual, potente y moderno**. No pasa nada porque se note que está hecho con IA; lo que queremos es que no se vea genérico ni de plantilla. Mejor datos y recursos reales (ver `docs/open-resources.md`) que ilustraciones de relleno.
 
 ## D. Moderno oscuro (usado en la primera prueba, escena 3 del vídeo de RAG)
 
@@ -20,7 +20,7 @@ Que el vídeo sea **visual, potente y moderno**. No pasa nada porque se note que
 | Firma | Barra de pasos superior (01–04) con el paso activo en lima; subtítulo explicativo abajo |
 | Texto mínimo | 28 px en 1080p |
 
-Código de referencia: `videos/2026-10-31-rag-2026/animaciones/escena-03/` (HyperFrames).
+Código de referencia: `videos/2026-10-31-rag-2026/animations/scene-03/` (HyperFrames).
 
 ## Para no parecer de plantilla
 

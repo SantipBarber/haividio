@@ -3,9 +3,9 @@
 - **Formato:** vídeo sin cara, explicativo animado, 1920×1080
 - **Duración objetivo:** ~9:20 (≈1.400 palabras a 150 ppm)
 - **Estado:** v2 aprobada (gancho A) a falta de la fuente primaria de la escena 1
-- **Público:** alguien que no sabe qué es RAG tiene que acabar entendiéndolo. Didáctico, sin bajar a fórmulas. Fuentes en `fuentes.md`.
+- **Público:** alguien que no sabe qué es RAG tiene que acabar entendiéndolo. Didáctico, sin bajar a fórmulas. Fuentes en `sources.md`.
 - **Firma «glosario»:** la primera vez que aparece un término (fragmento, vector, top-k, BM25, reranker, agente) sale una tarjeta pequeña abajo a la derecha con su definición en ≤ 6 palabras.
-- **Visuales:** descritos de forma neutra; se adaptan a la dirección de estilo elegida (`docs/estilo/identidad.md`)
+- **Visuales:** descritos de forma neutra; se adaptan a la dirección de estilo elegida (`docs/style/identity.md`)
 
 ---
 

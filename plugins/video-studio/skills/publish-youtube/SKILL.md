@@ -7,7 +7,7 @@ description: Prepares and uploads a video to YouTube - title, description with c
 
 Reply in the user's language. Title, description and tags go in the video's language.
 
-## Prepare (`publicacion.md`)
+## Prepare (`publishing.md`)
 
 - **Title:** ≤ 60 characters, a clear promise, no misleading clickbait. Propose 3 options.
 - **Description:** 2 hook lines, summary, chapters (`00:00 Intro`…) taken from the script or the transcript, sources and links.
@@ -16,8 +16,8 @@ Reply in the user's language. Title, description and tags go in the video's lang
 
 ## Upload
 
-1. Check that `youtubeuploader -version` works and that the credentials exist outside the repository (`~/.config/youtubeuploader/`). If not, guide the setup with `docs/workflows/04-publicar-youtube.md`.
-2. Prepare `publicacion.json` (title, description with chapters, tags, language) from `publicacion.md`.
+1. Check that `youtubeuploader -version` works and that the credentials exist outside the repository (`~/.config/youtubeuploader/`). If not, guide the setup with `docs/workflows/04-publish-youtube.md`.
+2. Prepare `publishing.json` (title, description with chapters, tags, language) from `publishing.md`.
 3. **Ask for explicit confirmation** before uploading.
 4. Upload with `-privacy private` (or `unlisted` if asked), with `-thumbnail` and `-caption` if available. Never straight to public.
 5. Return the link and ask the user to review it in YouTube Studio: check the visibility (an unaudited project may leave it private and locked) and declare synthetic content if there is a cloned voice.

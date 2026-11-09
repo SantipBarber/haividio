@@ -1,4 +1,4 @@
-![Haividio: script, voice, animation and publishing, directed by your AI agent](docs/estilo/haividio-banner.png)
+![Haividio: script, voice, animation and publishing, directed by your AI agent](docs/style/haividio-banner.png)
 
 ![MIT license](https://img.shields.io/badge/license-MIT-D4FF3A?style=flat-square&labelColor=0F1116)
 ![Agents: Claude Code, Codex, OpenCode, pi, Cursor](https://img.shields.io/badge/agents-Claude_Code_%C2%B7_Codex_%C2%B7_OpenCode_%C2%B7_pi_%C2%B7_Cursor-D4FF3A?style=flat-square&labelColor=0F1116)
@@ -18,11 +18,11 @@ A manual and a workspace for making videos with AI agents. Open the terminal her
 
 | You want to make | With | Guide |
 |---|---|---|
-| Talking-head video: remove silences, mistakes and filler words | [video-use](https://github.com/browser-use/video-use) | [Workflow 1](docs/workflows/01-video-hablado.md) |
-| Animations over your explanation | video-use + HyperFrames or Remotion | [Workflow 2](docs/workflows/02-animaciones.md) |
-| Faceless explainer with voice-over | [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-video-sin-cara.md) |
-| Product demo: screen recording and cloned voice | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-demo-de-producto.md) |
-| Publish to YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publicar-youtube.md) |
+| Talking-head video: remove silences, mistakes and filler words | [video-use](https://github.com/browser-use/video-use) | [Workflow 1](docs/workflows/01-talking-video.md) |
+| Animations over your explanation | video-use + HyperFrames or Remotion | [Workflow 2](docs/workflows/02-animations.md) |
+| Faceless explainer with voice-over | [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-faceless-video.md) |
+| Product demo: screen recording and cloned voice | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-product-demo.md) |
+| Publish to YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publish-youtube.md) |
 
 It works with Claude Code, Codex, OpenCode, pi and Cursor. The only paid service is ElevenLabs.
 
@@ -36,7 +36,7 @@ claude    # or codex, opencode, pi, Cursor…
 
 Your agent reads `AGENTS.md` and finds the skills (in `.agents/skills`, or `.claude/skills` in Claude Code): there is nothing else to install. Tell it what video you want; it picks the workflow and proposes a plan before rendering anything.
 
-To use the skills in other projects (Claude Code plugin, `pi install` or `~/.agents/skills`) and to see what has been tested with each agent: [docs/otros-agentes.md](docs/otros-agentes.md).
+To use the skills in other projects (Claude Code plugin, `pi install` or `~/.agents/skills`) and to see what has been tested with each agent: [docs/other-agents.md](docs/other-agents.md).
 
 Keys (ElevenLabs, Google) go in a `.env` at the root; it is in `.gitignore`. Heavy video and audio files are not committed.
 
@@ -50,10 +50,10 @@ git clone https://github.com/SantipBarber/haividio.git
 cd haividio
 
 # 2. Check that the sample scene renders
-cd videos/2026-10-31-rag-2026/animaciones/escena-03
+cd videos/2026-10-31-rag-2026/animations/scene-03
 npx hyperframes check
 npx hyperframes preview          # preview in the browser
-npx hyperframes render -o ~/Desktop/escena-03.mp4
+npx hyperframes render -o ~/Desktop/scene-03.mp4
 
 # 3. Open your agent at the root of the repository
 cd ../../../.. && claude          # or codex, opencode, pi
@@ -77,10 +77,10 @@ git clone https://github.com/SantipBarber/haividio.git
 cd haividio
 
 # 2. Check that the sample scene renders
-cd videos/2026-10-31-rag-2026/animaciones/escena-03
+cd videos/2026-10-31-rag-2026/animations/scene-03
 npx hyperframes check
 npx hyperframes preview          # preview in Chrome or Edge
-npx hyperframes render -o $HOME\Desktop\escena-03.mp4
+npx hyperframes render -o $HOME\Desktop\scene-03.mp4
 ```
 
 The core is cross-platform, but HyperFrames on Windows is still untested and some tools are macOS-only. The rest is in [docs/windows.md](docs/windows.md).
@@ -103,13 +103,13 @@ They have English names and trigger whether you ask in English or in Spanish; th
 
 In Spanish for now.
 
-- [Cloned voice](docs/voz-clonada.md): models, pronunciation, takes and splicing.
-- [Editing and checks](docs/montaje-y-verificacion.md): sync, clean cuts, mixing and what each check proves.
-- [Other agents](docs/otros-agentes.md): Codex, OpenCode, pi and Cursor, inside and outside the repository.
-- [Tool catalogue](docs/herramientas.md): editors, MCP servers and skills, with their cost.
-- [Visual identity](docs/estilo/identidad.md): palette, typography and motion.
-- [Open resources](docs/recursos-abiertos.md): docs, icons, fonts and audio, with their licenses.
-- [Memory](memoria/): lessons and failures, dated.
+- [Cloned voice](docs/cloned-voice.md): models, pronunciation, takes and splicing.
+- [Editing and checks](docs/editing-and-verification.md): sync, clean cuts, mixing and what each check proves.
+- [Other agents](docs/other-agents.md): Codex, OpenCode, pi and Cursor, inside and outside the repository.
+- [Tool catalogue](docs/tools.md): editors, MCP servers and skills, with their cost.
+- [Visual identity](docs/style/identity.md): palette, typography and motion.
+- [Open resources](docs/open-resources.md): docs, icons, fonts and audio, with their licenses.
+- [Memory](memory/): lessons and failures, dated.
 
 ## Contributing
 

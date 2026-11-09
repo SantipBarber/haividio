@@ -19,8 +19,8 @@ _Qué explica el vídeo en 3-5 líneas._
 
 ## Archivos
 
-- `guion.md` — guion por escenas
-- `publicacion.md` — título, descripción, tags, capítulos
+- `script.md` — guion por escenas
+- `publishing.md` — título, descripción, tags, capítulos
 - `REVIEW.md` — qué tiene que revisar una persona en cada entrega
-- `animaciones/` — código de las animaciones
-- `subtitulos.srt`
+- `animations/` — código de las animaciones
+- `subtitles.srt`

@@ -13,7 +13,7 @@ Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo ap
 
 - 2026-11-07 · [web] `haividio.dev` es una página estática en `site/`, servida por un Worker de Cloudflare con la configuración de `wrangler.jsonc`. Se publica sola al fusionar en `main` (GitHub Actions, necesita los secretos de `docs/web.md`); a mano, `just deploy`.
 
-- 2026-11-07 · [demo] Lo aprendido al hacer una demo de producto con voz clonada está en `docs/workflows/05-demo-de-producto.md`, `docs/voz-clonada.md` y `docs/montaje-y-verificacion.md`. Lo más caro: buscar palabras sueltas al sincronizar y regenerar voz ya aprobada en vez de empalmarla.
+- 2026-11-07 · [demo] Lo aprendido al hacer una demo de producto con voz clonada está en `docs/workflows/05-product-demo.md`, `docs/cloned-voice.md` y `docs/editing-and-verification.md`. Lo más caro: buscar palabras sueltas al sincronizar y regenerar voz ya aprobada en vez de empalmarla.
 
 ## HyperFrames
 

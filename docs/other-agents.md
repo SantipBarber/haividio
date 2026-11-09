@@ -40,7 +40,7 @@ Fuera del repositorio, el agente tiene las skills pero no `AGENTS.md`, ni la mem
 | Codex | Sin probar. Según su documentación, lee `.agents/skills` y `~/.agents/skills` y sigue los enlaces simbólicos. |
 | Cursor | Sin probar. Según su documentación, lee `.agents/skills`, `~/.agents/skills` y también `.claude/skills`. |
 
-Lo probado es que el agente encuentra las skills. Producir un vídeo entero solo se ha hecho con Claude Code. Si lo pruebas con otro agente, apunta en `memoria/aprendizajes.md` qué funcionó y qué no.
+Lo probado es que el agente encuentra las skills. Producir un vídeo entero solo se ha hecho con Claude Code. Si lo pruebas con otro agente, apunta en `memory/learnings.md` qué funcionó y qué no.
 
 ## Diferencias con Claude Code
 

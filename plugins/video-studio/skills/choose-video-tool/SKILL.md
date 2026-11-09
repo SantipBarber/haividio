@@ -23,7 +23,7 @@ Is there recorded footage of someone talking?
 │               → add Palmier Pro (macOS 26 + Apple Silicon) or Velorn
 │
 ├─ Demo of an application with screen recording and a cloned voice?
-│       → Playwright + ffmpeg + HyperFrames → docs/workflows/05-demo-de-producto.md
+│       → Playwright + ffmpeg + HyperFrames → docs/workflows/05-product-demo.md
 │
 └─ No → Explainer / diagrams / motion graphics / short?
          → HyperFrames (default) or Remotion + ElevenLabs voice → skill faceless-video
@@ -71,4 +71,4 @@ claude mcp add --transport http palmier-pro http://127.0.0.1:19789/mcp   # macOS
 
 - Check prices and requirements on the web if the information is more than a few months old: this ecosystem changes every month.
 - Recommend a single main option and at most one alternative; do not list the whole catalogue.
-- If the work is in the `haividio` repo, each tool is detailed in `docs/herramientas.md` and the workflows in `docs/workflows/` (in Spanish).
+- If the work is in the `haividio` repo, each tool is detailed in `docs/tools.md` and the workflows in `docs/workflows/` (in Spanish).

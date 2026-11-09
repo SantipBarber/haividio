@@ -20,4 +20,4 @@ Sin permanencia, sin plan gratuito ni prueba (garantía de devolución de 14 dí
 
 ## Cuándo tendría sentido
 
-Solo si se quiere vender cursos o mentorías online. Para editar y publicar vídeos, ver `herramientas.md`.
+Solo si se quiere vender cursos o mentorías online. Para editar y publicar vídeos, ver `tools.md`.

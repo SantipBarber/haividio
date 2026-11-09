@@ -6,8 +6,8 @@ Gracias por querer aportar. Haividio es una base de conocimiento para producir v
 
 ## Qué aporta más
 
-- **Lo que aprendiste usando una herramienta**: un fallo, un truco, un cambio de precio o de versión. Va en `docs/` y, en una línea, en `memoria/aprendizajes.md`.
-- **Pruebas con otros agentes y sistemas.** Codex y Cursor están sin probar, y Windows casi. Cuéntalo en `docs/otros-agentes.md` o `docs/windows.md`.
+- **Lo que aprendiste usando una herramienta**: un fallo, un truco, un cambio de precio o de versión. Va en `docs/` y, en una línea, en `memory/learnings.md`.
+- **Pruebas con otros agentes y sistemas.** Codex y Cursor están sin probar, y Windows casi. Cuéntalo en `docs/other-agents.md` o `docs/windows.md`.
 - **Mejoras en skills, workflows y scripts**, con la prueba que hiciste.
 - **Herramientas nuevas**, priorizando las de código abierto y gratuitas.
 
@@ -19,7 +19,7 @@ Para un arreglo pequeño (una errata, un comando que ha cambiado, un enlace roto
 2. **Ninguna clave en git.** Las claves van en `.env`, que está ignorado.
 3. **Nada de vídeo ni audio pesado.** Sí guiones, código de animaciones, subtítulos, miniaturas finales y notas. Para enseñar un resultado, enlázalo.
 4. **Di qué probaste y con qué.** Versión de la herramienta, sistema y agente. Si el agente generó audio o vídeo, di si lo escuchaste o viste: un agente no puede oír.
-5. **Con fecha.** Las herramientas cambian rápido: un precio o un requisito sin fecha no sirve. En `memoria/aprendizajes.md`, sigue el formato `- AAAA-MM-DD · [tema] lo aprendido.`
+5. **Con fecha.** Las herramientas cambian rápido: un precio o un requisito sin fecha no sirve. En `memory/learnings.md`, sigue el formato `- AAAA-MM-DD · [tema] lo aprendido.`
 6. **En español o en inglés**, en issues, PR y documentación. Si añades una guía en un idioma, no hace falta que la traduzcas: la otra versión puede llegar después.
 
 ## Usar IA para contribuir
@@ -42,7 +42,7 @@ Los mensajes de commit, en español o en inglés, dicen qué cambia («Comprobar
 
 ## Qué no toca un PR
 
-- `memoria/preferencias.md`: son los gustos del mantenedor para sus vídeos.
+- `memory/preferences.md`: son los gustos del mantenedor para sus vídeos.
 - `videos/`: son los vídeos del mantenedor. Si quieres enseñar uno tuyo hecho con Haividio, abre un issue y lo enlazamos.
 
 ## Problemas de seguridad

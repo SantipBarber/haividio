@@ -35,10 +35,10 @@ Tras instalar, cierra y abre la terminal para que el PATH se actualice; comprueb
 ## Diferencias de comandos
 
 - En Windows se usa `python` (o `py`) en vez de `python3`: `python build_root.py`.
-- Rutas en PowerShell: `$HOME\Desktop\escena-03.mp4` en lugar de `~/Desktop/...`.
+- Rutas en PowerShell: `$HOME\Desktop\scene-03.mp4` en lugar de `~/Desktop/...`.
 - Enlace simbólico de la skill video-use: en vez de `ln -s`, usa una unión de directorios (no requiere administrador):
   `New-Item -ItemType Junction -Path "$HOME\.claude\skills\video-use" -Target "$HOME\tools\video-use"`
-- Skills del repositorio: `.agents/skills` y `.claude/skills` son enlaces simbólicos. Sin el Modo desarrollador, Git los clona como ficheros de texto. Actívalo y clona con `git clone -c core.symlinks=true ...`, o crea una unión: `New-Item -ItemType Junction -Path .agents\skills -Target plugins\video-studio\skills` (borra antes el fichero; lo mismo para `.claude\skills`). Detalles en [otros-agentes.md](otros-agentes.md).
+- Skills del repositorio: `.agents/skills` y `.claude/skills` son enlaces simbólicos. Sin el Modo desarrollador, Git los clona como ficheros de texto. Actívalo y clona con `git clone -c core.symlinks=true ...`, o crea una unión: `New-Item -ItemType Junction -Path .agents\skills -Target plugins\video-studio\skills` (borra antes el fichero; lo mismo para `.claude\skills`). Detalles en [other-agents.md](other-agents.md).
 - La vista previa de HyperFrames se abre en Chrome o Edge, que reproducen el audio.
 - Finales de línea: el repo trae `.gitattributes` con `eol=lf`, no hace falta tocar `core.autocrlf`.
 
@@ -47,7 +47,7 @@ Tras instalar, cierra y abre la terminal para que el PATH se actualice; comprueb
 - Requisitos oficiales: Node.js 22+ y FFmpeg. La app de escritorio de HyperFrames tiene descarga para macOS, Windows y Linux.
 - Las notas de versión recientes incluyen arreglos específicos de Windows (v0.8.207: instalación, check y preview en más configuraciones, `init` sin Modo desarrollador; v0.8.219: `check`, `snapshot` y `render` ya no fallan por un log de Chrome bloqueado). Usa una versión igual o posterior a la 0.8.219.
 - Primeros pasos: `npx hyperframes doctor` y `npx hyperframes browser ensure` (descarga Chrome Headless Shell).
-- Prueba mínima: renderizar `videos/2026-10-31-rag-2026/animaciones/escena-03` (comandos de la sección del README) y después el vídeo completo `rag-video`. Ojo: `rag-video` necesita los mp3 de voz, música y efectos en `assets/`, que no están en git; hay que copiarlos aparte o regenerarlos con ElevenLabs.
+- Prueba mínima: renderizar `videos/2026-10-31-rag-2026/animations/scene-03` (comandos de la sección del README) y después el vídeo completo `rag-video`. Ojo: `rag-video` necesita los mp3 de voz, música y efectos en `assets/`, que no están en git; hay que copiarlos aparte o regenerarlos con ElevenLabs.
 - Si falla el render nativo: usa **WSL2** (Ubuntu) y sigue las instrucciones de Linux (`sudo apt install ffmpeg`, Node 22 con nvm). Según las notas de versión, en WSL el render usa la GPU a través de Chrome completo.
 - Aún no lo hemos probado en un Windows real. Casilla pendiente:
 
@@ -55,7 +55,7 @@ Tras instalar, cierra y abre la terminal para que el PATH se actualice; comprueb
 
 - [ ] `npx hyperframes doctor` pasa sin errores
 - [ ] preview con audio suena
-- [ ] render de escena-03 sale correcto
+- [ ] render de scene-03 sale correcto
 - [ ] render de rag-video sale correcto
 - [ ] `python build_root.py` regenera `index.html` con las tildes correctas
 

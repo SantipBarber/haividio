@@ -21,7 +21,7 @@ Herramientas para editar y producir vídeo con Claude Code mediante MCP, skills 
 
 | Herramienta | Para qué | Precio | Notas |
 |---|---|---|---|
-| **video-use** (browser-use) | Editar metraje en bruto → `edit/final.mp4`. Cortes, color, subtítulos, animaciones. | MIT. Requiere API key de ElevenLabs (Scribe) | Ver `workflows/01-video-hablado.md` — [repo](https://github.com/browser-use/video-use) |
+| **video-use** (browser-use) | Editar metraje en bruto → `edit/final.mp4`. Cortes, color, subtítulos, animaciones. | MIT. Requiere API key de ElevenLabs (Scribe) | Ver `workflows/01-talking-video.md` — [repo](https://github.com/browser-use/video-use) |
 | **HyperFrames** (HeyGen) | HTML → MP4, pensado para agentes. App macOS con preview "Studio". | Apache 2.0, gratis | `claude plugin marketplace add heygen-com/hyperframes`. Requiere Node 22+ y FFmpeg — [repo](https://github.com/heygen-com/hyperframes) |
 | **Remotion** | Vídeo programado en React, skills oficiales. | Gratis para individuos y equipos ≤3. Empresa: $25/mes por dev | `npx skills add remotion-dev/skills` — [docs](https://www.remotion.dev/docs/ai/skills), [licencia](https://www.remotion.dev/docs/license/faq) |
 | videocut-skills ⚠️ | Quita muletillas y silencios >1 s, subtítulos con Whisper large-v3 local. | MIT, sin APIs de pago (~5 GB) | [ficha](https://www.sourcepulse.org/projects/22803490) |
@@ -36,13 +36,13 @@ Herramientas para editar y producir vídeo con Claude Code mediante MCP, skills 
 | **[youtubeuploader](https://github.com/porjo/youtubeuploader)** (recomendada) | CLI: sube como privado u oculto, con miniatura, subtítulos SRT, lista de reproducción y metadatos en JSON | Apache-2.0, gratis. Mac (`brew`), Windows (zip) y Linux. OAuth de Google Cloud + YouTube Data API v3. v1.25.5, actividad en agosto de 2026 |
 | [youtube-uploader-mcp](https://github.com/anwerj/youtube-uploader-mcp) | MCP: lo mismo, más cambiar la visibilidad después y marcar contenido sintético | MIT, gratis. Mac, Windows y Linux. v0.3.1 (31-10-2026), pocos usuarios: **revisar el código antes de dar acceso al canal** |
 
-Un proyecto de Google Cloud sin auditar puede dejar privados y bloqueados los vídeos subidos por la API: prueba antes con un vídeo corto (ver [workflow 4](workflows/04-publicar-youtube.md)).
+Un proyecto de Google Cloud sin auditar puede dejar privados y bloqueados los vídeos subidos por la API: prueba antes con un vídeo corto (ver [workflow 4](workflows/04-publish-youtube.md)).
 
 ## Recomendación de stacks
 
 - **Vídeo hablado (talking-head):** video-use → (opcional) retoque en Palmier Pro / Velorn → youtubeuploader. Alternativa coste cero: auto-editor/videocut-skills + Whisper local.
 - **Motion graphics, shorts y vídeos sin cara:** HyperFrames (o Remotion) + ElevenLabs TTS → youtubeuploader.
 
-Demo de producto con grabación de pantalla: Playwright + ffmpeg + HyperFrames + ElevenLabs ([workflow 5](workflows/05-demo-de-producto.md)). Voz: [voz-clonada.md](voz-clonada.md).
+Demo de producto con grabación de pantalla: Playwright + ffmpeg + HyperFrames + ElevenLabs ([workflow 5](workflows/05-product-demo.md)). Voz: [cloned-voice.md](cloned-voice.md).
 
 Windows: ver [docs/windows.md](windows.md).

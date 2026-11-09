@@ -36,7 +36,7 @@ Merola y Singh (2025) llegan a esta conclusión: la recuperación contextual man
 **Fuentes.**
 - Günther et al., *Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models* (Jina AI), arXiv:2409.04701 — https://arxiv.org/abs/2409.04701
 - Merola y Singh, *Reconstructing Context: Evaluating Advanced Chunking Strategies for RAG* (2025), arXiv:2504.19754 — https://arxiv.org/abs/2504.19754
-- Anthropic, *Introducing Contextual Retrieval* — cifras en `fuentes.md`.
+- Anthropic, *Introducing Contextual Retrieval* — cifras en `sources.md`.
 
 ## Otras técnicas del vídeo que conviene revisar en los proyectos
 
