@@ -19,5 +19,5 @@ Cada animación la genera un subagente en paralelo con HyperFrames, Remotion, Ma
 
 ## Consejos
 
-- Definir una vez una paleta y tipografía de marca y guardarla en `videos/_template/estilo.md` para que todas las animaciones sean coherentes.
+- Definir una vez una paleta y tipografía de marca y guardarla en `docs/style/identity.md` para que todas las animaciones sean coherentes.
 - Las animaciones de tipo diagrama (flujos, cajas, flechas) salen mejor en HyperFrames (HTML/CSS); las muy programáticas o con datos, en Remotion.

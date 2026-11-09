@@ -86,9 +86,9 @@ Regenerar una escena cambia todo lo ya aprobado. [`scripts/splice_voice.py`](../
 
 ```bash
 # Una frase entera
-scripts/splice_voice.py phrase audio/escena-3 audio/toma-buena "Tardó unos" "cargada."
+scripts/splice_voice.py phrase audio/scene-3 audio/approved-take "Tardó unos" "cargada."
 # Las mismas palabras de una toma, en varias frases
-scripts/splice_voice.py word audio/escena-3 audio/toma-buena "por api" all
+scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
 ```
 
 - **Incluye la palabra anterior** si la palabra se pega a ella: en «por api», cortar antes de «por» cayó en silencio y cortar entre «por» y «api» no.

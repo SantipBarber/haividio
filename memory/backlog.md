@@ -54,7 +54,8 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 ## Tarea: pasar nombres a inglés (pedida el 2026-10-31)
 
 - [x] Renombrar **carpetas y ficheros** del repo de español a inglés: `memoria/` → `memory/`, `docs/estilo/` → `docs/style/`, `docs/herramientas.md` → `docs/tools.md`, `videos/_plantilla/` → `videos/_template/`, `guion.md` → `script.md`, `fuentes.md` → `sources.md`, `animaciones/escena-03` → `animations/scene-03`, skills del plugin `identidad-visual` → `visual-identity`, etc.
-- [ ] El **código** pasa a inglés (ids, clases, variables, nombres de capas en Pencil, keys de JSON). Los **comentarios** pueden seguir en español.
+- [x] El **código** pasa a inglés (09-11, tras una auditoría con pi): plantillas de issue, ancla `#start` de la web, claves del informe de `check_voice.py` (`type`, `expected`, `heard`…) y la etiqueta del plugin. Los **comentarios** pueden seguir en español.
+- [ ] Quedan dos cosas que no se pueden cambiar solo en git: los nombres de capa en español de `design/scene3.pen` (se cambian en Pencil y se vuelve a exportar `kf03.html`) y la pista local `A-pulso-tech-full.mp3` que espera `build_root.py` (renombrar el fichero y la constante a la vez).
 - [ ] El **contenido** de los documentos y del vídeo sigue en español.
 - [x] Hacerlo con `git mv` (conserva historial) y actualizar todas las referencias: CLAUDE.md, README, skills del plugin, marketplace.json, enlaces entre docs y la memoria de Claude. Al final: `claude plugin validate .` y reinstalar el plugin `video-studio`.
 - [x] Buena candidata para delegar en pi (mecánica), con una lista de renombrados cerrada que apruebe Santi antes.
