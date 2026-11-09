@@ -11,7 +11,7 @@
 - 2026-11-07 · [repositorio] El repositorio es público y acumula conocimiento: lo que se sube debe ser general, sin datos de proyectos concretos.
 - 2026-11-06 · [voz] Prefiere Eleven v4 para su voz clonada: es «la que me parece más real y se parece a mi voz». Con Multilingual v2 le sonaba «un poco a robot».
 - 2026-11-06 · [locución] Tiene que sonar humana y fluida. Una aclaración se da una vez y no se fuerzan aclaraciones a mitad de frase.
-- 2026-11-06 · [pronunciación] «Odoo» se dice «Odú», «API» como palabra, «OCR» «oce erre», «CIF» «zif». Tabla en `docs/voz-clonada.md`.
+- 2026-11-06 · [pronunciación] «Odoo» se dice «Odú», «API» como palabra, «OCR» «oce erre», «CIF» «zif». Tabla en `docs/cloned-voice.md`.
 - 2026-11-06 · [demo] Lo que se explica tiene que verse, y el recorrido parte siempre del mismo sitio. Sirve de referencia: unos 7-8 min sin huecos de voz.
 - 2026-11-06 · [contenido] En un vídeo de formación aportan los entresijos: cómo se hizo y qué se planea mejorar. Descartar lo evidente y profundizar en lo técnico propio.
 - 2026-11-07 · [nombre] El proyecto se llama **Haividio**: «hay vídeo» en español y «hi, video» en inglés. Dominio elegido: `haividio.dev`. Debe servir con otros agentes, no solo con Claude.

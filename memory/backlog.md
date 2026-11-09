@@ -2,14 +2,14 @@
 
 ## Haividio
 
-- [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/otros-agentes.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.
+- [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/other-agents.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.
 - [ ] Producir un vídeo entero con un agente que no sea Claude Code y anotar qué falla.
 - [ ] Publicar con youtubeuploader (07-11, workflow 4): crear el proyecto de Google Cloud y subir un vídeo corto de prueba como **oculto** para ver si un proyecto sin auditar lo deja privado y bloqueado.
 - [x] Subir la imagen como vista previa social en los ajustes de GitHub (07-11).
 - [x] Publicar haividio.dev sola al fusionar en `main`, y `just deploy` a mano (07-11, `docs/web.md`).
 - [x] Guía para contribuir, código de conducta (Contributor Covenant 3.0), plantillas de issue y PR, y avisos privados de seguridad (08-11). Contacto: info@haividio.dev, reenviado con Email Routing.
 - [x] README y página en inglés (08-11): `README.en.md` y haividio.dev/en/.
-- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/voz-clonada.md`, `docs/otros-agentes.md`). Las skills ya están en inglés con activación en los dos idiomas (08-11, 0.2.0). Relacionado con la tarea de pasar nombres a inglés (más abajo).
+- [ ] Traducir al inglés las guías más usadas (`docs/workflows/`, `docs/cloned-voice.md`, `docs/other-agents.md`). Las skills ya están en inglés con activación en los dos idiomas (08-11, 0.2.0). Relacionado con la tarea de pasar nombres a inglés (más abajo).
 - [ ] El perfil de comunidad de GitHub marca las plantillas de issue como ausentes aunque existen (son formularios `.yml`). Ver si basta con eso o hace falta otra cosa.
 - [ ] Probar Codex y Cursor con las skills (siguen sin probar).
 - [x] Mejoras pedidas por compañeros (08-11):
@@ -38,7 +38,7 @@ Más adelante:
 - [ ] Borradores con voz local (VoxCPM2, Apache-2.0, o Qwen3-TTS) para cuadrar tiempos antes de gastar créditos.
 - [ ] Shorts verticales: composición vertical en HyperFrames; para vídeo hablado, recorte con MediaPipe.
 - [ ] Miniaturas desde código con Pillow; subtítulos SRT y capítulos desde los `.words.json`; probar títulos y miniaturas con «Test & Compare» de YouTube Studio.
-- [ ] Documentar en `docs/otros-agentes.md` el MCP alojado de ElevenLabs (`https://api.elevenlabs.io/v1/mcp`, OAuth); el `elevenlabs-mcp` local está archivado desde el 20-08-2026.
+- [ ] Documentar en `docs/other-agents.md` el MCP alojado de ElevenLabs (`https://api.elevenlabs.io/v1/mcp`, OAuth); el `elevenlabs-mcp` local está archivado desde el 20-08-2026.
 - [ ] Validar las skills con `skills-ref` (Agent Skills).
 
 Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia de investigación), F5-TTS y XTTS v2 (pesos no comerciales), Gemini (de pago; como mucho segunda opinión), UTMOSv2 como único medidor (inestable).
@@ -47,29 +47,30 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 
 - [x] Clonar el repo e instalar el plugin `video-studio` (+ hyperframes, Chrome Headless Shell, whisper-cpp, Parakeet) (ver "Empezar en tu Mac" en el README).
 - [ ] Probar el flujo **pencil.dev → HyperFrames**: diseñar 1–2 fotogramas clave de una escena en Pencil, que Claude Code los lea por MCP y los anime. Comprobar qué exporta Pencil (HTML/CSS, imágenes, tokens) y documentarlo en `docs/workflows/06-pencil-a-hyperframes.md`.
-- [x] (01-11, clonación instantánea; ver `docs/voz-clonada.md`.) **Clonar la voz** en ElevenLabs: grabar audio limpio, crear la voz, comprobar requisitos actuales (clonación rápida vs profesional, plan necesario). Guardar el ID de la voz en `.env`, nunca en git.
+- [x] (01-11, clonación instantánea; ver `docs/cloned-voice.md`.) **Clonar la voz** en ElevenLabs: grabar audio limpio, crear la voz, comprobar requisitos actuales (clonación rápida vs profesional, plan necesario). Guardar el ID de la voz en `.env`, nunca en git.
 - [ ] Elegir entre whisper-cpp y Parakeet para transcribir y **desinstalar el que no se use** (Santi, 31-10: el espacio en disco está creciendo mucho; npm y Playwright ya se limpiaron).
-- [ ] Vídeo de RAG: **más pantallas** en el pen, con el conocimiento de `fuentes.md` (Hugging Face, LangChain Deep Agents…) explicado para usuarios no tan avanzados (petición de Santi, 31-10).
+- [ ] Vídeo de RAG: **más pantallas** en el pen, con el conocimiento de `sources.md` (Hugging Face, LangChain Deep Agents…) explicado para usuarios no tan avanzados (petición de Santi, 31-10).
 
 ## Tarea: pasar nombres a inglés (pedida el 2026-10-31)
 
-- [ ] Renombrar **carpetas y ficheros** del repo de español a inglés (p. ej. `memoria/` → `memory/`, `docs/estilo/` → `docs/style/`, `docs/herramientas.md` → `docs/tools.md`, `videos/_plantilla/` → `videos/_template/`, `guion.md` → `script.md`, `fuentes.md` → `sources.md`, `animaciones/escena-03` → `animations/scene-03`, skills del plugin `identidad-visual` → `visual-identity`, etc.).
-- [ ] El **código** pasa a inglés (ids, clases, variables, nombres de capas en Pencil, keys de JSON). Los **comentarios** pueden seguir en español.
+- [x] Renombrar **carpetas y ficheros** del repo de español a inglés: `memoria/` → `memory/`, `docs/estilo/` → `docs/style/`, `docs/herramientas.md` → `docs/tools.md`, `videos/_plantilla/` → `videos/_template/`, `guion.md` → `script.md`, `fuentes.md` → `sources.md`, `animaciones/escena-03` → `animations/scene-03`, skills del plugin `identidad-visual` → `visual-identity`, etc.
+- [x] El **código** pasa a inglés (09-11, tras una auditoría con pi): plantillas de issue, ancla `#start` de la web, claves del informe de `check_voice.py` (`type`, `expected`, `heard`…) y la etiqueta del plugin. Los **comentarios** pueden seguir en español.
+- [ ] Quedan dos cosas que no se pueden cambiar solo en git: los nombres de capa en español de `design/scene3.pen` (se cambian en Pencil y se vuelve a exportar `kf03.html`) y la pista local `A-pulso-tech-full.mp3` que espera `build_root.py` (renombrar el fichero y la constante a la vez).
 - [ ] El **contenido** de los documentos y del vídeo sigue en español.
-- [ ] Hacerlo con `git mv` (conserva historial) y actualizar todas las referencias: CLAUDE.md, README, skills del plugin, marketplace.json, enlaces entre docs y la memoria de Claude. Al final: `claude plugin validate .` y reinstalar el plugin `video-studio`.
-- [ ] Buena candidata para delegar en pi (mecánica), con una lista de renombrados cerrada que apruebe Santi antes.
+- [x] Hacerlo con `git mv` (conserva historial) y actualizar todas las referencias: CLAUDE.md, README, skills del plugin, marketplace.json, enlaces entre docs y la memoria de Claude. Al final: `claude plugin validate .` y reinstalar el plugin `video-studio`.
+- [x] Buena candidata para delegar en pi (mecánica), con una lista de renombrados cerrada que apruebe Santi antes.
 
 ## Vídeo de RAG (`videos/2026-10-31-rag-2026/`)
 
 - [x] Guion v1 con fuentes.
 - [x] Prueba de la escena 3 en HyperFrames (26 s, sin voz).
-- [x] Guion v2: bloque de fundamentos para principiantes (escenas 2b, 3a–3c, 8 ampliada) con fuentes de HF, LangChain y Anthropic (`fuentes.md`).
+- [x] Guion v2: bloque de fundamentos para principiantes (escenas 2b, 3a–3c, 8 ampliada) con fuentes de HF, LangChain y Anthropic (`sources.md`).
 - [x] Guion v2 aprobado; gancho A (sin dar por sabido qué es Claude Code).
 - [ ] **Fuente primaria de la escena 1**: post de Boris Cherny en X o entrevista (mayo 2025) donde cuenta que quitaron RAG + base vectorial. La URL de smartscope de la v1 ya no lo dice. Sin fuente primaria, no publicar esa afirmación tal cual.
 - [x] Fotogramas en `design/scene3.pen`: 2b, 3a, 3b Trocear, 3b Vectorizar, 03 Buscar, 3c ¿Cuántos?, 04 Generar (fila 1) y 8a, 8b (fila 2). Componente reutilizable «Glosario». PNG en `design/export/`.
 - [x] Revisión de Santi de los fotogramas (01-11: «bastante bien» como prueba de concepto).
-- [x] Tramo de prueba 3b + 3c animado con voz en `animaciones/rag-steps/` (74 s, 5 escenas como subcomposiciones, voz de serie «Daniel» de ElevenLabs sincronizada por palabra). Pendiente: que Santi lo vea en la vista previa y apruebe antes de renderizar.
-- [x] **Vídeo completo montado** en `animaciones/rag-video/` (18 composiciones, 7:58, voz de prueba «Daniel»). `build_root.py` regenera `index.html` y `timeline.json` desde las duraciones reales de la voz. Borrador renderizado en `out/rag-video-draft-v1.mp4` (fuera de git). Santi: «como POC está guay», mejorable en el ajuste final.
+- [x] Tramo de prueba 3b + 3c animado con voz en `animations/rag-steps/` (74 s, 5 escenas como subcomposiciones, voz de serie «Daniel» de ElevenLabs sincronizada por palabra). Pendiente: que Santi lo vea en la vista previa y apruebe antes de renderizar.
+- [x] **Vídeo completo montado** en `animations/rag-video/` (18 composiciones, 7:58, voz de prueba «Daniel»). `build_root.py` regenera `index.html` y `timeline.json` desde las duraciones reales de la voz. Borrador renderizado en `out/rag-video-draft-v1.mp4` (fuera de git). Santi: «como POC está guay», mejorable en el ajuste final.
 - [x] Música (estilo A «pulso tech», ElevenLabs Music, encadenada a 6:13) y 30 efectos (whoosh, pop, tic, golpe final), colocados desde `build_root.py`. Render v2 normalizado a −14 LUFS: `out/rag-video-v2.mp4`. Santi (01-11): «está perfecto para ser el primero»; la voz suena algo artificial.
 - [x] Enviar la v2 para recoger opiniones (Google Drive, `Vídeos IA/RAG en 2026 - v2 (borrador para opiniones).mp4`). 03-11: **ha gustado bastante**. Siguiente paso: ajuste final (voz más natural, transiciones, ritmo de agentic y longcontext, `first_frame_empty`) y miniatura.
 - [ ] Crear un client_id propio de Google Cloud para rclone (el compartido se retira en 2026) y aprovechar el proyecto para la API de YouTube.
@@ -80,7 +81,7 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 - [ ] Afinar la escena 3: ritmo ajustado a la voz real, sonido (música de fondo + efecto en cada paso).
 - [ ] Sustituir los puntos inventados por **embeddings reales** (sentence-transformers + dataset de Hugging Face, proyección UMAP/PCA).
 - [x] Generar la voz por escenas con la voz clonada (01-11).
-- [x] Animar el resto de escenas (`animaciones/rag-video/`, 18 composiciones).
+- [x] Animar el resto de escenas (`animations/rag-video/`, 18 composiciones).
 - [ ] Miniatura y publicación como privado.
 
 ## Windows (03-11)
@@ -90,7 +91,7 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 
 ## Ideas
 
-- **Biblioteca de vídeos de ingeniería de IA para la empresa de Santi** (01-11): `docs/biblioteca-ingenieria-ia.md`. Late chunking, para aplicarlo en sus proyectos: `videos/2026-10-31-rag-2026/aplicar-en-proyectos.md`.
+- **Biblioteca de vídeos de ingeniería de IA para la empresa de Santi** (01-11): `docs/ai-engineering-library.md`. Late chunking, para aplicarlo en sus proyectos: `videos/2026-10-31-rag-2026/apply-in-projects.md`.
 
 - Crear una pequeña librería de componentes reutilizables (barra de pasos, tarjeta de fragmento, panel de dispersión, caja LLM) para no rehacerlos en cada vídeo.
 - Workflow `05-pencil-a-hyperframes.md` y añadir la clonación de voz a la skill `faceless-video`.

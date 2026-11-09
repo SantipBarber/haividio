@@ -2,6 +2,7 @@
 
 Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo aplicarlo.`
 
+- 2026-11-09 · [pi] Para un renombrado de 85 ficheros con sus referencias, glm-5.3-flash (`codigo`) lo dejó limpio a la primera por 0,03 $; una auditoría de solo lectura con gpt-6-luna encontró después lo que quedaba (identificadores, una ancla, dos enlaces rotos) por 0,05 $. Pedir a pi un informe en un fichero y aplicar los cambios uno mismo evita que toque lo que no debe.
 - 2026-11-08 · [plugin] Para comprobar qué skill se activa sin instalar la rama: `claude -p "<petición>" --plugin-dir <repo>/plugins/video-studio --settings s.json --output-format stream-json --verbose`, con `s.json` = `{"enabledPlugins":{"video-studio@haividio":false}}` para que no cargue la versión instalada, y buscar la llamada `"name":"Skill"`. Con nombres y cuerpo en inglés y frases de activación en español en la descripción, las seis peticiones de prueba (cinco en español, una en inglés) activaron la skill correcta.
 - 2026-11-08 · [web] La publicación automática funciona: al fusionar un cambio de `site/`, el flujo tarda unos 25 s. El token de Cloudflare tiene que ser de edición (plantilla *Edit Cloudflare Workers*, limitada a la cuenta y a la zona); con solo lectura no publica. En el registro sale `npm error npx canceled due to missing packages`: es la acción comprobando si wrangler está instalado, no un fallo.
 - 2026-11-08 · [web] Página bilingüe: `site/index.html` y `site/en/index.html`, enlazadas con `hreflang`. La onda de la portada sale de una toma real: en inglés se generó una frase con la voz clonada (`language_code: en`, 16 créditos por toma) y se midieron los tiempos con WhisperX (`--language en`; la primera vez descarga el alineador inglés). WhisperX junta «Claude Code» en una palabra: se separa por el mínimo de energía entre las dos.
@@ -13,7 +14,7 @@ Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo ap
 
 - 2026-11-07 · [web] `haividio.dev` es una página estática en `site/`, servida por un Worker de Cloudflare con la configuración de `wrangler.jsonc`. Se publica sola al fusionar en `main` (GitHub Actions, necesita los secretos de `docs/web.md`); a mano, `just deploy`.
 
-- 2026-11-07 · [demo] Lo aprendido al hacer una demo de producto con voz clonada está en `docs/workflows/05-demo-de-producto.md`, `docs/voz-clonada.md` y `docs/montaje-y-verificacion.md`. Lo más caro: buscar palabras sueltas al sincronizar y regenerar voz ya aprobada en vez de empalmarla.
+- 2026-11-07 · [demo] Lo aprendido al hacer una demo de producto con voz clonada está en `docs/workflows/05-product-demo.md`, `docs/cloned-voice.md` y `docs/editing-and-verification.md`. Lo más caro: buscar palabras sueltas al sincronizar y regenerar voz ya aprobada en vez de empalmarla.
 
 ## HyperFrames
 

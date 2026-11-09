@@ -54,7 +54,7 @@ h1{font-weight:800;font-size:clamp(72px,22vw,288px);line-height:.95;letter-spaci
 .lead{padding-block:clamp(64px,12vh,128px) 0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
 .lead p{grid-column:1/10;margin:0;font-size:clamp(26px,3.6vw,46px);line-height:1.18;letter-spacing:-.018em;font-weight:500;text-wrap:pretty}
 .lead .cta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:36px;align-items:center}
-#empezar .cta{display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:36px;align-items:center}
+#start .cta{display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:36px;align-items:center}
 .primary{display:inline-block;background:var(--lime);color:var(--bg);font-weight:600;padding:14px 22px;border-radius:4px;text-decoration:none;font-size:17px;transition:transform .35s var(--ease)}
 .primary:hover{transform:translateY(-2px)}
 h2{font-weight:700;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.025em;margin:0}
@@ -90,7 +90,7 @@ footer p{margin:0}
 <header class="wrap">
   <nav aria-label="Principal">
     <a href="#elige">Elige tu vídeo</a>
-    <a href="#empezar">Empezar</a>
+    <a href="#start">Empezar</a>
     <a href="https://github.com/SantipBarber/haividio">GitHub</a>
     <a href="/en/" hreflang="en" lang="en">English</a>
   </nav>
@@ -120,11 +120,11 @@ footer p{margin:0}
   <section id="elige">
     <h2>Elige tu vídeo</h2>
     <ul class="picks">
-      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/01-video-hablado.md"><b>Hablado, sin silencios ni muletillas</b><span>video-use</span></a></li>
-      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/02-animaciones.md"><b>Animaciones sobre tu explicación</b><span>video-use + HyperFrames o Remotion</span></a></li>
-      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/03-video-sin-cara.md"><b>Explicativo sin cara, con voz en off</b><span>HyperFrames o Remotion + ElevenLabs</span></a></li>
-      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/05-demo-de-producto.md"><b>Demo de producto, con voz clonada</b><span>Playwright + ffmpeg + HyperFrames</span></a></li>
-      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/04-publicar-youtube.md"><b>Publicar en YouTube</b><span>youtubeuploader</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/01-talking-video.md"><b>Hablado, sin silencios ni muletillas</b><span>video-use</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/02-animations.md"><b>Animaciones sobre tu explicación</b><span>video-use + HyperFrames o Remotion</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/03-faceless-video.md"><b>Explicativo sin cara, con voz en off</b><span>HyperFrames o Remotion + ElevenLabs</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/05-product-demo.md"><b>Demo de producto, con voz clonada</b><span>Playwright + ffmpeg + HyperFrames</span></a></li>
+      <li><a href="https://github.com/SantipBarber/haividio/blob/main/docs/workflows/04-publish-youtube.md"><b>Publicar en YouTube</b><span>youtubeuploader</span></a></li>
     </ul>
   </section>
 
@@ -133,7 +133,7 @@ footer p{margin:0}
     <div class="scars">
       <article>
         <h3>El agente no puede oír</h3>
-        <p>Una transcripción dice qué palabras hay, no cómo suenan. Cada entrega lleva una lista de minutos que debe escuchar una persona. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/voz-clonada.md">Guía de voz</a></p>
+        <p>Una transcripción dice qué palabras hay, no cómo suenan. Cada entrega lleva una lista de minutos que debe escuchar una persona. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/cloned-voice.md">Guía de voz</a></p>
       </article>
       <article>
         <h3>Se aprueba la toma, no la grafía</h3>
@@ -141,7 +141,7 @@ footer p{margin:0}
       </article>
       <article>
         <h3>Busca frases, no palabras</h3>
-        <p>Enganchar un rótulo a una palabra repetida lo hizo entrar 10 segundos antes de tiempo. Hay que buscar la frase exacta y fallar si aparece dos veces. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/montaje-y-verificacion.md">Guía de montaje</a></p>
+        <p>Enganchar un rótulo a una palabra repetida lo hizo entrar 10 segundos antes de tiempo. Hay que buscar la frase exacta y fallar si aparece dos veces. <a href="https://github.com/SantipBarber/haividio/blob/main/docs/editing-and-verification.md">Guía de montaje</a></p>
       </article>
       <article>
         <h3>Entre dos palabras no siempre hay silencio</h3>
@@ -150,7 +150,7 @@ footer p{margin:0}
     </div>
   </section>
 
-  <section id="empezar">
+  <section id="start">
     <h2>Empezar</h2>
     <p class="after">Clona el repositorio y abre tu agente en la carpeta: Claude Code, Codex, OpenCode, pi o Cursor. Lee <code>AGENTS.md</code> y encuentra las skills, sin instalar nada más. Lo único que se paga aparte es ElevenLabs.</p>
     <div class="cta">

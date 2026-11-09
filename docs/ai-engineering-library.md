@@ -11,7 +11,7 @@ Idea de Santi: el formato del vídeo de RAG (animaciones claras, voz y fundament
 ## Temas candidatos (por decidir)
 
 1. RAG (hecho: `videos/2026-10-31-rag-2026/`).
-2. Embeddings y búsqueda semántica en profundidad. Incluye late chunking: ver `videos/2026-10-31-rag-2026/aplicar-en-proyectos.md`.
+2. Embeddings y búsqueda semántica en profundidad. Incluye late chunking: ver `videos/2026-10-31-rag-2026/apply-in-projects.md`.
 3. Agentes: herramientas, bucle, subagentes, MCP.
 4. Evaluación de sistemas con LLM (datasets, LLM como juez, métricas de recuperación).
 5. Prompt caching, coste y latencia.

@@ -2,7 +2,7 @@
 
 Vídeo de 5 a 15 minutos sobre una aplicación real: se ve la pantalla, un cursor señala lo que cuenta la voz y unos rótulos o esquemas explican lo que la pantalla no enseña.
 
-Herramientas: Playwright (toma), ElevenLabs (voz), ffmpeg (preparar la imagen) y HyperFrames (componer). Detalle en [voz clonada](../voz-clonada.md) y [montaje y verificación](../montaje-y-verificacion.md).
+Herramientas: Playwright (toma), ElevenLabs (voz), ffmpeg (preparar la imagen) y HyperFrames (componer). Detalle en [voz clonada](../cloned-voice.md) y [montaje y verificación](../editing-and-verification.md).
 
 ## Orden de trabajo
 
@@ -15,7 +15,7 @@ Cada paso cierra el anterior. Volver atrás cuesta créditos y tiempo, sobre tod
 5. **Tiempos para la toma:** de la voz sale cuánto tiene que quedarse el cursor en cada punto.
 6. **Borrador** con la toma de ensayo. Lo que aún no sea real se marca en pantalla con un rótulo.
 7. **Toma real**, una sola vez, y **versión final** con ella.
-8. **Lista de revisión** con los minutos que hay que mirar (plantilla en `videos/_plantilla/REVIEW.md`).
+8. **Lista de revisión** con los minutos que hay que mirar (plantilla en `videos/_template/REVIEW.md`).
 
 ## La toma de pantalla
 
@@ -33,7 +33,7 @@ Cada paso cierra el anterior. Volver atrás cuesta créditos y tiempo, sobre tod
 - **Un punto de partida fijo.** Volver al mismo mapa o menú antes de cada parte hace didáctico el recorrido. Si se hace largo, esas entradas son lo primero que se acorta.
 - **Sin huecos de voz.** Unos 7-8 minutos sin silencios largos funcionan mejor que un vídeo más corto con esperas. Las esperas de la app se recortan de la imagen, con un rótulo «espera recortada»; no se para la voz.
 - **El cursor no tapa lo que señala:** debajo de la palabra o la cifra. Llega unos 0,3 s antes de que se nombre.
-- **Los esquemas se dibujan con datos reales**, no con un fotograma ampliado: ver [redibujar](../montaje-y-verificacion.md#esquemas-redibujar-no-ampliar).
+- **Los esquemas se dibujan con datos reales**, no con un fotograma ampliado: ver [redibujar](../editing-and-verification.md#esquemas-redibujar-no-ampliar).
 - **Cifras con su fuente y su alcance.** Si se enseña una barra, el rótulo dice qué se midió y sobre cuántos casos.
 - **Ejemplos inventados, marcados como tales** («Correo de ejemplo»).
 
@@ -51,7 +51,7 @@ Se estima el guion con el ritmo real de la voz, no con una cifra general: una es
 
 Con varias sesiones de Claude (app y toma, voz y montaje, coordinación) funcionó así:
 
-- **Un solo guion**, en el repositorio de la app, con una referencia fija (`git show <commit>:guion.md`): la copia local puede ir por detrás.
+- **Un solo guion**, en el repositorio de la app, con una referencia fija (`git show <commit>:script.md`): la copia local puede ir por detrás.
 - **Una sesión manda** y las demás le proponen cambios. Las notas de traspaso con estado, decisiones y qué no reabrir ahorran repetir discusiones.
 - **Un vídeo aprobado se congela:** nadie toca voz ni montaje salvo que lo pida quien lo aprobó.
 - **Antes de un render pesado**, comprobar que no haya otra medición en marcha en la misma máquina.

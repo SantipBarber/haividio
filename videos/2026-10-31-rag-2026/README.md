@@ -23,6 +23,6 @@ Explicación del RAG clásico (trocear, vectorizar, buscar, generar), por qué f
 
 ## Archivos
 
-- `guion.md` — guion por escenas con fuentes
-- `publicacion.md` — título, descripción, tags, capítulos
-- `animaciones/` — código de las animaciones
+- `script.md` — guion por escenas con fuentes
+- `publishing.md` — título, descripción, tags, capítulos
+- `animations/` — código de las animaciones

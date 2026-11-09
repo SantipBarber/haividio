@@ -104,8 +104,8 @@ def spelled_acronyms(pairs):
             continue  # el guion ya la escribe como sigla: deletrearla puede ser lo buscado
         dur = word["end"] - word["start"]
         if dur / len(heard_raw) > SPELLED_SECONDS_PER_LETTER:
-            out.append({"tipo": "deletreada", "esperado": raw_exp, "oido": word["w"],
-                        "t": word["start"], "duracion": round(dur, 3)})
+            out.append({"type": "spelled", "expected": raw_exp, "heard": word["w"],
+                        "t": word["start"], "duration": round(dur, 3)})
     return out
 
 
@@ -121,14 +121,14 @@ def compare_text(expected, heard):
             continue
         at = got[b0][2]["start"] if b0 < len(got) else (got[-1][2]["end"] if got else 0)
         heard_text = " ".join(g[0] for g in got[b0:b1])
-        kind = {"replace": "cambiada", "delete": "perdida", "insert": "añadida"}[op]
+        kind = {"replace": "changed", "delete": "missing", "insert": "added"}[op]
         # La transcripción escribe en cifras lo que el guion dice en letras.
         if op == "replace" and re.search(r"\d", heard_text):
-            kind = "número"
+            kind = "number"
         issues.append({
-            "tipo": kind,
-            "esperado": " ".join(e[0] for e in exp[a0:a1]),
-            "oido": heard_text,
+            "type": kind,
+            "expected": " ".join(e[0] for e in exp[a0:a1]),
+            "heard": heard_text,
             "t": at,
         })
     issues.sort(key=lambda x: x["t"])
@@ -158,24 +158,24 @@ def main():
     heard, duration = transcribe(args.audio, args.model, args.language)
     issues, exp, got = compare_text(expected, heard)
 
-    report = {"audio": str(args.audio), "duracion": round(duration, 3), "modelo": args.model,
-              "palabras_esperadas": len(exp), "palabras_oidas": len(got), "texto": issues}
-    report["palabras"] = heard
+    report = {"audio": str(args.audio), "duration": round(duration, 3), "model": args.model,
+              "expected_words": len(exp), "heard_words": len(got), "issues": issues}
+    report["words"] = heard
 
     out = args.out or args.audio.with_suffix(".check.json")
     out.write_text(json.dumps(report, ensure_ascii=False, indent=1))
 
     print(f"{args.audio.name}: {duration:.1f} s, {len(exp)} palabras esperadas, {len(got)} oídas")
-    main_issues = [x for x in issues if x["tipo"] != "número"]
-    numbers = [x for x in issues if x["tipo"] == "número"]
+    main_issues = [x for x in issues if x["type"] != "number"]
+    numbers = [x for x in issues if x["type"] == "number"]
     print(f"Diferencias: {len(main_issues)}" + ("" if main_issues else " (ninguna)"))
     for x in main_issues:
-        extra = f"  ({x['duracion']:.2f} s: escúchala)" if x["tipo"] == "deletreada" else ""
-        print(f"  {x['t']:7.2f}s  {x['tipo']:10}  esperado «{x['esperado']}»  oído «{x['oido']}»{extra}")
+        extra = f"  ({x['duration']:.2f} s: escúchala)" if x["type"] == "spelled" else ""
+        print(f"  {x['t']:7.2f}s  {x['type']:10}  esperado «{x['expected']}»  oído «{x['heard']}»{extra}")
     if numbers:
         print(f"Números escritos en cifras: {len(numbers)} (escúchalos solo si importa cómo se leen)")
         for x in numbers:
-            print(f"  {x['t']:7.2f}s  «{x['esperado']}» → «{x['oido']}»")
+            print(f"  {x['t']:7.2f}s  «{x['expected']}» → «{x['heard']}»")
     print(f"Informe: {out}")
 
 

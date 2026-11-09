@@ -6,8 +6,8 @@ Thanks for wanting to help. Haividio is a knowledge base for making videos with 
 
 ## What helps most
 
-- **What you learned using a tool**: a bug, a trick, a price or version change. It goes in `docs/` and, in one line, in `memoria/aprendizajes.md`.
-- **Tests with other agents and systems.** Codex and Cursor are untested, and Windows barely tested. Write it up in `docs/otros-agentes.md` or `docs/windows.md`.
+- **What you learned using a tool**: a bug, a trick, a price or version change. It goes in `docs/` and, in one line, in `memory/learnings.md`.
+- **Tests with other agents and systems.** Codex and Cursor are untested, and Windows barely tested. Write it up in `docs/other-agents.md` or `docs/windows.md`.
 - **Improvements to skills, workflows and scripts**, with the test you ran.
 - **New tools**, open source and free ones first.
 
@@ -19,7 +19,7 @@ For a small fix (a typo, a command that changed, a broken link), open the PR dir
 2. **No keys in git.** Keys go in `.env`, which is ignored.
 3. **No heavy video or audio.** Scripts, animation code, subtitles, final thumbnails and notes are fine. To show a result, link to it.
 4. **Say what you tested and with what.** Tool version, operating system and agent. If the agent generated audio or video, say whether you listened to or watched it: an agent cannot hear.
-5. **Dated.** Tools change fast: a price or requirement without a date is useless. In `memoria/aprendizajes.md`, follow the format `- YYYY-MM-DD · [topic] what you learned.`
+5. **Dated.** Tools change fast: a price or requirement without a date is useless. In `memory/learnings.md`, follow the format `- YYYY-MM-DD · [topic] what you learned.`
 6. **In Spanish or English**, for issues, PRs and docs. Most of the project is in Spanish today. If you add a guide in one language, you do not need to translate it: the other version can come later.
 
 ## Using AI to contribute
@@ -42,7 +42,7 @@ Commit messages, in Spanish or English, say what changes ("Check the voice again
 
 ## What a PR does not touch
 
-- `memoria/preferencias.md`: the maintainer's preferences for their own videos.
+- `memory/preferences.md`: the maintainer's preferences for their own videos.
 - `videos/`: the maintainer's videos. If you want to show one of yours made with Haividio, open an issue and we will link it.
 
 ## Security issues
