@@ -35,8 +35,8 @@ Tools for editing and producing video with Claude Code through MCP, skills or pl
 
 | Tool | What it does | Notes |
 |---|---|---|
-| **[youtubeuploader](https://github.com/porjo/youtubeuploader)** (recommended) | CLI: uploads as private or unlisted, with thumbnail, SRT subtitles, playlist and metadata in JSON | Apache-2.0, free. Mac (`brew`), Windows (zip) and Linux. Google Cloud OAuth + YouTube Data API v3. v1.25.5, active in August 2026 |
-| [youtube-uploader-mcp](https://github.com/anwerj/youtube-uploader-mcp) | MCP: the same, plus changing visibility later and marking synthetic content | MIT, free. Mac, Windows and Linux. v0.3.1 (31-10-2026), few users: **review the code before granting access to your channel** |
+| **[youtubeuploader](https://github.com/porjo/youtubeuploader)** (recommended) | CLI: uploads as private or unlisted, with thumbnail, SRT subtitles, playlist, metadata and declarations (made for kids, synthetic content) in JSON | Apache-2.0, free. Mac (`brew`), Windows (zip) and Linux. Google Cloud OAuth + YouTube Data API v3. v1.25.5, active in August 2026 |
+| [youtube-uploader-mcp](https://github.com/anwerj/youtube-uploader-mcp) | MCP: the same, plus changing visibility later | MIT, free. Mac, Windows and Linux. v0.3.1 (31-10-2026), few users: **review the code before granting access to your channel** |
 
 An unaudited Google Cloud project may leave videos uploaded through the API private and blocked: test first with a short video (see [workflow 4](workflows/04-publish-youtube.en.md)).
 

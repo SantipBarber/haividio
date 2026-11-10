@@ -1,27 +1,50 @@
 ---
 name: publish-youtube
-description: Prepares and uploads a video to YouTube - title, description with chapters, tags, thumbnail and upload as private or unlisted with the youtubeuploader CLI (YouTube Data API v3). Use it when a video is finished or the user asks to publish. Also when the user writes in Spanish, e.g. "súbelo a YouTube", "publica el vídeo", "prepara el título y la descripción", "capítulos del vídeo".
+description: Prepares and uploads a video to YouTube - review of what is on screen, title, description with chapters, tags, thumbnail, validation against YouTube's rules and upload as private or unlisted with the youtubeuploader CLI (YouTube Data API v3). Use it when a video is finished or the user asks to publish it or share it by link. Also when the user writes in Spanish, e.g. "súbelo a YouTube", "publica el vídeo", "prepara el título y la descripción", "capítulos del vídeo", "quiero mandar el vídeo por enlace".
 ---
 
 # Publish to YouTube
 
-Reply in the user's language. Title, description and tags go in the video's language.
+Reply in the user's language. Title, description and tags go in the video's language. Full guide: `docs/workflows/04-publish-youtube.md`.
 
-## Prepare (`publishing.md`)
+## Rules
 
-- **Title:** ≤ 60 characters, a clear promise, no misleading clickbait. Propose 3 options.
-- **Description:** 2 hook lines, summary, chapters (`00:00 Intro`…) taken from the script or the transcript, sources and links.
+- **Never public.** Private to review it; unlisted to send the link to someone. An unlisted link gets forwarded without control: treat it as public.
+- **Nothing is uploaded without the user's explicit OK**, after they have seen the metadata and what the review flagged.
+- Credentials and token stay outside the repo (`~/.config/youtubeuploader/`).
+
+## 1. Review what is on screen
+
+Go through the frames (a contact sheet or the whole video), on-screen text and the voice-over. Flag real personal data (names, emails, phones, IDs), real client amounts or business data, data of another client, and keys, tokens, personal paths or internal URLs. Made-up demo data is fine. If something must not show, propose recording or rendering again with other data; do not blur it.
+
+## 2. Prepare (`publishing.md`)
+
+- **Title:** a clear promise, no misleading clickbait; aim for ≤ 60 characters (YouTube allows 100). Propose 3 options.
+- **Description:** 2 hook lines, summary, chapters (`00:00 Intro`…) taken from the script or the transcript, sources and links. Chapters: the first at 0:00, at least 3, each ≥ 10 s; if the video is too short for that, no chapters.
 - **Tags:** 5–10 relevant ones.
 - **Thumbnail:** 1280×720, at most 4 words, with the channel's visual identity (skill `visual-identity`).
+- **Declarations:** made for kids (normally no) and synthetic content (yes if there is a cloned voice or realistic AI-generated content).
 
-## Upload
+## 3. Validate
 
-1. Check that `youtubeuploader -version` works and that the credentials exist outside the repository (`~/.config/youtubeuploader/`). If not, guide the setup with `docs/workflows/04-publish-youtube.md`.
-2. Prepare `publishing.json` (title, description with chapters, tags, language) from `publishing.md`.
-3. **Ask for explicit confirmation** before uploading.
-4. Upload with `-privacy private` (or `unlisted` if asked), with `-thumbnail` and `-caption` if available. Never straight to public.
-5. Return the link and ask the user to review it in YouTube Studio: check the visibility (an unaudited project may leave it private and locked) and declare synthetic content if there is a cloned voice.
+Write `publishing.json` (title, description, tags, `privacyStatus`, `madeForKids`, `containsSyntheticMedia`, `categoryId`, `language`; example in the guide) and run:
+
+```bash
+python3 scripts/check_publishing.py meta publishing.json video.mp4
+```
+
+Fix what it flags and repeat until ✔.
+
+## 4. Upload
+
+1. Check that `youtubeuploader -version` works and that the credentials exist. If not, guide the setup with the guide, including publishing the OAuth app (in testing mode the token expires after 7 days).
+2. Show the metadata and the review findings and **ask for explicit confirmation**.
+3. Upload with `-metaJSON publishing.json -metaJSONout upload-result.json -notify=false`, plus `-thumbnail` and `-caption` if available.
+4. Run `python3 scripts/check_publishing.py result upload-result.json --expect <private|unlisted>`. If YouTube left it with another visibility (unaudited project), say so and do not hand out the link.
+5. Return the link and ask the user to review it in YouTube Studio.
+
+Without API access, hand over the mp4, the `.srt` and the metadata with the guide's steps for uploading by hand through Studio.
 
 ## When done
 
-Write down the link and the date in the video's `README.md` and in the index `videos/README.md`.
+Write down the link and the date in the video's `README.md` and in the index `videos/README.md`. Do not commit `upload-result.json`.

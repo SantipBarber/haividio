@@ -141,6 +141,7 @@ scripts/
   splice_voice.py            Sustituye frases o palabras de una locución sin regenerarla
   detect_glitches.py         Busca clics, huecos y congelaciones en un vídeo
   check_voice.py             Compara la voz con el guion (WhisperX, local)
+  check_publishing.py        Valida la ficha de YouTube antes de subir y la visibilidad después
 videos/
   README.md                  Índice de vídeos
   _template/                 Copiar para cada vídeo nuevo

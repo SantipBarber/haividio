@@ -33,4 +33,6 @@ videos/*/audio/ab-test/
 
 # Informes de check_voice.py (llevan la transcripción)
 *.check.json
+# Respuesta de youtubeuploader (-metaJSONout)
+upload-result.json
 __pycache__/
