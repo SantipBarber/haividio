@@ -4,46 +4,46 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
     #root .arrow { width: 56px; height: 32px; }
 
-    #pb-kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; }
+    #pb-kick { left: 120px; top: 84px; font-size: 32px; color: #a3a8b8; }
 
     /* El modelo y su alcance */
     #pb-reach { left: 560px; top: 290px; width: 480px; height: 480px; border-radius: 50%; border: 2px dashed #3a3f4d; }
     #pb-know { left: 610px; top: 340px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(139,144,160,0.16) 0%, rgba(139,144,160,0) 70%); }
-    #pb-llm { left: 620px; top: 410px; width: 360px; height: 220px; border-radius: 24px; border: 3px solid #3a3f4d; background: #0f1116; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+    #pb-llm { left: 600px; top: 410px; width: 400px; height: 220px; border-radius: 24px; border: 3px solid #3a3f4d; background: #0f1116; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
     #pb-llm .big { font-size: 96px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
-    #pb-llm .small { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; }
-    #pb-knows { left: 680px; top: 652px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #pb-llm .small { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; }
+    #pb-knows { left: 656px; top: 652px; font-size: 32px; color: #a3a8b8; white-space: nowrap; }
 
     /* Lo tuyo: documentos fuera de su alcance */
     #root .doc { width: 420px; padding: 20px 26px; }
-    #root .doc .k { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; margin-bottom: 6px; }
+    #root .doc .k { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; margin-bottom: 6px; }
     #root .doc .n { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; }
-    #pb-yours { left: 120px; top: 240px; font-size: 28px; color: #8b90a0; }
+    #pb-yours { left: 120px; top: 236px; font-size: 32px; color: #a3a8b8; }
 
     /* Pegarlo todo en el prompt */
     #pb-prompt { left: 560px; top: 820px; width: 480px; height: 72px; border-radius: 14px; overflow: hidden; }
     #pb-fill { position: absolute; left: 0; top: 0; width: 480px; height: 72px; background: rgba(244,245,247,0.14); transform-origin: left center; }
-    #pb-prompt .lbl { position: absolute; left: 22px; top: 18px; font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; }
+    #pb-prompt .lbl { position: absolute; left: 22px; top: 16px; font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; }
     #pb-cost { left: 1080px; top: 820px; display: flex; gap: 16px; }
     #pb-cost span { font-family: "Geist Mono", monospace; font-size: 32px; color: #ff6b4a; padding: 12px 22px; border: 2px solid #ff6b4a; border-radius: 999px; }
 
     /* La biblioteca: miles de documentos */
     #pb-pile { left: 1360px; top: 300px; width: 400px; height: 400px; }
     #pb-pile i { position: absolute; width: 34px; height: 44px; border-radius: 5px; background: #1a1d25; border: 2px solid #2c303c; }
-    #pb-many { left: 1360px; top: 716px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #pb-many { left: 1360px; top: 716px; font-size: 32px; color: #a3a8b8; white-space: nowrap; }
 
     /* RAG */
     #pb-rag { left: 120px; top: 150px; font-size: 120px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; }
-    #pb-exp { left: 128px; top: 284px; font-size: 36px; color: #8b90a0; white-space: nowrap; }
-    #pb-beam { left: 996px; top: 504px; width: 56px; height: 32px; }
-    #root .card { width: 250px; height: 60px; padding: 0 18px; display: flex; align-items: center; gap: 12px; font-family: "Geist Mono", monospace; font-size: 28px; border-radius: 12px; background: #10140a; border: 2px solid #d4ff3a; }
+    #pb-exp { left: 128px; top: 284px; font-size: 36px; color: #a3a8b8; white-space: nowrap; }
+    #pb-beam { left: 1006px; top: 504px; width: 56px; height: 32px; }
+    #root .card { width: 250px; height: 60px; padding: 0 18px; display: flex; align-items: center; gap: 12px; font-family: "Geist Mono", monospace; font-size: 32px; border-radius: 12px; background: #10140a; border: 2px solid #d4ff3a; }
     #root .card i { width: 12px; height: 12px; border-radius: 50%; background: #d4ff3a; flex: none; }
     #pb-in { left: 300px; top: 504px; }
   </style>
@@ -156,7 +156,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.163,0.163],[0.522,0.499],[0.627,0.58],[1.451,1.091],[1.823,1.428],[2.868,2.113],[3.111,2.38],[3.262,2.531],[3.611,2.81],[3.947,3.135],[4.052,3.228],[4.168,3.355],[5.004,3.785],[5.248,4.005],[6.2,4.632],[6.374,4.783],[7.047,5.422],[7.883,6.002],[8.115,6.177],[8.487,6.513],[8.591,6.629],[9.683,7.07],[10.043,7.43],[10.542,7.999],[10.786,8.313],[10.89,8.417],[11.006,8.557],[11.761,8.998],[12.016,9.218],[12.318,9.485],[12.516,9.729],[12.829,10.031],[12.922,10.136],[13.886,10.89],[14.303,11.192],[14.756,11.366],[15.499,11.807],[15.673,11.97],[16.893,12.562],[17.555,12.98],[18.158,13.537],[18.727,14.083],[18.971,14.257],[20.213,15.162],[20.794,15.604],[21.316,16.01],[22.35,16.439],[22.744,16.776],[22.872,16.892],[23.871,17.577],[24.091,17.763],[24.556,18.216],[24.881,18.529],[25.055,18.692],[25.415,19.005],[26.367,19.725],[26.541,19.876],[26.669,19.98],[26.866,20.178],[27.214,20.422],[27.354,20.526],[28.84,21.88]];
+      const W = [[0.0,0.0],[0.163,0.32],[0.522,0.52],[0.627,0.6],[1.451,1.08],[1.823,1.44],[2.868,2.56],[3.111,2.72],[3.262,2.88],[3.611,3.28],[3.947,3.56],[4.052,3.68],[4.168,3.84],[5.004,4.6],[5.248,4.8],[6.2,5.64],[6.374,5.88],[7.047,6.44],[7.883,7.16],[8.115,7.28],[8.487,7.64],[8.591,7.88],[9.683,8.72],[10.043,9.04],[10.542,9.6],[10.786,9.88],[10.89,9.96],[11.006,10.08],[11.761,10.76],[12.016,10.92],[12.318,11.24],[12.516,11.44],[12.829,11.76],[12.922,11.84],[13.886,12.64],[14.303,12.88],[14.756,13.04],[15.499,13.52],[15.673,13.6],[16.893,14.72],[17.555,15.4],[18.158,15.947],[18.727,16.4],[18.971,16.56],[20.213,17.68],[20.794,18.16],[21.316,18.72],[22.35,19.44],[22.744,19.76],[22.872,19.84],[23.871,20.6],[24.091,20.72],[24.556,21.2],[24.881,21.6],[25.055,21.76],[25.415,22.24],[26.367,22.72],[26.541,22.88],[26.669,23.04],[26.866,23.2],[27.214,23.44],[27.354,23.72],[28.84,24.86]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

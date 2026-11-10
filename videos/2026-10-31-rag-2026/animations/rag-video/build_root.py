@@ -207,7 +207,22 @@ tracker_to = next(s["start"] + s["duration"] for s in scenes if s["id"] == "gene
 step_at = {i: next(s["start"] for s in scenes if s["id"] == cid)
            for i, cid in enumerate(["chunk", "embed", "search", "generate"])}
 
-for t_ in step_at.values():                                     # se enciende un paso de la barra
+
+def word_at(scene, prefix):
+    """Instante (raíz) de la primera palabra de la escena que empieza por prefix, en la voz actual."""
+    comp = next(s for s in scenes if s["scene"] == scene)
+    w = next(x for x in words_of(VOICE, scene)["words"] if x["w"].lower().startswith(prefix.lower()))
+    return comp["start"] + w["start"] + comp["word_to_local"]
+
+
+# Segunda barra: los arreglos, de la búsqueda híbrida al final del RAG agéntico.
+fixes_from = next(s["start"] for s in scenes if s["id"] == "hybrid")
+fixes_to = next(s["start"] + s["duration"] for s in scenes if s["id"] == "warnings")
+fix_at = {0: fixes_from, 1: word_at("5", "segundo"), 2: word_at("6", "tercer"),
+          3: next(s["start"] for s in scenes if s["id"] == "graphrag"),
+          4: next(s["start"] for s in scenes if s["id"] == "agentic")}
+
+for t_ in list(step_at.values()) + list(fix_at.values()):      # se enciende un paso de una barra
     sfx.append(("tick", t_ + 0.2))
 sfx_tags = "\n".join(
     f'      <audio id="sfx-{i}" class="clip" src="assets/sfx/{name}.mp3" data-start="{round(hit + FRAME - PEAK[name], 2)}" '
@@ -245,8 +260,8 @@ html = f"""<!doctype html>
       #root {{ position: relative; width: 1920px; height: 1080px; font-family: "Geist", sans-serif; color: #f4f5f7; }}
       #bg {{ position: absolute; inset: 0; background-image: radial-gradient(#1c2029 1.5px, transparent 1.5px); background-size: 40px 40px; }}
       .host {{ position: absolute; inset: 0; }}
-      #tracker {{ position: absolute; left: 120px; top: 70px; display: flex; gap: 14px; z-index: 10; }}
-      .step {{ font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; padding: 12px 22px; border: 2px solid #232733; border-radius: 999px; }}
+      #tracker, #fixes {{ position: absolute; left: 120px; top: 70px; display: flex; gap: 14px; z-index: 10; }}
+      .step {{ font-family: "Geist Mono", monospace; font-size: 30px; color: #a3a8b8; padding: 12px 22px; border: 2px solid #232733; border-radius: 999px; }}
       .step b {{ font-weight: 500; margin-right: 10px; }}
     </style>
   </head>
@@ -264,6 +279,13 @@ html = f"""<!doctype html>
         <div class="step" id="s3"><b>03</b>Buscar</div>
         <div class="step" id="s4"><b>04</b>Generar</div>
       </div>
+      <div id="fixes" class="clip" data-start="{fixes_from}" data-duration="{round(fixes_to - fixes_from, 2)}" data-track-index="2">
+        <div class="step" id="f1"><b>01</b>Híbrida</div>
+        <div class="step" id="f2"><b>02</b>Reranker</div>
+        <div class="step" id="f3"><b>03</b>Contextual</div>
+        <div class="step" id="f4"><b>04</b>GraphRAG</div>
+        <div class="step" id="f5"><b>05</b>Agéntico</div>
+      </div>
 
 {audios}
 
@@ -276,11 +298,11 @@ html = f"""<!doctype html>
 
     <script>
       const tl = gsap.timeline({{ paused: true }});
-      const steps = ["#s1", "#s2", "#s3", "#s4"];
-      const activate = (idx, at) => {{
+      const bars = {{ steps: ["#s1", "#s2", "#s3", "#s4"], fixes: ["#f1", "#f2", "#f3", "#f4", "#f5"] }};
+      const activate = (idx, at, steps = bars.steps) => {{
         steps.forEach((s, i) => {{
           tl.to(s, {{
-            color: i === idx ? "#11140a" : i < idx ? "#f4f5f7" : "#8b90a0",
+            color: i === idx ? "#11140a" : i < idx ? "#f4f5f7" : "#a3a8b8",
             backgroundColor: i === idx ? "#d4ff3a" : "rgba(212,255,58,0)",
             borderColor: i === idx ? "#d4ff3a" : i < idx ? "#3a3f4d" : "#232733",
             duration: 0.35, ease: "power2.out",
@@ -290,6 +312,9 @@ html = f"""<!doctype html>
       // La barra nace en la escena 3a, cuando la voz dice «Un RAG tiene dos momentos».
       tl.from("#tracker .step", {{ autoAlpha: 0, y: -20, stagger: 0.08, duration: 0.5, ease: "power3.out" }}, {tracker_from + 0.4});
 {chr(10).join(f'      activate({i}, {round(at + 0.2, 2)});' for i, at in step_at.items())}
+      // La barra de arreglos nace con «Primer arreglo» y se enciende con cada uno.
+      tl.from("#fixes .step", {{ autoAlpha: 0, y: -20, stagger: 0.08, duration: 0.5, ease: "power3.out" }}, {fixes_from + 0.1});
+{chr(10).join(f'      activate({i}, {round(at + 0.2, 2)}, bars.fixes);' for i, at in fix_at.items())}
       window.__timelines = window.__timelines || {{}};
       window.__timelines["main"] = tl;
     </script>

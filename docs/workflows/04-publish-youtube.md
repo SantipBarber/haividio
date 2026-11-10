@@ -85,6 +85,8 @@ Los datos inventados de una demo valen. Si sale algo que no debe, se vuelve a gr
 
    `-notify=false` no avisa a los suscriptores, porque el vídeo aún no es público. La visibilidad sale del `privacyStatus` del JSON.
 
+   **Miniatura personalizada:** solo funciona con el canal verificado por teléfono ([youtube.com/verify](https://www.youtube.com/verify)). Si no lo está, YouTube responde `403 … permissions to upload and set custom video thumbnails` y youtubeuploader **se para ahí: tampoco sube los subtítulos**, aunque el vídeo ya esté subido. Verifica el canal antes o quita `-thumbnail` y súbela después desde Studio.
+
 3. **Comprueba la visibilidad** con la respuesta de YouTube:
 
    ```bash
@@ -97,7 +99,7 @@ Los datos inventados de una demo valen. Si sale algo que no debe, se vuelve a gr
 
 ## Ojo: proyectos sin auditar
 
-Según la referencia de `videos.insert`, los vídeos subidos por la API desde un proyecto de Google Cloud **sin auditar** (creado después del 28-07-2020) quedan **privados**, y la ayuda de YouTube dice que no se pueden cambiar: habría que volver a subirlos desde Studio o pedir la auditoría de la API, que es gratis. Una fuente de noviembre de 2026 dice que Google levantó esta restricción en octubre, pero no está confirmado ([issue](https://github.com/porjo/youtubeuploader/issues/86)).
+Según la referencia de `videos.insert`, los vídeos subidos por la API desde un proyecto de Google Cloud **sin auditar** (creado después del 28-07-2020) quedan **privados**, y la ayuda de YouTube dice que no se pueden cambiar: habría que volver a subirlos desde Studio o pedir la auditoría de la API, que es gratis. Una fuente de noviembre de 2026 dice que Google levantó esta restricción en octubre ([issue](https://github.com/porjo/youtubeuploader/issues/86)). Nuestra prueba lo confirma: el 10-11-2026, un proyecto recién creado y sin auditar subió un vídeo como oculto y otro como público, y los dos quedaron con esa visibilidad.
 
 Antes del primer vídeo de verdad, **sube uno corto de prueba como oculto** y comprueba el resultado con `check_publishing.py result … --expect unlisted` y en Studio:
 

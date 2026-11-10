@@ -1,147 +1,147 @@
 {
- "total": 373.09,
+ "total": 401.98,
  "scenes": [
   {
    "id": "hook",
    "scene": "1",
    "start": 0,
-   "duration": 20.38,
+   "duration": 23.52,
    "hold": 0,
    "word_to_local": 0.5
   },
   {
    "id": "problem",
    "scene": "2",
-   "start": 20.38,
-   "duration": 21.88,
+   "start": 23.52,
+   "duration": 24.86,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "openbook",
    "scene": "2b",
-   "start": 42.26,
-   "duration": 28.38,
+   "start": 48.38,
+   "duration": 31.42,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "twomoments",
    "scene": "3a",
-   "start": 70.64,
-   "duration": 9.85,
+   "start": 79.8,
+   "duration": 11.42,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "chunk",
    "scene": "3b",
-   "start": 80.49,
-   "duration": 13.38,
+   "start": 91.22,
+   "duration": 15.56,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "embed",
    "scene": "3b",
-   "start": 93.87,
-   "duration": 14.35,
+   "start": 106.78,
+   "duration": 15.62,
    "hold": 0,
-   "word_to_local": -13.38
+   "word_to_local": -15.56
   },
   {
    "id": "search",
    "scene": "3c",
-   "start": 108.22,
-   "duration": 6.53,
+   "start": 122.4,
+   "duration": 7.8,
    "hold": 1.2,
    "word_to_local": 0.0
   },
   {
    "id": "topk",
    "scene": "3c",
-   "start": 114.75,
-   "duration": 8.12,
+   "start": 130.2,
+   "duration": 9.56,
    "hold": 1.2,
-   "word_to_local": -5.33
+   "word_to_local": -6.6
   },
   {
    "id": "generate",
    "scene": "3c",
-   "start": 122.87,
-   "duration": 12.65,
+   "start": 139.76,
+   "duration": 13.74,
    "hold": 0,
-   "word_to_local": -12.25
+   "word_to_local": -14.96
   },
   {
    "id": "failures",
    "scene": "4",
-   "start": 135.52,
-   "duration": 27.59,
+   "start": 153.5,
+   "duration": 29.02,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "hybrid",
    "scene": "5",
-   "start": 163.11,
-   "duration": 31.44,
+   "start": 182.52,
+   "duration": 36.46,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "contextual",
    "scene": "6",
-   "start": 194.55,
-   "duration": 31.3,
+   "start": 218.98,
+   "duration": 33.74,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "graphrag",
    "scene": "7",
-   "start": 225.85,
-   "duration": 32.23,
+   "start": 252.72,
+   "duration": 32.22,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "agentic",
    "scene": "8",
-   "start": 258.08,
-   "duration": 28.41,
+   "start": 284.94,
+   "duration": 26.0,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "warnings",
    "scene": "8",
-   "start": 286.49,
-   "duration": 18.45,
+   "start": 310.94,
+   "duration": 18.14,
    "hold": 0,
-   "word_to_local": -28.41
+   "word_to_local": -26.0
   },
   {
    "id": "longcontext",
    "scene": "9",
-   "start": 304.94,
-   "duration": 31.21,
+   "start": 329.08,
+   "duration": 33.98,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "choose",
    "scene": "10",
-   "start": 336.15,
-   "duration": 28.15,
+   "start": 363.06,
+   "duration": 29.26,
    "hold": 0,
    "word_to_local": 0.0
   },
   {
    "id": "outro",
    "scene": "11",
-   "start": 364.3,
-   "duration": 8.79,
+   "start": 392.32,
+   "duration": 9.66,
    "hold": 0,
    "word_to_local": 0.0
   }

@@ -4,35 +4,37 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
-    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
-    #root .lab { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
+    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #a3a8b8; white-space: nowrap; }
+    #root .lab { font-family: "Geist Mono", monospace; font-size: 28px; color: #a3a8b8; white-space: nowrap; }
 
-    #gr-title { left: 120px; top: 126px; font-size: 120px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
-    #gr-ms { left: 720px; top: 196px; }
+    #gr-title { left: 120px; top: 156px; font-size: 120px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
+    #gr-ms { left: 760px; top: 198px; font-size: 32px; }
 
     /* Columna izquierda: fragmentos → preguntas → precio → remate */
     #root .frag { left: 120px; width: 500px; padding: 18px 24px; }
-    #root .frag .lbl { font-size: 28px; color: #8b90a0; margin-bottom: 6px; }
-    #root .frag p { font-size: 30px; line-height: 1.28; color: #8b90a0; }
-    #root .frag .e { color: #8b90a0; }
+    #root .frag .lbl { font-size: 28px; color: #a3a8b8; margin-bottom: 6px; }
+    #root .frag p { font-size: 30px; line-height: 1.28; color: #a3a8b8; }
+    #root .frag .e { color: #a3a8b8; }
     #root .ask { left: 120px; width: 500px; padding: 16px 24px; font-size: 32px; font-weight: 500; line-height: 1.25; border-radius: 16px; }
     #gr-cost { left: 120px; top: 640px; width: 500px; }
-    #gr-cost .cl { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; margin-bottom: 14px; }
+    #gr-cost .cl { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; margin-bottom: 14px; white-space: nowrap; }
     #gr-cost .br { position: relative; height: 40px; margin-bottom: 14px; }
-    #gr-cost .br i { position: absolute; left: 190px; top: 6px; height: 28px; border-radius: 4px; transform-origin: left center; }
-    #gr-cost .br span { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; line-height: 40px; }
+    #gr-cost .br i { position: absolute; left: 230px; top: 6px; height: 28px; border-radius: 4px; transform-origin: left center; }
+    #gr-cost .br span { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; line-height: 40px; }
     #gr-expensive { font-size: 40px; font-weight: 800; letter-spacing: -0.03em; color: #ff6b4a; margin-top: 8px; white-space: nowrap; }
-    #gr-end { left: 120px; top: 320px; width: 520px; font-size: 52px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.08; }
-    #gr-moda { left: 120px; top: 570px; font-size: 30px; color: #ff6b4a; }
+    #gr-end { left: 120px; top: 340px; width: 520px; font-size: 52px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.08; }
+    #gr-moda { left: 120px; top: 586px; font-size: 32px; color: #ff6b4a; }
 
     /* Grafo */
     #gr-svg { left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; }
     #root .node { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: #0f1116; border: 3px solid #f4f5f7; }
-    #root .nl { position: absolute; font-size: 30px; font-weight: 500; white-space: nowrap; line-height: 36px; }
-    #root .nl small { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; margin-left: 10px; }
-    #root .sum { position: absolute; font-family: "Geist Mono", monospace; font-size: 28px; white-space: nowrap; padding: 6px 14px; border-radius: 8px; background: #07080b; }
+    #root .nl { position: absolute; font-size: 32px; font-weight: 500; white-space: nowrap; line-height: 36px; }
+    #root .nl small { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; margin-left: 10px; }
+    #root .sum { position: absolute; font-family: "Geist Mono", monospace; font-size: 32px; white-space: nowrap; padding: 6px 14px; border-radius: 8px; background: #07080b; }
+    /* La barra de arreglos de la raíz ocupa este hueco. */
+    #gr-kick { display: none; }
   </style>
 
   <div data-hf-id="hf-083l" id="root" data-composition-id="graphrag" data-width="1920" data-height="1080">
@@ -53,13 +55,13 @@
     <div data-hf-id="hf-fdd6" class="sum" id="gr-s3" style="left: 1240px; top: 880px; color: #ff8e75">ventas y clientes</div>
 
     <!-- Fragmentos de partida (ejemplo ilustrativo) -->
-    <div data-hf-id="hf-cfff" class="abs panel frag" id="gr-f1" style="top: 300px"><div data-hf-id="hf-q0ev" class="lbl mono">fragmento 1</div><p data-hf-id="hf-te8p"><span data-hf-id="hf-wu2s" class="e">Tecmet</span> y <span data-hf-id="hf-j0ls" class="e">Fundix</span> fabrican la <span data-hf-id="hf-qeer" class="e">pieza P-12</span>.</p></div>
-    <div data-hf-id="hf-br0k" class="abs panel frag" id="gr-f2" style="top: 500px"><div data-hf-id="hf-pm3u" class="lbl mono">fragmento 2</div><p data-hf-id="hf-wy9u">La <span data-hf-id="hf-s1eu" class="e">P-12</span> va en el <span data-hf-id="hf-ai7l" class="e">robot Kora</span>, de <span data-hf-id="hf-eh0i" class="e">Nórdica</span>.</p></div>
+    <div data-hf-id="hf-cfff" class="abs panel frag" id="gr-f1" style="top: 320px"><div data-hf-id="hf-q0ev" class="lbl mono">fragmento 1</div><p data-hf-id="hf-te8p"><span data-hf-id="hf-wu2s" class="e">Tecmet</span> y <span data-hf-id="hf-j0ls" class="e">Fundix</span> fabrican la <span data-hf-id="hf-qeer" class="e">pieza P-12</span>.</p></div>
+    <div data-hf-id="hf-br0k" class="abs panel frag" id="gr-f2" style="top: 510px"><div data-hf-id="hf-pm3u" class="lbl mono">fragmento 2</div><p data-hf-id="hf-wy9u">La <span data-hf-id="hf-s1eu" class="e">P-12</span> va en el <span data-hf-id="hf-ai7l" class="e">robot Kora</span>, de <span data-hf-id="hf-eh0i" class="e">Nórdica</span>.</p></div>
     <div data-hf-id="hf-wel5" class="abs panel frag" id="gr-f3" style="top: 700px"><div data-hf-id="hf-p7st" class="lbl mono">fragmento 3</div><p data-hf-id="hf-iihc"><span data-hf-id="hf-ootd" class="e">Marta Gil</span> vende <span data-hf-id="hf-igyp" class="e">Kora</span> a <span data-hf-id="hf-dca4" class="e">Bexa</span>.</p></div>
 
     <!-- Preguntas -->
-    <div data-hf-id="hf-cx76" class="abs panel ask" id="gr-a1" style="top: 320px">¿Cuáles son los grandes temas?</div>
-    <div data-hf-id="hf-qx9n" class="abs panel ask" id="gr-a2" style="top: 450px">¿Qué proveedores dependen de esta pieza?</div>
+    <div data-hf-id="hf-cx76" class="abs panel ask" id="gr-a1" style="top: 340px">¿Cuáles son los grandes temas?</div>
+    <div data-hf-id="hf-qx9n" class="abs panel ask" id="gr-a2" style="top: 470px">¿Qué proveedores dependen de esta pieza?</div>
 
     <!-- Precio (comparación cualitativa, sin cifras) -->
     <div data-hf-id="hf-gzlh" class="abs" id="gr-cost">
@@ -125,10 +127,14 @@
       tl.from("#gr-title", { autoAlpha: 0, y: 40, duration: 0.8, ease: "expo.out" }, 2.2);
       tl.from("#gr-ms", { autoAlpha: 0, x: -14, duration: 0.5, ease: "power2.out" }, 4.3);
       // Mientras, aparecen los fragmentos que va a leer.
-      tl.from(["#gr-f1", "#gr-f2", "#gr-f3"], { autoAlpha: 0, x: -50, duration: 0.6, ease: "expo.out", stagger: 0.2 }, 0.3);
+      // Composición: los fragmentos empiezan grandes y centrados; pasan a la columna izquierda cuando nace el grafo (10.3).
+      const frags = ["#gr-f1", "#gr-f2", "#gr-f3"];
+      tl.fromTo(frags, { x: 580, scale: 1.12, transformOrigin: "50% 50%" }, { x: 580, scale: 1.12, duration: 0.01 }, 0.3);
+      tl.from(["#gr-f1", "#gr-f2", "#gr-f3"], { autoAlpha: 0, y: 30, duration: 0.6, ease: "expo.out", stagger: 0.2 }, 0.3);
       // «extrae entidades» (8.2): los nombres se iluminan.
       tl.to("#root .frag .e", { color: "#f4f5f7", fontWeight: 700, duration: 0.3, stagger: 0.08 }, 8.2);
       // «personas» (10.4) · «empresas» (11.5) · «productos» (12.6)
+      tl.to(frags, { x: 0, scale: 1, duration: 0.6, ease: "expo.out" }, 10.3);
       tl.from(byKind.h, { autoAlpha: 0, scale: 0.4, duration: 0.45, ease: "back.out(2)", stagger: 0.08 }, 10.3);
       tl.from(byKind.e, { autoAlpha: 0, scale: 0.4, duration: 0.45, ease: "back.out(2)", stagger: 0.08 }, 11.4);
       tl.from(byKind.p, { autoAlpha: 0, scale: 0.4, duration: 0.45, ease: "back.out(2)", stagger: 0.08 }, 12.5);
@@ -165,7 +171,7 @@
       tl.from("#gr-expensive", { autoAlpha: 0, y: 16, duration: 0.5, ease: "expo.out" }, 30.0);
 
       // «Úsalo cuando las relaciones sean el corazón del problema» (31.8–35.1)
-      tl.to(["#gr-a1", "#gr-a2"], { autoAlpha: 0, x: -30, duration: 0.4, ease: "power2.in" }, 31.7);
+      tl.to(["#gr-a1", "#gr-a2"], { autoAlpha: 0, duration: 0.4, ease: "power2.in" }, 31.7);
       tl.to("#gr-end", { autoAlpha: 1, duration: 0.01 }, 32.2);
       tl.from("#gr-end", { y: 30, duration: 0.7, ease: "expo.out" }, 32.2);
       // «no por moda» (35.8)
@@ -174,7 +180,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.255,0.29],[0.395,0.464],[0.859,0.975],[1.625,1.591],[2.345,2.368],[3.587,3.251],[3.727,3.413],[4.423,4.18],[5.77,5.236],[5.956,5.41],[6.165,5.573],[6.269,5.677],[6.49,5.898],[7.512,6.664],[8.197,7.256],[8.951,7.964],[9.056,8.104],[10.403,9.23],[11.517,9.996],[12.643,10.832],[13.56,11.575],[13.723,11.726],[13.944,11.935],[14.06,12.063],[15.302,13.084],[15.894,13.688],[15.987,13.804],[16.649,14.327],[16.788,14.478],[16.916,14.559],[17.31,14.988],[17.415,15.128],[18.054,15.766],[18.25,15.975],[19.574,17.067],[19.876,17.357],[20.143,17.624],[20.886,18.274],[21.478,19.029],[21.652,19.203],[21.815,19.354],[22.175,19.702],[23.208,20.294],[23.568,20.561],[23.928,20.863],[24.648,21.49],[25.158,21.931],[25.275,22.013],[25.507,22.21],[26.691,23.348],[26.923,23.534],[27.794,24.346],[28.456,24.904],[28.525,24.973],[28.978,25.414],[29.152,25.589],[29.86,25.902],[30.058,26.007],[30.569,26.413],[30.766,26.599],[31.823,27.318],[32.647,27.748],[32.949,28.027],[33.065,28.259],[33.854,29.083],[34.261,29.42],[34.388,29.559],[34.899,29.931],[35.085,30.093],[35.84,30.72],[36.025,30.906],[36.211,31.103],[37.57,32.23]];
+      const W = [[0.0,0.0],[0.255,0.32],[0.395,0.48],[0.859,0.88],[1.625,1.52],[2.345,2.08],[3.587,3.04],[3.727,3.32],[4.423,4.08],[5.77,4.96],[5.956,5.12],[6.165,5.28],[6.269,5.4],[6.49,5.72],[7.512,6.6],[8.197,7.0],[8.951,7.56],[9.056,7.68],[10.403,8.92],[11.517,9.56],[12.643,10.56],[13.56,11.04],[13.723,11.28],[13.944,11.52],[14.06,11.68],[15.302,12.72],[15.894,13.2],[15.987,13.28],[16.649,13.76],[16.788,13.88],[16.916,14.0],[17.31,14.32],[17.415,14.48],[18.054,15.12],[18.25,15.28],[19.574,16.32],[19.876,16.64],[20.143,16.88],[20.886,17.84],[21.478,18.24],[21.652,18.4],[21.815,18.56],[22.175,18.96],[23.208,19.6],[23.568,20.16],[23.928,20.32],[24.648,20.96],[25.158,21.44],[25.275,21.52],[25.507,21.76],[26.691,22.88],[26.923,23.04],[27.794,24.0],[28.456,24.52],[28.525,24.68],[28.978,25.04],[29.152,25.28],[29.86,25.68],[30.058,25.92],[30.569,26.48],[30.766,26.64],[31.823,27.44],[32.647,27.88],[32.949,28.12],[33.065,28.24],[33.854,28.8],[34.261,29.04],[34.388,29.2],[34.899,29.68],[35.085,29.84],[35.84,30.64],[36.025,30.8],[36.211,31.04],[37.57,32.22]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

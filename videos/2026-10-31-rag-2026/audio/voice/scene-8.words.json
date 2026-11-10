@@ -1,603 +1,604 @@
 {
  "scene": "8",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
+ "model_id": "eleven_v4",
  "text": "Y el gran cambio de estos dos años: el RAG agéntico. El RAG clásico es como un becario: hace una búsqueda y contesta con lo que encuentra. El agéntico se parece más a un jefe de investigación. Planifica, busca, reparte los documentos entre varios ayudantes que los leen a la vez, junta sus resúmenes y, si algo no cuadra, vuelve a buscar, en documentos, en una base de datos o en la web. Dos avisos. Uno: es más lento y más caro, porque hay muchas más llamadas al modelo. Y dos: un documento puede llevar escondida una instrucción del tipo 'ignora todo y haz esto otro'. Por eso lo que se recupera se trata como datos, nunca como órdenes.",
- "duration": 46.161,
+ "duration": 43.44,
  "words": [
   {
    "w": "Y",
    "start": 0.0,
-   "end": 0.081
+   "end": 0.16
   },
   {
    "w": "el",
-   "start": 0.139,
-   "end": 0.221
+   "start": 0.2,
+   "end": 0.24
   },
   {
    "w": "gran",
-   "start": 0.302,
-   "end": 0.511
+   "start": 0.32,
+   "end": 0.48
   },
   {
    "w": "cambio",
-   "start": 0.592,
-   "end": 0.952
+   "start": 0.56,
+   "end": 0.88
   },
   {
    "w": "de",
-   "start": 0.987,
-   "end": 1.045
+   "start": 0.92,
+   "end": 0.96
   },
   {
    "w": "estos",
-   "start": 1.115,
-   "end": 1.393
+   "start": 1.08,
+   "end": 1.28
   },
   {
    "w": "dos",
-   "start": 1.44,
-   "end": 1.567
+   "start": 1.36,
+   "end": 1.44
   },
   {
    "w": "años:",
-   "start": 1.614,
-   "end": 2.229
+   "start": 1.52,
+   "end": 2.32
   },
   {
    "w": "el",
-   "start": 2.508,
-   "end": 2.67
+   "start": 2.4,
+   "end": 2.48
   },
   {
    "w": "RAG",
-   "start": 2.786,
-   "end": 3.135
+   "start": 2.56,
+   "end": 2.8
   },
   {
    "w": "agéntico.",
-   "start": 3.286,
-   "end": 4.214
+   "start": 2.96,
+   "end": 3.76
   },
   {
    "w": "El",
-   "start": 4.818,
-   "end": 4.957
+   "start": 4.32,
+   "end": 4.4
   },
   {
    "w": "RAG",
-   "start": 5.05,
-   "end": 5.306
+   "start": 4.44,
+   "end": 4.64
   },
   {
    "w": "clásico",
-   "start": 5.387,
-   "end": 5.968
+   "start": 4.72,
+   "end": 5.28
   },
   {
    "w": "es",
-   "start": 6.142,
-   "end": 6.327
+   "start": 5.36,
+   "end": 5.52
   },
   {
    "w": "como",
-   "start": 6.397,
-   "end": 6.583
+   "start": 5.6,
+   "end": 5.68
   },
   {
    "w": "un",
-   "start": 6.618,
-   "end": 6.664
+   "start": 5.76,
+   "end": 5.84
   },
   {
    "w": "becario:",
-   "start": 6.734,
-   "end": 7.43
+   "start": 5.92,
+   "end": 6.72
   },
   {
    "w": "hace",
-   "start": 7.814,
-   "end": 8.034
+   "start": 6.76,
+   "end": 6.96
   },
   {
    "w": "una",
-   "start": 8.069,
-   "end": 8.185
+   "start": 7.04,
+   "end": 7.12
   },
   {
    "w": "búsqueda",
-   "start": 8.231,
-   "end": 8.673
+   "start": 7.16,
+   "end": 7.6
   },
   {
    "w": "y",
-   "start": 8.789,
-   "end": 8.858
+   "start": 7.76,
+   "end": 7.84
   },
   {
    "w": "contesta",
-   "start": 8.928,
-   "end": 9.404
+   "start": 7.96,
+   "end": 8.4
   },
   {
    "w": "con",
-   "start": 9.451,
-   "end": 9.555
+   "start": 8.44,
+   "end": 8.48
   },
   {
    "w": "lo",
-   "start": 9.59,
-   "end": 9.671
+   "start": 8.56,
+   "end": 8.6
   },
   {
    "w": "que",
-   "start": 9.706,
-   "end": 9.776
+   "start": 8.64,
+   "end": 8.72
   },
   {
    "w": "encuentra.",
-   "start": 9.799,
-   "end": 10.519
+   "start": 8.8,
+   "end": 9.28
   },
   {
    "w": "El",
-   "start": 11.215,
-   "end": 11.355
+   "start": 9.92,
+   "end": 10.0
   },
   {
    "w": "agéntico",
-   "start": 11.401,
-   "end": 11.842
+   "start": 10.08,
+   "end": 10.64
   },
   {
    "w": "se",
-   "start": 11.889,
-   "end": 11.958
+   "start": 10.72,
+   "end": 10.8
   },
   {
    "w": "parece",
-   "start": 12.005,
-   "end": 12.318
+   "start": 10.88,
+   "end": 11.12
   },
   {
    "w": "más",
-   "start": 12.365,
-   "end": 12.574
+   "start": 11.2,
+   "end": 11.36
   },
   {
    "w": "a",
-   "start": 12.69,
-   "end": 12.736
+   "start": 11.4,
+   "end": 11.44
   },
   {
    "w": "un",
-   "start": 12.771,
-   "end": 12.829
+   "start": 11.52,
+   "end": 11.6
   },
   {
    "w": "jefe",
-   "start": 12.91,
-   "end": 13.201
+   "start": 11.64,
+   "end": 11.84
   },
   {
    "w": "de",
-   "start": 13.247,
-   "end": 13.305
+   "start": 11.92,
+   "end": 11.96
   },
   {
    "w": "investigación.",
-   "start": 13.328,
-   "end": 14.257
+   "start": 12.0,
+   "end": 12.96
   },
   {
    "w": "Planifica,",
-   "start": 14.768,
-   "end": 15.685
+   "start": 13.2,
+   "end": 14.16
   },
   {
    "w": "busca,",
-   "start": 15.894,
-   "end": 16.66
+   "start": 14.28,
+   "end": 14.96
   },
   {
    "w": "reparte",
-   "start": 16.939,
-   "end": 17.334
+   "start": 15.04,
+   "end": 15.4
   },
   {
    "w": "los",
-   "start": 17.369,
-   "end": 17.485
+   "start": 15.44,
+   "end": 15.52
   },
   {
    "w": "documentos",
-   "start": 17.52,
-   "end": 18.065
+   "start": 15.6,
+   "end": 16.08
   },
   {
    "w": "entre",
-   "start": 18.123,
-   "end": 18.379
+   "start": 16.2,
+   "end": 16.32
   },
   {
    "w": "varios",
-   "start": 18.425,
-   "end": 18.681
+   "start": 16.4,
+   "end": 16.64
   },
   {
    "w": "ayudantes",
-   "start": 18.75,
-   "end": 19.284
+   "start": 16.72,
+   "end": 17.2
   },
   {
    "w": "que",
-   "start": 19.331,
-   "end": 19.412
+   "start": 17.28,
+   "end": 17.36
   },
   {
    "w": "los",
-   "start": 19.459,
-   "end": 19.609
+   "start": 17.44,
+   "end": 17.52
   },
   {
    "w": "leen",
-   "start": 19.679,
-   "end": 19.842
+   "start": 17.64,
+   "end": 17.76
   },
   {
    "w": "a",
-   "start": 19.9,
-   "end": 19.923
+   "start": 17.8,
+   "end": 17.84
   },
   {
    "w": "la",
-   "start": 19.969,
-   "end": 20.039
+   "start": 17.88,
+   "end": 17.92
   },
   {
    "w": "vez,",
-   "start": 20.085,
-   "end": 20.527
+   "start": 18.0,
+   "end": 18.72
   },
   {
    "w": "junta",
-   "start": 20.852,
-   "end": 21.13
+   "start": 18.8,
+   "end": 19.04
   },
   {
    "w": "sus",
-   "start": 21.177,
-   "end": 21.316
+   "start": 19.12,
+   "end": 19.2
   },
   {
    "w": "resúmenes",
-   "start": 21.363,
-   "end": 22.001
+   "start": 19.28,
+   "end": 19.84
   },
   {
    "w": "y,",
-   "start": 22.245,
-   "end": 22.512
+   "start": 20.08,
+   "end": 20.4
   },
   {
    "w": "si",
-   "start": 22.628,
-   "end": 22.791
+   "start": 20.48,
+   "end": 20.56
   },
   {
    "w": "algo",
-   "start": 22.849,
-   "end": 23.034
+   "start": 20.68,
+   "end": 20.8
   },
   {
    "w": "no",
-   "start": 23.092,
-   "end": 23.174
+   "start": 20.88,
+   "end": 20.96
   },
   {
    "w": "cuadra,",
-   "start": 23.232,
-   "end": 23.801
+   "start": 21.04,
+   "end": 21.6
   },
   {
    "w": "vuelve",
-   "start": 23.952,
-   "end": 24.23
+   "start": 21.64,
+   "end": 21.84
   },
   {
    "w": "a",
-   "start": 24.253,
-   "end": 24.277
+   "start": 21.92,
+   "end": 21.96
   },
   {
    "w": "buscar,",
-   "start": 24.3,
-   "end": 24.799
+   "start": 22.0,
+   "end": 22.72
   },
   {
    "w": "en",
-   "start": 24.834,
-   "end": 24.962
+   "start": 22.8,
+   "end": 22.88
   },
   {
    "w": "documentos,",
-   "start": 25.02,
-   "end": 25.879
+   "start": 23.16,
+   "end": 23.76
   },
   {
    "w": "en",
-   "start": 25.949,
-   "end": 26.053
+   "start": 23.8,
+   "end": 23.84
   },
   {
    "w": "una",
-   "start": 26.134,
-   "end": 26.262
+   "start": 23.92,
+   "end": 24.08
   },
   {
    "w": "base",
-   "start": 26.308,
-   "end": 26.529
+   "start": 24.2,
+   "end": 24.32
   },
   {
    "w": "de",
-   "start": 26.587,
-   "end": 26.645
+   "start": 24.36,
+   "end": 24.4
   },
   {
    "w": "datos",
-   "start": 26.703,
-   "end": 27.144
+   "start": 24.64,
+   "end": 24.88
   },
   {
    "w": "o",
-   "start": 27.318,
-   "end": 27.435
+   "start": 25.04,
+   "end": 25.12
   },
   {
    "w": "en",
-   "start": 27.481,
-   "end": 27.539
+   "start": 25.16,
+   "end": 25.2
   },
   {
    "w": "la",
-   "start": 27.597,
-   "end": 27.655
+   "start": 25.24,
+   "end": 25.28
   },
   {
    "w": "web.",
-   "start": 27.736,
-   "end": 28.108
+   "start": 25.36,
+   "end": 25.68
   },
   {
    "w": "Dos",
-   "start": 28.712,
-   "end": 28.897
+   "start": 26.32,
+   "end": 26.48
   },
   {
    "w": "avisos.",
-   "start": 28.967,
-   "end": 29.606
+   "start": 26.56,
+   "end": 27.12
   },
   {
    "w": "Uno:",
-   "start": 30.047,
-   "end": 30.476
+   "start": 27.52,
+   "end": 28.24
   },
   {
    "w": "es",
-   "start": 30.86,
-   "end": 31.01
+   "start": 28.32,
+   "end": 28.4
   },
   {
    "w": "más",
-   "start": 31.08,
-   "end": 31.219
+   "start": 28.48,
+   "end": 28.64
   },
   {
    "w": "lento",
-   "start": 31.289,
-   "end": 31.661
+   "start": 28.72,
+   "end": 29.04
   },
   {
    "w": "y",
-   "start": 31.753,
-   "end": 31.823
+   "start": 29.2,
+   "end": 29.28
   },
   {
    "w": "más",
-   "start": 31.893,
-   "end": 32.044
+   "start": 29.36,
+   "end": 29.52
   },
   {
    "w": "caro,",
-   "start": 32.102,
-   "end": 32.601
+   "start": 29.6,
+   "end": 30.08
   },
   {
    "w": "porque",
-   "start": 32.926,
-   "end": 33.158
+   "start": 30.16,
+   "end": 30.32
   },
   {
    "w": "hay",
-   "start": 33.182,
-   "end": 33.286
+   "start": 30.4,
+   "end": 30.48
   },
   {
    "w": "muchas",
-   "start": 33.344,
-   "end": 33.727
+   "start": 30.64,
+   "end": 30.96
   },
   {
    "w": "más",
-   "start": 33.785,
-   "end": 33.913
+   "start": 31.04,
+   "end": 31.12
   },
   {
    "w": "llamadas",
-   "start": 33.948,
-   "end": 34.342
+   "start": 31.2,
+   "end": 31.52
   },
   {
    "w": "al",
-   "start": 34.4,
-   "end": 34.47
+   "start": 31.6,
+   "end": 31.68
   },
   {
    "w": "modelo.",
-   "start": 34.517,
-   "end": 35.051
+   "start": 31.88,
+   "end": 32.64
   },
   {
    "w": "Y",
-   "start": 35.376,
-   "end": 35.457
+   "start": 32.68,
+   "end": 32.72
   },
   {
    "w": "dos:",
-   "start": 35.55,
-   "end": 35.991
+   "start": 32.8,
+   "end": 33.6
   },
   {
    "w": "un",
-   "start": 36.316,
-   "end": 36.421
+   "start": 33.64,
+   "end": 33.68
   },
   {
    "w": "documento",
-   "start": 36.455,
-   "end": 36.885
+   "start": 33.76,
+   "end": 34.24
   },
   {
    "w": "puede",
-   "start": 36.955,
-   "end": 37.164
+   "start": 34.32,
+   "end": 34.56
   },
   {
    "w": "llevar",
-   "start": 37.187,
-   "end": 37.407
+   "start": 34.6,
+   "end": 34.8
   },
   {
    "w": "escondida",
-   "start": 37.454,
-   "end": 37.976
+   "start": 34.88,
+   "end": 35.28
   },
   {
    "w": "una",
-   "start": 38.034,
-   "end": 38.139
+   "start": 35.36,
+   "end": 35.44
   },
   {
    "w": "instrucción",
-   "start": 38.162,
-   "end": 38.626
+   "start": 35.56,
+   "end": 36.0
   },
   {
    "w": "del",
-   "start": 38.673,
-   "end": 38.777
+   "start": 36.08,
+   "end": 36.16
   },
   {
    "w": "tipo",
-   "start": 38.835,
-   "end": 39.195
+   "start": 36.24,
+   "end": 36.56
   },
   {
    "w": "'ignora",
-   "start": 39.242,
-   "end": 39.695
+   "start": 36.8,
+   "end": 37.2
   },
   {
    "w": "todo",
-   "start": 39.741,
-   "end": 40.055
+   "start": 37.28,
+   "end": 37.6
   },
   {
    "w": "y",
-   "start": 40.205,
-   "end": 40.287
+   "start": 37.76,
+   "end": 37.84
   },
   {
    "w": "haz",
-   "start": 40.345,
-   "end": 40.449
+   "start": 37.893,
+   "end": 38.0
   },
   {
    "w": "esto",
-   "start": 40.531,
-   "end": 40.751
+   "start": 38.12,
+   "end": 38.24
   },
   {
    "w": "otro'.",
-   "start": 40.798,
-   "end": 41.239
+   "start": 38.32,
+   "end": 39.12
   },
   {
    "w": "Por",
-   "start": 41.622,
-   "end": 41.784
+   "start": 39.2,
+   "end": 39.28
   },
   {
    "w": "eso",
-   "start": 41.831,
-   "end": 42.098
+   "start": 39.4,
+   "end": 39.52
   },
   {
    "w": "lo",
-   "start": 42.272,
-   "end": 42.377
+   "start": 39.68,
+   "end": 39.76
   },
   {
    "w": "que",
-   "start": 42.423,
-   "end": 42.493
+   "start": 39.8,
+   "end": 39.84
   },
   {
    "w": "se",
-   "start": 42.539,
-   "end": 42.597
+   "start": 39.92,
+   "end": 40.0
   },
   {
    "w": "recupera",
-   "start": 42.644,
-   "end": 43.131
+   "start": 40.08,
+   "end": 40.48
   },
   {
    "w": "se",
-   "start": 43.247,
-   "end": 43.387
+   "start": 40.56,
+   "end": 40.64
   },
   {
    "w": "trata",
-   "start": 43.445,
-   "end": 43.712
+   "start": 40.72,
+   "end": 40.96
   },
   {
    "w": "como",
-   "start": 43.758,
-   "end": 43.955
+   "start": 41.08,
+   "end": 41.2
   },
   {
    "w": "datos,",
-   "start": 43.99,
-   "end": 44.571
+   "start": 41.44,
+   "end": 41.92
   },
   {
    "w": "nunca",
-   "start": 44.78,
-   "end": 45.105
+   "start": 42.0,
+   "end": 42.32
   },
   {
    "w": "como",
-   "start": 45.163,
-   "end": 45.36
+   "start": 42.4,
+   "end": 42.64
   },
   {
    "w": "órdenes.",
-   "start": 45.418,
-   "end": 46.161
+   "start": 42.72,
+   "end": 43.44
   }
  ]
 }

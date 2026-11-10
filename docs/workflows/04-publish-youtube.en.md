@@ -85,6 +85,8 @@ Made-up demo data is fine. If something shows that should not, record or render 
 
    `-notify=false` does not notify subscribers, because the video is not public yet. Visibility comes from `privacyStatus` in the JSON.
 
+   **Custom thumbnail:** it only works once the channel is phone-verified ([youtube.com/verify](https://www.youtube.com/verify)). Otherwise YouTube answers `403 … permissions to upload and set custom video thumbnails` and youtubeuploader **stops there: it does not upload the subtitles either**, although the video is already uploaded. Verify the channel first, or drop `-thumbnail` and add it later in Studio.
+
 3. **Check the visibility** with YouTube's response:
 
    ```bash
@@ -97,7 +99,7 @@ Made-up demo data is fine. If something shows that should not, record or render 
 
 ## Warning: unaudited projects
 
-According to the `videos.insert` reference, videos uploaded through the API from an **unaudited** Google Cloud project (created after 2020-07-28) remain **private**, and YouTube's help says their visibility cannot be changed: they would need to be uploaded again through Studio or the API audit requested, which is free. A November 2026 source says Google lifted this restriction in October, but this is unconfirmed ([issue](https://github.com/porjo/youtubeuploader/issues/86)).
+According to the `videos.insert` reference, videos uploaded through the API from an **unaudited** Google Cloud project (created after 2020-07-28) remain **private**, and YouTube's help says their visibility cannot be changed: they would need to be uploaded again through Studio or the API audit requested, which is free. A November 2026 source says Google lifted this restriction in October ([issue](https://github.com/porjo/youtubeuploader/issues/86)). Our test confirms it: on 2026-11-10, a newly created, unaudited project uploaded one video as unlisted and another as public, and both kept that visibility.
 
 Before your first real video, **upload a short test video as unlisted** and check the result with `check_publishing.py result … --expect unlisted` and in Studio:
 

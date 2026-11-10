@@ -4,8 +4,8 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
     /* La barra de pasos de la raíz ocupa y 70–130: el titular empieza debajo. */
     #tm-title { left: 120px; top: 180px; font-size: 104px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
@@ -14,16 +14,16 @@
     #tm-prep { left: 120px; }
     #tm-ask { left: 980px; }
     #root .moment .h { position: absolute; left: 44px; top: 44px; font-size: 64px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; }
-    #root .moment .when { position: absolute; right: 44px; top: 82px; font-family: "Geist Mono", monospace; font-size: 30px; color: #8b90a0; }
+    #root .moment .when { position: absolute; right: 44px; top: 82px; font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; }
     #root .moment .pills { position: absolute; left: 44px; top: 150px; display: flex; gap: 14px; }
-    #root .pill { font-family: "Geist Mono", monospace; font-size: 30px; padding: 10px 22px; border: 2px solid #2c303c; border-radius: 999px; white-space: nowrap; }
-    #root .pill b { font-weight: 400; color: #8b90a0; margin-right: 10px; }
+    #root .pill { font-family: "Geist Mono", monospace; font-size: 32px; padding: 10px 22px; border: 2px solid #2c303c; border-radius: 999px; white-space: nowrap; }
+    #root .pill b { font-weight: 400; color: #a3a8b8; margin-right: 10px; }
 
     #tm-line { left: 120px; top: 829px; width: 1680px; height: 2px; background: #232733; transform-origin: left center; }
     #tm-once { left: 320px; top: 816px; width: 28px; height: 28px; border-radius: 50%; background: #d4ff3a; }
     #root .q { top: 821px; width: 18px; height: 18px; border-radius: 50%; background: #8b90a0; }
-    #tm-l1 { left: 120px; top: 872px; font-size: 30px; color: #d4ff3a; white-space: nowrap; }
-    #tm-l2 { left: 980px; top: 872px; font-size: 30px; color: #8b90a0; white-space: nowrap; }
+    #tm-l1 { left: 120px; top: 868px; font-size: 32px; color: #d4ff3a; white-space: nowrap; }
+    #tm-l2 { left: 980px; top: 868px; font-size: 32px; color: #a3a8b8; white-space: nowrap; }
   </style>
 
   <div data-hf-id="hf-4h2w" id="root" data-composition-id="twomoments" data-width="1920" data-height="1080">
@@ -98,7 +98,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.244,0.255],[0.836,0.662],[1.207,0.964],[1.405,1.138],[2.566,1.765],[3.03,2.276],[3.46,2.752],[3.564,2.856],[4.609,3.587],[4.853,3.82],[5.132,4.04],[6.211,4.377],[7.233,4.923],[7.523,5.178],[7.732,5.375],[7.895,5.492],[8.208,5.747],[9.288,6.351],[9.81,6.769],[9.938,6.885],[10.983,7.233],[11.633,7.953],[11.807,8.15],[11.9,8.266],[13.7,9.85]];
+      const W = [[0.0,0.0],[0.244,0.24],[0.836,0.6],[1.207,0.96],[1.405,1.2],[2.566,2.24],[3.03,2.64],[3.46,3.08],[3.564,3.2],[4.609,4.16],[4.853,4.36],[5.132,4.72],[6.211,5.36],[7.233,6.24],[7.523,6.48],[7.732,6.64],[7.895,6.8],[8.208,7.04],[9.288,7.88],[9.81,8.24],[9.938,8.44],[10.983,9.12],[11.633,9.64],[11.807,9.76],[11.9,9.92],[13.7,11.42]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

@@ -1,468 +1,469 @@
 {
  "scene": "5",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
+ "model_id": "eleven_v4",
  "text": "Primer arreglo, y el que más rinde: búsqueda híbrida. Combinas la búsqueda por significado con la búsqueda clásica por palabras clave, la de toda la vida, BM25. Una encuentra lo parecido, la otra lo exacto, y fusionas los dos rankings. Hoy es el estándar en producción. Segundo arreglo: el reranker. Recuperas, por ejemplo, treinta candidatos rápido, y un modelo más preciso los lee uno a uno junto a la pregunta y se queda con los cinco mejores. Es como pasar de buscar en Google a que un experto te filtre los resultados.",
- "duration": 30.743,
+ "duration": 35.76,
  "words": [
   {
    "w": "Primer",
    "start": 0.0,
-   "end": 0.372
+   "end": 0.32
   },
   {
    "w": "arreglo,",
-   "start": 0.418,
-   "end": 0.975
+   "start": 0.36,
+   "end": 1.04
   },
   {
    "w": "y",
-   "start": 1.254,
-   "end": 1.324
+   "start": 1.08,
+   "end": 1.12
   },
   {
    "w": "el",
-   "start": 1.382,
-   "end": 1.451
+   "start": 1.2,
+   "end": 1.28
   },
   {
    "w": "que",
-   "start": 1.509,
-   "end": 1.579
+   "start": 1.36,
+   "end": 1.44
   },
   {
    "w": "más",
-   "start": 1.637,
-   "end": 1.741
+   "start": 1.52,
+   "end": 1.68
   },
   {
    "w": "rinde:",
-   "start": 1.788,
-   "end": 2.345
+   "start": 1.76,
+   "end": 2.4
   },
   {
    "w": "búsqueda",
-   "start": 2.519,
-   "end": 3.019
+   "start": 2.64,
+   "end": 3.2
   },
   {
    "w": "híbrida.",
-   "start": 3.065,
-   "end": 3.564
+   "start": 3.28,
+   "end": 3.84
   },
   {
    "w": "Combinas",
-   "start": 3.68,
-   "end": 4.203
+   "start": 4.4,
+   "end": 4.88
   },
   {
    "w": "la",
-   "start": 4.272,
-   "end": 4.331
+   "start": 4.92,
+   "end": 4.96
   },
   {
    "w": "búsqueda",
-   "start": 4.377,
-   "end": 4.76
+   "start": 5.04,
+   "end": 5.36
   },
   {
    "w": "por",
-   "start": 4.818,
-   "end": 4.957
+   "start": 5.44,
+   "end": 5.52
   },
   {
    "w": "significado",
-   "start": 5.016,
-   "end": 5.654
+   "start": 5.64,
+   "end": 6.24
   },
   {
    "w": "con",
-   "start": 5.735,
-   "end": 5.863
+   "start": 6.32,
+   "end": 6.48
   },
   {
    "w": "la",
-   "start": 5.898,
-   "end": 5.968
+   "start": 6.52,
+   "end": 6.56
   },
   {
    "w": "búsqueda",
-   "start": 6.002,
-   "end": 6.385
+   "start": 6.64,
+   "end": 6.96
   },
   {
    "w": "clásica",
-   "start": 6.42,
-   "end": 6.838
+   "start": 7.04,
+   "end": 7.52
   },
   {
    "w": "por",
-   "start": 6.885,
-   "end": 7.012
+   "start": 7.6,
+   "end": 7.68
   },
   {
    "w": "palabras",
-   "start": 7.07,
-   "end": 7.454
+   "start": 7.76,
+   "end": 8.16
   },
   {
    "w": "clave,",
-   "start": 7.5,
-   "end": 7.918
+   "start": 8.24,
+   "end": 8.8
   },
   {
    "w": "la",
-   "start": 8.034,
-   "end": 8.139
+   "start": 8.84,
+   "end": 8.88
   },
   {
    "w": "de",
-   "start": 8.197,
-   "end": 8.278
+   "start": 8.96,
+   "end": 9.04
   },
   {
    "w": "toda",
-   "start": 8.348,
-   "end": 8.58
+   "start": 9.12,
+   "end": 9.28
   },
   {
    "w": "la",
-   "start": 8.626,
-   "end": 8.684
+   "start": 9.32,
+   "end": 9.36
   },
   {
    "w": "vida,",
-   "start": 8.731,
-   "end": 9.114
+   "start": 9.44,
+   "end": 9.84
   },
   {
    "w": "BM25.",
-   "start": 9.207,
-   "end": 10.286
+   "start": 9.92,
+   "end": 11.52
   },
   {
    "w": "Una",
-   "start": 10.403,
-   "end": 10.623
+   "start": 11.6,
+   "end": 11.76
   },
   {
    "w": "encuentra",
-   "start": 10.646,
-   "end": 11.064
+   "start": 11.92,
+   "end": 12.4
   },
   {
    "w": "lo",
-   "start": 11.088,
-   "end": 11.157
+   "start": 12.44,
+   "end": 12.48
   },
   {
    "w": "parecido,",
-   "start": 11.204,
-   "end": 11.773
+   "start": 12.56,
+   "end": 13.36
   },
   {
    "w": "la",
-   "start": 11.865,
-   "end": 11.97
+   "start": 13.44,
+   "end": 13.52
   },
   {
    "w": "otra",
-   "start": 12.016,
-   "end": 12.214
+   "start": 13.6,
+   "end": 13.84
   },
   {
    "w": "lo",
-   "start": 12.26,
-   "end": 12.33
+   "start": 14.0,
+   "end": 14.08
   },
   {
    "w": "exacto,",
-   "start": 12.365,
-   "end": 12.829
+   "start": 14.16,
+   "end": 14.96
   },
   {
    "w": "y",
-   "start": 12.875,
-   "end": 12.934
+   "start": 15.0,
+   "end": 15.04
   },
   {
    "w": "fusionas",
-   "start": 13.003,
-   "end": 13.479
+   "start": 15.24,
+   "end": 15.6
   },
   {
    "w": "los",
-   "start": 13.537,
-   "end": 13.688
+   "start": 15.68,
+   "end": 15.76
   },
   {
    "w": "dos",
-   "start": 13.735,
-   "end": 13.92
+   "start": 15.84,
+   "end": 16.0
   },
   {
    "w": "rankings.",
-   "start": 14.036,
-   "end": 14.663
+   "start": 16.16,
+   "end": 16.64
   },
   {
    "w": "Hoy",
-   "start": 14.698,
-   "end": 14.977
+   "start": 17.04,
+   "end": 17.36
   },
   {
    "w": "es",
-   "start": 15.093,
-   "end": 15.209
+   "start": 17.44,
+   "end": 17.52
   },
   {
    "w": "el",
-   "start": 15.278,
-   "end": 15.325
+   "start": 17.56,
+   "end": 17.6
   },
   {
    "w": "estándar",
-   "start": 15.383,
-   "end": 15.778
+   "start": 17.68,
+   "end": 18.16
   },
   {
    "w": "en",
-   "start": 15.824,
-   "end": 15.871
+   "start": 18.2,
+   "end": 18.24
   },
   {
    "w": "producción.",
-   "start": 15.917,
-   "end": 16.59
+   "start": 18.32,
+   "end": 18.96
   },
   {
    "w": "Segundo",
-   "start": 16.706,
-   "end": 17.043
+   "start": 19.84,
+   "end": 20.16
   },
   {
    "w": "arreglo:",
-   "start": 17.066,
-   "end": 17.519
+   "start": 20.24,
+   "end": 20.96
   },
   {
    "w": "el",
-   "start": 17.635,
-   "end": 17.74
+   "start": 21.04,
+   "end": 21.12
   },
   {
    "w": "reranker.",
-   "start": 17.833,
-   "end": 18.448
+   "start": 21.2,
+   "end": 22.0
   },
   {
    "w": "Recuperas,",
-   "start": 18.576,
-   "end": 19.052
+   "start": 22.48,
+   "end": 23.12
   },
   {
    "w": "por",
-   "start": 19.075,
-   "end": 19.179
+   "start": 23.16,
+   "end": 23.2
   },
   {
    "w": "ejemplo,",
-   "start": 19.203,
-   "end": 19.609
+   "start": 23.28,
+   "end": 23.84
   },
   {
    "w": "treinta",
-   "start": 19.679,
-   "end": 20.004
+   "start": 23.92,
+   "end": 24.16
   },
   {
    "w": "candidatos",
-   "start": 20.039,
-   "end": 20.503
+   "start": 24.24,
+   "end": 24.72
   },
   {
    "w": "rápido,",
-   "start": 20.561,
-   "end": 21.002
+   "start": 24.8,
+   "end": 25.52
   },
   {
    "w": "y",
-   "start": 21.083,
-   "end": 21.141
+   "start": 25.56,
+   "end": 25.6
   },
   {
    "w": "un",
-   "start": 21.258,
-   "end": 21.327
+   "start": 25.64,
+   "end": 25.68
   },
   {
    "w": "modelo",
-   "start": 21.362,
-   "end": 21.676
+   "start": 25.76,
+   "end": 26.08
   },
   {
    "w": "más",
-   "start": 21.722,
-   "end": 21.85
+   "start": 26.16,
+   "end": 26.32
   },
   {
    "w": "preciso",
-   "start": 21.908,
-   "end": 22.43
+   "start": 26.4,
+   "end": 26.8
   },
   {
    "w": "los",
-   "start": 22.546,
-   "end": 22.732
+   "start": 26.96,
+   "end": 27.12
   },
   {
    "w": "lee",
-   "start": 22.813,
-   "end": 23.022
+   "start": 27.2,
+   "end": 27.52
   },
   {
    "w": "uno",
-   "start": 23.115,
-   "end": 23.278
+   "start": 27.6,
+   "end": 27.76
   },
   {
    "w": "a",
-   "start": 23.313,
-   "end": 23.336
+   "start": 27.84,
+   "end": 27.92
   },
   {
    "w": "uno",
-   "start": 23.394,
-   "end": 23.661
+   "start": 28.04,
+   "end": 28.16
   },
   {
    "w": "junto",
-   "start": 23.719,
-   "end": 24.044
+   "start": 28.24,
+   "end": 28.48
   },
   {
    "w": "a",
-   "start": 24.079,
-   "end": 24.102
+   "start": 28.507,
+   "end": 28.533
   },
   {
    "w": "la",
-   "start": 24.125,
-   "end": 24.195
+   "start": 28.56,
+   "end": 28.6
   },
   {
    "w": "pregunta",
-   "start": 24.241,
-   "end": 24.741
+   "start": 28.64,
+   "end": 29.12
   },
   {
    "w": "y",
-   "start": 24.857,
-   "end": 24.938
+   "start": 29.28,
+   "end": 29.36
   },
   {
    "w": "se",
-   "start": 25.008,
-   "end": 25.089
+   "start": 29.44,
+   "end": 29.52
   },
   {
    "w": "queda",
-   "start": 25.135,
-   "end": 25.309
+   "start": 29.64,
+   "end": 29.76
   },
   {
    "w": "con",
-   "start": 25.356,
-   "end": 25.46
+   "start": 29.8,
+   "end": 29.84
   },
   {
    "w": "los",
-   "start": 25.495,
-   "end": 25.611
+   "start": 29.92,
+   "end": 30.08
   },
   {
    "w": "cinco",
-   "start": 25.635,
-   "end": 25.843
+   "start": 30.16,
+   "end": 30.4
   },
   {
    "w": "mejores.",
-   "start": 25.89,
-   "end": 26.482
+   "start": 30.48,
+   "end": 31.04
   },
   {
    "w": "Es",
-   "start": 26.552,
-   "end": 26.703
+   "start": 31.52,
+   "end": 31.6
   },
   {
    "w": "como",
-   "start": 26.749,
-   "end": 26.935
+   "start": 31.68,
+   "end": 31.84
   },
   {
    "w": "pasar",
-   "start": 26.993,
-   "end": 27.318
+   "start": 31.96,
+   "end": 32.16
   },
   {
    "w": "de",
-   "start": 27.364,
-   "end": 27.422
+   "start": 32.24,
+   "end": 32.32
   },
   {
    "w": "buscar",
-   "start": 27.457,
-   "end": 27.771
+   "start": 32.48,
+   "end": 32.64
   },
   {
    "w": "en",
-   "start": 27.817,
-   "end": 27.864
+   "start": 32.68,
+   "end": 32.72
   },
   {
    "w": "Google",
-   "start": 27.922,
-   "end": 28.282
+   "start": 32.8,
+   "end": 33.2
   },
   {
    "w": "a",
-   "start": 28.363,
-   "end": 28.433
+   "start": 33.24,
+   "end": 33.28
   },
   {
    "w": "que",
-   "start": 28.502,
-   "end": 28.583
+   "start": 33.36,
+   "end": 33.44
   },
   {
    "w": "un",
-   "start": 28.618,
-   "end": 28.665
+   "start": 33.48,
+   "end": 33.52
   },
   {
    "w": "experto",
-   "start": 28.723,
-   "end": 29.152
+   "start": 33.6,
+   "end": 34.08
   },
   {
    "w": "te",
-   "start": 29.21,
-   "end": 29.292
+   "start": 34.16,
+   "end": 34.24
   },
   {
    "w": "filtre",
-   "start": 29.338,
-   "end": 29.698
+   "start": 34.32,
+   "end": 34.64
   },
   {
    "w": "los",
-   "start": 29.733,
-   "end": 29.861
+   "start": 34.72,
+   "end": 34.8
   },
   {
    "w": "resultados.",
-   "start": 29.907,
-   "end": 30.743
+   "start": 34.96,
+   "end": 35.76
   }
  ]
 }

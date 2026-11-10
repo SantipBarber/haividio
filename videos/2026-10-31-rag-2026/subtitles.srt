@@ -1,0 +1,791 @@
+1
+00:00:00,500 --> 00:00:02,640
+El equipo de Claude Code, una de las
+
+2
+00:00:02,660 --> 00:00:04,960
+herramientas de IA más usadas para
+
+3
+00:00:04,980 --> 00:00:07,360
+programar, probó la receta estándar para
+
+4
+00:00:07,380 --> 00:00:09,360
+que un modelo encuentre información.
+
+5
+00:00:09,540 --> 00:00:10,400
+Y la tiró.
+
+6
+00:00:10,580 --> 00:00:13,040
+Desde entonces medio internet dice que esa
+
+7
+00:00:13,060 --> 00:00:15,440
+receta, el RAG, ha muerto.
+
+8
+00:00:15,620 --> 00:00:16,480
+Spoiler:
+
+9
+00:00:16,500 --> 00:00:17,600
+no ha muerto.
+
+10
+00:00:17,620 --> 00:00:19,040
+Ha cambiado de forma.
+
+11
+00:00:19,140 --> 00:00:21,480
+Y en seis minutos vas a entender qué es y
+
+12
+00:00:21,500 --> 00:00:23,120
+en qué se ha convertido.
+
+13
+00:00:23,520 --> 00:00:26,220
+Un modelo de lenguaje sabe muchísimo, pero
+
+14
+00:00:26,240 --> 00:00:28,100
+no sabe nada de lo tuyo:
+
+15
+00:00:28,120 --> 00:00:30,660
+tus contratos, tu documentación interna,
+
+16
+00:00:30,680 --> 00:00:31,980
+el correo de ayer.
+
+17
+00:00:32,240 --> 00:00:34,420
+Puedes pegárselo todo en el prompt, pero
+
+18
+00:00:34,440 --> 00:00:37,020
+cuando son miles de documentos eso es caro
+
+19
+00:00:37,040 --> 00:00:37,900
+y lento.
+
+20
+00:00:38,240 --> 00:00:40,060
+RAG, generación aumentada con
+
+21
+00:00:40,080 --> 00:00:42,940
+recuperación, resuelve justo eso:
+
+22
+00:00:42,960 --> 00:00:45,260
+antes de responder, el sistema busca los
+
+23
+00:00:45,280 --> 00:00:47,980
+trozos relevantes y se los pasa al modelo.
+
+24
+00:00:48,380 --> 00:00:50,520
+La idea viene de un artículo de Meta de
+
+25
+00:00:50,540 --> 00:00:51,920
+2020.
+
+26
+00:00:51,940 --> 00:00:53,480
+Piensa en un examen.
+
+27
+00:00:53,500 --> 00:00:56,160
+Un modelo normal lo hace a libro cerrado:
+
+28
+00:00:56,180 --> 00:00:58,520
+solo con lo que memorizó al entrenarse.
+
+29
+00:00:58,780 --> 00:01:01,320
+Con RAG lo hace a libro abierto:
+
+30
+00:01:01,340 --> 00:01:03,160
+antes de contestar, consulta una
+
+31
+00:01:03,180 --> 00:01:04,280
+biblioteca.
+
+32
+00:01:04,300 --> 00:01:06,680
+En aquel primer experimento, la biblioteca
+
+33
+00:01:06,700 --> 00:01:08,840
+era Wikipedia troceada en veintiún
+
+34
+00:01:08,860 --> 00:01:10,920
+millones de fragmentos, y para cada
+
+35
+00:01:10,940 --> 00:01:13,040
+pregunta consultaba cinco.
+
+36
+00:01:13,060 --> 00:01:14,120
+Y lo mejor:
+
+37
+00:01:14,140 --> 00:01:16,120
+si cambia la biblioteca, el modelo se
+
+38
+00:01:16,140 --> 00:01:17,480
+entera al momento.
+
+39
+00:01:17,500 --> 00:01:19,400
+No hay que volver a entrenarlo.
+
+40
+00:01:19,800 --> 00:01:21,940
+Un RAG tiene dos momentos.
+
+41
+00:01:22,040 --> 00:01:24,500
+Primero preparas la biblioteca, una sola
+
+42
+00:01:24,520 --> 00:01:25,140
+vez.
+
+43
+00:01:25,160 --> 00:01:27,660
+Después, cada vez que alguien pregunta,
+
+44
+00:01:27,680 --> 00:01:28,740
+buscas en ella.
+
+45
+00:01:28,920 --> 00:01:30,820
+Empecemos por la preparación.
+
+46
+00:01:31,220 --> 00:01:32,040
+Uno:
+
+47
+00:01:32,060 --> 00:01:32,960
+trocear.
+
+48
+00:01:33,140 --> 00:01:35,280
+En un tutorial de LangChain, catorce
+
+49
+00:01:35,300 --> 00:01:37,360
+páginas de documentación acaban en
+
+50
+00:01:37,380 --> 00:01:39,440
+setecientos ochenta y dos fragmentos de
+
+51
+00:01:39,460 --> 00:01:41,040
+unos mil caracteres.
+
+52
+00:01:41,220 --> 00:01:44,000
+Y cada trozo repite un poco del anterior,
+
+53
+00:01:44,020 --> 00:01:45,920
+para que ninguna idea quede partida por la
+
+54
+00:01:45,940 --> 00:01:46,640
+mitad.
+
+55
+00:01:47,220 --> 00:01:48,000
+Dos:
+
+56
+00:01:48,020 --> 00:01:50,400
+convertir cada trozo en un vector.
+
+57
+00:01:50,740 --> 00:01:53,280
+Un vector es una lista de números, cientos
+
+58
+00:01:53,300 --> 00:01:55,200
+de ellos, que resume de qué habla el
+
+59
+00:01:55,220 --> 00:01:56,000
+texto.
+
+60
+00:01:56,180 --> 00:01:57,960
+No hace falta entender los números:
+
+61
+00:01:57,980 --> 00:02:00,000
+lo importante es que los textos que hablan
+
+62
+00:02:00,020 --> 00:02:02,000
+de lo mismo acaban cerca.
+
+63
+00:02:02,400 --> 00:02:03,100
+Tres:
+
+64
+00:02:03,280 --> 00:02:04,700
+llega una pregunta.
+
+65
+00:02:04,880 --> 00:02:07,100
+También la conviertes en vector y buscas
+
+66
+00:02:07,120 --> 00:02:09,100
+los trozos que quedan más cerca.
+
+67
+00:02:09,120 --> 00:02:10,060
+¿Cuántos?
+
+68
+00:02:10,080 --> 00:02:10,980
+Depende:
+
+69
+00:02:11,000 --> 00:02:13,380
+en el ejemplo de Hugging Face, cinco;
+
+70
+00:02:13,400 --> 00:02:15,220
+Anthropic recomienda veinte.
+
+71
+00:02:15,240 --> 00:02:17,260
+No hay número mágico, se mide.
+
+72
+00:02:17,760 --> 00:02:18,620
+Cuatro:
+
+73
+00:02:18,640 --> 00:02:20,380
+le das esos trozos al modelo con la
+
+74
+00:02:20,400 --> 00:02:22,860
+pregunta y le pides que responda solo con
+
+75
+00:02:22,880 --> 00:02:25,020
+eso y que diga de dónde lo saca.
+
+76
+00:02:25,040 --> 00:02:26,860
+Si mañana cambia un documento, lo
+
+77
+00:02:26,880 --> 00:02:29,020
+actualizas en la biblioteca y listo.
+
+78
+00:02:29,040 --> 00:02:30,700
+Sin reentrenar nada.
+
+79
+00:02:33,500 --> 00:02:35,400
+Y en la práctica, falla.
+
+80
+00:02:35,580 --> 00:02:38,093
+Un trozo suelto pierde su contexto:
+
+81
+00:02:38,113 --> 00:02:41,240
+'los ingresos crecieron un 3 %'… ¿de qué
+
+82
+00:02:41,260 --> 00:02:41,800
+empresa?
+
+83
+00:02:41,820 --> 00:02:43,240
+¿De qué trimestre?
+
+84
+00:02:43,260 --> 00:02:45,240
+La búsqueda por significado se equivoca
+
+85
+00:02:45,260 --> 00:02:47,960
+con nombres exactos, códigos de producto o
+
+86
+00:02:47,980 --> 00:02:49,160
+identificadores.
+
+87
+00:02:49,260 --> 00:02:51,480
+Y hay preguntas que ningún trozo responde
+
+88
+00:02:51,500 --> 00:02:52,300
+solo:
+
+89
+00:02:52,320 --> 00:02:53,960
+'¿cuáles son los temas principales de
+
+90
+00:02:53,980 --> 00:02:56,400
+estos mil informes?' o preguntas que
+
+91
+00:02:56,420 --> 00:02:58,680
+necesitan encadenar varios pasos.
+
+92
+00:02:58,700 --> 00:03:00,920
+Para cada uno de estos fallos ha aparecido
+
+93
+00:03:00,940 --> 00:03:02,120
+una solución.
+
+94
+00:03:02,520 --> 00:03:05,140
+Primer arreglo, y el que más rinde:
+
+95
+00:03:05,160 --> 00:03:06,660
+búsqueda híbrida.
+
+96
+00:03:06,920 --> 00:03:09,020
+Combinas la búsqueda por significado con
+
+97
+00:03:09,040 --> 00:03:11,460
+la búsqueda clásica por palabras clave, la
+
+98
+00:03:11,480 --> 00:03:14,100
+de toda la vida, BM25.
+
+99
+00:03:14,120 --> 00:03:16,660
+Una encuentra lo parecido, la otra lo
+
+100
+00:03:16,680 --> 00:03:19,460
+exacto, y fusionas los dos rankings.
+
+101
+00:03:19,560 --> 00:03:21,780
+Hoy es el estándar en producción.
+
+102
+00:03:22,360 --> 00:03:23,540
+Segundo arreglo:
+
+103
+00:03:23,560 --> 00:03:24,820
+el reranker.
+
+104
+00:03:25,000 --> 00:03:27,300
+Recuperas, por ejemplo, treinta candidatos
+
+105
+00:03:27,320 --> 00:03:30,100
+rápido, y un modelo más preciso los lee
+
+106
+00:03:30,120 --> 00:03:32,300
+uno a uno junto a la pregunta y se queda
+
+107
+00:03:32,320 --> 00:03:33,860
+con los cinco mejores.
+
+108
+00:03:34,040 --> 00:03:36,100
+Es como pasar de buscar en Google a que un
+
+109
+00:03:36,120 --> 00:03:38,580
+experto te filtre los resultados.
+
+110
+00:03:38,980 --> 00:03:42,000
+Tercer arreglo, para los trozos huérfanos:
+
+111
+00:03:42,020 --> 00:03:43,840
+recuperación contextual.
+
+112
+00:03:44,100 --> 00:03:46,400
+Antes de indexar, un modelo escribe una
+
+113
+00:03:46,420 --> 00:03:48,720
+frase que sitúa cada trozo:
+
+114
+00:03:48,740 --> 00:03:51,040
+'esto es del informe de Acme del segundo
+
+115
+00:03:51,060 --> 00:03:53,120
+trimestre de 2023'.
+
+116
+00:03:53,460 --> 00:03:55,760
+Parece poca cosa, pero Anthropic midió
+
+117
+00:03:55,780 --> 00:03:58,000
+que, combinada con búsqueda híbrida,
+
+118
+00:03:58,020 --> 00:04:00,560
+reduce los fallos de recuperación un 49
+
+119
+00:04:00,580 --> 00:04:03,600
+%, y con reranker, un 67
+
+120
+00:04:03,620 --> 00:04:05,200
+%.
+
+121
+00:04:05,220 --> 00:04:07,520
+Hay una alternativa más barata, el late
+
+122
+00:04:07,540 --> 00:04:09,640
+chunking, que genera los vectores viendo
+
+123
+00:04:09,660 --> 00:04:12,320
+el documento entero antes de trocearlo.
+
+124
+00:04:12,720 --> 00:04:15,740
+Para las preguntas globales está GraphRAG,
+
+125
+00:04:15,760 --> 00:04:17,500
+que popularizó Microsoft.
+
+126
+00:04:17,680 --> 00:04:20,380
+En vez de solo trocear, extrae entidades y
+
+127
+00:04:20,400 --> 00:04:21,620
+relaciones:
+
+128
+00:04:21,640 --> 00:04:24,380
+personas, empresas, productos y cómo se
+
+129
+00:04:24,400 --> 00:04:25,420
+conectan.
+
+130
+00:04:25,440 --> 00:04:27,180
+Construye un grafo y lo agrupa en
+
+131
+00:04:27,200 --> 00:04:28,940
+comunidades con resúmenes.
+
+132
+00:04:29,040 --> 00:04:31,260
+Así puede responder '¿cuáles son los
+
+133
+00:04:31,280 --> 00:04:33,660
+grandes temas?' o '¿qué proveedores
+
+134
+00:04:33,680 --> 00:04:35,180
+dependen de esta pieza?'.
+
+135
+00:04:35,600 --> 00:04:36,540
+El precio:
+
+136
+00:04:36,720 --> 00:04:39,180
+construir y mantener ese grafo es bastante
+
+137
+00:04:39,200 --> 00:04:39,980
+más caro.
+
+138
+00:04:40,160 --> 00:04:41,900
+Úsalo cuando las relaciones sean el
+
+139
+00:04:41,920 --> 00:04:44,540
+corazón del problema, no por moda.
+
+140
+00:04:44,940 --> 00:04:47,320
+Y el gran cambio de estos dos años:
+
+141
+00:04:47,340 --> 00:04:49,000
+el RAG agéntico.
+
+142
+00:04:49,260 --> 00:04:51,680
+El RAG clásico es como un becario:
+
+143
+00:04:51,700 --> 00:04:53,720
+hace una búsqueda y contesta con lo que
+
+144
+00:04:53,740 --> 00:04:54,520
+encuentra.
+
+145
+00:04:54,860 --> 00:04:56,920
+El agéntico se parece más a un jefe de
+
+146
+00:04:56,940 --> 00:04:58,120
+investigación.
+
+147
+00:04:58,140 --> 00:05:01,120
+Planifica, busca, reparte los documentos
+
+148
+00:05:01,140 --> 00:05:02,920
+entre varios ayudantes que los leen a la
+
+149
+00:05:02,940 --> 00:05:05,960
+vez, junta sus resúmenes y, si algo no
+
+150
+00:05:05,980 --> 00:05:08,840
+cuadra, vuelve a buscar, en documentos, en
+
+151
+00:05:08,860 --> 00:05:10,920
+una base de datos o en la web.
+
+152
+00:05:11,260 --> 00:05:12,360
+Dos avisos.
+
+153
+00:05:12,460 --> 00:05:13,240
+Uno:
+
+154
+00:05:13,260 --> 00:05:15,960
+es más lento y más caro, porque hay muchas
+
+155
+00:05:15,980 --> 00:05:17,600
+más llamadas al modelo.
+
+156
+00:05:17,620 --> 00:05:18,560
+Y dos:
+
+157
+00:05:18,580 --> 00:05:20,480
+un documento puede llevar escondida una
+
+158
+00:05:20,500 --> 00:05:23,040
+instrucción del tipo 'ignora todo y haz
+
+159
+00:05:23,060 --> 00:05:24,120
+esto otro'.
+
+160
+00:05:24,140 --> 00:05:26,360
+Por eso lo que se recupera se trata como
+
+161
+00:05:26,380 --> 00:05:28,680
+datos, nunca como órdenes.
+
+162
+00:05:29,080 --> 00:05:30,580
+Volvamos al principio.
+
+163
+00:05:30,840 --> 00:05:33,300
+Hoy hay modelos con un millón de tokens de
+
+164
+00:05:33,320 --> 00:05:35,700
+contexto, y los agentes de programación
+
+165
+00:05:35,720 --> 00:05:38,020
+como Claude Code ya no usan una base de
+
+166
+00:05:38,040 --> 00:05:39,380
+datos vectorial:
+
+167
+00:05:39,400 --> 00:05:42,020
+exploran el código con búsquedas de texto,
+
+168
+00:05:42,040 --> 00:05:44,420
+abren archivos y deciden qué leer.
+
+169
+00:05:44,600 --> 00:05:46,660
+Eso es lo que la gente llama 'la muerte
+
+170
+00:05:46,680 --> 00:05:47,593
+del RAG'.
+
+171
+00:05:47,613 --> 00:05:48,580
+Pero fíjate:
+
+172
+00:05:48,600 --> 00:05:50,740
+siguen recuperando información antes de
+
+173
+00:05:50,760 --> 00:05:51,780
+responder.
+
+174
+00:05:51,800 --> 00:05:53,780
+Lo que ha muerto es la base de datos
+
+175
+00:05:53,800 --> 00:05:55,700
+vectorial como paso obligatorio.
+
+176
+00:05:55,720 --> 00:05:57,700
+Y meter un millón de tokens en cada
+
+177
+00:05:57,720 --> 00:06:00,340
+pregunta sigue costando muchísimo más que
+
+178
+00:06:00,360 --> 00:06:02,660
+recuperar cinco trozos buenos.
+
+179
+00:06:03,060 --> 00:06:04,800
+Mi recomendación práctica.
+
+180
+00:06:04,980 --> 00:06:06,880
+¿Pocos documentos, menos de unas
+
+181
+00:06:06,900 --> 00:06:08,160
+quinientas páginas?
+
+182
+00:06:08,340 --> 00:06:10,720
+Mételos en el contexto y olvídate.
+
+183
+00:06:10,900 --> 00:06:13,840
+¿Una base de conocimiento grande tipo FAQ
+
+184
+00:06:13,860 --> 00:06:15,040
+o documentación?
+
+185
+00:06:15,220 --> 00:06:17,680
+RAG con búsqueda híbrida y reranker:
+
+186
+00:06:17,700 --> 00:06:18,800
+es lo que mejor relación
+
+187
+00:06:18,820 --> 00:06:20,400
+esfuerzo-resultado tiene.
+
+188
+00:06:20,500 --> 00:06:22,560
+¿Muchas relaciones entre entidades?
+
+189
+00:06:22,580 --> 00:06:23,520
+GraphRAG.
+
+190
+00:06:23,540 --> 00:06:25,040
+¿Tareas de varios pasos?
+
+191
+00:06:25,060 --> 00:06:26,240
+Agentic RAG.
+
+192
+00:06:26,260 --> 00:06:27,280
+Y sobre todo:
+
+193
+00:06:27,300 --> 00:06:29,760
+empieza por lo más simple y sube de nivel
+
+194
+00:06:29,780 --> 00:06:31,920
+solo cuando midas que te hace falta.
+
+195
+00:06:32,320 --> 00:06:35,260
+El RAG no ha muerto, ha madurado.
+
+196
+00:06:35,280 --> 00:06:36,820
+Si quieres que en el próximo vídeo
+
+197
+00:06:36,840 --> 00:06:39,380
+montemos uno de estos paso a paso, dímelo
+
+198
+00:06:39,400 --> 00:06:40,980
+en los comentarios.

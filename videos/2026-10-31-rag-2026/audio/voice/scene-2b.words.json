@@ -1,413 +1,414 @@
 {
  "scene": "2b",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
+ "model_id": "eleven_v4",
  "text": "La idea viene de un artículo de Meta de 2020. Piensa en un examen. Un modelo normal lo hace a libro cerrado: solo con lo que memorizó al entrenarse. Con RAG lo hace a libro abierto: antes de contestar, consulta una biblioteca. En aquel primer experimento, la biblioteca era Wikipedia troceada en veintiún millones de fragmentos, y para cada pregunta consultaba cinco. Y lo mejor: si cambia la biblioteca, el modelo se entera al momento. No hay que volver a entrenarlo.",
- "duration": 27.678,
+ "duration": 30.72,
  "words": [
   {
    "w": "La",
    "start": 0.0,
-   "end": 0.139
+   "end": 0.12
   },
   {
    "w": "idea",
-   "start": 0.174,
-   "end": 0.406
+   "start": 0.16,
+   "end": 0.44
   },
   {
    "w": "viene",
-   "start": 0.453,
-   "end": 0.708
+   "start": 0.48,
+   "end": 0.747
   },
   {
    "w": "de",
-   "start": 0.755,
-   "end": 0.813
+   "start": 0.8,
+   "end": 0.86
   },
   {
    "w": "un",
-   "start": 0.882,
-   "end": 0.964
+   "start": 0.88,
+   "end": 0.94
   },
   {
    "w": "artículo",
-   "start": 1.01,
-   "end": 1.416
+   "start": 0.96,
+   "end": 1.44
   },
   {
    "w": "de",
-   "start": 1.463,
-   "end": 1.533
+   "start": 1.52,
+   "end": 1.56
   },
   {
    "w": "Meta",
-   "start": 1.591,
-   "end": 1.846
+   "start": 1.6,
+   "end": 1.92
   },
   {
    "w": "de",
-   "start": 1.892,
-   "end": 1.974
+   "start": 2.0,
+   "end": 2.08
   },
   {
    "w": "2020.",
-   "start": 2.067,
-   "end": 2.914
+   "start": 2.16,
+   "end": 3.52
   },
   {
    "w": "Piensa",
-   "start": 2.984,
-   "end": 3.32
+   "start": 3.56,
+   "end": 3.84
   },
   {
    "w": "en",
-   "start": 3.355,
-   "end": 3.402
+   "start": 3.88,
+   "end": 3.92
   },
   {
    "w": "un",
-   "start": 3.495,
-   "end": 3.564
+   "start": 3.96,
+   "end": 4.0
   },
   {
    "w": "examen.",
-   "start": 3.611,
-   "end": 4.11
+   "start": 4.08,
+   "end": 4.84
   },
   {
    "w": "Un",
-   "start": 4.226,
-   "end": 4.331
+   "start": 5.12,
+   "end": 5.28
   },
   {
    "w": "modelo",
-   "start": 4.354,
-   "end": 4.667
+   "start": 5.44,
+   "end": 5.6
   },
   {
    "w": "normal",
-   "start": 4.714,
-   "end": 5.108
+   "start": 5.84,
+   "end": 6.08
   },
   {
    "w": "lo",
-   "start": 5.224,
-   "end": 5.352
+   "start": 6.16,
+   "end": 6.32
   },
   {
    "w": "hace",
-   "start": 5.41,
-   "end": 5.619
+   "start": 6.4,
+   "end": 6.56
   },
   {
    "w": "a",
-   "start": 5.666,
-   "end": 5.689
+   "start": 6.587,
+   "end": 6.613
   },
   {
    "w": "libro",
-   "start": 5.747,
-   "end": 5.991
+   "start": 6.64,
+   "end": 6.88
   },
   {
    "w": "cerrado:",
-   "start": 6.026,
-   "end": 6.536
+   "start": 6.96,
+   "end": 7.76
   },
   {
    "w": "solo",
-   "start": 6.583,
-   "end": 6.827
+   "start": 7.8,
+   "end": 8.08
   },
   {
    "w": "con",
-   "start": 6.873,
-   "end": 6.989
+   "start": 8.16,
+   "end": 8.24
   },
   {
    "w": "lo",
-   "start": 7.036,
-   "end": 7.117
+   "start": 8.32,
+   "end": 8.36
   },
   {
    "w": "que",
-   "start": 7.163,
-   "end": 7.245
+   "start": 8.4,
+   "end": 8.48
   },
   {
    "w": "memorizó",
-   "start": 7.291,
-   "end": 7.883
+   "start": 8.56,
+   "end": 9.0
   },
   {
    "w": "al",
-   "start": 8.034,
-   "end": 8.185
+   "start": 9.04,
+   "end": 9.12
   },
   {
    "w": "entrenarse.",
-   "start": 8.243,
-   "end": 8.951
+   "start": 9.2,
+   "end": 9.84
   },
   {
    "w": "Con",
-   "start": 8.998,
-   "end": 9.172
+   "start": 10.4,
+   "end": 10.56
   },
   {
    "w": "RAG",
-   "start": 9.253,
-   "end": 9.543
+   "start": 10.64,
+   "end": 10.96
   },
   {
    "w": "lo",
-   "start": 9.659,
-   "end": 9.787
+   "start": 11.2,
+   "end": 11.28
   },
   {
    "w": "hace",
-   "start": 9.834,
-   "end": 9.996
+   "start": 11.32,
+   "end": 11.52
   },
   {
    "w": "a",
-   "start": 10.031,
-   "end": 10.054
+   "start": 11.6,
+   "end": 11.64
   },
   {
    "w": "libro",
-   "start": 10.101,
-   "end": 10.31
+   "start": 11.68,
+   "end": 11.92
   },
   {
    "w": "abierto:",
-   "start": 10.333,
-   "end": 10.844
+   "start": 12.0,
+   "end": 12.88
   },
   {
    "w": "antes",
-   "start": 10.902,
-   "end": 11.192
+   "start": 12.96,
+   "end": 13.2
   },
   {
    "w": "de",
-   "start": 11.227,
-   "end": 11.285
+   "start": 13.24,
+   "end": 13.28
   },
   {
    "w": "contestar,",
-   "start": 11.331,
-   "end": 11.9
+   "start": 13.36,
+   "end": 14.08
   },
   {
    "w": "consulta",
-   "start": 11.935,
-   "end": 12.457
+   "start": 14.32,
+   "end": 14.56
   },
   {
    "w": "una",
-   "start": 12.516,
-   "end": 12.666
+   "start": 14.64,
+   "end": 14.72
   },
   {
    "w": "biblioteca.",
-   "start": 12.713,
-   "end": 13.421
+   "start": 14.8,
+   "end": 15.64
   },
   {
    "w": "En",
-   "start": 13.467,
-   "end": 13.584
+   "start": 15.92,
+   "end": 16.0
   },
   {
    "w": "aquel",
-   "start": 13.642,
-   "end": 13.851
+   "start": 16.08,
+   "end": 16.24
   },
   {
    "w": "primer",
-   "start": 13.897,
-   "end": 14.176
+   "start": 16.32,
+   "end": 16.56
   },
   {
    "w": "experimento,",
-   "start": 14.222,
-   "end": 14.988
+   "start": 16.88,
+   "end": 17.52
   },
   {
    "w": "la",
-   "start": 15.058,
-   "end": 15.151
+   "start": 17.56,
+   "end": 17.6
   },
   {
    "w": "biblioteca",
-   "start": 15.197,
-   "end": 15.801
+   "start": 17.68,
+   "end": 18.24
   },
   {
    "w": "era",
-   "start": 15.894,
-   "end": 16.103
+   "start": 18.32,
+   "end": 18.4
   },
   {
    "w": "Wikipedia",
-   "start": 16.173,
-   "end": 16.823
+   "start": 18.48,
+   "end": 19.12
   },
   {
    "w": "troceada",
-   "start": 16.881,
-   "end": 17.392
+   "start": 19.2,
+   "end": 19.68
   },
   {
    "w": "en",
-   "start": 17.415,
-   "end": 17.473
+   "start": 19.76,
+   "end": 19.84
   },
   {
    "w": "veintiún",
-   "start": 17.519,
-   "end": 17.972
+   "start": 19.88,
+   "end": 20.4
   },
   {
    "w": "millones",
-   "start": 18.019,
-   "end": 18.413
+   "start": 20.48,
+   "end": 20.8
   },
   {
    "w": "de",
-   "start": 18.437,
-   "end": 18.495
+   "start": 20.84,
+   "end": 20.88
   },
   {
    "w": "fragmentos,",
-   "start": 18.541,
-   "end": 19.261
+   "start": 20.96,
+   "end": 21.92
   },
   {
    "w": "y",
-   "start": 19.296,
-   "end": 19.365
+   "start": 21.96,
+   "end": 22.0
   },
   {
    "w": "para",
-   "start": 19.447,
-   "end": 19.621
+   "start": 22.08,
+   "end": 22.24
   },
   {
    "w": "cada",
-   "start": 19.656,
-   "end": 19.841
+   "start": 22.32,
+   "end": 22.48
   },
   {
    "w": "pregunta",
-   "start": 19.888,
-   "end": 20.399
+   "start": 22.56,
+   "end": 22.96
   },
   {
    "w": "consultaba",
-   "start": 20.468,
-   "end": 21.049
+   "start": 23.12,
+   "end": 23.6
   },
   {
    "w": "cinco.",
-   "start": 21.084,
-   "end": 21.56
+   "start": 23.76,
+   "end": 24.64
   },
   {
    "w": "Y",
-   "start": 21.641,
-   "end": 21.711
+   "start": 24.68,
+   "end": 24.72
   },
   {
    "w": "lo",
-   "start": 21.792,
-   "end": 21.85
+   "start": 24.76,
+   "end": 24.8
   },
   {
    "w": "mejor:",
-   "start": 21.896,
-   "end": 22.372
+   "start": 24.88,
+   "end": 25.68
   },
   {
    "w": "si",
-   "start": 22.616,
-   "end": 22.767
+   "start": 25.76,
+   "end": 25.84
   },
   {
    "w": "cambia",
-   "start": 22.837,
-   "end": 23.127
+   "start": 25.92,
+   "end": 26.16
   },
   {
    "w": "la",
-   "start": 23.162,
-   "end": 23.22
+   "start": 26.2,
+   "end": 26.24
   },
   {
    "w": "biblioteca,",
-   "start": 23.266,
-   "end": 23.94
+   "start": 26.32,
+   "end": 27.12
   },
   {
    "w": "el",
-   "start": 24.056,
-   "end": 24.16
+   "start": 27.16,
+   "end": 27.2
   },
   {
    "w": "modelo",
-   "start": 24.207,
-   "end": 24.52
+   "start": 27.28,
+   "end": 27.6
   },
   {
    "w": "se",
-   "start": 24.578,
-   "end": 24.636
+   "start": 27.64,
+   "end": 27.68
   },
   {
    "w": "entera",
-   "start": 24.659,
-   "end": 25.031
+   "start": 27.76,
+   "end": 28.053
   },
   {
    "w": "al",
-   "start": 25.054,
-   "end": 25.112
+   "start": 28.107,
+   "end": 28.16
   },
   {
    "w": "momento.",
-   "start": 25.159,
-   "end": 25.716
+   "start": 28.36,
+   "end": 29.04
   },
   {
    "w": "No",
-   "start": 25.844,
-   "end": 25.995
+   "start": 29.12,
+   "end": 29.2
   },
   {
    "w": "hay",
-   "start": 26.029,
-   "end": 26.111
+   "start": 29.28,
+   "end": 29.36
   },
   {
    "w": "que",
-   "start": 26.169,
-   "end": 26.262
+   "start": 29.44,
+   "end": 29.52
   },
   {
    "w": "volver",
-   "start": 26.308,
-   "end": 26.645
+   "start": 29.56,
+   "end": 29.76
   },
   {
    "w": "a",
-   "start": 26.668,
-   "end": 26.691
+   "start": 29.84,
+   "end": 29.893
   },
   {
    "w": "entrenarlo.",
-   "start": 26.749,
-   "end": 27.678
+   "start": 29.947,
+   "end": 30.72
   }
  ]
 }
