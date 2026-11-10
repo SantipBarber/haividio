@@ -4,27 +4,29 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
     #c-doc { left: 120px; top: 210px; width: 700px; padding: 36px 40px; }
-    #c-doc .lbl { font-size: 28px; color: #8b90a0; margin-bottom: 18px; }
+    #c-doc .lbl { font-size: 32px; color: #a3a8b8; margin-bottom: 18px; }
     #c-doc p { font-size: 32px; line-height: 1.35; }
     #c-doc .cut { display: flex; align-items: center; gap: 16px; margin: 22px 0; height: 26px; }
     #c-doc .cut svg { flex: none; }
     #c-doc .cut i { display: block; height: 2px; flex: 1; background: #d4ff3a; opacity: 0.55; transform-origin: left center; }
 
-    #root .frag { left: 940px; width: 860px; padding: 18px 26px; }
-    #root .frag .lbl { font-size: 28px; color: #8b90a0; margin-bottom: 10px; }
-    #root .frag .ov { font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .frag p { font-size: 29px; line-height: 1.28; }
+    #root .frag { left: 940px; width: 860px; padding: 14px 26px; }
+    #root .frag .lbl { font-size: 32px; color: #a3a8b8; margin-bottom: 6px; }
+    #root .frag .ov { font-size: 32px; color: #d4ff3a; margin-bottom: 4px; }
+    #root .frag p { font-size: 32px; line-height: 1.22; }
+    /* Huecos fantasma: los fragmentos ya tienen sitio mientras se habla del documento. */
+    #root .ghost { left: 940px; width: 860px; border: 2px dashed #2c303c; border-radius: 16px; }
 
     #c-count { left: 120px; top: 828px; font-size: 72px; font-weight: 800; letter-spacing: -0.04em; white-space: nowrap; }
     #c-count .lime { color: #d4ff3a; }
-    #c-sub { left: 120px; top: 916px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #c-sub { left: 120px; top: 912px; font-size: 32px; color: #a3a8b8; white-space: nowrap; }
   </style>
 
   <div data-hf-id="hf-etfg" id="root" data-composition-id="chunk" data-width="1920" data-height="1080">
@@ -43,16 +45,20 @@
       <p data-hf-id="hf-bj2h">Los gastos de envío de la devolución corren de tu cuenta.</p>
     </div>
 
+    <div class="abs ghost" id="c-g1" style="top: 210px; height: 154px"></div>
+    <div class="abs ghost" id="c-g2" style="top: 376px; height: 196px"></div>
+    <div class="abs ghost" id="c-g3" style="top: 584px; height: 196px"></div>
+
     <div data-hf-id="hf-wjx5" class="abs panel frag" id="c-f1" style="top: 210px">
       <div data-hf-id="hf-q0ev" class="lbl mono">fragmento 1</div>
       <p data-hf-id="hf-hr8s">Puedes devolver cualquier producto sin abrir en un plazo de 30 días desde la compra.</p>
     </div>
-    <div data-hf-id="hf-7whg" class="abs panel frag" id="c-f2" style="top: 382px">
+    <div data-hf-id="hf-7whg" class="abs panel frag" id="c-f2" style="top: 376px">
       <div data-hf-id="hf-pm3u" class="lbl mono">fragmento 2</div>
       <div data-hf-id="hf-3wkl" class="ov mono">↳ desde la compra.</div>
       <p data-hf-id="hf-9p64">El reembolso se hace con el mismo método de pago en 5 días hábiles.</p>
     </div>
-    <div data-hf-id="hf-h1p0" class="abs panel frag" id="c-f3" style="top: 600px">
+    <div data-hf-id="hf-h1p0" class="abs panel frag" id="c-f3" style="top: 584px">
       <div data-hf-id="hf-p7st" class="lbl mono">fragmento 3</div>
       <div data-hf-id="hf-v2jf" class="ov mono">↳ 5 días hábiles.</div>
       <p data-hf-id="hf-eou5">Los gastos de envío de la devolución corren de tu cuenta.</p>
@@ -61,7 +67,7 @@
     <div data-hf-id="hf-cbqz" class="abs" id="c-count"><span data-hf-id="hf-b3jo" id="c-pages">14 páginas</span> <span data-hf-id="hf-bjd3" id="c-arrow" class="lime">→</span> <span data-hf-id="hf-rwb9" class="lime" id="c-frags"><span data-hf-id="hf-rz6r" id="c-n">782</span> fragmentos</span></div>
     <div data-hf-id="hf-jrxz" class="abs mono" id="c-sub"><span data-hf-id="hf-e0gr" id="c-sub1">tutorial de LangChain</span><span data-hf-id="hf-h5yw" id="c-sub2"> · ~1000 caracteres por trozo</span></div>
 
-    <div data-hf-id="hf-h8d0" class="abs gloss" id="c-gloss" style="left: 1220px; top: 860px; width: 580px">
+    <div data-hf-id="hf-h8d0" class="abs gloss" id="c-gloss" style="left: 1240px; top: 860px">
       <div data-hf-id="hf-j6cq" class="t">solapamiento</div>
       <div data-hf-id="hf-lsm4" class="d">un trozo repite el final del anterior</div>
     </div>
@@ -76,6 +82,7 @@
 
       // «Uno: trocear» (0.0) — aparece el documento original.
       tl.from("#c-doc", { autoAlpha: 0, y: 40, duration: 0.8, ease: "expo.out" }, 0.3);
+      tl.from(["#c-g1", "#c-g2", "#c-g3"], { autoAlpha: 0, y: 20, duration: 0.8, ease: "expo.out", stagger: 0.1 }, 0.3);
       // «En un tutorial de LangChain» (2.5)
       tl.from("#c-sub1", { autoAlpha: 0, y: 14, duration: 0.5, ease: "power2.out" }, 2.5);
       // «catorce páginas» (4.3)
@@ -89,6 +96,7 @@
       tl.from("#c-cut1 svg, #c-cut2 svg", { autoAlpha: 0, rotation: -90, stagger: 0.3, duration: 0.4, ease: "back.out(2)" }, 8.4);
       tl.from("#c-cut1 i, #c-cut2 i", { scaleX: 0, stagger: 0.3, duration: 0.6, ease: "power3.out" }, 8.5);
       tl.from(["#c-f1", "#c-f2", "#c-f3"], { autoAlpha: 0, x: -140, stagger: 0.35, duration: 0.8, ease: "expo.out" }, 9.1);
+      tl.to(["#c-g1", "#c-g2", "#c-g3"], { autoAlpha: 0, duration: 0.4, stagger: 0.35 }, 9.1);
       // «unos mil caracteres» (10.0)
       tl.from("#c-sub2", { autoAlpha: 0, x: -14, duration: 0.5, ease: "power2.out" }, 10.0);
       // «cada trozo repite un poco del anterior» (12.7): aparece el solapamiento en lima.
@@ -102,7 +110,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.975,0.801],[2.218,1.846],[2.403,2.043],[2.496,2.125],[2.995,2.554],[3.088,2.67],[4.296,3.437],[4.783,3.878],[5.271,4.272],[5.375,4.377],[6.513,5.016],[7.047,5.341],[7.175,5.433],[7.872,6.049],[8.243,6.362],[8.313,6.432],[8.545,6.606],[9.543,7.187],[9.729,7.279],[10.031,7.546],[10.31,7.755],[11.471,8.603],[11.633,8.8],[11.877,9.067],[12.736,9.462],[13.166,9.81],[13.282,9.903],[13.607,10.159],[13.769,10.286],[14.663,10.82],[14.919,11.064],[15.035,11.18],[15.43,11.529],[16.126,11.842],[16.416,12.086],[16.951,12.492],[17.113,12.655],[17.218,12.76],[18.3,13.38]];
+      const W = [[0.0,0.0],[0.975,0.84],[2.218,1.92],[2.403,2.04],[2.496,2.16],[2.995,2.6],[3.088,2.72],[4.296,3.56],[4.783,4.08],[5.271,4.52],[5.375,4.76],[6.513,5.52],[7.047,5.92],[7.175,6.16],[7.872,6.88],[8.243,7.24],[8.313,7.32],[8.545,7.52],[9.543,8.16],[9.729,8.24],[10.031,8.56],[10.31,8.96],[11.471,10.0],[11.633,10.16],[11.877,10.4],[12.736,10.96],[13.166,11.36],[13.282,11.52],[13.607,11.76],[13.769,11.92],[14.663,12.8],[14.919,12.92],[15.035,13.04],[15.43,13.6],[16.126,13.84],[16.416,14.08],[16.951,14.48],[17.113,14.6],[17.218,14.72],[18.3,15.56]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

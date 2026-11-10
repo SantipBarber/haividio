@@ -4,42 +4,44 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
     #root .swap { display: grid; }
     #root .swap > * { grid-area: 1 / 1; }
-    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
-    #root .title { left: 120px; top: 136px; font-size: 96px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
-    #root .lab { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #a3a8b8; white-space: nowrap; }
+    #root .title { left: 120px; top: 160px; font-size: 96px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
+    #root .lab { font-family: "Geist Mono", monospace; font-size: 28px; color: #a3a8b8; white-space: nowrap; }
     #root .arrow { width: 56px; height: 32px; }
 
     /* Parte 1 · búsqueda híbrida */
-    #hy-query { left: 1020px; top: 150px; padding: 16px 28px; font-size: 32px; font-weight: 500; border-radius: 999px; white-space: nowrap; }
+    #hy-query { left: 1020px; top: 174px; padding: 16px 28px; font-size: 32px; font-weight: 500; border-radius: 999px; white-space: nowrap; }
     #root .row { width: 520px; height: 76px; padding: 0 22px; display: flex; align-items: center; gap: 16px; font-size: 29px; border-radius: 12px; white-space: nowrap; }
     #root .row i { width: 14px; height: 14px; border-radius: 50%; flex: none; }
     #root .row .c { font-family: "Geist Mono", monospace; }
-    #root .row .k { font-family: "Geist Mono", monospace; color: #8b90a0; width: 26px; flex: none; }
+    #root .row .k { font-family: "Geist Mono", monospace; color: #a3a8b8; width: 26px; flex: none; }
     #root .cy i { background: #5ce1e6; }
     #root .vi i { background: #a78bfa; }
     #hy-std { left: 1300px; top: 770px; font-size: 28px; color: #d4ff3a; padding: 8px 16px; border: 2px solid #d4ff3a; border-radius: 8px; white-space: nowrap; }
 
     /* Parte 2 · reranker */
-    #hy-pool { left: 120px; top: 380px; width: 520px; height: 380px; }
-    #hy-pool .chip { position: absolute; width: 76px; height: 60px; border-radius: 10px; background: #0f1116; border: 2px solid #232733; font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; display: flex; align-items: center; justify-content: center; }
-    #hy-funnel { left: 700px; top: 340px; width: 500px; height: 460px; }
-    #hy-flab { left: 760px; top: 534px; width: 380px; text-align: center; font-family: "Geist Mono", monospace; font-size: 34px; color: #d4ff3a; }
-    #hy-qtag { left: 800px; top: 290px; width: 300px; text-align: center; }
+    #hy-pool { left: 120px; top: 380px; width: 592px; height: 378px; }
+    #hy-pool .chip { position: absolute; width: 92px; height: 66px; border-radius: 10px; background: #0f1116; border: 2px solid #232733; font-family: "Geist Mono", monospace; font-size: 34px; color: #a3a8b8; display: flex; align-items: center; justify-content: center; }
+    #hy-funnel { left: 760px; top: 340px; width: 500px; height: 460px; }
+    #hy-flab { left: 820px; top: 534px; width: 380px; text-align: center; font-family: "Geist Mono", monospace; font-size: 34px; color: #d4ff3a; }
+    #hy-qtag { left: 860px; top: 290px; width: 300px; text-align: center; }
     #root .out { left: 1290px; width: 510px; height: 74px; padding: 0 22px; display: flex; align-items: center; gap: 18px; font-size: 29px; border-radius: 12px; white-space: nowrap; }
     #root .out .k { font-family: "Geist Mono", monospace; color: #d4ff3a; width: 28px; }
-    #root .out .c { font-family: "Geist Mono", monospace; color: #8b90a0; margin-left: auto; }
+    #root .out .c { font-family: "Geist Mono", monospace; color: #a3a8b8; margin-left: auto; }
     #hy-n30 { left: 120px; top: 300px; font-size: 56px; font-weight: 800; letter-spacing: -0.04em; white-space: nowrap; }
     #hy-n5 { left: 1290px; top: 300px; font-size: 56px; font-weight: 800; letter-spacing: -0.04em; color: #d4ff3a; white-space: nowrap; }
-    #hy-google { left: 120px; top: 790px; }
-    #hy-expert { left: 1290px; top: 802px; }
-    #hy-src { left: 1290px; top: 852px; }
+    #hy-google { left: 120px; top: 792px; font-size: 32px; }
+    #hy-expert { left: 1290px; top: 800px; font-size: 32px; }
+    #hy-src { right: 120px; top: 852px; font-size: 30px; color: #c4c8d4; }
+    /* La barra de arreglos de la raíz ocupa este hueco. */
+    #hy-kick { display: none; }
   </style>
 
   <div data-hf-id="hf-ka2d" id="root" data-composition-id="hybrid" data-width="1920" data-height="1080">
@@ -68,7 +70,7 @@
       <div data-hf-id="hf-tdfh" class="abs panel row cy" id="hy-m4" style="left: 1300px; top: 650px"><span data-hf-id="hf-mebk" class="k">4</span><i data-hf-id="hf-2krg"></i>el equipo no enciende</div>
       <div data-hf-id="hf-b75t" class="abs mono" id="hy-std">estándar en producción</div>
 
-      <div data-hf-id="hf-92c0" class="abs gloss" id="hy-g1" style="left: 1280px; top: 860px">
+      <div data-hf-id="hf-92c0" class="abs gloss" id="hy-g1" style="left: 1240px; top: 832px">
         <div data-hf-id="hf-46q8" class="t">BM25</div>
         <div data-hf-id="hf-l4u5" class="d">busca las palabras exactas</div>
       </div>
@@ -97,7 +99,7 @@
       <div data-hf-id="hf-88nc" class="abs lab" id="hy-expert" style="color:#f4f5f7">como un experto que filtra</div>
       <div data-hf-id="hf-471a" class="abs lab" id="hy-src">cifras · cookbook de Hugging Face</div>
 
-      <div data-hf-id="hf-si3p" class="abs gloss" id="hy-g2" style="left: 1280px; top: 860px">
+      <div data-hf-id="hf-si3p" class="abs gloss" id="hy-g2" style="left: 1240px; top: 832px">
         <div data-hf-id="hf-t5bo" class="t">reranker</div>
         <div data-hf-id="hf-h9em" class="d">relee y reordena los candidatos</div>
       </div>
@@ -118,7 +120,7 @@
         const el = document.createElement("div");
         el.className = "chip"; el.textContent = "#" + id;
         el.setAttribute("data-layout-ignore", "");
-        el.style.left = (i % 6) * 86 + "px"; el.style.top = Math.floor(i / 6) * 72 + "px";
+        el.style.left = (i % 6) * 100 + "px"; el.style.top = Math.floor(i / 6) * 78 + "px";
         pool.appendChild(el); chips.push(el);
         if (keep.includes(id)) kept.push(el);
       });
@@ -131,6 +133,9 @@
       tl.from("#hy-t1", { autoAlpha: 0, y: 40, duration: 0.8, ease: "expo.out" }, 2.5);
       // «Combinas la búsqueda por significado» (4.5–5.6)
       tl.from("#hy-query", { autoAlpha: 0, y: 24, duration: 0.6, ease: "expo.out" }, 4.4);
+      // Composición: las dos columnas empiezan centradas y se apartan cuando llega la fusión (16.3).
+      const cols = ["#hy-h1", "#hy-s1", "#hy-s2", "#hy-s3", "#hy-h2", "#hy-b1", "#hy-b2", "#hy-b3"];
+      tl.fromTo(cols, { x: 300 }, { x: 300, duration: 0.01 }, 4.4);
       tl.from("#hy-h1", { autoAlpha: 0, duration: 0.4 }, 5.5);
       tl.from(["#hy-s1", "#hy-s2", "#hy-s3"], { autoAlpha: 0, y: 30, duration: 0.5, ease: "expo.out", stagger: 0.15 }, 5.6);
       // «con la búsqueda clásica por palabras clave» (7.3–8.7)
@@ -144,6 +149,7 @@
       tl.to("#hy-b1", { borderColor: "#a78bfa", scale: 1.04, duration: 0.35, ease: "back.out(2)" }, 15.0);
       tl.to("#hy-b1", { scale: 1, duration: 0.3 }, 15.5);
       // «y fusionas los dos rankings» (16.4–17.6): las filas viajan a una sola lista.
+      tl.to(cols, { x: 0, duration: 0.6, ease: "power3.inOut" }, 16.3);
       tl.from("#hy-am", { autoAlpha: 0, x: -20, duration: 0.4, ease: "power2.out" }, 16.3);
       tl.from("#hy-h3", { autoAlpha: 0, duration: 0.4 }, 16.4);
       tl.from("#hy-m1", { autoAlpha: 0, x: -620, duration: 0.8, ease: "expo.out" }, 16.5);
@@ -173,7 +179,7 @@
       chips.forEach((c, i) => {
         const t = 28.9 + i * 0.075;
         tl.to(c, { borderColor: "#d4ff3a", color: "#f4f5f7", duration: 0.12 }, t);
-        if (!kept.includes(c)) tl.to(c, { borderColor: "#232733", color: "#8b90a0", opacity: 0.3, duration: 0.25 }, t + 0.2);
+        if (!kept.includes(c)) tl.to(c, { borderColor: "#232733", color: "#a3a8b8", opacity: 0.35, duration: 0.25 }, t + 0.2);
       });
       tl.from("#hy-qtag", { autoAlpha: 0, y: -14, duration: 0.5, ease: "power2.out" }, 30.6);
       tl.to("#hy-fpath", { attr: { "stroke-width": 6 }, duration: 0.25, yoyo: true, repeat: 3, ease: "sine.inOut" }, 30.0);
@@ -191,7 +197,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.348,0.418],[1.173,1.254],[1.277,1.382],[1.382,1.509],[1.474,1.637],[1.66,1.788],[2.659,2.519],[3.262,3.065],[4.528,3.68],[5.039,4.272],[5.132,4.377],[5.503,4.818],[5.642,5.016],[6.618,5.735],[6.815,5.898],[6.908,6.002],[7.314,6.42],[8.092,6.885],[8.313,7.07],[8.719,7.5],[9.485,8.034],[9.601,8.197],[9.729,8.348],[9.973,8.626],[10.066,8.731],[10.832,9.207],[12.841,10.403],[13.061,10.646],[13.479,11.088],[13.572,11.204],[14.687,11.865],[14.907,12.016],[15.139,12.26],[15.256,12.365],[16.231,12.875],[16.37,13.003],[17.078,13.537],[17.31,13.735],[17.589,14.036],[18.565,14.698],[19.133,15.093],[19.354,15.278],[19.459,15.383],[19.853,15.824],[19.946,15.917],[21.037,16.706],[21.479,17.066],[22.338,17.635],[22.57,17.833],[23.754,18.576],[24.265,19.075],[24.416,19.203],[25.24,19.679],[25.658,20.039],[26.216,20.561],[27.144,21.083],[27.295,21.258],[27.388,21.362],[27.794,21.722],[27.992,21.908],[28.909,22.546],[29.164,22.813],[29.501,23.115],[29.78,23.313],[29.931,23.394],[30.175,23.719],[30.523,24.079],[30.674,24.241],[31.556,24.857],[31.719,25.008],[31.87,25.135],[32.137,25.356],[32.288,25.495],[32.45,25.635],[32.764,25.89],[33.89,26.552],[34.087,26.749],[34.308,26.993],[34.621,27.364],[34.714,27.457],[35.109,27.817],[35.213,27.922],[35.956,28.363],[36.107,28.502],[36.258,28.618],[36.386,28.723],[37.117,29.21],[37.315,29.338],[37.709,29.733],[37.849,29.907],[39.62,31.44]];
+      const W = [[0.0,0.0],[0.348,0.36],[1.173,1.08],[1.277,1.2],[1.382,1.36],[1.474,1.52],[1.66,1.76],[2.659,2.64],[3.262,3.28],[4.528,4.4],[5.039,4.92],[5.132,5.04],[5.503,5.44],[5.642,5.64],[6.618,6.32],[6.815,6.52],[6.908,6.64],[7.314,7.04],[8.092,7.6],[8.313,7.76],[8.719,8.24],[9.485,8.84],[9.601,8.96],[9.729,9.12],[9.973,9.32],[10.066,9.44],[10.832,9.92],[12.841,11.6],[13.061,11.92],[13.479,12.44],[13.572,12.56],[14.687,13.44],[14.907,13.6],[15.139,14.0],[15.256,14.16],[16.231,15.0],[16.37,15.24],[17.078,15.68],[17.31,15.84],[17.589,16.16],[18.565,17.04],[19.133,17.44],[19.354,17.56],[19.459,17.68],[19.853,18.2],[19.946,18.32],[21.037,19.84],[21.479,20.24],[22.338,21.04],[22.57,21.2],[23.754,22.48],[24.265,23.16],[24.416,23.28],[25.24,23.92],[25.658,24.24],[26.216,24.8],[27.144,25.56],[27.295,25.64],[27.388,25.76],[27.794,26.16],[27.992,26.4],[28.909,26.96],[29.164,27.2],[29.501,27.6],[29.78,27.84],[29.931,28.04],[30.175,28.24],[30.523,28.507],[30.674,28.64],[31.556,29.28],[31.719,29.44],[31.87,29.64],[32.137,29.8],[32.288,29.92],[32.45,30.16],[32.764,30.48],[33.89,31.52],[34.087,31.68],[34.308,31.96],[34.621,32.24],[34.714,32.48],[35.109,32.68],[35.213,32.8],[35.956,33.24],[36.107,33.36],[36.258,33.48],[36.386,33.6],[37.117,34.16],[37.315,34.32],[37.709,34.72],[37.849,34.96],[39.62,36.46]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

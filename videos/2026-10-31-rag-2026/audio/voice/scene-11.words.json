@@ -1,133 +1,134 @@
 {
  "scene": "11",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
+ "model_id": "eleven_v4",
  "text": "El RAG no ha muerto, ha madurado. Si quieres que en el próximo vídeo montemos uno de estos paso a paso, dímelo en los comentarios.",
- "duration": 7.291,
+ "duration": 8.16,
  "words": [
   {
    "w": "El",
    "start": 0.0,
-   "end": 0.116
+   "end": 0.16
   },
   {
    "w": "RAG",
-   "start": 0.197,
-   "end": 0.418
+   "start": 0.24,
+   "end": 0.56
   },
   {
    "w": "no",
-   "start": 0.534,
-   "end": 0.639
-  },
-  {
-   "w": "ha",
-   "start": 0.673,
+   "start": 0.64,
    "end": 0.72
   },
   {
+   "w": "ha",
+   "start": 0.76,
+   "end": 0.8
+  },
+  {
    "w": "muerto,",
-   "start": 0.755,
-   "end": 1.207
+   "start": 0.88,
+   "end": 1.68
   },
   {
    "w": "ha",
-   "start": 1.265,
-   "end": 1.358
+   "start": 1.72,
+   "end": 1.76
   },
   {
    "w": "madurado.",
-   "start": 1.428,
-   "end": 1.985
+   "start": 1.84,
+   "end": 2.68
   },
   {
    "w": "Si",
-   "start": 2.229,
-   "end": 2.368
+   "start": 2.96,
+   "end": 3.04
   },
   {
    "w": "quieres",
-   "start": 2.415,
-   "end": 2.635
+   "start": 3.12,
+   "end": 3.36
   },
   {
    "w": "que",
-   "start": 2.682,
-   "end": 2.752
+   "start": 3.4,
+   "end": 3.44
   },
   {
    "w": "en",
-   "start": 2.775,
-   "end": 2.821
+   "start": 3.48,
+   "end": 3.52
   },
   {
    "w": "el",
-   "start": 2.879,
-   "end": 2.949
+   "start": 3.6,
+   "end": 3.68
   },
   {
    "w": "próximo",
-   "start": 3.007,
-   "end": 3.379
+   "start": 3.72,
+   "end": 4.08
   },
   {
    "w": "vídeo",
-   "start": 3.413,
-   "end": 3.762
+   "start": 4.16,
+   "end": 4.4
   },
   {
    "w": "montemos",
-   "start": 3.889,
-   "end": 4.319
+   "start": 4.52,
+   "end": 4.88
   },
   {
    "w": "uno",
-   "start": 4.389,
-   "end": 4.516
+   "start": 4.96,
+   "end": 5.04
   },
   {
    "w": "de",
-   "start": 4.563,
-   "end": 4.621
+   "start": 5.08,
+   "end": 5.12
   },
   {
    "w": "estos",
-   "start": 4.656,
-   "end": 4.899
+   "start": 5.2,
+   "end": 5.52
   },
   {
    "w": "paso",
-   "start": 4.957,
-   "end": 5.178
+   "start": 5.68,
+   "end": 5.92
   },
   {
    "w": "a",
-   "start": 5.213,
-   "end": 5.236
+   "start": 5.96,
+   "end": 6.0
   },
   {
    "w": "paso,",
-   "start": 5.283,
-   "end": 5.712
+   "start": 6.08,
+   "end": 6.64
   },
   {
    "w": "dímelo",
-   "start": 5.828,
-   "end": 6.153
+   "start": 6.72,
+   "end": 7.04
   },
   {
    "w": "en",
-   "start": 6.188,
-   "end": 6.235
+   "start": 7.08,
+   "end": 7.12
   },
   {
    "w": "los",
-   "start": 6.269,
-   "end": 6.374
+   "start": 7.16,
+   "end": 7.2
   },
   {
    "w": "comentarios.",
-   "start": 6.42,
-   "end": 7.291
+   "start": 7.28,
+   "end": 8.16
   }
  ]
 }

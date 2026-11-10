@@ -4,34 +4,40 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
     #root .arr { width: 34px; height: 24px; }
 
     #ag-kick { left: 120px; top: 84px; font-size: 28px; color: #d4ff3a; }
-    #ag-t1 { left: 120px; top: 162px; font-size: 60px; font-weight: 800; letter-spacing: -0.045em; color: #8b90a0; white-space: nowrap; }
+    #ag-t1 { left: 120px; top: 162px; font-size: 60px; font-weight: 800; letter-spacing: -0.045em; color: #a3a8b8; white-space: nowrap; }
     #ag-t2 { left: 120px; top: 425px; font-size: 72px; font-weight: 800; letter-spacing: -0.045em; white-space: nowrap; }
     #root .box { height: 80px; padding: 0 28px; display: flex; align-items: center; font-size: 32px; font-weight: 500; border-radius: 12px; white-space: nowrap; }
     #ag-search { background: #12160a; border-color: #d4ff3a; color: #d4ff3a; }
-    #root .help { left: 620px; width: 300px; height: 58px; padding: 0 20px; display: flex; align-items: center; gap: 14px; font-family: "Geist Mono", monospace; font-size: 28px; color: #5ce1e6; border: 2px solid #5ce1e6; border-radius: 999px; background: #0b1416; white-space: nowrap; }
+    #root .help { left: 620px; width: 350px; height: 58px; padding: 0 20px; display: flex; align-items: center; gap: 14px; font-family: "Geist Mono", monospace; font-size: 32px; color: #5ce1e6; border: 2px solid #5ce1e6; border-radius: 999px; background: #0b1416; white-space: nowrap; }
     #root .help i { width: 12px; height: 12px; border-radius: 50%; background: #5ce1e6; flex: none; }
-    #ag-loop { left: 460px; top: 676px; width: 640px; height: 124px; overflow: visible; }
-    #ag-again { left: 1096px; top: 722px; font-size: 28px; color: #d4ff3a; white-space: nowrap; }
-    #ag-in { left: 120px; top: 876px; font-size: 28px; color: #8b90a0; }
-    #root .src { top: 868px; height: 54px; padding: 0 18px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 28px; border-radius: 8px; white-space: nowrap; }
+    #ag-loop { left: 460px; top: 676px; width: 690px; height: 124px; overflow: visible; }
+    #ag-again { left: 1146px; top: 720px; font-size: 32px; color: #d4ff3a; white-space: nowrap; }
+    #ag-in { left: 120px; top: 875px; font-size: 32px; color: #a3a8b8; }
+    #root .src { top: 864px; height: 60px; padding: 0 18px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 32px; border-radius: 8px; white-space: nowrap; }
+    /* La barra de arreglos de la raíz ocupa este hueco. */
+    #ag-kick { display: none; }
+    /* Fase del becario: el grupo se presenta grande y centrado, y luego pasa a su sitio. */
+    #ag-g1 { position: absolute; inset: 0; }
   </style>
 
   <div data-hf-id="hf-lz1w" id="root" data-composition-id="agentic" data-width="1920" data-height="1080">
     <div data-hf-id="hf-k80m" class="abs mono" id="ag-kick">RAG agéntico</div>
 
     <!-- Clásico: el becario -->
+    <div id="ag-g1">
     <h2 data-hf-id="hf-i5g2" class="abs" id="ag-t1">Clásico: un <span data-hf-id="hf-q5h1" id="ag-t1b">becario</span></h2>
     <div data-hf-id="hf-3y6e" class="abs panel box" id="ag-c1" style="left: 120px; top: 250px">buscar una vez</div>
     <svg data-hf-id="hf-dm4a" class="abs arr" id="ag-ca" style="left: 426px; top: 278px" viewBox="0 0 34 24" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-gcnz" d="M2 12h28M20 3l10 9-10 9"/></svg>
     <div data-hf-id="hf-t00r" class="abs panel box" id="ag-c2" style="left: 477px; top: 250px">responder</div>
+    </div>
 
     <!-- Agéntico: el jefe de investigación -->
     <h2 data-hf-id="hf-4l2t" class="abs" id="ag-t2">Agéntico: un <span data-hf-id="hf-dcw5" id="ag-t2b">jefe de investigación</span></h2>
@@ -42,25 +48,25 @@
     <div data-hf-id="hf-igjf" class="abs help" id="ag-h1" style="top: 542px"><i data-hf-id="hf-wt6k"></i>ayudante 1 lee</div>
     <div data-hf-id="hf-o8la" class="abs help" id="ag-h2" style="top: 608px"><i data-hf-id="hf-zeb8"></i>ayudante 2 lee</div>
     <div data-hf-id="hf-3ftv" class="abs help" id="ag-h3" style="top: 674px"><i data-hf-id="hf-y7e5"></i>ayudante 3 lee</div>
-    <svg data-hf-id="hf-yqiv" class="abs arr" id="ag-a3" style="left: 937px; top: 625px" viewBox="0 0 34 24" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-8khx" d="M2 12h28M20 3l10 9-10 9"/></svg>
-    <div data-hf-id="hf-un7q" class="abs panel box" id="ag-enough" style="left: 988px; top: 597px">¿basta?</div>
-    <svg data-hf-id="hf-zjll" class="abs arr" id="ag-a4" style="left: 1184px; top: 625px" viewBox="0 0 34 24" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-bcn4" d="M2 12h28M20 3l10 9-10 9"/></svg>
-    <div data-hf-id="hf-yx5p" class="abs panel box" id="ag-ans" style="left: 1235px; top: 597px">responder</div>
+    <svg data-hf-id="hf-yqiv" class="abs arr" id="ag-a3" style="left: 987px; top: 625px" viewBox="0 0 34 24" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-8khx" d="M2 12h28M20 3l10 9-10 9"/></svg>
+    <div data-hf-id="hf-un7q" class="abs panel box" id="ag-enough" style="left: 1038px; top: 597px">¿basta?</div>
+    <svg data-hf-id="hf-zjll" class="abs arr" id="ag-a4" style="left: 1234px; top: 625px" viewBox="0 0 34 24" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-bcn4" d="M2 12h28M20 3l10 9-10 9"/></svg>
+    <div data-hf-id="hf-yx5p" class="abs panel box" id="ag-ans" style="left: 1285px; top: 597px">responder</div>
 
     <!-- La vuelta: «no: otra vez» -->
-    <svg data-hf-id="hf-lswz" class="abs" id="ag-loop" viewBox="0 0 640 124" fill="none" stroke="#d4ff3a" stroke-width="3">
-      <path data-hf-id="hf-cx0d" id="ag-loop-p" d="M617 8 V114 H10 V12" />
+    <svg data-hf-id="hf-lswz" class="abs" id="ag-loop" viewBox="0 0 690 124" fill="none" stroke="#d4ff3a" stroke-width="3">
+      <path data-hf-id="hf-cx0d" id="ag-loop-p" d="M667 8 V114 H10 V12" />
       <path data-hf-id="hf-4mwf" id="ag-loop-h" d="M-2 24 L10 8 L22 24" />
     </svg>
     <div data-hf-id="hf-7sc2" class="abs mono" id="ag-again">no: otra vez</div>
 
     <!-- Fuentes -->
     <div data-hf-id="hf-uxu4" class="abs mono" id="ag-in">busca en</div>
-    <div data-hf-id="hf-xalj" class="abs panel src" id="ag-s1" style="left: 268px">documentos</div>
-    <div data-hf-id="hf-chk0" class="abs panel src" id="ag-s2" style="left: 487px">SQL</div>
-    <div data-hf-id="hf-yzkr" class="abs panel src" id="ag-s3" style="left: 588px">web</div>
+    <div data-hf-id="hf-xalj" class="abs panel src" id="ag-s1" style="left: 290px">documentos</div>
+    <div data-hf-id="hf-chk0" class="abs panel src" id="ag-s2" style="left: 538px">SQL</div>
+    <div data-hf-id="hf-yzkr" class="abs panel src" id="ag-s3" style="left: 652px">web</div>
 
-    <div data-hf-id="hf-p01c" class="abs gloss" id="ag-gloss" style="left: 1280px; top: 850px">
+    <div data-hf-id="hf-p01c" class="abs gloss" id="ag-gloss" style="left: 1240px; top: 812px">
       <div data-hf-id="hf-7ln4" class="t">agente</div>
       <div data-hf-id="hf-z8fo" class="d">un modelo que decide qué hacer</div>
     </div>
@@ -72,7 +78,9 @@
     (() => {
       const tl = gsap.timeline({ paused: true });
       const loop = document.querySelector("#ag-loop-p");
-      const loopLen = 106 + 607 + 102;
+      const loopLen = 106 + 657 + 102;
+      // El becario empieza grande y centrado (escala 1,6 desde su esquina 120,162).
+      gsap.set("#ag-g1", { x: 383, y: 150, scale: 1.6, transformOrigin: "120px 162px" });
       gsap.set(loop, { attr: { "stroke-dasharray": loopLen, "stroke-dashoffset": loopLen } });
 
       // «Y el gran cambio…» (0.0): el antetítulo entra enseguida.
@@ -82,17 +90,19 @@
 
       // «El RAG clásico es como un becario» (4.75–6.85)
       tl.from("#ag-t1", { autoAlpha: 0, y: 30, duration: 0.7, ease: "expo.out" }, 4.8);
-      tl.fromTo("#ag-t1b", { color: "#8b90a0" }, { color: "#f4f5f7", duration: 0.3, yoyo: true, repeat: 1 }, 6.8);
+      tl.fromTo("#ag-t1b", { color: "#a3a8b8" }, { color: "#f4f5f7", duration: 0.3, yoyo: true, repeat: 1 }, 6.8);
       // «hace una búsqueda» (8.30) · «y contesta» (9.25)
       tl.from("#ag-c1", { autoAlpha: 0, x: -40, duration: 0.6, ease: "expo.out" }, 8.2);
       tl.from("#ag-ca", { autoAlpha: 0, x: -14, duration: 0.3, ease: "power2.out" }, 9.1);
       tl.from("#ag-c2", { autoAlpha: 0, x: -40, duration: 0.6, ease: "expo.out" }, 9.25);
       // Tras contestar, el becario se queda en segundo plano.
-      tl.to(["#ag-c1", "#ag-c2", "#ag-ca"], { opacity: 0.55, duration: 0.6 }, 11.3);
+      tl.to(["#ag-c1", "#ag-c2", "#ag-ca"], { opacity: 0.6, duration: 0.6 }, 11.3);
+      // «El agéntico…»: el becario se encoge a su sitio arriba a la izquierda (FLIP).
+      tl.to("#ag-g1", { x: 0, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 11.3);
 
       // «El agéntico se parece más a un jefe de investigación» (11.54–14.31)
       tl.from("#ag-t2", { autoAlpha: 0, y: 40, duration: 0.8, ease: "expo.out" }, 11.5);
-      tl.fromTo("#ag-t2b", { color: "#8b90a0" }, { color: "#f4f5f7", duration: 0.6, ease: "power2.out" }, 13.85);
+      tl.fromTo("#ag-t2b", { color: "#a3a8b8" }, { color: "#f4f5f7", duration: 0.6, ease: "power2.out" }, 13.85);
 
       // «Planifica» (15.91) · «busca» (17.14)
       tl.from("#ag-plan", { autoAlpha: 0, y: 30, duration: 0.6, ease: "expo.out" }, 15.8);
@@ -129,7 +139,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.139,0.139],[0.29,0.302],[0.569,0.592],[0.975,0.987],[1.103,1.115],[1.416,1.44],[1.602,1.614],[2.577,2.508],[2.844,2.786],[3.518,3.286],[4.748,4.818],[4.981,5.05],[5.248,5.387],[6.269,6.142],[6.502,6.397],[6.745,6.618],[6.85,6.734],[7.848,7.814],[8.139,8.069],[8.301,8.231],[9.091,8.789],[9.253,8.928],[9.787,9.451],[9.938,9.59],[10.043,9.706],[10.147,9.799],[11.54,11.215],[11.749,11.401],[12.736,11.889],[12.922,12.005],[13.27,12.365],[13.642,12.69],[13.746,12.771],[13.897,12.91],[14.211,13.247],[14.315,13.328],[15.906,14.768],[17.136,15.894],[18.181,16.939],[18.611,17.369],[18.761,17.52],[19.702,18.123],[20.062,18.425],[20.387,18.75],[20.956,19.331],[21.072,19.459],[21.281,19.679],[21.583,19.9],[21.641,19.969],[21.745,20.085],[22.477,20.852],[22.86,21.177],[23.069,21.363],[24.125,22.245],[24.474,22.628],[24.752,22.849],[25.008,23.092],[25.112,23.232],[25.878,23.952],[26.203,24.253],[26.807,24.834],[27.005,25.02],[28.096,25.949],[28.27,26.134],[28.433,26.308],[28.711,26.587],[28.827,26.703],[29.489,27.318],[29.652,27.481],[29.744,27.597],[29.872,27.736],[30.6,28.41]];
+      const W = [[0.0,0.0],[0.139,0.2],[0.29,0.32],[0.569,0.56],[0.975,0.92],[1.103,1.08],[1.416,1.36],[1.602,1.52],[2.577,2.4],[2.844,2.56],[3.518,2.96],[4.748,4.32],[4.981,4.44],[5.248,4.72],[6.269,5.36],[6.502,5.6],[6.745,5.76],[6.85,5.92],[7.848,6.76],[8.139,7.04],[8.301,7.16],[9.091,7.76],[9.253,7.96],[9.787,8.44],[9.938,8.56],[10.043,8.64],[10.147,8.8],[11.54,9.92],[11.749,10.08],[12.736,10.72],[12.922,10.88],[13.27,11.2],[13.642,11.4],[13.746,11.52],[13.897,11.64],[14.211,11.92],[14.315,12.0],[15.906,13.2],[17.136,14.28],[18.181,15.04],[18.611,15.44],[18.761,15.6],[19.702,16.2],[20.062,16.4],[20.387,16.72],[20.956,17.28],[21.072,17.44],[21.281,17.64],[21.583,17.8],[21.641,17.88],[21.745,18.0],[22.477,18.8],[22.86,19.12],[23.069,19.28],[24.125,20.08],[24.474,20.48],[24.752,20.68],[25.008,20.88],[25.112,21.04],[25.878,21.64],[26.203,21.92],[26.261,22.0],[26.807,22.8],[27.005,23.16],[28.096,23.8],[28.27,23.92],[28.433,24.2],[28.711,24.36],[28.827,24.64],[29.489,25.04],[29.652,25.16],[29.744,25.24],[29.872,25.36],[30.6,26.0]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

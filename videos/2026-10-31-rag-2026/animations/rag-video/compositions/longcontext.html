@@ -4,12 +4,12 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
-    #root .lbl { font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
+    #root .lbl { font-size: 32px; color: #a3a8b8; white-space: nowrap; }
     #root .layer { position: absolute; inset: 0; }
 
-    #lc-kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; }
+    #lc-kick { left: 120px; top: 84px; font-size: 32px; color: #a3a8b8; }
 
     /* Fase A: ventana de contexto frente a Claude Code */
     #lc-win { left: 120px; top: 170px; width: 900px; height: 480px; }
@@ -18,20 +18,20 @@
     #lc-pages i { position: absolute; width: 40px; height: 52px; border-radius: 4px; border: 2px solid #3a3f4d;
       background: #1a1d25 repeating-linear-gradient(180deg, transparent 0 9px, #3a3f4d 9px 11px); background-clip: padding-box; }
     #lc-count { left: 120px; top: 670px; font-size: 80px; font-weight: 800; letter-spacing: -0.04em; white-space: nowrap; }
-    #lc-count .u { color: #8b90a0; }
+    #lc-count .u { color: #a3a8b8; }
     #lc-said { left: 120px; top: 796px; }
     #lc-death { left: 120px; top: 836px; font-size: 64px; font-weight: 800; letter-spacing: -0.045em; color: #ff6b4a; white-space: nowrap; }
 
     #lc-term { left: 1080px; top: 170px; width: 720px; height: 480px; padding: 18px 28px; background: #0b0c10; }
-    #lc-term .lbl { margin-bottom: 26px; }
-    #lc-term .ln { font-family: "Geist Mono", monospace; font-size: 28px; line-height: 1.55; white-space: nowrap; }
-    #lc-term .ln .p { color: #8b90a0; }
+    #lc-term .lbl { margin-bottom: 22px; }
+    #lc-term .ln { font-family: "Geist Mono", monospace; font-size: 32px; line-height: 1.55; white-space: nowrap; }
+    #lc-term .ln .p { color: #a3a8b8; }
     #lc-term .hit { color: #5ce1e6; }
     #lc-term .dec { color: #d4ff3a; }
-    #lc-vec { left: 1080px; top: 680px; height: 58px; padding: 0 20px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; border-radius: 10px; white-space: nowrap; }
-    #lc-vec i { position: absolute; left: 12px; right: 12px; top: 27px; height: 3px; background: #ff6b4a; transform-origin: left center; }
+    #lc-vec { left: 1080px; top: 678px; height: 64px; padding: 0 20px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; border-radius: 10px; white-space: nowrap; }
+    #lc-vec i { position: absolute; left: 12px; right: 12px; top: 30px; height: 3px; background: #ff6b4a; transform-origin: left center; }
     #lc-tag { left: 1080px; top: 780px; font-size: 44px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.15; white-space: nowrap; }
-    #lc-tag2 { color: #8b90a0; }
+    #lc-tag2 { color: #a3a8b8; }
 
     /* Fase B: el remate */
     #lc-dead { left: 120px; top: 400px; font-size: 32px; color: #ff6b4a; }
@@ -43,11 +43,15 @@
     #root .track { left: 120px; width: 1680px; height: 72px; border-radius: 12px; overflow: hidden; }
     #lc-fill1 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #ff6b4a; transform-origin: left center; }
     #lc-fill2 { position: absolute; left: 0; top: 0; width: 6px; height: 100%; background: #d4ff3a; }
-    #lc-n1 { left: 120px; top: 392px; font-size: 56px; font-weight: 800; letter-spacing: -0.04em; color: #ff6b4a; white-space: nowrap; }
+    #lc-n1 { left: 120px; top: 388px; font-size: 80px; font-weight: 800; letter-spacing: -0.04em; color: #ff6b4a; white-space: nowrap; }
     #lc-n2 { left: 150px; top: 616px; font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #d4ff3a; white-space: nowrap; }
     #root .card { top: 720px; width: 170px; height: 104px; padding: 14px 18px; }
     #root .card b { display: block; height: 8px; margin-bottom: 9px; border-radius: 4px; background: #3a3f4d; }
-    #root .card span { font-family: "Geist Mono", monospace; font-size: 28px; color: #f4f5f7; }
+    #root .card span { font-family: "Geist Mono", monospace; font-size: 32px; color: #f4f5f7; }
+    /* Huecos fantasma: dónde aterrizarán la segunda barra y los cinco trozos. */
+    #root .ghost { border: 2px dashed #2c303c; background: transparent; }
+    #lc-g2 { left: 120px; top: 604px; width: 1680px; height: 72px; border-radius: 12px; }
+    #root .gcard { top: 720px; width: 170px; height: 104px; border-radius: 16px; }
   </style>
 
   <div data-hf-id="hf-f74k" id="root" data-composition-id="longcontext" data-width="1920" data-height="1080">
@@ -86,6 +90,10 @@
       <div data-hf-id="hf-9jcg" class="abs panel track" id="lc-t1" style="top: 300px"><div data-hf-id="hf-4uid" id="lc-fill1"></div></div>
       <div data-hf-id="hf-bouz" class="abs" id="lc-n1"><span data-hf-id="hf-d5ab" id="lc-n1v">0</span> tokens</div>
 
+      <div id="lc-ghosts">
+        <div class="abs ghost" id="lc-g2"></div>
+        <div class="abs ghost gcard" style="left: 120px"></div><div class="abs ghost gcard" style="left: 310px"></div><div class="abs ghost gcard" style="left: 500px"></div><div class="abs ghost gcard" style="left: 690px"></div><div class="abs ghost gcard" style="left: 880px"></div>
+      </div>
       <div data-hf-id="hf-iogk" class="abs mono lbl" id="lc-c2l" style="left: 120px; top: 560px">5 trozos buenos · ~512 tokens cada uno (aprox., cookbook de HF)</div>
       <div data-hf-id="hf-7km4" class="abs panel track" id="lc-t2" style="top: 604px"><div data-hf-id="hf-8sme" id="lc-fill2"></div></div>
       <div data-hf-id="hf-v0d7" class="abs" id="lc-n2">~2.500 tokens</div>
@@ -161,12 +169,13 @@
       tl.from("#lc-r1", { autoAlpha: 0, y: 50, duration: 0.8, ease: "expo.out" }, 29.85);
       tl.from("#lc-r2", { autoAlpha: 0, y: 50, duration: 0.8, ease: "expo.out" }, 31.55);
       tl.to("#lc-strike", { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 32.4);
-      tl.to("#lc-r2", { color: "#8b90a0", duration: 0.4 }, 32.6);
+      tl.to("#lc-r2", { color: "#a3a8b8", duration: 0.4 }, 32.6);
 
       // «Y meter un millón de tokens en cada pregunta» (33.66–35.77)
       tl.to("#lc-b", { autoAlpha: 0, duration: 0.35, ease: "power2.in" }, 33.4);
       tl.to("#lc-c", { autoAlpha: 1, duration: 0.01 }, 33.75);
       tl.from(["#lc-c1l", "#lc-t1", "#lc-n1"], { autoAlpha: 0, y: 20, duration: 0.5, ease: "power2.out", stagger: 0.1 }, 33.75);
+      tl.from("#lc-ghosts", { autoAlpha: 0, duration: 0.6, ease: "power2.out" }, 33.75);
       tl.to("#lc-fill1", { scaleX: 1, duration: 1.6, ease: "power2.inOut" }, 34.0);
       const m = { v: 0 };
       tl.to(m, { v: 1000000, duration: 1.6, ease: "power2.inOut", onUpdate: () => { document.querySelector("#lc-n1v").textContent = fmt(m.v); } }, 34.0);
@@ -181,7 +190,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.534,0.476],[0.65,0.569],[1.823,1.207],[2.635,1.486],[2.856,1.649],[3.379,2.125],[3.611,2.334],[3.704,2.438],[4.052,2.763],[4.168,2.868],[4.586,3.239],[4.69,3.355],[6.026,4.017],[6.153,4.145],[6.339,4.307],[6.792,4.656],[6.896,4.748],[7.814,5.433],[8.127,5.817],[8.429,6.153],[9.276,6.687],[9.485,6.885],[9.613,6.978],[9.938,7.279],[10.124,7.454],[10.437,7.755],[10.553,7.872],[10.89,8.208],[12.307,8.812],[12.922,9.404],[13.084,9.543],[13.537,9.95],[13.723,10.101],[14.222,10.519],[14.327,10.612],[15.29,11.146],[15.65,11.505],[16.73,12.109],[16.892,12.26],[17.508,12.689],[17.717,12.829],[18.936,13.154],[19.342,13.432],[19.516,13.537],[19.644,13.653],[19.76,13.769],[19.888,13.92],[20.224,14.292],[20.886,14.791],[21.176,15.058],[21.594,15.441],[21.78,15.673],[22.767,16.172],[23.034,16.405],[24.149,16.985],[24.543,17.357],[25.124,17.844],[26.633,18.552],[27.063,18.947],[27.19,19.063],[28.409,19.795],[28.584,19.981],[28.711,20.073],[28.792,20.166],[29.605,20.863],[29.849,21.083],[29.965,21.211],[30.255,21.478],[30.371,21.583],[30.731,21.943],[31.66,22.535],[31.997,22.813],[32.38,23.104],[33.657,23.916],[33.808,24.079],[34.18,24.392],[34.272,24.474],[34.621,24.81],[34.737,24.95],[35.283,25.403],[35.503,25.531],[35.77,25.786],[36.862,26.541],[37.245,26.901],[37.79,27.353],[38.371,27.969],[39.009,28.317],[39.207,28.479],[40.194,29.083],[40.658,29.455],[41.088,29.838],[42.59,31.21]];
+      const W = [[0.0,0.0],[0.534,0.52],[0.65,0.64],[1.823,1.76],[2.635,2.16],[2.856,2.4],[3.379,2.92],[3.611,3.12],[3.704,3.28],[4.052,3.64],[4.168,3.76],[4.586,4.12],[4.69,4.24],[6.026,5.24],[6.153,5.36],[6.339,5.6],[6.792,5.88],[6.896,6.08],[7.814,6.64],[8.127,6.96],[8.429,7.28],[9.276,7.84],[9.485,8.0],[9.613,8.16],[9.938,8.48],[10.124,8.68],[10.437,8.88],[10.553,8.96],[10.89,9.28],[12.307,10.32],[12.922,10.84],[13.084,11.04],[13.537,11.44],[13.723,11.6],[14.222,12.04],[14.327,12.16],[15.29,12.96],[15.65,13.32],[16.73,13.92],[16.892,14.08],[17.508,14.48],[17.717,14.72],[18.936,15.52],[19.342,15.72],[19.516,15.84],[19.644,15.92],[19.76,16.04],[19.888,16.16],[20.224,16.44],[20.886,16.96],[21.176,17.2],[21.594,17.6],[21.78,17.76],[22.767,18.533],[23.034,18.68],[24.149,19.52],[24.543,19.92],[25.124,20.56],[26.633,21.2],[27.063,21.6],[27.19,21.68],[28.409,22.72],[28.584,22.84],[28.711,22.96],[28.792,23.04],[29.605,23.6],[29.849,23.8],[29.965,23.92],[30.255,24.16],[30.371,24.4],[30.731,24.72],[31.66,25.12],[31.997,25.36],[32.38,25.64],[33.657,26.64],[33.808,26.88],[34.18,27.2],[34.272,27.36],[34.621,27.68],[34.737,27.76],[35.283,28.24],[35.503,28.4],[35.77,28.64],[36.862,29.28],[37.245,29.64],[37.79,30.08],[38.371,30.8],[39.009,31.12],[39.207,31.28],[40.194,31.92],[40.658,32.24],[41.088,32.6],[42.59,33.98]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

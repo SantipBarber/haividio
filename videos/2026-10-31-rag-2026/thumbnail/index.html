@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, height=720" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Geist"; src: url("assets/fonts/geist-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Geist"; src: url("assets/fonts/geist-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      @font-face { font-family: "Geist Mono"; src: url("assets/fonts/geist-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1280px; height: 720px; overflow: hidden; background: #07080b; }
+      #root { position: relative; width: 1280px; height: 720px; font-family: "Geist", sans-serif; color: #f4f5f7;
+        background-image: radial-gradient(#1c2029 1.5px, transparent 1.5px); background-size: 32px 32px; }
+      .v { position: absolute; inset: 0; }
+      /* Miniatura: titular a la izquierda, la receta clásica tachada a la derecha */
+      #a .hl { position: absolute; left: 64px; top: 92px; font-size: 168px; font-weight: 800; letter-spacing: -0.055em; line-height: 0.92; }
+      #a .dead { color: #ff6b4a; }
+      #a .pipe { position: absolute; left: 770px; top: 150px; display: flex; flex-direction: column; gap: 22px; }
+      #a .box { width: 430px; padding: 24px 30px; background: #0f1116; border: 3px solid #2c303c; border-radius: 18px;
+        font-family: "Geist Mono", monospace; font-size: 40px; font-weight: 500; color: #a3a8b8; }
+      #a .box b { color: #f4f5f7; font-weight: 500; margin-right: 18px; }
+      #a .x { position: absolute; left: 655px; top: 388px; width: 660px; height: 16px; background: #ff6b4a; border-radius: 7px; transform: rotate(-40deg); }
+      #a .tag { position: absolute; left: 64px; bottom: 70px; font-size: 64px; font-weight: 800; letter-spacing: -0.04em; color: #d4ff3a; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1280" data-height="720">
+      <div id="a" class="v clip" data-start="0" data-duration="1" data-track-index="1">
+        <div class="hl">¿RAG<br /><span class="dead">muerto?</span></div>
+        <div class="pipe">
+          <div class="box"><b>01</b>Trocear</div>
+          <div class="box"><b>02</b>Vectorizar</div>
+          <div class="box"><b>03</b>Buscar</div>
+          <div class="box"><b>04</b>Generar</div>
+        </div>
+        <i class="x"></i>
+        <div class="tag">Ha cambiado.</div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = { main: tl };
+    </script>
+  </body>
+</html>

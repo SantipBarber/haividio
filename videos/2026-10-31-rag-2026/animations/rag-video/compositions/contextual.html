@@ -4,27 +4,27 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
-    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
-    #root .lab { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
+    #root .kick { left: 120px; top: 84px; font-size: 28px; color: #a3a8b8; white-space: nowrap; }
+    #root .lab { font-family: "Geist Mono", monospace; font-size: 30px; color: #a3a8b8; white-space: nowrap; }
 
-    #cx-title { left: 120px; top: 136px; font-size: 96px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
+    #cx-title { left: 120px; top: 160px; font-size: 96px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; white-space: nowrap; }
 
     /* El trozo y su etiqueta de contexto */
-    #cx-model { left: 120px; top: 270px; }
-    #cx-tag { left: 120px; top: 318px; width: 820px; height: 62px; padding: 0 22px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; background: #10140a; border: 2px solid #d4ff3a; border-radius: 12px 12px 0 0; white-space: nowrap; }
+    #cx-model { left: 120px; top: 290px; }
+    #cx-tag { left: 120px; top: 338px; width: 820px; height: 62px; padding: 0 22px; display: flex; align-items: center; font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; background: #10140a; border: 2px solid #d4ff3a; border-radius: 12px 12px 0 0; white-space: nowrap; }
     #cx-caret { display: inline-block; width: 3px; height: 32px; margin-left: 4px; background: #d4ff3a; }
-    #cx-frag { left: 120px; top: 378px; width: 820px; padding: 30px 36px; border-color: #ff6b4a; }
-    #cx-frag .lbl { font-size: 28px; color: #8b90a0; margin-bottom: 12px; }
+    #cx-frag { left: 120px; top: 398px; width: 820px; padding: 30px 36px; border-color: #ff6b4a; }
+    #cx-frag .lbl { font-size: 28px; color: #a3a8b8; margin-bottom: 12px; }
     #cx-frag p { white-space: nowrap; font-size: 46px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
     #root .q { font-family: "Geist Mono", monospace; font-size: 30px; color: #ff6b4a; white-space: nowrap; }
 
     /* Cifras de Anthropic */
-    #cx-dh { left: 1000px; top: 270px; }
+    #cx-dh { left: 1000px; top: 290px; }
     #cx-dh b { color: #f4f5f7; font-weight: 500; }
     #root .brow { left: 1000px; width: 800px; }
-    #root .brow .l { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; margin-bottom: 10px; white-space: nowrap; }
+    #root .brow .l { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; margin-bottom: 10px; white-space: nowrap; }
     #root .brow .b { position: absolute; left: 0; top: 50px; height: 44px; border-radius: 6px; background: #ff6b4a; transform-origin: left center; }
     #root .brow .v { position: absolute; top: 46px; font-size: 44px; font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; line-height: 52px; }
     #root .brow .v em { font-style: normal; color: #d4ff3a; margin-left: 16px; }
@@ -33,10 +33,12 @@
     #cx-late { left: 120px; top: 790px; display: flex; align-items: center; gap: 22px; white-space: nowrap; }
     #cx-late .chip { font-family: "Geist Mono", monospace; font-size: 32px; color: #5ce1e6; padding: 8px 18px; border: 2px solid #5ce1e6; border-radius: 10px; }
     #cx-late .t { font-size: 36px; font-weight: 500; }
-    #cx-late .m { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; }
+    #cx-late .m { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; }
     #cx-doc { left: 120px; top: 880px; width: 900px; height: 40px; }
     #cx-doc i { position: absolute; top: 0; height: 40px; width: 146px; background: #1a1d26; border: 2px solid #232733; }
     #cx-glow { left: 120px; top: 880px; width: 900px; height: 40px; background: rgba(92,225,230,0.35); border-radius: 4px; transform-origin: left center; }
+    /* La barra de arreglos de la raíz ocupa este hueco. */
+    #cx-kick { display: none; }
   </style>
 
   <div data-hf-id="hf-8udk" id="root" data-composition-id="contextual" data-width="1920" data-height="1080">
@@ -49,13 +51,13 @@
       <div data-hf-id="hf-c6b3" class="lbl mono">fragmento 214</div>
       <p data-hf-id="hf-2r62">«Los ingresos crecieron un 3 %…»</p>
     </div>
-    <div data-hf-id="hf-hmn4" class="abs q" id="cx-q1" style="left: 156px; top: 620px">¿qué empresa?</div>
-    <div data-hf-id="hf-lp96" class="abs q" id="cx-q2" style="left: 450px; top: 620px">¿qué trimestre?</div>
+    <div data-hf-id="hf-hmn4" class="abs q" id="cx-q1" style="left: 156px; top: 640px">¿qué empresa?</div>
+    <div data-hf-id="hf-lp96" class="abs q" id="cx-q2" style="left: 450px; top: 640px">¿qué trimestre?</div>
 
     <div data-hf-id="hf-v0wx" class="abs lab" id="cx-dh"><b data-hf-id="hf-fmd1">fallos de recuperación</b> · top-20 · Anthropic</div>
-    <div data-hf-id="hf-5qho" class="abs brow" id="cx-r1" style="top: 330px"><div data-hf-id="hf-wu00" class="l">búsqueda normal</div><i data-hf-id="hf-25ii" class="b" id="cx-b1" style="width: 560px"></i><div data-hf-id="hf-ttwt" class="v" style="left: 580px">5,7 %</div></div>
-    <div data-hf-id="hf-9bfq" class="abs brow" id="cx-r2" style="top: 470px"><div data-hf-id="hf-bfnu" class="l">+ contexto + búsqueda híbrida</div><i data-hf-id="hf-4tdb" class="b" id="cx-b2" style="width: 285px"></i><div data-hf-id="hf-1mg7" class="v" style="left: 305px">2,9 %<em data-hf-id="hf-2yn3" id="cx-e49">−<span data-hf-id="hf-1nj1" id="cx-n49">0</span> %</em></div></div>
-    <div data-hf-id="hf-ya0p" class="abs brow" id="cx-r3" style="top: 610px"><div data-hf-id="hf-ly0v" class="l">+ reranker</div><i data-hf-id="hf-k8z5" class="b" id="cx-b3" style="width: 187px"></i><div data-hf-id="hf-41lr" class="v" style="left: 207px">1,9 %<em data-hf-id="hf-5j03" id="cx-e67">−<span data-hf-id="hf-q5od" id="cx-n67">0</span> %</em></div></div>
+    <div data-hf-id="hf-5qho" class="abs brow" id="cx-r1" style="top: 350px"><div data-hf-id="hf-wu00" class="l">búsqueda normal</div><i data-hf-id="hf-25ii" class="b" id="cx-b1" style="width: 560px"></i><div data-hf-id="hf-ttwt" class="v" style="left: 580px">5,7 %</div></div>
+    <div data-hf-id="hf-9bfq" class="abs brow" id="cx-r2" style="top: 490px"><div data-hf-id="hf-bfnu" class="l">+ contexto + búsqueda híbrida</div><i data-hf-id="hf-4tdb" class="b" id="cx-b2" style="width: 285px"></i><div data-hf-id="hf-1mg7" class="v" style="left: 305px">2,9 %<em data-hf-id="hf-2yn3" id="cx-e49">−<span data-hf-id="hf-1nj1" id="cx-n49">0</span> %</em></div></div>
+    <div data-hf-id="hf-ya0p" class="abs brow" id="cx-r3" style="top: 630px"><div data-hf-id="hf-ly0v" class="l">+ reranker</div><i data-hf-id="hf-k8z5" class="b" id="cx-b3" style="width: 187px; background: #d4ff3a"></i><div data-hf-id="hf-41lr" class="v" style="left: 207px">1,9 %<em data-hf-id="hf-5j03" id="cx-e67">−<span data-hf-id="hf-q5od" id="cx-n67">0</span> %</em></div></div>
 
     <div data-hf-id="hf-p5yg" class="abs" id="cx-late"><span data-hf-id="hf-2g97" class="m" id="cx-l1">más barato:</span><span data-hf-id="hf-meqe" class="chip" id="cx-l2">late chunking</span><span data-hf-id="hf-cfzu" class="t" id="cx-l3">vectores viendo el documento entero</span></div>
     <div data-hf-id="hf-zjym" class="abs" id="cx-doc"></div>
@@ -99,7 +101,7 @@
       tl.to(p, { n: label.length, duration: 3.6, ease: "none", onUpdate: () => { typed.textContent = label.slice(0, Math.round(p.n)); } }, 11.8);
       tl.to("#cx-caret", { opacity: 0, duration: 0.3 }, 15.5);
       // Las preguntas quedan contestadas.
-      tl.to(["#cx-q1", "#cx-q2"], { color: "#8b90a0", opacity: 0.5, duration: 0.5, stagger: 0.15 }, 15.6);
+      tl.to(["#cx-q1", "#cx-q2"], { color: "#a3a8b8", opacity: 0.6, duration: 0.5, stagger: 0.15 }, 15.6);
       // «Parece poca cosa» (16.9)
       tl.from("#cx-cap", { autoAlpha: 0, y: 14, duration: 0.5, ease: "power2.out" }, 16.9);
 
@@ -112,7 +114,6 @@
       tl.from("#cx-r2 .l", { autoAlpha: 0, duration: 0.4 }, 20.6);
       tl.from("#cx-b2", { scaleX: 0, duration: 0.9, ease: "power3.out" }, 22.6);
       tl.from("#cx-r2 .v", { autoAlpha: 0, x: -20, duration: 0.4, ease: "power2.out" }, 23.2);
-      tl.to("#cx-b1", { opacity: 0.4, duration: 0.5 }, 23.0);
       // «un 49 %» (25.3)
       tl.from("#cx-e49", { autoAlpha: 0, duration: 0.2 }, 25.1);
       const a = { v: 0 }, n49 = document.querySelector("#cx-n49");
@@ -121,7 +122,7 @@
       tl.from("#cx-r3 .l", { autoAlpha: 0, duration: 0.4 }, 27.3);
       tl.from("#cx-b3", { scaleX: 0, duration: 0.8, ease: "power3.out" }, 27.6);
       tl.from("#cx-r3 .v", { autoAlpha: 0, x: -20, duration: 0.4, ease: "power2.out" }, 28.2);
-      tl.to("#cx-b2", { opacity: 0.4, duration: 0.5 }, 28.4);
+      tl.to("#cx-b2", { opacity: 0.6, duration: 0.5 }, 28.4);
       tl.from("#cx-e67", { autoAlpha: 0, duration: 0.2 }, 28.6);
       const b = { v: 0 }, n67 = document.querySelector("#cx-n67");
       tl.to(b, { v: 67, duration: 0.9, ease: "power2.out", onUpdate: () => { n67.textContent = Math.round(b.v); } }, 28.6);
@@ -140,7 +141,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.58,0.499],[1.66,1.126],[1.927,1.347],[2.101,1.509],[2.508,1.916],[3.634,2.821],[4.4,3.39],[5.921,5.016],[6.258,5.433],[6.351,5.515],[7.314,6.351],[7.465,6.467],[8.231,6.792],[8.766,7.163],[8.951,7.326],[9.601,7.883],[9.787,8.057],[10.275,8.499],[10.6,8.742],[11.656,9.358],[12.109,9.845],[12.307,9.938],[12.492,10.089],[12.98,10.495],[13.096,10.635],[13.468,10.937],[13.677,11.099],[14.118,11.459],[15.012,12.249],[15.221,12.457],[16.939,14.153],[17.345,14.547],[17.612,14.791],[18.611,15.302],[18.843,15.545],[19.69,16.068],[20.19,16.497],[20.329,16.846],[20.991,17.426],[21.176,17.566],[21.641,17.96],[22.616,18.529],[23.022,18.901],[23.231,19.098],[23.673,19.423],[23.812,19.551],[25.066,20.306],[25.321,20.503],[26.146,21.188],[27.121,21.71],[27.295,21.884],[27.504,22.175],[28.526,22.895],[28.723,23.045],[29.582,23.73],[30.673,24.299],[30.917,24.532],[31.091,24.648],[31.846,25.182],[32.032,25.344],[32.937,25.82],[33.216,26.029],[33.506,26.308],[34.412,26.923],[34.574,27.086],[34.911,27.411],[35.074,27.585],[35.55,28.038],[35.84,28.293],[35.956,28.386],[36.49,28.862],[37.175,29.292],[37.651,29.64],[37.755,29.744],[39.48,31.3]];
+      const W = [[0.0,0.0],[0.58,0.4],[1.66,1.28],[1.927,1.44],[2.101,1.6],[2.508,1.96],[3.634,3.04],[4.4,4.0],[5.921,5.12],[6.258,5.44],[6.351,5.707],[7.314,6.36],[7.465,6.48],[8.231,6.88],[8.766,7.28],[8.951,7.44],[9.601,7.84],[9.787,8.04],[10.275,8.36],[10.6,8.68],[11.656,9.76],[12.109,10.16],[12.307,10.4],[12.492,10.64],[12.98,10.96],[13.096,11.16],[13.468,11.52],[13.677,11.68],[14.118,12.08],[15.012,12.68],[15.221,12.8],[16.939,14.48],[17.345,14.8],[17.612,15.04],[18.611,15.64],[18.843,15.88],[19.69,16.4],[20.19,16.8],[20.329,17.32],[20.991,17.84],[21.176,17.96],[21.641,18.4],[22.616,19.04],[23.022,19.52],[23.231,19.68],[23.673,19.96],[23.812,20.08],[25.066,20.88],[25.321,21.12],[26.146,21.6],[27.121,22.92],[27.295,23.04],[27.504,23.2],[28.526,24.0],[28.723,24.16],[29.582,24.64],[30.673,26.24],[30.917,26.36],[31.091,26.48],[31.846,27.08],[32.032,27.28],[32.937,28.0],[33.216,28.16],[33.506,28.56],[34.412,29.28],[34.574,29.48],[34.911,29.76],[35.074,29.96],[35.55,30.4],[35.84,30.68],[35.956,30.96],[36.49,31.28],[37.175,31.92],[37.651,32.12],[37.755,32.24],[39.48,33.74]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

@@ -4,26 +4,26 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
     #e-title { left: 120px; top: 190px; font-size: 96px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; }
     #e-frag { left: 120px; top: 440px; width: 520px; padding: 22px 28px; }
-    #e-frag .lbl { font-size: 28px; color: #8b90a0; margin-bottom: 10px; }
-    #e-frag p { font-size: 30px; line-height: 1.3; }
+    #e-frag .lbl { font-size: 32px; color: #a3a8b8; margin-bottom: 10px; }
+    #e-frag p { font-size: 32px; line-height: 1.3; }
     #root .arrow { width: 56px; height: 32px; }
     #e-grid { left: 745px; top: 440px; width: 576px; height: 216px; }
     #e-grid i { position: absolute; width: 14px; height: 14px; border-radius: 2px; }
     #e-384 { left: 745px; top: 676px; font-size: 64px; font-weight: 800; letter-spacing: -0.04em; color: #d4ff3a; white-space: nowrap; }
-    #e-nums { left: 745px; top: 752px; font-size: 30px; color: #8b90a0; white-space: nowrap; }
-    #e-plot { left: 1410px; top: 400px; width: 400px; height: 400px; overflow: hidden; }
+    #e-nums { left: 745px; top: 752px; font-size: 32px; color: #a3a8b8; white-space: nowrap; }
+    #e-plot { left: 1400px; top: 400px; width: 400px; height: 400px; overflow: hidden; }
     #e-plot .dot { position: absolute; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; }
-    #e-plot .lab { position: absolute; font-family: "Geist Mono", monospace; font-size: 28px; white-space: nowrap; }
+    #e-plot .lab { position: absolute; font-family: "Geist Mono", monospace; font-size: 32px; white-space: nowrap; }
     #e-new { width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: #5ce1e6; border: 3px solid #d4ff3a; z-index: 5; }
-    #e-near { left: 1410px; top: 822px; font-size: 28px; color: #8b90a0; white-space: nowrap; }
+    #e-near { right: 120px; top: 822px; font-size: 32px; color: #a3a8b8; white-space: nowrap; text-align: right; }
   </style>
 
   <div data-hf-id="hf-03xs" id="root" data-composition-id="embed" data-width="1920" data-height="1080">
@@ -43,13 +43,13 @@
     <div data-hf-id="hf-9h3v" class="abs panel" id="e-plot">
       <div data-hf-id="hf-0fev" id="e-dots"></div>
       <div data-hf-id="hf-z8ar" class="lab" id="e-la" style="left: 22px; top: 24px; color: #5ce1e6">devoluciones</div>
-      <div data-hf-id="hf-dg91" class="lab" id="e-lb" style="left: 196px; top: 200px; color: #a78bfa">facturación</div>
+      <div data-hf-id="hf-dg91" class="lab" id="e-lb" style="left: 172px; top: 200px; color: #a78bfa">facturación</div>
       <div data-hf-id="hf-w1mm" class="lab" id="e-lc" style="left: 150px; top: 344px; color: #ff6b4a">envíos</div>
       <div data-hf-id="hf-azo2" class="abs" id="e-new"></div>
     </div>
     <div data-hf-id="hf-88lm" class="abs mono" id="e-near">junto a los de su tema</div>
 
-    <div data-hf-id="hf-k3jd" class="abs gloss" id="e-gloss" style="left: 120px; top: 830px">
+    <div data-hf-id="hf-k3jd" class="abs gloss" id="e-gloss" style="left: 1240px; top: 196px">
       <div data-hf-id="hf-rah7" class="t">vector</div>
       <div data-hf-id="hf-eepn" class="d">números que resumen un texto</div>
     </div>
@@ -103,7 +103,7 @@
       tl.from("#e-a1", { autoAlpha: 0, x: -20, duration: 0.4, ease: "power2.out" }, 2.6);
       tl.from(cells, { autoAlpha: 0, scale: 0, duration: 0.25, ease: "power2.out", stagger: { each: 0.006, from: "start" } }, 2.8);
       // «Un vector es…» (4.0)
-      tl.from("#e-gloss", { autoAlpha: 0, x: -40, duration: 0.6, ease: "expo.out" }, 4.0);
+      tl.from("#e-gloss", { autoAlpha: 0, x: 40, duration: 0.6, ease: "expo.out" }, 4.0);
       // «lista de números» (5.5) · «cientos de ellos» (6.5)
       tl.from("#e-nums", { autoAlpha: 0, y: 12, duration: 0.5, ease: "power2.out" }, 5.5);
       tl.from("#e-384", { autoAlpha: 0, y: 24, duration: 0.6, ease: "expo.out" }, 6.5);
@@ -124,7 +124,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.868,0.994],[1.484,1.551],[1.739,1.783],[2.331,2.375],[2.563,2.596],[2.703,2.677],[3.782,3.42],[4.015,3.583],[4.769,3.942],[4.978,4.059],[5.129,4.21],[5.431,4.488],[5.535,4.581],[6.534,5.208],[7.126,5.742],[7.277,5.87],[8.113,6.311],[8.275,6.462],[8.984,6.984],[9.181,7.147],[9.367,7.286],[9.634,7.507],[9.796,7.623],[10.969,8.157],[11.131,8.273],[11.375,8.47],[11.712,8.726],[12.153,9.109],[12.35,9.295],[13.465,9.875],[13.616,9.956],[14.672,10.595],[14.893,10.792],[15.009,10.92],[15.195,11.094],[15.636,11.489],[15.775,11.582],[16.089,11.826],[16.193,11.919],[16.31,12.035],[17.053,12.557],[17.587,13.01],[19.13,14.35]];
+      const W = [[0.0,0.0],[0.868,1.24],[1.484,1.8],[1.739,2.12],[2.331,2.6],[2.563,2.72],[2.703,2.84],[3.782,3.96],[4.015,4.24],[4.769,4.6],[4.978,4.76],[5.129,4.92],[5.431,5.2],[5.535,5.32],[6.534,6.2],[7.126,6.52],[7.277,6.68],[8.113,7.2],[8.275,7.48],[8.984,7.8],[9.181,7.96],[9.367,8.12],[9.634,8.32],[9.796,8.44],[10.969,9.4],[11.131,9.507],[11.375,9.64],[11.712,9.96],[12.153,10.36],[12.35,10.48],[13.465,11.2],[13.616,11.4],[14.672,12.04],[14.893,12.16],[15.009,12.28],[15.195,12.44],[15.636,12.88],[15.775,13.0],[16.089,13.24],[16.193,13.32],[16.31,13.44],[17.053,13.88],[17.587,14.4],[19.13,15.62]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

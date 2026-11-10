@@ -1,468 +1,469 @@
 {
  "scene": "9",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
+ "model_id": "eleven_v4",
  "text": "Volvamos al principio. Hoy hay modelos con un millón de tokens de contexto, y los agentes de programación como Claude Code ya no usan una base de datos vectorial: exploran el código con búsquedas de texto, abren archivos y deciden qué leer. Eso es lo que la gente llama 'la muerte del RAG'. Pero fíjate: siguen recuperando información antes de responder. Lo que ha muerto es la base de datos vectorial como paso obligatorio. Y meter un millón de tokens en cada pregunta sigue costando muchísimo más que recuperar cinco trozos buenos.",
- "duration": 30.511,
+ "duration": 33.28,
  "words": [
   {
    "w": "Volvamos",
    "start": 0.0,
-   "end": 0.418
+   "end": 0.48
   },
   {
    "w": "al",
-   "start": 0.476,
-   "end": 0.534
+   "start": 0.52,
+   "end": 0.56
   },
   {
    "w": "principio.",
-   "start": 0.569,
-   "end": 1.184
+   "start": 0.64,
+   "end": 1.2
   },
   {
    "w": "Hoy",
-   "start": 1.207,
-   "end": 1.451
+   "start": 1.76,
+   "end": 2.0
   },
   {
    "w": "hay",
-   "start": 1.486,
-   "end": 1.591
+   "start": 2.16,
+   "end": 2.32
   },
   {
    "w": "modelos",
-   "start": 1.649,
-   "end": 2.055
+   "start": 2.4,
+   "end": 2.8
   },
   {
    "w": "con",
-   "start": 2.125,
-   "end": 2.252
+   "start": 2.92,
+   "end": 3.04
   },
   {
    "w": "un",
-   "start": 2.334,
-   "end": 2.392
+   "start": 3.12,
+   "end": 3.2
   },
   {
    "w": "millón",
-   "start": 2.438,
-   "end": 2.717
+   "start": 3.28,
+   "end": 3.6
   },
   {
    "w": "de",
-   "start": 2.763,
-   "end": 2.821
+   "start": 3.64,
+   "end": 3.68
   },
   {
    "w": "tokens",
-   "start": 2.868,
-   "end": 3.216
+   "start": 3.76,
+   "end": 4.08
   },
   {
    "w": "de",
-   "start": 3.239,
-   "end": 3.297
+   "start": 4.12,
+   "end": 4.16
   },
   {
    "w": "contexto,",
-   "start": 3.355,
-   "end": 3.971
+   "start": 4.24,
+   "end": 5.2
   },
   {
    "w": "y",
-   "start": 4.017,
-   "end": 4.075
+   "start": 5.24,
+   "end": 5.28
   },
   {
    "w": "los",
-   "start": 4.145,
-   "end": 4.249
+   "start": 5.36,
+   "end": 5.44
   },
   {
    "w": "agentes",
-   "start": 4.307,
-   "end": 4.632
+   "start": 5.6,
+   "end": 5.84
   },
   {
    "w": "de",
-   "start": 4.656,
-   "end": 4.702
+   "start": 5.88,
+   "end": 5.92
   },
   {
    "w": "programación",
-   "start": 4.748,
-   "end": 5.364
+   "start": 6.08,
+   "end": 6.56
   },
   {
    "w": "como",
-   "start": 5.433,
-   "end": 5.735
+   "start": 6.64,
+   "end": 6.88
   },
   {
    "w": "Claude",
-   "start": 5.817,
-   "end": 6.118
+   "start": 6.96,
+   "end": 7.2
   },
   {
    "w": "Code",
-   "start": 6.153,
-   "end": 6.478
+   "start": 7.28,
+   "end": 7.52
   },
   {
    "w": "ya",
-   "start": 6.687,
-   "end": 6.827
+   "start": 7.84,
+   "end": 7.92
   },
   {
    "w": "no",
-   "start": 6.885,
-   "end": 6.943
+   "start": 8.0,
+   "end": 8.08
   },
   {
    "w": "usan",
-   "start": 6.978,
-   "end": 7.21
+   "start": 8.16,
+   "end": 8.4
   },
   {
    "w": "una",
-   "start": 7.279,
-   "end": 7.407
+   "start": 8.48,
+   "end": 8.56
   },
   {
    "w": "base",
-   "start": 7.454,
-   "end": 7.686
+   "start": 8.68,
+   "end": 8.8
   },
   {
    "w": "de",
-   "start": 7.755,
-   "end": 7.825
+   "start": 8.88,
+   "end": 8.92
   },
   {
    "w": "datos",
-   "start": 7.872,
-   "end": 8.162
+   "start": 8.96,
+   "end": 9.2
   },
   {
    "w": "vectorial:",
-   "start": 8.208,
-   "end": 8.742
+   "start": 9.28,
+   "end": 10.24
   },
   {
    "w": "exploran",
-   "start": 8.812,
-   "end": 9.346
+   "start": 10.32,
+   "end": 10.8
   },
   {
    "w": "el",
-   "start": 9.404,
-   "end": 9.474
+   "start": 10.84,
+   "end": 10.88
   },
   {
    "w": "código",
-   "start": 9.543,
-   "end": 9.903
+   "start": 11.04,
+   "end": 11.36
   },
   {
    "w": "con",
-   "start": 9.95,
-   "end": 10.054
+   "start": 11.44,
+   "end": 11.52
   },
   {
    "w": "búsquedas",
-   "start": 10.101,
-   "end": 10.472
+   "start": 11.6,
+   "end": 12.0
   },
   {
    "w": "de",
-   "start": 10.519,
-   "end": 10.565
+   "start": 12.04,
+   "end": 12.08
   },
   {
    "w": "texto,",
-   "start": 10.612,
-   "end": 11.099
+   "start": 12.16,
+   "end": 12.88
   },
   {
    "w": "abren",
-   "start": 11.146,
-   "end": 11.447
+   "start": 12.96,
+   "end": 13.2
   },
   {
    "w": "archivos",
-   "start": 11.505,
-   "end": 12.028
+   "start": 13.32,
+   "end": 13.76
   },
   {
    "w": "y",
-   "start": 12.109,
-   "end": 12.167
+   "start": 13.92,
+   "end": 14.0
   },
   {
    "w": "deciden",
-   "start": 12.26,
-   "end": 12.631
+   "start": 14.08,
+   "end": 14.4
   },
   {
    "w": "qué",
-   "start": 12.689,
-   "end": 12.782
+   "start": 14.48,
+   "end": 14.64
   },
   {
    "w": "leer.",
-   "start": 12.829,
-   "end": 13.131
+   "start": 14.72,
+   "end": 15.04
   },
   {
    "w": "Eso",
-   "start": 13.154,
-   "end": 13.398
+   "start": 15.52,
+   "end": 15.68
   },
   {
    "w": "es",
-   "start": 13.432,
-   "end": 13.491
+   "start": 15.72,
+   "end": 15.76
   },
   {
    "w": "lo",
-   "start": 13.537,
-   "end": 13.607
+   "start": 15.84,
+   "end": 15.88
   },
   {
    "w": "que",
-   "start": 13.653,
-   "end": 13.723
+   "start": 15.92,
+   "end": 16.0
   },
   {
    "w": "la",
-   "start": 13.769,
-   "end": 13.85
+   "start": 16.04,
+   "end": 16.08
   },
   {
    "w": "gente",
-   "start": 13.92,
-   "end": 14.268
+   "start": 16.16,
+   "end": 16.4
   },
   {
    "w": "llama",
-   "start": 14.292,
-   "end": 14.698
+   "start": 16.44,
+   "end": 16.72
   },
   {
    "w": "'la",
-   "start": 14.791,
-   "end": 15.0
+   "start": 16.96,
+   "end": 17.04
   },
   {
    "w": "muerte",
-   "start": 15.058,
-   "end": 15.383
+   "start": 17.2,
+   "end": 17.52
   },
   {
    "w": "del",
-   "start": 15.441,
-   "end": 15.58
+   "start": 17.6,
+   "end": 17.68
   },
   {
    "w": "RAG'.",
-   "start": 15.673,
-   "end": 16.114
+   "start": 17.76,
+   "end": 18.48
   },
   {
    "w": "Pero",
-   "start": 16.172,
-   "end": 16.37
+   "start": 18.533,
+   "end": 18.64
   },
   {
    "w": "fíjate:",
-   "start": 16.405,
-   "end": 16.915
+   "start": 18.68,
+   "end": 19.44
   },
   {
    "w": "siguen",
-   "start": 16.985,
-   "end": 17.287
+   "start": 19.52,
+   "end": 19.84
   },
   {
    "w": "recuperando",
-   "start": 17.357,
-   "end": 17.821
+   "start": 19.92,
+   "end": 20.4
   },
   {
    "w": "información",
-   "start": 17.844,
-   "end": 18.471
+   "start": 20.56,
+   "end": 21.04
   },
   {
    "w": "antes",
-   "start": 18.552,
-   "end": 18.901
+   "start": 21.2,
+   "end": 21.52
   },
   {
    "w": "de",
-   "start": 18.947,
-   "end": 19.005
+   "start": 21.6,
+   "end": 21.64
   },
   {
    "w": "responder.",
-   "start": 19.063,
-   "end": 19.679
+   "start": 21.68,
+   "end": 22.48
   },
   {
    "w": "Lo",
-   "start": 19.795,
-   "end": 19.946
+   "start": 22.72,
+   "end": 22.8
   },
   {
    "w": "que",
-   "start": 19.981,
-   "end": 20.05
+   "start": 22.84,
+   "end": 22.88
   },
   {
    "w": "ha",
-   "start": 20.073,
-   "end": 20.12
+   "start": 22.96,
+   "end": 23.0
   },
   {
    "w": "muerto",
-   "start": 20.166,
-   "end": 20.689
+   "start": 23.04,
+   "end": 23.44
   },
   {
    "w": "es",
-   "start": 20.863,
-   "end": 21.014
+   "start": 23.6,
+   "end": 23.76
   },
   {
    "w": "la",
-   "start": 21.083,
-   "end": 21.165
+   "start": 23.8,
+   "end": 23.84
   },
   {
    "w": "base",
-   "start": 21.211,
-   "end": 21.432
+   "start": 23.92,
+   "end": 24.08
   },
   {
    "w": "de",
-   "start": 21.478,
-   "end": 21.536
+   "start": 24.16,
+   "end": 24.24
   },
   {
    "w": "datos",
-   "start": 21.583,
-   "end": 21.873
+   "start": 24.4,
+   "end": 24.56
   },
   {
    "w": "vectorial",
-   "start": 21.943,
-   "end": 22.465
+   "start": 24.72,
+   "end": 25.04
   },
   {
    "w": "como",
-   "start": 22.535,
-   "end": 22.755
+   "start": 25.12,
+   "end": 25.28
   },
   {
    "w": "paso",
-   "start": 22.813,
-   "end": 23.057
+   "start": 25.36,
+   "end": 25.6
   },
   {
    "w": "obligatorio.",
-   "start": 23.104,
-   "end": 23.87
+   "start": 25.64,
+   "end": 26.32
   },
   {
    "w": "Y",
-   "start": 23.916,
-   "end": 23.986
+   "start": 26.64,
+   "end": 26.72
   },
   {
    "w": "meter",
-   "start": 24.079,
-   "end": 24.323
+   "start": 26.88,
+   "end": 27.04
   },
   {
    "w": "un",
-   "start": 24.392,
-   "end": 24.439
+   "start": 27.2,
+   "end": 27.28
   },
   {
    "w": "millón",
-   "start": 24.474,
-   "end": 24.764
+   "start": 27.36,
+   "end": 27.6
   },
   {
    "w": "de",
-   "start": 24.81,
-   "end": 24.892
+   "start": 27.68,
+   "end": 27.72
   },
   {
    "w": "tokens",
-   "start": 24.95,
-   "end": 25.345
+   "start": 27.76,
+   "end": 28.16
   },
   {
    "w": "en",
-   "start": 25.403,
-   "end": 25.472
+   "start": 28.24,
+   "end": 28.32
   },
   {
    "w": "cada",
-   "start": 25.531,
-   "end": 25.74
+   "start": 28.4,
+   "end": 28.56
   },
   {
    "w": "pregunta",
-   "start": 25.786,
-   "end": 26.39
+   "start": 28.64,
+   "end": 29.12
   },
   {
    "w": "sigue",
-   "start": 26.541,
-   "end": 26.831
+   "start": 29.28,
+   "end": 29.52
   },
   {
    "w": "costando",
-   "start": 26.901,
-   "end": 27.295
+   "start": 29.64,
+   "end": 30.0
   },
   {
    "w": "muchísimo",
-   "start": 27.353,
-   "end": 27.922
+   "start": 30.08,
+   "end": 30.72
   },
   {
    "w": "más",
-   "start": 27.969,
-   "end": 28.236
+   "start": 30.8,
+   "end": 31.04
   },
   {
    "w": "que",
-   "start": 28.317,
-   "end": 28.41
+   "start": 31.12,
+   "end": 31.2
   },
   {
    "w": "recuperar",
-   "start": 28.479,
-   "end": 29.014
+   "start": 31.28,
+   "end": 31.68
   },
   {
    "w": "cinco",
-   "start": 29.083,
-   "end": 29.408
+   "start": 31.92,
+   "end": 32.16
   },
   {
    "w": "trozos",
-   "start": 29.455,
-   "end": 29.791
+   "start": 32.24,
+   "end": 32.56
   },
   {
    "w": "buenos.",
-   "start": 29.838,
-   "end": 30.511
+   "start": 32.6,
+   "end": 33.28
   }
  ]
 }

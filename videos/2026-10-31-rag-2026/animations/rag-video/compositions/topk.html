@@ -4,23 +4,28 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 20px; }
-    #root .gloss { width: 520px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
-    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 28px; color: #d4ff3a; margin-bottom: 8px; }
-    #root .gloss .d { font-size: 30px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; white-space: nowrap; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .gloss { width: 560px; padding: 20px 26px; background: #0f1116; border-left: 4px solid #d4ff3a; border-radius: 16px; }
+    #root .gloss .t { font-family: "Geist Mono", monospace; font-size: 30px; color: #d4ff3a; margin-bottom: 8px; }
+    #root .gloss .d { font-size: 34px; line-height: 1.25; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; white-space: nowrap; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
     #k-title { left: 120px; top: 210px; font-size: 120px; font-weight: 800; letter-spacing: -0.045em; white-space: nowrap; }
-    #root .card { top: 420px; width: 540px; height: 380px; padding: 44px; display: flex; flex-direction: column; justify-content: flex-end; }
-    #root .card .num { font-size: 190px; font-weight: 800; letter-spacing: -0.05em; line-height: 0.9; margin-bottom: 36px; }
-    #root .card .src { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; line-height: 1.3; }
+    #root .card { top: 410px; width: 540px; height: 370px; padding: 44px; display: flex; flex-direction: column; justify-content: flex-end; }
+    #root .card .num { font-size: 190px; font-weight: 800; letter-spacing: -0.05em; line-height: 0.9; margin-bottom: 24px; }
+    #root .card .src { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; line-height: 1.3; }
     #k-c3 { border-color: #d4ff3a; background: #10140a; }
     #k-c3 .num { font-size: 120px; color: #d4ff3a; margin-bottom: 30px; }
     #k-c3 .src { color: #d4ff3a; }
+    #root .ghost { top: 410px; width: 540px; height: 370px; border: 2px dashed #2c303c; border-radius: 20px; }
   </style>
 
   <div data-hf-id="hf-yppb" id="root" data-composition-id="topk" data-width="1920" data-height="1080">
     <h1 data-hf-id="hf-2ph9" class="abs" id="k-title">¿Cuántos fragmentos?</h1>
+
+    <div class="abs ghost" id="k-g1" style="left: 120px"></div>
+    <div class="abs ghost" id="k-g2" style="left: 690px"></div>
+    <div class="abs ghost" id="k-g3" style="left: 1260px"></div>
 
     <div data-hf-id="hf-gjhu" class="abs panel card" id="k-c1" style="left: 120px">
       <div data-hf-id="hf-xeds" class="num" id="k-n1">5</div>
@@ -35,7 +40,7 @@
       <div data-hf-id="hf-tyzj" class="src">con tus preguntas<br data-hf-id="hf-szow" />y tus documentos</div>
     </div>
 
-    <div data-hf-id="hf-mmx0" class="abs gloss" id="k-gloss" style="left: 1280px; top: 860px">
+    <div data-hf-id="hf-mmx0" class="abs gloss" id="k-gloss" style="left: 1240px; top: 816px">
       <div data-hf-id="hf-z29z" class="t">top-k</div>
       <div data-hf-id="hf-vayi" class="d">los k fragmentos más cercanos</div>
     </div>
@@ -48,6 +53,8 @@
       const tl = gsap.timeline({ paused: true });
       // «¿Cuántos?» (0.0)
       tl.from("#k-title", { autoAlpha: 0, y: 50, duration: 0.8, ease: "expo.out" }, 0.0);
+      // Huecos discontinuos donde caerán las tres tarjetas: el encuadre no se queda vacío.
+      tl.from(["#k-g1", "#k-g2", "#k-g3"], { autoAlpha: 0, y: 20, duration: 0.6, ease: "power2.out", stagger: 0.1 }, 0.0);
       tl.from("#k-gloss", { autoAlpha: 0, x: 40, duration: 0.6, ease: "expo.out" }, 1.2);
       // «en el ejemplo de Hugging Face, cinco» (2.4 · 3.8)
       tl.from("#k-c1", { autoAlpha: 0, y: 40, duration: 0.6, ease: "expo.out" }, 2.4);
@@ -57,13 +64,14 @@
       tl.from("#k-n2", { autoAlpha: 0, scale: 0.6, transformOrigin: "left bottom", duration: 0.5, ease: "back.out(2)" }, 6.6);
       // «No hay número mágico» (8.0) · «se mide» (9.3)
       tl.from("#k-cap", { autoAlpha: 0, y: 14, duration: 0.5, ease: "power2.out" }, 8.0);
-      tl.to(["#k-c1", "#k-c2"], { opacity: 0.45, duration: 0.5 }, 8.9);
+      // Se atenúa el contenido, no la tarjeta: así el fondo sigue opaco y la rejilla de puntos no asoma entre las cifras.
+      tl.to(["#k-c1 .num", "#k-c2 .num", "#k-c1 .src", "#k-c2 .src"], { opacity: 0.6, duration: 0.5 }, 8.9);
       tl.from("#k-c3", { autoAlpha: 0, scale: 0.9, duration: 0.6, ease: "back.out(1.6)" }, 8.9);
 
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[1.168,0.672],[2.109,1.253],[2.283,1.415],[2.376,1.52],[2.77,1.949],[2.898,2.1],[3.212,2.495],[3.804,2.983],[4.79,3.54],[5.766,4.19],[6.706,4.678],[7.972,5.2],[8.227,5.34],[8.401,5.456],[8.715,5.781],[9.539,6.384],[9.748,6.559],[10.8,6.92],[10.8,8.12]];
+      const W = [[0.0,0.0],[1.168,1.08],[2.109,2.0],[2.283,2.12],[2.376,2.2],[2.77,2.56],[2.898,2.64],[3.212,3.0],[3.804,3.56],[4.79,4.4],[5.766,4.92],[6.706,5.4],[7.972,6.24],[8.227,6.36],[8.401,6.52],[8.715,6.76],[9.539,7.48],[9.748,7.6],[10.8,8.36],[10.8,9.56]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

@@ -4,20 +4,20 @@
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
     #root .panel { background: #0f1116; border: 2px solid #232733; border-radius: 16px; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
-    #ch-kick { left: 120px; top: 84px; font-size: 28px; color: #8b90a0; }
+    #ch-kick { left: 120px; top: 84px; font-size: 32px; color: #a3a8b8; }
     #ch-root { left: 120px; top: 470px; width: 300px; height: 120px; display: flex; flex-direction: column; justify-content: center; padding: 0 28px; }
-    #ch-root .k { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; }
+    #ch-root .k { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; }
     #ch-root .v { font-size: 40px; font-weight: 800; letter-spacing: -0.04em; }
     #ch-tree { left: 420px; top: 180px; width: 120px; height: 600px; overflow: visible; }
     #root .q { left: 540px; width: 660px; height: 110px; padding: 0 28px; display: flex; align-items: center; font-size: 32px; white-space: nowrap; }
     #root .arr { left: 1214px; width: 48px; height: 28px; }
     #root .a { left: 1276px; width: 524px; height: 110px; padding: 0 24px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; }
     #root .a .v { font-size: 38px; font-weight: 800; letter-spacing: -0.03em; }
-    #root .a .s { font-family: "Geist Mono", monospace; font-size: 28px; color: #5ce1e6; margin-top: 4px; }
-    #ch-end { left: 120px; top: 846px; font-size: 52px; font-weight: 800; letter-spacing: -0.045em; color: #d4ff3a; white-space: nowrap; }
+    #root .a .s { font-family: "Geist Mono", monospace; font-size: 30px; color: #5ce1e6; margin-top: 4px; }
+    #ch-end { left: 120px; top: 872px; font-size: 64px; font-weight: 800; letter-spacing: -0.045em; color: #d4ff3a; white-space: nowrap; }
     #ch-end2 { color: #f4f5f7; }
   </style>
 
@@ -80,7 +80,7 @@
       // «¿Una base de conocimiento grande tipo FAQ o documentación?» (9.04–12.43)
       grow(1, 9.0);
       tl.from("#ch-q2b", { autoAlpha: 0, x: -16, duration: 0.4, ease: "power2.out" }, 11.3);
-      tl.to("#ch-q2", { borderColor: "#8b90a0", duration: 0.3, yoyo: true, repeat: 1 }, 12.4);
+      tl.to("#ch-q2", { borderColor: "#a3a8b8", duration: 0.3, yoyo: true, repeat: 1 }, 12.4);
       // «RAG con búsqueda híbrida y reranker» (14.27–16.27)
       answer(1, 14.2);
       // «es lo que mejor relación esfuerzo-resultado tiene» (17.37–20.86)
@@ -97,17 +97,18 @@
       tl.to("#ch-a2", { borderColor: "#232733", duration: 0.4 }, 30.3);
       tl.to(branches[0], { attr: { stroke: "#d4ff3a" }, duration: 0.4 }, 30.5);
       tl.to(["#ch-q1", "#ch-a1"], { borderColor: "#d4ff3a", duration: 0.4 }, 30.5);
+      tl.to("#ch-cap", { autoAlpha: 0, y: 14, duration: 0.4, ease: "power2.in" }, 30.55);
       tl.from("#ch-end1", { autoAlpha: 0, y: 30, duration: 0.6, ease: "expo.out" }, 30.55);
       // «y sube de nivel» (32.69–33.11): las ramas siguientes se iluminan en cascada.
       tl.from("#ch-end2", { autoAlpha: 0, y: 30, duration: 0.6, ease: "expo.out" }, 32.65);
-      tl.to(["#ch-a2", "#ch-a3", "#ch-a4"], { borderColor: "#8b90a0", duration: 0.25, yoyo: true, repeat: 1, stagger: 0.25 }, 32.8);
+      tl.to(["#ch-a2", "#ch-a3", "#ch-a4"], { borderColor: "#a3a8b8", duration: 0.25, yoyo: true, repeat: 1, stagger: 0.25 }, 32.8);
       // «solo cuando midas que te hace falta» (33.84–35.55)
       tl.from("#ch-end3", { autoAlpha: 0, y: 30, duration: 0.6, ease: "expo.out" }, 34.3);
 
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.209,0.209],[0.94,1.057],[2.241,1.776],[2.763,2.194],[3.796,2.926],[4.133,3.228],[4.261,3.32],[4.516,3.518],[5.039,3.994],[6.06,4.609],[6.594,5.039],[6.699,5.143],[6.827,5.236],[7.674,5.933],[7.86,6.06],[9.044,6.629],[9.474,6.861],[9.741,7.094],[9.857,7.187],[10.542,7.918],[10.948,8.336],[11.413,8.742],[12.295,9.334],[12.434,9.474],[14.269,10.472],[14.675,10.89],[14.907,11.146],[15.395,11.598],[16.068,12.086],[16.266,12.26],[17.369,12.91],[17.566,13.108],[17.682,13.224],[17.786,13.351],[18.425,13.653],[19.516,14.152],[20.863,15.232],[21.85,15.998],[22.431,16.625],[23.104,17.252],[23.359,17.508],[24.694,18.402],[25.89,19.203],[26.587,19.69],[26.703,19.795],[27.075,20.131],[28.027,21.234],[28.653,21.792],[29.443,22.175],[29.605,22.326],[29.884,22.57],[30.558,23.057],[31.161,23.487],[31.37,23.626],[31.498,23.742],[31.718,23.893],[32.508,24.439],[32.694,24.601],[32.996,24.857],[33.112,24.95],[33.843,25.379],[34.249,25.704],[34.598,26.029],[35.004,26.354],[35.132,26.494],[35.283,26.598],[35.55,26.796],[37.06,28.15]];
+      const W = [[0.0,0.0],[0.209,0.24],[0.94,0.88],[2.241,1.92],[2.763,2.44],[3.796,3.28],[4.133,3.52],[4.261,3.6],[4.516,3.84],[5.039,4.24],[6.06,5.28],[6.594,5.72],[6.699,5.8],[6.827,5.92],[7.674,6.64],[7.86,6.84],[9.044,7.84],[9.474,8.12],[9.741,8.28],[9.857,8.4],[10.542,9.04],[10.948,9.52],[11.413,10.08],[12.295,10.8],[12.434,11.08],[14.269,12.16],[14.675,12.56],[14.907,12.8],[15.395,13.2],[16.068,13.56],[16.266,13.72],[17.369,14.64],[17.566,14.76],[17.682,14.88],[17.786,14.96],[18.425,15.36],[19.516,15.76],[20.863,16.72],[21.85,17.44],[22.431,17.84],[23.104,18.36],[23.359,18.56],[24.694,19.52],[25.89,20.48],[26.587,20.84],[26.703,20.96],[27.075,21.2],[28.027,22.0],[28.653,22.52],[29.443,23.2],[29.605,23.28],[29.884,23.6],[30.558,24.24],[31.161,24.8],[31.37,24.92],[31.498,25.04],[31.718,25.4],[32.508,25.76],[32.694,25.92],[32.996,26.16],[33.112,26.4],[33.843,26.72],[34.249,27.04],[34.598,27.36],[35.004,27.6],[35.132,27.72],[35.283,27.813],[35.55,28.0],[37.06,29.26]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

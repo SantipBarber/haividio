@@ -3,18 +3,19 @@
     #root { position: absolute; inset: 0; font-family: "Geist", sans-serif; color: #f4f5f7; }
     #root .abs { position: absolute; }
     #root .mono { font-family: "Geist Mono", monospace; }
-    #root .cap { left: 120px; top: 985px; font-size: 32px; color: #8b90a0; }
-    #root .cap b { color: #f4f5f7; font-weight: 500; }
+    #root .cap { left: 120px; top: 964px; font-size: 40px; color: #a3a8b8; }
+    #root .cap b { color: #f4f5f7; font-weight: 600; }
 
     #ou-head { left: 0; top: 400px; width: 1920px; height: 150px; }
     #root .hl { position: absolute; left: 0; top: 0; width: 1920px; text-align: center; font-size: 120px; font-weight: 800; letter-spacing: -0.045em; line-height: 1.1; white-space: nowrap; }
     #ou-dead { position: relative; }
     #ou-strike { position: absolute; left: -6px; right: -6px; top: 56%; height: 10px; border-radius: 5px; background: #ff6b4a; transform-origin: left center; }
     #ou-ripe { color: #d4ff3a; }
-    #ou-steps { left: 0; top: 470px; width: 1920px; display: flex; justify-content: center; gap: 14px; }
-    #root .step { font-family: "Geist Mono", monospace; font-size: 28px; color: #8b90a0; padding: 12px 22px; border: 2px solid #232733; border-radius: 999px; }
+    #ou-steps { left: 0; top: 420px; width: 1920px; display: flex; justify-content: center; gap: 16px; }
+    #root .step { font-family: "Geist Mono", monospace; font-size: 32px; color: #a3a8b8; padding: 12px 24px; border: 2px solid #232733; border-radius: 999px; }
     #root .step b { font-weight: 500; margin-right: 10px; }
-    #ou-ask { left: 0; top: 590px; width: 1920px; text-align: center; font-size: 44px; font-weight: 500; letter-spacing: -0.02em; }
+    #ou-askw { left: 0; top: 524px; width: 1920px; display: flex; justify-content: center; }
+    #ou-ask { font-size: 50px; font-weight: 600; letter-spacing: -0.025em; line-height: 1; color: #f4f5f7; white-space: nowrap; padding: 22px 44px 24px; border: 2px solid #d4ff3a; border-radius: 999px; }
   </style>
 
   <div data-hf-id="hf-x7nm" id="root" data-composition-id="outro" data-width="1920" data-height="1080">
@@ -30,7 +31,7 @@
       <div data-hf-id="hf-t9fa" class="step" id="ou-s4"><b data-hf-id="hf-3e75">04</b>Generar</div>
     </div>
 
-    <div data-hf-id="hf-79px" class="abs" id="ou-ask">Dímelo en los comentarios</div>
+    <div data-hf-id="hf-79pw" class="abs" id="ou-askw"><div data-hf-id="hf-79px" id="ou-ask">¿Montamos uno paso a paso? Cuéntamelo en los comentarios</div></div>
 
     <p data-hf-id="hf-1mmw" class="abs cap" id="ou-cap"><b data-hf-id="hf-oy4x">Próximo vídeo ·</b> uno de estos, paso a paso</p>
   </div>
@@ -45,37 +46,30 @@
       tl.from("#ou-a", { autoAlpha: 0, y: 30, duration: 0.5, ease: "expo.out" }, 0.0);
       // «no ha muerto» (0.81–1.04): se tacha «muerto».
       tl.to("#ou-strike", { scaleX: 1, duration: 0.45, ease: "power3.inOut" }, 0.85);
-      tl.to("#ou-dead", { color: "#8b90a0", duration: 0.3 }, 1.1);
+      tl.to("#ou-dead", { color: "#a3a8b8", duration: 0.3 }, 1.1);
       // «ha madurado» (1.96–2.17): la pregunta se transforma en afirmación.
       tl.to("#ou-a", { autoAlpha: 0, y: -40, duration: 0.35, ease: "power2.in" }, 1.75);
       tl.fromTo("#ou-b", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.6, ease: "expo.out" }, 2.0);
 
       // «Si quieres que en el próximo vídeo…» (3.32): el titular sube para dejar sitio.
-      tl.to("#ou-head", { y: -120, duration: 0.8, ease: "power3.inOut" }, 3.3);
+      tl.to("#ou-head", { y: -160, duration: 0.8, ease: "power3.inOut" }, 3.3);
       tl.from("#ou-cap", { autoAlpha: 0, y: 14, duration: 0.5, ease: "power2.out" }, 3.6);
       // «montemos uno de estos» (5.46–6.49): vuelve la barra de pasos, la firma del canal.
       tl.from("#ou-steps .step", { autoAlpha: 0, y: 20, duration: 0.5, ease: "power3.out", stagger: 0.08 }, 5.4);
-      // «paso a paso» (6.90–7.26): el acento recorre los cuatro pasos.
+      // La llamada a la acción entra con los pasos y se queda hasta el final.
+      tl.from("#ou-ask", { autoAlpha: 0, y: 24, duration: 0.6, ease: "expo.out" }, 5.4);
+      // «paso a paso» (6.90–7.26): los cuatro pasos se completan uno a uno (sin lima: todos hechos).
       const steps = ["#ou-s1", "#ou-s2", "#ou-s3", "#ou-s4"];
-      const activate = (idx, at) => {
-        steps.forEach((s, i) => {
-          if (i > idx) return;
-          tl.to(s, {
-            color: i === idx ? "#11140a" : "#f4f5f7",
-            backgroundColor: i === idx ? "#d4ff3a" : "rgba(212,255,58,0)",
-            borderColor: i === idx ? "#d4ff3a" : "#3a3f4d",
-            duration: 0.25, ease: "power2.out",
-          }, at);
-        });
-      };
-      activate(0, 6.85); activate(1, 7.15); activate(2, 7.45); activate(3, 7.75);
-      // «dímelo en los comentarios» (8.13–8.81)
-      tl.from("#ou-ask", { autoAlpha: 0, y: 24, duration: 0.6, ease: "expo.out" }, 8.1);
+      [6.85, 7.15, 7.45, 7.75].forEach((at, i) => {
+        tl.to(steps[i], { color: "#f4f5f7", borderColor: "#3a3f4d", duration: 0.25, ease: "power2.out" }, at);
+      });
+      // «dímelo en los comentarios» (8.13–8.81): la llamada a la acción late una vez.
+      tl.to("#ou-ask", { scale: 1.05, duration: 0.3, yoyo: true, repeat: 1, ease: "power2.inOut" }, 8.1);
 
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.232,0.197],[0.813,0.534],[0.964,0.673],[1.045,0.755],[1.962,1.265],[2.171,1.428],[3.32,2.229],[3.564,2.415],[3.924,2.682],[4.017,2.775],[4.122,2.879],[4.261,3.007],[4.737,3.413],[5.457,3.889],[6.118,4.389],[6.339,4.563],[6.49,4.656],[6.896,4.957],[7.187,5.213],[7.256,5.283],[8.127,5.828],[8.568,6.188],[8.638,6.269],[8.812,6.42],[11.44,8.79]];
+      const W = [[0.0,0.0],[0.232,0.24],[0.813,0.64],[0.964,0.76],[1.045,0.88],[1.962,1.72],[2.171,1.84],[3.32,2.96],[3.564,3.12],[3.924,3.4],[4.017,3.48],[4.122,3.6],[4.261,3.72],[4.737,4.16],[5.457,4.52],[6.118,4.96],[6.339,5.08],[6.49,5.2],[6.896,5.68],[7.187,5.96],[7.256,6.08],[8.127,6.72],[8.568,7.08],[8.638,7.16],[8.812,7.28],[11.44,9.66]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }

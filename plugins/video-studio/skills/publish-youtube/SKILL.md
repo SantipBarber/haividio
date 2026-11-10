@@ -39,7 +39,7 @@ Fix what it flags and repeat until ✔.
 
 1. Check that `youtubeuploader -version` works and that the credentials exist. If not, guide the setup with the guide, including publishing the OAuth app (in testing mode the token expires after 7 days).
 2. Show the metadata and the review findings and **ask for explicit confirmation**.
-3. Upload with `-metaJSON publishing.json -metaJSONout upload-result.json -notify=false`, plus `-thumbnail` and `-caption` if available.
+3. Upload with `-metaJSON publishing.json -metaJSONout upload-result.json -notify=false`, plus `-thumbnail` and `-caption` if available. Custom thumbnails need a phone-verified channel: if YouTube answers 403 for the thumbnail, youtubeuploader stops before the subtitles, so add them afterwards (Studio or `captions.insert`).
 4. Run `python3 scripts/check_publishing.py result upload-result.json --expect <private|unlisted>`. If YouTube left it with another visibility (unaudited project), say so and do not hand out the link.
 5. Return the link and ask the user to review it in YouTube Studio.
 

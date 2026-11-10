@@ -2,7 +2,7 @@
 
 - **Formato:** vídeo sin cara, explicativo animado, 1920×1080
 - **Duración objetivo:** ~9:20 (≈1.400 palabras a 150 ppm)
-- **Estado:** v2 aprobada (gancho A) a falta de la fuente primaria de la escena 1
+- **Estado:** v2 aprobada (gancho A), con fuente de la escena 1
 - **Público:** alguien que no sabe qué es RAG tiene que acabar entendiéndolo. Didáctico, sin bajar a fórmulas. Fuentes en `sources.md`.
 - **Firma «glosario»:** la primera vez que aparece un término (fragmento, vector, top-k, BM25, reranker, agente) sale una tarjeta pequeña abajo a la derecha con su definición en ≤ 6 palabras.
 - **Visuales:** descritos de forma neutra; se adaptan a la dirección de estilo elegida (`docs/style/identity.md`)
@@ -12,7 +12,7 @@
 ### Escena 1 — Gancho (0:00–0:20)
 **Voz:** "El equipo de Claude Code, una de las herramientas de IA más usadas para programar, probó la receta estándar para que un modelo encuentre información. Y la tiró. Desde entonces medio internet dice que esa receta, el RAG, ha muerto. Spoiler: no ha muerto. Ha cambiado de forma. Y en seis minutos vas a entender qué es y en qué se ha convertido."
 **Visual:** una caja «receta estándar: base de datos vectorial» se tacha; aparece «¿RAG ha muerto?»; el signo de interrogación se convierte en una flecha que gira hacia «ha cambiado».
-**Fuente:** ⚠️ pendiente de fuente primaria (post de Boris Cherny en X / entrevista de mayo de 2025). Secundarias: https://www.tabnews.com.br/kenimo49/construi-o-rag-que-mandaram-fazer-voyage-vector-db-busca-semantica-depois-deletei-tudo-o-grep-venceu · https://www.besthub.dev/articles/why-claude-code-and-cursor-abandoned-vector-databases-for-agentic-retrieval-9dad68e8f191
+**Fuente:** entrevista a Boris Cherny en The Pragmatic Engineer, 04-03-2026 (https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny): probaron bases de datos vectoriales locales e indexado con el modelo; grep y glob guiados por el modelo «outperformed RAG». Secundarias: https://www.tabnews.com.br/kenimo49/construi-o-rag-que-mandaram-fazer-voyage-vector-db-busca-semantica-depois-deletei-tudo-o-grep-venceu · https://www.besthub.dev/articles/why-claude-code-and-cursor-abandoned-vector-databases-for-agentic-retrieval-9dad68e8f191
 **Contexto (para la escena 9):** lo quitaron porque la búsqueda agéntica (grep, abrir ficheros) daba mejores resultados, no se desactualiza, no obliga a guardar una copia del código en un índice y tiene menos piezas.
 
 ### Escena 2 — El problema (0:20–0:50)
