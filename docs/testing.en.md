@@ -74,7 +74,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [x] The `pencil-to-hyperframes` skill triggers from a request in Spanish (11-11, Claude).
 - [x] **Real storyboard** (11-11, Claude): "KF 3b · Trocear", "KF 3b · Vectorizar" and "KF 03 · Buscar" from `scene3.pen`, exported together with an explicit `uri`. `states.json` captures the active step (01 → 02 → 03) and the footer; animated from it, snapshots at 1, 4 and 7 s match each PNG in the step bar (pills a few pixels narrower). The test surfaced three bugs, already fixed in #29: the unnamed canvas that wraps several frames, images relative to the `.pen`, and the missing HTML of entering layers.
 - [x] Whole scene from the storyboard with `--draft --at 0,6,12` (11-11, Claude): `check` with no errors or reading warnings, an 18 s render, and `check_render.py` finds the 9 labels of the three states. It surfaced and fixed two more bugs: single-quoted `style` attributes and the transition to transparent going through green.
-- [ ] **Watch** the draft (`storyboard-draft.mp4`) in motion and decide whether the transition style works as a starting point (Santi).
+- [x] **Watched** the draft (`storyboard-draft.mp4`, no audio: voice and music go into the composition afterwards) in motion: it works as a starting point (11-11, Santi).
 - [ ] A design with an image in an `<img>`, an SVG and a reusable component (instances).
 - [ ] A font other than Geist.
 
