@@ -71,7 +71,8 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 
 - [x] Un fotograma (KF 03 del vídeo de RAG): `hyperframes check` sin errores y la captura difiere del PNG de Pencil en 1 nivel de gris de 255 de media (11-11, Claude).
 - [x] La skill `pencil-to-hyperframes` se activa con una petición en español (11-11, Claude).
-- [ ] **Storyboard real:** 2 o 3 fotogramas de la misma escena exportados de Pencil; comprobar que `states.json` recoge lo que cambia, entra y sale, y animar la escena entera a partir de él.
+- [x] **Storyboard real** (11-11, Claude): «KF 3b · Trocear», «KF 3b · Vectorizar» y «KF 03 · Buscar» de `scene3.pen`, exportados juntos con `uri` explícito. `states.json` recoge el paso activo (01 → 02 → 03) y el pie; animados desde ahí, las capturas en 1, 4 y 7 s coinciden con cada PNG en la barra de pasos (pastillas unos píxeles más estrechas). La prueba sacó tres fallos, ya arreglados en #29: el lienzo sin nombre que envuelve varios fotogramas, las imágenes relativas al `.pen` y que faltaba el HTML de las capas que entran.
+- [ ] Animar la escena entera desde el storyboard, con las capas que entran y salen copiadas de `pencil/<nombre>/`, y **verla en movimiento**.
 - [ ] Un diseño con imagen dentro de un `<img>`, un SVG y un componente reutilizable (instancias).
 - [ ] Una fuente que no sea Geist.
 
