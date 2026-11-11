@@ -2,6 +2,8 @@
 
 ## Haividio
 
+- [ ] **Santi: revisar el vídeo de RAG en YouTube** (https://youtu.be/leo1j2YyT1w): pronunciación de «Claude», «RAG» y «Spoiler»; los 4 titulares inventados del gancho; los «tics» de la barra de arreglos.
+- [ ] **Features del plugin (investigación del 11-11):** primera tirada aprobada por Santi: ducking de la música, bloques de HyperFrames en las skills (transiciones, terminal, código), revisión automática del render (PySceneDetect + RapidOCR + `freezedetect`), SRT, capítulos y miniatura desde los tiempos por palabra, y conversor de Pencil a HyperFrames. Un PR por tema. Siguen en cola: shorts verticales, voz local para borradores (Kokoro-82M, revisar licencia de las voces), versión en inglés, retención de YouTube por escena (exige reautorizar OAuth con `yt-analytics.readonly`), nube de embeddings reales, render por escena con manifiesto, música libre y transcripción local (whisper.cpp). Licencias por aclarar: Silero VAD, Parakeet v3, ACE-Step, Piper.
 - [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/other-agents.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.
 - [ ] Producir un vídeo entero con un agente que no sea Claude Code y anotar qué falla.
 - [x] Publicar con youtubeuploader (07-11, workflow 4): proyecto de Google Cloud creado y prueba como oculto hecha (10-11); el vídeo de RAG, publicado. Miniatura puesta el 11-11 tras verificar el canal (PR #19).
@@ -29,7 +31,7 @@ Ya:
 Después:
 - [ ] Revisión visual: un fotograma por plano con [PySceneDetect](https://www.scenedetect.com) (BSD-3) y OCR ([PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), Apache-2.0, o `ocrmac` en Mac) para comparar rótulos esperados, texto cortado, legibilidad a 360 px de ancho y desfase rótulo-voz (OCR a 10 fps contra los tiempos de WhisperX).
 - [ ] Si el OCR se queda corto: [Qwen3-VL-4B](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) (Apache-2.0, local) como revisor de clips en movimiento. Ya está en caché la versión MLX de 4 bits.
-- [ ] Mezcla con *ducking* (`sidechaincompress`) en vez de volumen fijo para la música; medir voz y música por separado para marcar tramos donde la música tapa la voz (umbral a calibrar con oído).
+- [x] Mezcla con *ducking* (11-11, `scripts/duck_music.py`): `sidechaincompress` con la voz como control y medida de voz frente a música por ventanas. Falta calibrar de oído `--min-gap` (15 dB) y el volumen (0,25 en la prueba de RAG).
 
 Más adelante:
 - [ ] Detector de pronunciación por fonemas: `wav2vec2-xlsr-53-espeak-cv-ft` (lo que suena) contra espeak-ng (lo esperado). Solo para la lista de términos difíciles; calibrar con tomas aprobadas y rechazadas. Licencia del modelo sin verificar.
