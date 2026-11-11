@@ -1,0 +1,43 @@
+/* Identidad visual de Haividio como variables CSS (docs/style/identity.md).
+ *
+ * Cópialo a assets/tokens.css de cada proyecto de HyperFrames y enlázalo en la
+ * composición raíz:  <link rel="stylesheet" href="assets/tokens.css">
+ *
+ * Dos bloques:
+ * 1. Los nombres propios del canal (--ground, --lime…), los que usan las escenas.
+ * 2. Los tokens de tema que leen los componentes del catálogo de HyperFrames
+ *    (`npx hyperframes add <componente>`): --bg, --surface, --fg, --accent…
+ *    Con ellos, un componente instalado sale ya con la paleta y la tipografía
+ *    del canal. Sin ellos, cae en sus valores por defecto: Inter y verdes o
+ *    azules que no son los nuestros. Los bloques (type block) no leen estos
+ *    tokens: hay que cambiar sus colores en el código instalado.
+ *
+ * Las fuentes (Geist, Geist Mono) se declaran aparte con @font-face, apuntando
+ * a los .woff2 locales del proyecto (assets/fonts/).
+ */
+:root {
+  /* 1. Paleta del canal */
+  --ground: #07080b;
+  --panel: #0f1116;
+  --line: #232733;
+  --dots: #1c2029;
+  --ink: #f4f5f7;
+  --muted: #8b90a0;
+  --lime: #d4ff3a;
+  --cyan: #5ce1e6;
+  --violet: #a78bfa;
+  --coral: #ff6b4a;
+  --font-display: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  /* 2. Tokens de tema de los componentes de HyperFrames */
+  --bg: var(--ground);
+  --surface: var(--panel);
+  --border: var(--line);
+  --fg: var(--ink);
+  --brand: var(--lime);      /* acento principal: lo que importa */
+  --accent: var(--cyan);     /* categoría 1 */
+  --accent-2: var(--violet); /* categoría 2 */
+  --font-body: var(--font-display);
+  --radius: 18px;
+}

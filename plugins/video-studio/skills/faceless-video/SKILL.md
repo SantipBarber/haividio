@@ -22,7 +22,7 @@ Reply in the user's language. The script and the voice-over go in the language t
    Pace: ~150 words per minute in Spanish (measure the real pace of the chosen voice). Hook in the first 15 s. One idea per scene.
 3. **Script approval** by the user. Without it, do not generate voice or animations.
 4. **Voice.** ElevenLabs TTS (voice chosen in `docs/style/identity.md`) or the user's recording cleaned with video-use. Generate one track per scene so you can adjust without redoing everything.
-5. **Animation.** One composition per scene, as long as its voice track. Apply the skill `visual-identity` to all of them. Try 1 scene first and show it before doing the rest.
+5. **Animation.** One composition per scene, as long as its voice track. Apply the skill `visual-identity` to all of them, and look in the HyperFrames catalog before building a chart, a transition or a code scene by hand. Try 1 scene first and show it before doing the rest.
 6. **Assembly and render.** Join scenes, voice, music (optional) and subtitles. For music, run `scripts/duck_music.py` so it dips under the voice and check the stretches it flags (see `docs/editing-and-verification.md`, «Mezcla y volumen»). Export 1920×1080 at 30 fps (or 1080×1920 for shorts).
 7. **Publishing.** Prepare `publishing.md` and move on to the skill `publish-youtube`.
 
@@ -31,3 +31,5 @@ Reply in the user's language. The script and the voice-over go in the language t
 - Diagrams that build step by step with the voice beat long on-screen text.
 - At most ~8 words of on-screen text at a time.
 - Reuse components from previous videos (`videos/*/animations/`).
+- **Tutorials of code or a terminal** (Claude Code, an agent, a script): HyperFrames already has `code-typing`, `code-diff`, `code-highlight`, `code-scroll`, `code-morph`, `code-terminal-run`, `agent-cursor` and `cursor-zoom-follow`. Use a real terminal recording (VHS) only when the output must be real.
+- **Data:** `data-chart`, `chart-story`, `mk-line-graph`, `count-up`, `spain-map`. Real data from open sources, with the source on screen.

@@ -35,6 +35,7 @@ Cada paso cierra el anterior. Volver atrás cuesta créditos y tiempo, sobre tod
 - **Un punto de partida fijo.** Volver al mismo mapa o menú antes de cada parte hace didáctico el recorrido. Si se hace largo, esas entradas son lo primero que se acorta.
 - **Sin huecos de voz.** Unos 7-8 minutos sin silencios largos funcionan mejor que un vídeo más corto con esperas. Las esperas de la app se recortan de la imagen, con un rótulo «espera recortada»; no se para la voz.
 - **El cursor no tapa lo que señala:** debajo de la palabra o la cifra. Llega unos 0,3 s antes de que se nombre.
+- **Zoom hacia cada clic (por probar):** el componente `cursor-zoom-follow` de HyperFrames acerca la cámara a cada clic de una grabación de pantalla y la aleja después; se le pueden dar los instantes del JSON de marcas. Para una terminal sin grabar nada, `code-terminal-run` teclea un comando y va imprimiendo la salida.
 - **Los esquemas se dibujan con datos reales**, no con un fotograma ampliado: ver [redibujar](../editing-and-verification.md#esquemas-redibujar-no-ampliar).
 - **Cifras con su fuente y su alcance.** Si se enseña una barra, el rótulo dice qué se midió y sobre cuántos casos.
 - **Ejemplos inventados, marcados como tales** («Correo de ejemplo»).
