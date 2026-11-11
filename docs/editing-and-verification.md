@@ -86,7 +86,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
 
 - **Un fotograma por escena**, al final, cuando ya ha aparecido todo (de `timeline.json`, o detectando los planos con PySceneDetect si no lo hay), más uno cada 10 s, o cada 2 s si se buscan rótulos. Los guarda con los avisos marcados en rojo y en una hoja de contactos.
 - **Texto en pantalla** con RapidOCR, que lee bien el español (tildes, «», ¿?), a medio segundo por fotograma en un Mac con Apple Silicon. Avisa de texto pegado al borde (¿cortado?), de letra de menos de unos 28 px en 1080p (la estima por la altura de la caja, que en Geist es de 1 a 1,2 veces la letra) y de lecturas dudosas.
-- **Rótulos esperados** (`--expect`, uno por línea): cuáles no salen en ningún fotograma.
+- **Rótulos esperados** (`--expect`, uno por línea): cuáles no salen en ningún fotograma. Un rótulo en varias líneas cuenta si sus palabras salen en orden en el mismo fotograma, aunque el OCR lea en medio otra columna; por eso un rótulo hecho de palabras que ya están en pantalla puede darse por encontrado.
 - **Tramos quietos** de 4 s o más (`freezedetect`): en un explicativo, lo primero que mirar si el ritmo cansa.
 
 En el vídeo de RAG (6:42) tardó 2 minutos con 218 fotogramas. Encontró todos los rótulos menos uno inventado como control, dos tramos quietos de más de 6 s y un rótulo gris, tachado y en mono pequeña que se lee mal. No decide si algo se lee bien: el OCR siguió leyendo letra de 28 px con la imagen reducida a 360 px de ancho. Tampoco ve el movimiento ni el desfase entre rótulo y voz. Con PySceneDetect, el detector por defecto no vio ningún corte entre escenas oscuras parecidas; el adaptativo con umbral bajo, que es el que usa el script, los vio todos.

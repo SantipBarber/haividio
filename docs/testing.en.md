@@ -62,6 +62,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [x] Finds every expected label and not the made-up one (control); flags the grey struck-through label at 5:50 (11-11, Claude).
 - [x] Without `--timeline`, the adaptive detector finds every cut between scenes in the first two minutes (11-11, Claude).
 - [ ] Compare the shots detected over the whole video with `timeline.json`.
+- [x] A label over two lines with another column beside it ("Busca lo más / cercano") counts as found; the made-up one still does not (11-11, Claude, with the draft of the Pencil storyboard).
 - [ ] Cut-text control: render a scene with a label running off the frame; it must be flagged.
 - [ ] Small-type control: a 20 px label must be flagged and a 32 px one must not.
 - [ ] Try it on a talking-head video (workflow 1) and a screen demo (workflow 5), where the text is not ours.

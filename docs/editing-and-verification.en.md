@@ -86,7 +86,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
 
 - **One frame per scene**, at its end, once everything has appeared (from `timeline.json`, or by detecting shots with PySceneDetect when there is none), plus one every 10 s, or every 2 s when looking for labels. It saves them with the warnings marked in red, and a contact sheet.
 - **On-screen text** with RapidOCR, which reads Spanish well (accents, «», ¿?), at half a second per frame on an Apple Silicon Mac. It flags text touching the edge (cut off?), type under about 28 px at 1080p (estimated from the box height, which in Geist is 1 to 1.2 times the type size) and doubtful readings.
-- **Expected labels** (`--expect`, one per line): which ones do not appear in any frame.
+- **Expected labels** (`--expect`, one per line): which ones do not appear in any frame. A label over several lines counts if its words appear in order in the same frame, even when OCR reads another column in between; so a label made of words already on screen may be taken as found.
 - **Still stretches** of 4 s or more (`freezedetect`): in an explainer, the first thing to look at if the pace drags.
 
 On the RAG video (6:42) it took 2 minutes for 218 frames. It found every label except one made up as a control, two still stretches over 6 s, and a grey, struck-through, small mono label that is hard to read. It does not decide whether something reads well: OCR still read 28 px type with the frame scaled down to 360 px wide. Nor does it see motion or the offset between a label and the voice. With PySceneDetect, the default detector found no cut between similar dark scenes; the adaptive one with a low threshold, which the script uses, found them all.
