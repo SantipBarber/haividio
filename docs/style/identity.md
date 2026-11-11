@@ -20,9 +20,11 @@ Que el vídeo sea **visual, potente y moderno**. No pasa nada porque se note que
 | Tipografía | Geist (títulos 800, texto 400–700) + Geist Mono (datos, etiquetas) |
 | Movimiento | `expo.out` para entradas, `back.out` para elementos que "aterrizan", stagger corto |
 | Firma | Barra de pasos superior (01–04) con el paso activo en lima; subtítulo explicativo abajo |
-| Texto mínimo | 28 px en 1080p |
+| Texto mínimo | 32 px en 1080p para lo que importa; el subtítulo explicativo de abajo, 40 px. 28 px es el mínimo que exige `hyperframes check`, no un objetivo: en un móvil en vertical se ve a unos 6 px |
 
 Código de referencia: `videos/2026-10-31-rag-2026/animations/scene-03/` (HyperFrames).
+
+Variables CSS: [`tokens.css`](tokens.css). Lleva la paleta con sus nombres (`--lime`, `--panel`…) y además los tokens de tema que leen los componentes del catálogo de HyperFrames (`--bg`, `--surface`, `--fg`, `--brand`, `--accent`, `--font-body`…). Cópialo a `assets/` de cada proyecto y enlázalo en la composición raíz: un componente instalado con `npx hyperframes add` sale entonces con la paleta y Geist, en vez de Inter y sus verdes por defecto. Los bloques no leen esos tokens: sus colores se cambian en el código instalado.
 
 ## Para no parecer de plantilla
 

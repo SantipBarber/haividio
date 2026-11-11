@@ -37,8 +37,8 @@ Whenever there are animations → skill visual-identity
 
 | Choose | When |
 |---|---|
-| **HyperFrames** | Diagrams, animated typography, explainer-style scenes. Written in HTML/CSS, fast iteration, live preview. Apache 2.0. |
-| **Remotion** | Highly programmatic animations, data charts, reusable templates in React. Free for individuals and teams of ≤3. |
+| **HyperFrames** | Diagrams, animated typography, explainer-style scenes, data charts, code and terminal scenes. Written in HTML/CSS, fast iteration, live preview, a catalog of ~450 blocks and components (`npx hyperframes catalog`). Apache 2.0. |
+| **Remotion** | Highly programmatic animations and reusable templates in React. Free for individuals and teams of ≤3; companies need a licence. |
 
 ## Alternatives by constraint
 

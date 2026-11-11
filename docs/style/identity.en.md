@@ -20,9 +20,11 @@ Make the video **visual, bold and modern**. It is fine if it looks AI-made; what
 | Typeface | Geist (headings 800, body 400–700) + Geist Mono (data, labels) |
 | Motion | `expo.out` for entrances, `back.out` for elements that "land", short stagger |
 | Signature | Top step bar (01–04) with the active step in lime; explanatory subtitle below |
-| Minimum text size | 28 px at 1080p |
+| Minimum text size | 32 px at 1080p for anything that matters; the explanatory subtitle at the bottom, 40 px. 28 px is the minimum `hyperframes check` enforces, not a target: on a phone held upright it looks about 6 px tall |
 
 Reference code: `videos/2026-10-31-rag-2026/animations/scene-03/` (HyperFrames).
+
+CSS variables: [`tokens.css`](tokens.css). It holds the palette under its own names (`--lime`, `--panel`…) plus the theme tokens read by components from the HyperFrames catalog (`--bg`, `--surface`, `--fg`, `--brand`, `--accent`, `--font-body`…). Copy it to each project's `assets/` and link it from the root composition: a component installed with `npx hyperframes add` then comes out in the palette and Geist instead of Inter and its default greens. Blocks do not read those tokens: change their colours in the installed code.
 
 ## Avoiding a templated look
 

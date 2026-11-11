@@ -35,6 +35,7 @@ Each step closes out the previous one. Going back costs credits and time, especi
 - **A fixed starting point.** Return to the same map or menu before each section to make the walkthrough easier to follow. If it gets long, shorten those openings first.
 - **No gaps in the voice-over.** About 7–8 minutes without long silences works better than a shorter video with waits. Trim app waits from the footage and add the label «espera recortada» ("wait trimmed"); do not pause the voice-over.
 - **The cursor must not cover what it points to:** place it below the word or number. It arrives about 0.3 s before it is mentioned.
+- **Zoom towards each click (to be tried):** the HyperFrames component `cursor-zoom-follow` pushes the camera in towards each click of a screen recording and eases back out; it can take the timestamps from the marks JSON. For a terminal without recording anything, `code-terminal-run` types a command and prints its output line by line.
 - **Redraw diagrams using real data**, rather than enlarging a frame: see [redraw diagrams, don't enlarge](../editing-and-verification.en.md#diagrams-redraw-do-not-enlarge).
 - **Cite figures and their scope.** If you show a bar, the label says what was measured and across how many cases.
 - **Mark invented examples as such** («Correo de ejemplo», “Example email”).
