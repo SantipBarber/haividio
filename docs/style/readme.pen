@@ -1,0 +1,6742 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "h0L1E",
+      "x": 0,
+      "y": 0,
+      "name": "Banner Haividio 1280x640",
+      "clip": true,
+      "width": 1280,
+      "height": 640,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "group",
+          "id": "rcBuj",
+          "x": 0,
+          "y": 0,
+          "name": "Rejilla de puntos",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "JQBBA",
+              "x": 8,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "qdo7G",
+              "x": 8,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "aZLaF",
+              "x": 8,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "YrT4D",
+              "x": 8,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "oQ8Kh",
+              "x": 8,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "u1fqbL",
+              "x": 8,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "LkGrG",
+              "x": 8,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ifHbZ",
+              "x": 8,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "riPgk",
+              "x": 8,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "n7vcY6",
+              "x": 48,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "NhLRK",
+              "x": 48,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "PRW7Q",
+              "x": 48,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ihbtI",
+              "x": 48,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "jRXYH",
+              "x": 48,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Zsasb",
+              "x": 48,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "tJyhp",
+              "x": 48,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "w5qop",
+              "x": 48,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "WZ1Ku",
+              "x": 48,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "P7HXBf",
+              "x": 88,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "c1pi4Y",
+              "x": 88,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "TG7Nw",
+              "x": 88,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "GCNZC",
+              "x": 88,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "onKMy",
+              "x": 88,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "AlX9Y",
+              "x": 88,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bNK86",
+              "x": 88,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "JuCXq",
+              "x": 88,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Pr6D0",
+              "x": 88,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "gqBCf",
+              "x": 128,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "vAP2K",
+              "x": 128,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "V8Ohg",
+              "x": 128,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "nDMHg",
+              "x": 128,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "rBxf6",
+              "x": 128,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "e5HT1",
+              "x": 128,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "znRji",
+              "x": 128,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "iymAq",
+              "x": 128,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "NpJ39",
+              "x": 128,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "L3T9d",
+              "x": 168,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "c1663",
+              "x": 168,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "uZtdL",
+              "x": 168,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "E5Kz26",
+              "x": 168,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xeTOD",
+              "x": 168,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Bq6l6",
+              "x": 168,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "HAt5I",
+              "x": 168,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "lNiYr",
+              "x": 168,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Ek6ZL",
+              "x": 168,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "aqEty",
+              "x": 208,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ujOYj",
+              "x": 208,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "m2TPU",
+              "x": 208,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "oA8zy",
+              "x": 208,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "qCoAD",
+              "x": 208,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "pCOPo",
+              "x": 208,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "neQSI",
+              "x": 208,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "veUSX",
+              "x": 208,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "b56uWB",
+              "x": 208,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QdLH3",
+              "x": 248,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "R6sgJ",
+              "x": 248,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Hn8B2",
+              "x": 248,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "IbJCt",
+              "x": 248,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "V8KCRh",
+              "x": 248,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ymNhz",
+              "x": 248,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "D6iNY3",
+              "x": 248,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Nfbbs",
+              "x": 248,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "r5jQ7Q",
+              "x": 248,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "qcJ42",
+              "x": 288,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "HHg8T",
+              "x": 288,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "orTX7",
+              "x": 288,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "F0eMcD",
+              "x": 288,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Q8kfN",
+              "x": 288,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "SSbAX",
+              "x": 288,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "yIzcO",
+              "x": 288,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "iiDdD",
+              "x": 288,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ruBG3",
+              "x": 288,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "l2P9p",
+              "x": 328,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "qTUxW",
+              "x": 328,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Y8hXQX",
+              "x": 328,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "d3V3aV",
+              "x": 328,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "u4T8V",
+              "x": 328,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "fW1fY",
+              "x": 328,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "CFfEd",
+              "x": 328,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QdHz8",
+              "x": 328,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "KyFNb",
+              "x": 328,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "aeyvx",
+              "x": 368,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "z4rsag",
+              "x": 368,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Wgm8H",
+              "x": 368,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "L2eakb",
+              "x": 368,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "atfoW",
+              "x": 368,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "mzREA",
+              "x": 368,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "I0Ahj",
+              "x": 368,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Syn6N",
+              "x": 368,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "mpLhg",
+              "x": 368,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Gku8R",
+              "x": 408,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "uIQLL",
+              "x": 408,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "kjDdK",
+              "x": 408,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "l5Ey9P",
+              "x": 408,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "K1IOZ",
+              "x": 408,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "eVUME",
+              "x": 408,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "RCJAa",
+              "x": 408,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "JMkR6",
+              "x": 408,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Zo1S7",
+              "x": 408,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "JcxvZ",
+              "x": 448,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "q5kyBP",
+              "x": 448,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "PTg7v",
+              "x": 448,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "IazO8",
+              "x": 448,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "eCQys",
+              "x": 448,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "wA0Cq",
+              "x": 448,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Nkkf0",
+              "x": 448,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "C7dLX",
+              "x": 448,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "y950Q",
+              "x": 448,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "l0qR1",
+              "x": 488,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "lBI56",
+              "x": 488,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Ejkbg",
+              "x": 488,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "S1GQ3z",
+              "x": 488,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "w84OOb",
+              "x": 488,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Uh3WJ",
+              "x": 488,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ZFwdb",
+              "x": 488,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "jikDB",
+              "x": 488,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "WWmFO",
+              "x": 488,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "E6vv7g",
+              "x": 528,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Ya6hW",
+              "x": 528,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "cmiyS",
+              "x": 528,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "MttVZ",
+              "x": 528,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "B9hfoM",
+              "x": 528,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bIkhl",
+              "x": 528,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Av11N",
+              "x": 528,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Y5gS5",
+              "x": 528,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ZncWb",
+              "x": 528,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "He0yf",
+              "x": 568,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "b1DON",
+              "x": 568,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Q90HX",
+              "x": 568,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "FAZcw",
+              "x": 568,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "I9e8H",
+              "x": 568,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "pNjxT",
+              "x": 568,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "wfLVY",
+              "x": 568,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bC71m",
+              "x": 568,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "lo2tK",
+              "x": 568,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "dZk4d",
+              "x": 608,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "re0ZK",
+              "x": 608,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "B0VXW9",
+              "x": 608,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "M12N0G",
+              "x": 608,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "D1mcB",
+              "x": 608,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "JZZ3U",
+              "x": 608,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "eXmSZ",
+              "x": 608,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "v1aMg6",
+              "x": 608,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "tH7qm",
+              "x": 608,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "RbXAT",
+              "x": 648,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "mIOZH",
+              "x": 648,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "W6hXC",
+              "x": 648,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "NQZV1",
+              "x": 648,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "XY4KA",
+              "x": 648,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Sll5S",
+              "x": 648,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "pcUR6",
+              "x": 648,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "M7CR83",
+              "x": 648,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "a16Zp",
+              "x": 648,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "p4ves",
+              "x": 688,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "HKHhm",
+              "x": 688,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "U24CYJ",
+              "x": 688,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "K1S3XB",
+              "x": 688,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "aMduY",
+              "x": 688,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bzWFn",
+              "x": 688,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "vjD2O",
+              "x": 688,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Rb8S9",
+              "x": 688,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ouiSP",
+              "x": 688,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ug2w7",
+              "x": 728,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xwRKG",
+              "x": 728,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "o1Rux",
+              "x": 728,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "emUOV",
+              "x": 728,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "iockg",
+              "x": 728,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "oaM3V",
+              "x": 728,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "sjZvd",
+              "x": 728,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "v7N8K",
+              "x": 728,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "FDHli",
+              "x": 728,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "zD3X1",
+              "x": 768,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "cw1tq",
+              "x": 768,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "s6m6I4",
+              "x": 768,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "kTv5f",
+              "x": 768,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "jeNwE",
+              "x": 768,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "b5jSB",
+              "x": 768,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Q0a8B",
+              "x": 768,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ilE72",
+              "x": 768,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "V71T6r",
+              "x": 768,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "t6oQab",
+              "x": 808,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "V8RAxe",
+              "x": 808,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "s17mH",
+              "x": 808,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Op7Ra",
+              "x": 808,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Ira1f",
+              "x": 808,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "StE5o",
+              "x": 808,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "jKqig",
+              "x": 808,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "tDr1t",
+              "x": 808,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "BWKJn",
+              "x": 808,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "KWDny",
+              "x": 848,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QJH9k",
+              "x": 848,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "pTsBE",
+              "x": 848,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "F0lKV7",
+              "x": 848,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "n1suTu",
+              "x": 848,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "LxVbc",
+              "x": 848,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "OdP0W",
+              "x": 848,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "tJ7OK",
+              "x": 848,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "vUCA4",
+              "x": 848,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "C0apS6",
+              "x": 888,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "PwpBa",
+              "x": 888,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "R1RNGM",
+              "x": 888,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "MTwuR",
+              "x": 888,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "h1RAUL",
+              "x": 888,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xGJnA",
+              "x": 888,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "CCTbU",
+              "x": 888,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "t9Hqw",
+              "x": 888,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ef1mI",
+              "x": 888,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ihW8X",
+              "x": 928,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ZgpCz",
+              "x": 928,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "DqquK",
+              "x": 928,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "gqTcV",
+              "x": 928,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QUzB0",
+              "x": 928,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "AbJug",
+              "x": 928,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "aDX4B",
+              "x": 928,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "P2Gnx",
+              "x": 928,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "c7FO0i",
+              "x": 928,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "iDRF9",
+              "x": 968,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "x9TbPG",
+              "x": 968,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "NRmee",
+              "x": 968,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "MzhtW",
+              "x": 968,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "j4UlUy",
+              "x": 968,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "TRFqN",
+              "x": 968,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "e72gd",
+              "x": 968,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "pNJHT",
+              "x": 968,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "cgWYE",
+              "x": 968,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "if0Fm",
+              "x": 1008,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "T09Htm",
+              "x": 1008,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "N8biuL",
+              "x": 1008,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bKztJ",
+              "x": 1008,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "G61IsQ",
+              "x": 1008,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "maWgM",
+              "x": 1008,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QhiM4",
+              "x": 1008,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "yeAVs",
+              "x": 1008,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bmzBP",
+              "x": 1008,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xr68Z",
+              "x": 1048,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "GGdI6",
+              "x": 1048,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QNa72",
+              "x": 1048,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "zp7k0",
+              "x": 1048,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "N8TITV",
+              "x": 1048,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "qVIIC",
+              "x": 1048,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "FanHg",
+              "x": 1048,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "YP5e0",
+              "x": 1048,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "FP2oH",
+              "x": 1048,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "C87npX",
+              "x": 1088,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "YUktn",
+              "x": 1088,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "P3yN7Y",
+              "x": 1088,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "WyFIm",
+              "x": 1088,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "r7g9ID",
+              "x": 1088,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "KKpOq",
+              "x": 1088,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "rP6jq",
+              "x": 1088,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "A68Qz",
+              "x": 1088,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "hsjMW",
+              "x": 1088,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "QnrSR",
+              "x": 1128,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xR4Xw",
+              "x": 1128,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "wpxH6",
+              "x": 1128,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "NEMrc",
+              "x": 1128,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "lCxTh",
+              "x": 1128,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xmVdk",
+              "x": 1128,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "HVBN0",
+              "x": 1128,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Jc6V6",
+              "x": 1128,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "hE8aU",
+              "x": 1128,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "iPuFQ",
+              "x": 1168,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "SszCt",
+              "x": 1168,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "PKB0Z",
+              "x": 1168,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "BNsyW",
+              "x": 1168,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ZHvjU",
+              "x": 1168,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "YwdXe",
+              "x": 1168,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "eDqSf",
+              "x": 1168,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "GhebX",
+              "x": 1168,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Jy4Ue",
+              "x": 1168,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "IDvE1",
+              "x": 1208,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "k5eFSj",
+              "x": 1208,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "fPMbW",
+              "x": 1208,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "CGnvc",
+              "x": 1208,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ARAE4",
+              "x": 1208,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "xknB7",
+              "x": 1208,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "q7sOY",
+              "x": 1208,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "dvC7P",
+              "x": 1208,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "X0bLUH",
+              "x": 1208,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "LAsni",
+              "x": 1248,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "o5XmtU",
+              "x": 1248,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ImF3B",
+              "x": 1248,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "g71qqt",
+              "x": 1248,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "dj0ir",
+              "x": 1248,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "P1Wrx",
+              "x": 1248,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "Q0vM3L",
+              "x": 1248,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "S1JF5z",
+              "x": 1248,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "ZiotW",
+              "x": 1248,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "juvOP",
+              "x": 1288,
+              "y": 8,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "N8lw8",
+              "x": 1288,
+              "y": 48,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "vrBeV",
+              "x": 1288,
+              "y": 88,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "fR33i",
+              "x": 1288,
+              "y": 128,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "zRprp",
+              "x": 1288,
+              "y": 168,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "bOPz0",
+              "x": 1288,
+              "y": 208,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "KH00t",
+              "x": 1288,
+              "y": 248,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "m8YndX",
+              "x": 1288,
+              "y": 288,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            },
+            {
+              "type": "ellipse",
+              "id": "R5FZdt",
+              "x": 1288,
+              "y": 328,
+              "name": "Punto",
+              "fill": "$dot",
+              "width": 3,
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "NeE4p",
+          "x": 66,
+          "y": 36,
+          "name": "Título",
+          "fill": "$text",
+          "content": "Haividio",
+          "fontFamily": "$font",
+          "fontSize": 172,
+          "fontWeight": "800",
+          "letterSpacing": -2
+        },
+        {
+          "type": "text",
+          "id": "PQBbQ",
+          "x": 76,
+          "y": 242,
+          "name": "Subtítulo",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 1136,
+          "content": "Guion, voz, animación y publicación, dirigidos por tu agente de IA.",
+          "lineHeight": 1.3,
+          "fontFamily": "$font",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "group",
+          "id": "aXQPq",
+          "x": 0,
+          "y": 0,
+          "name": "Forma de onda real",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "dOosH",
+              "x": 72,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "WMk3F",
+              "x": 79.57333333333334,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "NwCaT",
+              "x": 87.14666666666666,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "vtQVj",
+              "x": 94.72,
+              "y": 408.84,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 42.32
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "t6MGB",
+              "x": 102.29333333333334,
+              "y": 354.56,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 150.88
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "bdLJA",
+              "x": 109.86666666666667,
+              "y": 365.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 128.79999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "oYHku",
+              "x": 117.44,
+              "y": 367.44,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 125.12
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "K60PES",
+              "x": 125.01333333333334,
+              "y": 360.08,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 139.84
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "h0AYP",
+              "x": 132.58666666666667,
+              "y": 342.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 174.79999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "O6oYlK",
+              "x": 140.16,
+              "y": 355.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 149.04000000000002
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "SUUG3",
+              "x": 147.73333333333335,
+              "y": 402.4,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 55.199999999999996
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "I4IuLf",
+              "x": 155.30666666666667,
+              "y": 413.44,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 33.12
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Vbe67",
+              "x": 162.88,
+              "y": 420.8,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 18.400000000000002
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "pCYhJ",
+              "x": 170.45333333333332,
+              "y": 414.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 31.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "kVGdn",
+              "x": 178.02666666666667,
+              "y": 365.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 128.79999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "WFlYM",
+              "x": 185.6,
+              "y": 363.76,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 132.48
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "VoObg",
+              "x": 193.17333333333335,
+              "y": 405.15999999999997,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 49.68000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "dDG4T",
+              "x": 200.74666666666667,
+              "y": 418.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 23.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "t1oVU",
+              "x": 208.32,
+              "y": 425.4,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 9.200000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "hLQyo",
+              "x": 215.89333333333335,
+              "y": 384.92,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 90.16
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "tILSf",
+              "x": 223.46666666666667,
+              "y": 349.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 161.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "HE7NF",
+              "x": 231.04,
+              "y": 359.15999999999997,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 141.68
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fCI0M",
+              "x": 238.61333333333334,
+              "y": 372.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 115.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Q3YlC",
+              "x": 246.18666666666667,
+              "y": 390.44,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 79.12
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "D1bUX9",
+              "x": 253.76,
+              "y": 369.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 121.44000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "N23Lrv",
+              "x": 261.33333333333337,
+              "y": 361,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 138
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "zuzwY",
+              "x": 268.90666666666664,
+              "y": 361,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 138
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "U1R1n",
+              "x": 276.48,
+              "y": 392.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 75.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "rqLlp",
+              "x": 284.05333333333334,
+              "y": 416.2,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 27.599999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "mWUjO",
+              "x": 291.62666666666667,
+              "y": 423.56,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 12.88
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "k690l",
+              "x": 299.2,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "gOk2V",
+              "x": 306.7733333333333,
+              "y": 426.32,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 7.36
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "PDc83",
+              "x": 314.3466666666667,
+              "y": 374.8,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 110.39999999999999
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "vnz4b",
+              "x": 321.91999999999996,
+              "y": 365.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 128.79999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "U5ANy",
+              "x": 329.49333333333334,
+              "y": 360.08,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 139.84
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Yhlez",
+              "x": 337.06666666666666,
+              "y": 358.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 143.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "w9oWS",
+              "x": 344.64,
+              "y": 371.12,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 117.76
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fpTUW",
+              "x": 352.2133333333333,
+              "y": 388.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 82.8
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "JGQzo",
+              "x": 359.7866666666667,
+              "y": 415.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 29.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Kd1xn",
+              "x": 367.36,
+              "y": 425.4,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 9.200000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Oy9CX",
+              "x": 374.93333333333334,
+              "y": 425.4,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 9.200000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "pTvE1",
+              "x": 382.50666666666666,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "B5w1O9",
+              "x": 390.08,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Qj4gC",
+              "x": 397.6533333333333,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "JPK19",
+              "x": 405.2266666666667,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "mmjew",
+              "x": 412.8,
+              "y": 408.84,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 42.32
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "k6OeK",
+              "x": 420.37333333333333,
+              "y": 338,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 184
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "d1UJD",
+              "x": 427.94666666666666,
+              "y": 342.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 174.79999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "n5IWA",
+              "x": 435.52,
+              "y": 351.8,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 156.4
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "i9Sr4",
+              "x": 443.0933333333333,
+              "y": 358.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 143.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "CmQLY",
+              "x": 450.6666666666667,
+              "y": 366.52,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 126.96
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "iwxD6",
+              "x": 458.24,
+              "y": 387.68,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 84.64
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "rTAMS",
+              "x": 465.81333333333333,
+              "y": 401.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 57.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "qBJgK",
+              "x": 473.38666666666666,
+              "y": 418.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 23.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "ix1mA",
+              "x": 480.96,
+              "y": 421.72,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 16.56
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "F6Nfd",
+              "x": 488.5333333333333,
+              "y": 424.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 11.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "F3KvwW",
+              "x": 496.1066666666667,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "COb0w",
+              "x": 503.68,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Xc7Bd",
+              "x": 511.25333333333333,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "LGMHX",
+              "x": 518.8266666666666,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "ZIFNK",
+              "x": 526.4,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Pe4FY",
+              "x": 533.9733333333334,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "wUyGm",
+              "x": 541.5466666666666,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "UWwi6",
+              "x": 549.12,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Ozo02",
+              "x": 556.6933333333334,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fEqZu",
+              "x": 564.2666666666667,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "o3OJr",
+              "x": 571.8399999999999,
+              "y": 428.5,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 3
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "GIkuD",
+              "x": 579.4133333333334,
+              "y": 377.56,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 104.88
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Q023IL",
+              "x": 586.9866666666667,
+              "y": 345.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 169.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "nEdwJ",
+              "x": 594.56,
+              "y": 359.15999999999997,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 141.68
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "js4WW",
+              "x": 602.1333333333333,
+              "y": 370.2,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 119.60000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Z9f9N",
+              "x": 609.7066666666667,
+              "y": 384,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "sQAA1",
+              "x": 617.28,
+              "y": 395.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 69.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fFjFb",
+              "x": 624.8533333333334,
+              "y": 390.44,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 79.12
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "aMgol",
+              "x": 632.4266666666666,
+              "y": 391.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 77.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "ZJHVy",
+              "x": 640,
+              "y": 390.44,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 79.12
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "kK1Zt",
+              "x": 647.5733333333334,
+              "y": 391.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 77.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "NFcwv",
+              "x": 655.1466666666666,
+              "y": 395.96,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 68.08
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "tlsCI",
+              "x": 662.72,
+              "y": 401.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 57.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "dsZV2",
+              "x": 670.2933333333333,
+              "y": 396.88,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 66.24
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "H6EHfq",
+              "x": 677.8666666666667,
+              "y": 375.72,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 108.55999999999999
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "t5XAVX",
+              "x": 685.4399999999999,
+              "y": 368.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 123.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fYAJW",
+              "x": 693.0133333333333,
+              "y": 387.68,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 84.64
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "iKDAE",
+              "x": 700.5866666666667,
+              "y": 389.52,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 80.96
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "HwBtT",
+              "x": 708.16,
+              "y": 389.52,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 80.96
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "v6H8nB",
+              "x": 715.7333333333333,
+              "y": 386.76,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 86.47999999999999
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "EeyJB",
+              "x": 723.3066666666666,
+              "y": 372.04,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 115.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "N4wmkb",
+              "x": 730.88,
+              "y": 387.68,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 84.64
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Ef87A",
+              "x": 738.4533333333334,
+              "y": 412.52,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 34.96
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "MowGe",
+              "x": 746.0266666666666,
+              "y": 415.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 29.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "ArKLk",
+              "x": 753.6,
+              "y": 424.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 11.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "z20qu",
+              "x": 761.1733333333333,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "bVUAi",
+              "x": 768.7466666666667,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "ZRXSM",
+              "x": 776.3199999999999,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "kp7rB",
+              "x": 783.8933333333333,
+              "y": 415.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 29.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "DUQIj",
+              "x": 791.4666666666667,
+              "y": 385.84000000000003,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 88.32
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Eqr4R",
+              "x": 799.04,
+              "y": 377.56,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 104.88
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "qF0Yr",
+              "x": 806.6133333333333,
+              "y": 393.2,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 73.60000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "SEBjQ",
+              "x": 814.1866666666666,
+              "y": 416.2,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 27.599999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "f160D",
+              "x": 821.76,
+              "y": 407.92,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 44.16
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "D3bYn2",
+              "x": 829.3333333333334,
+              "y": 420.8,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 18.400000000000002
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Bwl78",
+              "x": 836.9066666666666,
+              "y": 410.68,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 38.64
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "KPT04",
+              "x": 844.48,
+              "y": 392.28,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 75.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "saZfK",
+              "x": 852.0533333333333,
+              "y": 395.96,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 68.08
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "EaV8c",
+              "x": 859.6266666666667,
+              "y": 407,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 46
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "jBu77",
+              "x": 867.2,
+              "y": 405.15999999999997,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 49.68000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "r2hV49",
+              "x": 874.7733333333333,
+              "y": 400.56,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 58.88
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "K42E9i",
+              "x": 882.3466666666667,
+              "y": 397.8,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 64.39999999999999
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Q425p",
+              "x": 889.92,
+              "y": 397.8,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 64.39999999999999
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "G7Xrqz",
+              "x": 897.4933333333333,
+              "y": 394.12,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 71.76
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Y5wpUc",
+              "x": 905.0666666666666,
+              "y": 394.12,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 71.76
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "XCuJl",
+              "x": 912.64,
+              "y": 393.2,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 73.60000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "GZQLs",
+              "x": 920.2133333333334,
+              "y": 395.04,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 69.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "l5LQO",
+              "x": 927.7866666666666,
+              "y": 398.72,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 62.56
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "THN3p",
+              "x": 935.36,
+              "y": 396.88,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 66.24
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "GNX8R",
+              "x": 942.9333333333333,
+              "y": 401.48,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 57.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "C0DiqZ",
+              "x": 950.5066666666667,
+              "y": 420.8,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 18.400000000000002
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "W4vTmg",
+              "x": 958.08,
+              "y": 427.24,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 5.52
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "tWWvF",
+              "x": 965.6533333333333,
+              "y": 418.04,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 23.92
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "WamOP",
+              "x": 973.2266666666667,
+              "y": 384.92,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 90.16
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Bw5kW",
+              "x": 980.8,
+              "y": 392.28,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 75.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Gkfg3",
+              "x": 988.3733333333333,
+              "y": 391.36,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 77.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "dWuZD",
+              "x": 995.9466666666666,
+              "y": 401.48,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 57.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "fXBDr",
+              "x": 1003.52,
+              "y": 407.92,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 44.16
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "L3o9m",
+              "x": 1011.0933333333334,
+              "y": 415.28,
+              "name": "Barra",
+              "fill": "$lime",
+              "width": 4.573333333333333,
+              "height": 29.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "q6Nev",
+              "x": 1018.6666666666666,
+              "y": 416.2,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 27.599999999999998
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "SYCGS",
+              "x": 1026.24,
+              "y": 422.64,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 14.72
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "AjqLC",
+              "x": 1033.8133333333333,
+              "y": 424.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 11.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "f0eTYD",
+              "x": 1041.3866666666668,
+              "y": 417.12,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 25.76
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Q2e7U7",
+              "x": 1048.96,
+              "y": 391.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 77.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "NZ3iS",
+              "x": 1056.5333333333333,
+              "y": 394.12,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 71.76
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "FjEHF",
+              "x": 1064.1066666666666,
+              "y": 384.92,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 90.16
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "vKBHr",
+              "x": 1071.6799999999998,
+              "y": 388.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 82.8
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "DlOL6",
+              "x": 1079.2533333333333,
+              "y": 385.84000000000003,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 88.32
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "a91gA",
+              "x": 1086.8266666666668,
+              "y": 387.68,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 84.64
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "WABtI",
+              "x": 1094.4,
+              "y": 391.36,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 77.28
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "jUMP6",
+              "x": 1101.9733333333334,
+              "y": 388.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 82.8
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "S3MDD3",
+              "x": 1109.5466666666666,
+              "y": 389.52,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 80.96
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "uKVvv",
+              "x": 1117.12,
+              "y": 392.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 75.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "Yw2LB",
+              "x": 1124.6933333333334,
+              "y": 383.08,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 93.84
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "IAxGU",
+              "x": 1132.2666666666667,
+              "y": 381.24,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 97.52000000000001
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "KEvWk",
+              "x": 1139.84,
+              "y": 372.96,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 114.08
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "FKiGj",
+              "x": 1147.4133333333334,
+              "y": 376.64,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 106.72
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "kG80d",
+              "x": 1154.9866666666667,
+              "y": 382.15999999999997,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 95.68
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "knxWD",
+              "x": 1162.56,
+              "y": 388.6,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 82.8
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "OIGa5",
+              "x": 1170.1333333333332,
+              "y": 401.48,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 57.04
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "n0tlu",
+              "x": 1177.7066666666667,
+              "y": 406.08,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 47.84
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "sLgzr",
+              "x": 1185.28,
+              "y": 415.28,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 29.44
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "wtHwh",
+              "x": 1192.8533333333332,
+              "y": 422.64,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 14.72
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "J3PVr",
+              "x": 1200.4266666666667,
+              "y": 422.64,
+              "name": "Barra",
+              "fill": "#3A4050",
+              "width": 4.573333333333333,
+              "height": 14.72
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "hv9xv",
+          "x": 72,
+          "y": 542,
+          "name": "Línea de tiempo",
+          "fill": "$line",
+          "width": 1136,
+          "height": 1
+        },
+        {
+          "type": "rectangle",
+          "id": "FPAtR",
+          "x": 72,
+          "y": 536,
+          "name": "Marca El",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "YqV5k",
+          "x": 72,
+          "y": 560,
+          "name": "Palabra El",
+          "fill": "$muted",
+          "content": "El",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "XaU8V",
+          "x": 141.895041621426,
+          "y": 536,
+          "name": "Marca equipo",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "Ez4gD",
+          "x": 141.895041621426,
+          "y": 560,
+          "name": "Palabra equipo",
+          "fill": "$muted",
+          "content": "equipo",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "hgwfZ",
+          "x": 257.01628664495115,
+          "y": 536,
+          "name": "Marca de",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "OKFBE",
+          "x": 257.01628664495115,
+          "y": 560,
+          "name": "Palabra de",
+          "fill": "$muted",
+          "content": "de",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "W30lY3",
+          "x": 298.13101701049584,
+          "y": 536,
+          "name": "Marca Claude",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "pWa5F",
+          "x": 298.13101701049584,
+          "y": 560,
+          "name": "Palabra Claude",
+          "fill": "$muted",
+          "content": "Claude",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "ieKdR",
+          "x": 396.80636988780316,
+          "y": 536,
+          "name": "Marca Code,",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "vUD86",
+          "x": 396.80636988780316,
+          "y": 560,
+          "name": "Palabra Code,",
+          "fill": "$muted",
+          "content": "Code,",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "YzYxr",
+          "x": 577.7111834961997,
+          "y": 536,
+          "name": "Marca una",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "uuBFK",
+          "x": 577.7111834961997,
+          "y": 560,
+          "name": "Palabra una",
+          "fill": "$muted",
+          "content": "una",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "ppy65",
+          "x": 672.2750633369526,
+          "y": 536,
+          "name": "Marca de",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "CGCgo",
+          "x": 672.2750633369526,
+          "y": 560,
+          "name": "Palabra de",
+          "fill": "$muted",
+          "content": "de",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "W7mzD",
+          "x": 717.5012667390517,
+          "y": 536,
+          "name": "Marca las",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "Qdufp",
+          "x": 717.5012667390517,
+          "y": 560,
+          "name": "Palabra las",
+          "fill": "$muted",
+          "content": "las",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "VklKL",
+          "x": 791.5077813970323,
+          "y": 536,
+          "name": "Marca herramientas",
+          "fill": "$lime",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "Sde4U",
+          "x": 791.5077813970323,
+          "y": 560,
+          "name": "Palabra herramientas",
+          "fill": "$lime",
+          "content": "herramientas",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "600"
+        },
+        {
+          "type": "rectangle",
+          "id": "pfGKQ",
+          "x": 1046.4191096634095,
+          "y": 536,
+          "name": "Marca de",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "oAwZ6",
+          "x": 1046.4191096634095,
+          "y": 560,
+          "name": "Palabra de",
+          "fill": "$muted",
+          "content": "de",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "Vq54E",
+          "x": 1099.8682591386175,
+          "y": 536,
+          "name": "Marca IA",
+          "fill": "#3A4050",
+          "width": 2,
+          "height": 13
+        },
+        {
+          "type": "text",
+          "id": "zDlCD",
+          "x": 1099.8682591386175,
+          "y": 560,
+          "name": "Palabra IA",
+          "fill": "$muted",
+          "content": "IA",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "mSSpv",
+          "x": 880,
+          "y": 176,
+          "name": "Guiño",
+          "fill": "$lime",
+          "textGrowth": "fixed-width",
+          "width": 328,
+          "content": "¿hay vídeo? hi, video.",
+          "textAlign": "right",
+          "fontFamily": "$mono",
+          "fontSize": 22,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BYw15",
+      "x": 1360,
+      "y": 0,
+      "name": "Propuesta README Haividio (GitHub oscuro)",
+      "width": 1012,
+      "fill": "#0D1117",
+      "layout": "vertical",
+      "gap": 18,
+      "padding": [
+        40,
+        48,
+        56,
+        48
+      ],
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": 6,
+          "id": "lq8cQ",
+          "name": "Banner",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "exports/h0L1E.png",
+            "mode": "cover"
+          },
+          "width": "fill_container",
+          "height": 458
+        },
+        {
+          "type": "frame",
+          "id": "KoU6G",
+          "name": "Insignias",
+          "gap": 6,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HK39s",
+              "name": "Insignia licencia",
+              "clip": true,
+              "height": 20,
+              "cornerRadius": 3,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AhkCn",
+                  "name": "Clave",
+                  "height": "fill_container",
+                  "fill": "#555B66",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ifouI",
+                      "name": "licencia",
+                      "fill": "#FFFFFF",
+                      "content": "licencia",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WLnCH",
+                  "name": "Valor",
+                  "height": "fill_container",
+                  "fill": "#07080B",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OKlCA",
+                      "name": "MIT",
+                      "fill": "#D4FF3A",
+                      "content": "MIT",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oLPd6",
+              "name": "Insignia Claude Code",
+              "clip": true,
+              "height": 20,
+              "cornerRadius": 3,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZNx4b",
+                  "name": "Clave",
+                  "height": "fill_container",
+                  "fill": "#555B66",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "D3TkN2",
+                      "name": "Claude Code",
+                      "fill": "#FFFFFF",
+                      "content": "probado con",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Lz0qp",
+                  "name": "Valor",
+                  "height": "fill_container",
+                  "fill": "#07080B",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hrFzH",
+                      "name": "plugin",
+                      "fill": "#D4FF3A",
+                      "content": "Claude Code",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GKeTw",
+              "name": "Insignia idioma",
+              "clip": true,
+              "height": 20,
+              "cornerRadius": 3,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "heHdQ",
+                  "name": "Clave",
+                  "height": "fill_container",
+                  "fill": "#555B66",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vNIrY",
+                      "name": "idioma",
+                      "fill": "#FFFFFF",
+                      "content": "idioma",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A8DoH",
+                  "name": "Valor",
+                  "height": "fill_container",
+                  "fill": "#07080B",
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k88ppf",
+                      "name": "español",
+                      "fill": "#D4FF3A",
+                      "content": "español",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "gBjVP",
+          "name": "Un repositorio para prod",
+          "fill": "#E6EDF3",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Un manual y un espacio de trabajo para producir vídeos con agentes de IA. Abres la terminal aquí y el agente ya sabe qué herramienta usar, cómo se trabaja y qué falló la última vez.",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "MZMFO",
+          "name": "Índice",
+          "gap": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "DD93H",
+              "name": "Elige tu vídeo",
+              "fill": "#4493F8",
+              "content": "Elige tu vídeo",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "SE4qy",
+              "name": "Empezar",
+              "fill": "#4493F8",
+              "content": "Empezar",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "JN4V6",
+              "name": "Skills",
+              "fill": "#4493F8",
+              "content": "Skills",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "tjnfF",
+              "name": "Guías",
+              "fill": "#4493F8",
+              "content": "Guías",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "In9lj",
+              "name": "Estructura",
+              "fill": "#4493F8",
+              "content": "Estructura",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hB5Np",
+          "name": "H2 Elige tu vídeo",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "cePBE",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Elige tu vídeo",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "AZooj",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GM3L0",
+          "name": "Tabla",
+          "clip": true,
+          "width": "fill_container",
+          "cornerRadius": 6,
+          "stroke": "#3D444D",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AQr73",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#151B23",
+              "stroke": "#3D444D",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EWPA9",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "toPEg",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quieres hacer",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m3Rzak",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KHQU3",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Con",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P76asW",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iAVPj",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Guía",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EE5Cr",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iF0jg",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "q5XVqE",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Vídeo hablado: quitar silencios, errores y muletillas",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H3NfIe",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p6uum",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "video-use",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ERjbd",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dfiJr",
+                      "name": "Texto",
+                      "fill": "#4493F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Workflow 1",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NjK5W",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KtTTz",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uV6bm",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Animaciones sobre tu explicación",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b7daHe",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g2PzKO",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "video-use + HyperFrames o Remotion",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KvpUL",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NuMeC",
+                      "name": "Texto",
+                      "fill": "#4493F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Workflow 2",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kcC6V",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SlhM5",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NLTos",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Explicativo sin cara, con voz en off",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fiOHb",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ztaea",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "HyperFrames o Remotion + ElevenLabs",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G5OMC",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LrS8R",
+                      "name": "Texto",
+                      "fill": "#4493F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Workflow 3",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qoJ6u",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jFCF1",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kn9qc",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Demo de producto: pantalla y voz clonada",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dU4sJ",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fasFO",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Playwright + ffmpeg + HyperFrames",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S41F4r",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MvX9n",
+                      "name": "Texto",
+                      "fill": "#4493F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Workflow 5",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g24ep",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c3YftS",
+                  "name": "Celda",
+                  "width": 440,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kRBDQ",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Publicar en YouTube",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T5YJn",
+                  "name": "Celda",
+                  "width": 340,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O884hM",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "MCP de YouTube (Data API v3)",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a4zbA",
+                  "name": "Celda",
+                  "width": 136,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LkFYf",
+                      "name": "Texto",
+                      "fill": "#4493F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Workflow 4",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "UARXP",
+          "name": "Todo funciona con la sus",
+          "fill": "#9198A1",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Probado con Claude Code; las guías y los scripts sirven con cualquier agente. Lo único que se paga aparte es ElevenLabs.",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "xgxfA",
+          "name": "H2 Empezar",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "NOhGH",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Empezar",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "D5v9G8",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ECjkR",
+          "name": "Código",
+          "width": "fill_container",
+          "fill": "#151B23",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "gap": 4,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "W5wqf0",
+              "name": "Línea",
+              "fill": "#E6EDF3",
+              "content": "claude plugin marketplace add SantipBarber/haividio",
+              "lineHeight": 1.5,
+              "fontFamily": "Geist Mono",
+              "fontSize": 13.5,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "P2ARI8",
+              "name": "Línea",
+              "fill": "#E6EDF3",
+              "content": "claude plugin install video-studio@haividio",
+              "lineHeight": 1.5,
+              "fontFamily": "Geist Mono",
+              "fontSize": 13.5,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "aGS5u",
+              "name": "Línea",
+              "fill": "#E6EDF3",
+              "content": "git clone https://github.com/SantipBarber/haividio.git",
+              "lineHeight": 1.5,
+              "fontFamily": "Geist Mono",
+              "fontSize": 13.5,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "DsEtf",
+              "name": "Línea",
+              "fill": "#E6EDF3",
+              "content": "cd haividio && claude",
+              "lineHeight": 1.5,
+              "fontFamily": "Geist Mono",
+              "fontSize": 13.5,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "E7GG7P",
+          "name": "Dile qué vídeo quieres. ",
+          "fill": "#E6EDF3",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Dile qué vídeo quieres. El agente lee sus instrucciones, elige el workflow y propone el plan antes de renderizar nada.",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "VmJJD",
+          "name": "Instalación completa en Mac",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "b8oo27",
+              "name": "Flecha",
+              "width": 16,
+              "height": 16,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#9198A1"
+            },
+            {
+              "type": "text",
+              "id": "e6doA",
+              "name": "Instalación completa en ",
+              "fill": "#E6EDF3",
+              "content": "Instalación completa en Mac",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kApwy",
+          "name": "Instalación completa en Windows",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "yubSv",
+              "name": "Flecha",
+              "width": 16,
+              "height": 16,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#9198A1"
+            },
+            {
+              "type": "text",
+              "id": "nvdFr",
+              "name": "Instalación completa en ",
+              "fill": "#E6EDF3",
+              "content": "Instalación completa en Windows",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h6fbvc",
+          "name": "H2 Skills del plugin",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "lmmuF",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Skills del plugin",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "grVGq",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uOPiN",
+          "name": "Tabla",
+          "clip": true,
+          "width": "fill_container",
+          "cornerRadius": 6,
+          "stroke": "#3D444D",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZN8ih",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#151B23",
+              "stroke": "#3D444D",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dCQ09",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xU6CI",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Skill",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LhT7s",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U2p98",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Para qué",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y9xNQ",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dqJ0c",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xYnk7",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "elegir-herramienta-video",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qb9XP",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ptGoY",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Decide qué herramienta usar según el tipo de vídeo",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oA2Bm",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KsyWj",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S1VRD",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "video-hablado",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MKPhx",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lJ5w5",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Edita tomas: cortes, subtítulos y animaciones sincronizadas",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mAhWF",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jq8pt",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ObV4F",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "video-sin-cara",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CqEte",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DQTJM",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Investigación, guion, voz, animación y render",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DP2zi",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lW9ft",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i7Lx1",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "identidad-visual",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ffpQZ",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qnTxe",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aplica la identidad del canal y evita lo genérico",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mZyDv",
+              "name": "Fila",
+              "width": "fill_container",
+              "fill": "#0D1117",
+              "stroke": "#3D444D",
+              "strokeWidth": {
+                "top": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C3i6B2",
+                  "name": "Celda",
+                  "width": 300,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KkaTv",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "publicar-youtube",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wpdze",
+                  "name": "Celda",
+                  "width": 616,
+                  "padding": [
+                    9,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UEaat",
+                      "name": "Texto",
+                      "fill": "#E6EDF3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Título, capítulos, miniatura y subida como privado",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "khEB7",
+          "name": "H2 Guías",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Rknan",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Guías",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "t9h7T",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FWW4I",
+          "name": "Voz clonada",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "O6VQfz",
+              "name": "Voz clonada",
+              "fill": "#4493F8",
+              "content": "Voz clonada",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xhkxj",
+              "name": "· modelos, pronunciación",
+              "fill": "#E6EDF3",
+              "content": "· modelos, pronunciación, tomas y empalmes",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tXx4p",
+          "name": "Montaje y verificación",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "uTGV0",
+              "name": "Montaje y verificación",
+              "fill": "#4493F8",
+              "content": "Montaje y verificación",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "XL880",
+              "name": "· sincronía, cortes limp",
+              "fill": "#E6EDF3",
+              "content": "· sincronía, cortes limpios, mezcla y qué prueba cada comprobación",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IZ0KF",
+          "name": "Catálogo de herramientas",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "bGC4w",
+              "name": "Catálogo de herramientas",
+              "fill": "#4493F8",
+              "content": "Catálogo de herramientas",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "j8AmAK",
+              "name": "· editores, MCP y skills",
+              "fill": "#E6EDF3",
+              "content": "· editores, MCP y skills, con su coste",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cwJwh",
+          "name": "Identidad visual",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "i7vTr4",
+              "name": "Identidad visual",
+              "fill": "#4493F8",
+              "content": "Identidad visual",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "eqdrT",
+              "name": "· paleta, tipografía y m",
+              "fill": "#E6EDF3",
+              "content": "· paleta, tipografía y movimiento",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z5Pvqg",
+          "name": "Memoria",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "c1uqaq",
+              "name": "Memoria",
+              "fill": "#4493F8",
+              "content": "Memoria",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Znni4",
+              "name": "· aprendizajes y fallos,",
+              "fill": "#E6EDF3",
+              "content": "· aprendizajes y fallos, con fecha",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RxrWx",
+          "name": "H2 Estructura",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "truxT",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Estructura",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "NdQ79",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q9x5V",
+          "name": "Plegable estructura",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "T79QKs",
+              "name": "Flecha",
+              "width": 16,
+              "height": 16,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#9198A1"
+            },
+            {
+              "type": "text",
+              "id": "YCP5a",
+              "name": "Ver carpetas",
+              "fill": "#E6EDF3",
+              "content": "Ver carpetas",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VkWyc",
+          "name": "H2 Licencia",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "VchqJ",
+              "name": "Título",
+              "fill": "#E6EDF3",
+              "content": "Licencia",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "id": "qF1zN",
+              "name": "Regla",
+              "fill": "#3D444D",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "e7AZ8Y",
+          "name": "MIT. Las herramientas y ",
+          "fill": "#E6EDF3",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "MIT. Las herramientas y servicios citados tienen sus propias licencias.",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "R2IRB",
+      "x": 665,
+      "y": 1363,
+      "name": "Frame 1",
+      "clip": true,
+      "width": 9,
+      "height": 7,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#07080B"
+    },
+    "panel": {
+      "type": "color",
+      "value": "#0F1116"
+    },
+    "line": {
+      "type": "color",
+      "value": "#232733"
+    },
+    "dot": {
+      "type": "color",
+      "value": "#1C2029"
+    },
+    "text": {
+      "type": "color",
+      "value": "#F4F5F7"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#8B90A0"
+    },
+    "lime": {
+      "type": "color",
+      "value": "#D4FF3A"
+    },
+    "font": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    }
+  },
+  "fileToken": "a73d3202-459d-49a5-ae3f-0bbe7482b566"
+}

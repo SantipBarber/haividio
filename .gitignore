@@ -27,6 +27,8 @@ request.token
 
 # Pruebas A/B de voz (audios, logs y ficheros temporales)
 videos/*/audio/ab-test/
+# Voces anteriores guardadas tras regenerar (solo en local)
+videos/*/audio/voice-v*/
 
 # Cloudflare
 .wrangler/
