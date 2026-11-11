@@ -19,7 +19,7 @@ Alternative if you prefer an MCP: [youtube-uploader-mcp](https://github.com/anwe
 3. Create credentials: **OAuth client ID**, type **web application**, with the redirect URI `http://localhost:8080/oauth2callback`.
 4. Download the JSON and save it **outside the repository**, for example at `~/.config/youtubeuploader/client_secrets.json` (on Windows, `%APPDATA%\youtubeuploader\`).
 5. The first upload opens a browser to authorize the channel and saves the permission in the file specified with `-cache`. Save that file outside the repository too.
-6. **Publish the app** on the consent screen (status **In production**). Google does not need to verify it. While it is **in testing**, Google expires the permission after 7 days and you have to authorize again every week. When authorizing an unverified app you get a warning: **Advanced** → **Go to … (unsafe)**, with the channel's account.
+6. **Publish the app** under **Google Auth Platform** → **Audience** (status **In production**). Google does not need to verify it, but the button stays disabled until **Branding** is complete: app name (without "YouTube" or "Google"), support email, developer contact email, home page, a link to a privacy policy, and their domain as an authorized domain, verified in Search Console with the same account. No logo, which forces verification. After moving to production, authorize again: the permission obtained while testing still expires after 7 days. While it is **in testing**, Google expires the permission after 7 days and you have to authorize again every week. When authorizing an unverified app you get a warning: **Advanced** → **Go to … (unsafe)**, with the channel's account.
 
 The credentials and token grant access to your channel: never put them in git.
 
