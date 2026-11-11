@@ -18,8 +18,11 @@ este script hace:
   de tiempo vacía registrada en window.__timelines, donde va la animación.
 
 Varios fotogramas (un storyboard): el primero es la composición; los demás son
-estados del mismo diseño. Para cada elemento, por su id, <nombre>.states.json guarda
-qué cambia respecto al primero (estilos y texto) y qué elementos entran o salen, y
+estados del mismo diseño. Con --draft, la composición lleva además los bloques de
+todos los fotogramas y un borrador de animación: un tramo igual por fotograma y, en
+cada cambio, salen los bloques que ya no están, entran los nuevos y las capas
+comunes pasan al estado siguiente (colores, tamaño, posición, texto).
+Para cada elemento, por su id, <nombre>.states.json guarda qué cambia respecto al primero (estilos y texto) y qué elementos entran o salen, y
 pencil/<nombre>/ guarda el HTML de cada fotograma, ya convertido y con los mismos
 ids, para copiar de ahí las capas que entran. Pencil exporta varios fotogramas
 dentro de un lienzo sin nombre, cada uno con su left: el script lo quita. Los
@@ -30,7 +33,7 @@ Exportar desde Pencil (por MCP, con la ruta explícita del .pen):
 
 Uso:
     python3 scripts/pencil_to_hyperframes.py frames.html --project animations/mi-video \\
-        --name buscar --pen-dir design/ --tokens docs/style/tokens.css [--duration 8]
+        --name buscar --pen-dir design/ --tokens docs/style/tokens.css [--duration 8] [--draft [--at 0,3.2,6.5]]
 
 Escribe compositions/<nombre>.html (y <nombre>.states.json si hay más de un fotograma)
 e imprime el fragmento para montarla en index.html. Solo necesita Python 3; descargar
@@ -73,6 +76,7 @@ class Frames(html.parser.HTMLParser):
         self.frames = []       # [{"name", "html": [trozos], "elements": {id: {...}}}]
         self.fonts_href = []
         self.used = {}
+        self.top_open = None   # (id, inicio en html, profundidad) del bloque de primer nivel abierto
 
     def _frame(self):
         return self.frames[-1] if self.frames else None
@@ -99,7 +103,8 @@ class Frames(html.parser.HTMLParser):
         if all(e == "wrap" for _, _, e in self.stack):  # un fotograma de primer nivel
             # Dentro del lienzo, cada fotograma lleva su left: en la composición va a 0.
             raw = re.sub(r"\b(left|top):\s*-?[\d.]+px", r"\1: 0px", raw)
-            self.frames.append({"name": name or f"Fotograma {len(self.frames) + 1}", "html": [], "elements": {}})
+            self.frames.append({"name": name or f"Fotograma {len(self.frames) + 1}", "html": [], "elements": {},
+                                "top": {}})
             self.used = {}
         if name is not None:
             inner = [x for x in self.stack if x[2] != "wrap"]
@@ -115,10 +120,15 @@ class Frames(html.parser.HTMLParser):
             style = a.get("style", "") if path else re.sub(r"\b(left|top):\s*-?[\d.]+px", r"\1: 0px", a.get("style", ""))
             self._frame()["elements"][eid] = {"name": name, "path": "/".join(path), "style": style,
                                               "text": ""}
+        depth = len(self.stack)
+        if name is not None and len([x for x in self.stack if x[2] != "wrap"]) == 1:
+            # Hijo directo del fotograma: se guarda su HTML entero para --draft.
+            self.top_open = (eid, len(self._frame()["html"]), depth)
         self.stack.append((tag, name, eid if name is not None else None))
         self._emit(raw)
         if tag in self.VOID:
             self.stack.pop()
+            self._close_top()
 
     def handle_startendtag(self, tag, attrs):
         # <link … />, <path … />, <img … />: misma lógica que una etiqueta de apertura, sin cierre.
@@ -126,6 +136,13 @@ class Frames(html.parser.HTMLParser):
         self.handle_starttag(tag, attrs)
         if len(self.stack) > depth:
             self.stack.pop()
+            self._close_top()
+
+    def _close_top(self):
+        if self.top_open and len(self.stack) == self.top_open[2]:
+            eid, start, _ = self.top_open
+            self._frame()["top"][eid] = "".join(self._frame()["html"][start:])
+            self.top_open = None
 
     def handle_endtag(self, tag):
         if tag == "body":
@@ -139,13 +156,14 @@ class Frames(html.parser.HTMLParser):
             t = self.stack.pop()[0]
             if t == tag:
                 break
+        self._close_top()
 
     def handle_data(self, data):
         if self.in_body and self.stack:
             self._emit(data)
             if data.strip():
                 # El texto pertenece a la capa con nombre más cercana.
-                owner = next((e for _, _, e in reversed(self.stack) if e), None)
+                owner = next((e for _, _, e in reversed(self.stack) if e and e != "wrap"), None)
                 if owner is not None:
                     el = self._frame()["elements"][owner]
                     el["text"] = (el["text"] + " " + data.strip()).strip()
@@ -212,8 +230,11 @@ def tokenize_colors(text, pal):
         count += 1
         return f"var(--{name}, {m.group(0)})"
 
-    # Solo dentro de style="…": un color en el texto visible no se toca.
-    return re.sub(r'style="([^"]*)"', lambda m: 'style="' + re.sub(r"#[0-9a-fA-F]{6}\b", sub, m.group(1)) + '"', text), count
+    # Solo dentro de style="…" o style='…' (Pencil usa comillas simples si dentro hay dobles, como en
+    # font-family: "Geist Mono"): un color en el texto visible no se toca.
+    return re.sub(r"""style=(["'])(.*?)\1""",
+                  lambda m: f"style={m.group(1)}" + re.sub(r"#[0-9a-fA-F]{6}\b", sub, m.group(2)) + m.group(1),
+                  text, flags=re.S), count
 
 
 def copy_assets(text, bases, project):
@@ -271,6 +292,85 @@ def states(frames):
     return out
 
 
+TWEENABLE = {"color": "color", "background-color": "backgroundColor", "border-color": "borderColor",
+             "opacity": "opacity", "left": "left", "top": "top", "width": "width", "height": "height",
+             "font-size": "fontSize", "outline": "outlineColor"}
+
+
+def clear(color):
+    """El mismo color con opacidad 0: ir a «transparente» sin pasar por el negro (rgba(0,0,0,0) oscurece)."""
+    m = re.fullmatch(r"#([0-9a-fA-F]{6})", (color or "").strip())
+    if not m:
+        return "rgba(0,0,0,0)"
+    r, g, b = (int(m.group(1)[i:i + 2], 16) for i in (0, 2, 4))
+    return f"rgba({r},{g},{b},0)"
+
+
+def draft(frames, duration, starts=None):
+    """Borrador de animación de un storyboard: un tramo igual por fotograma y, en cada cambio,
+    salen los bloques que ya no están, entran los nuevos y las capas comunes pasan al estado siguiente.
+
+    Devuelve el HTML de los bloques que entran después del primer fotograma (ocultos al principio),
+    las líneas de la línea de tiempo y cuántas capas anidadas que entran se quedan sin animar."""
+    seg = duration / len(frames)
+    starts = starts or [round(seg * i, 3) for i in range(len(frames))]
+    extra, lines, nested = [], [], 0
+    seen = set(frames[0]["top"])
+    for i in range(1, len(frames)):
+        prev, cur = frames[i - 1], frames[i]
+        t = starts[i]
+        exits = [e for e in prev["top"] if e not in cur["top"]]
+        enters = [e for e in cur["top"] if e not in prev["top"]]
+        for e in enters:
+            if e not in seen:
+                block = cur["top"][e]
+                head = block.split(">", 1)[0]
+                block = (re.sub(r"""style=(["'])""", r"style=\1opacity: 0; ", block, count=1)
+                         if re.search(r"""style=["']""", head)
+                         else re.sub(r"^<(\w+)", r'<\1 style="opacity: 0"', block, count=1))
+                extra.append(block)
+                seen.add(e)
+        lines.append(f"// {cur['name']}")
+        if exits:
+            lines.append(f'tl.to({json.dumps(["#" + e for e in exits])}, {{ opacity: 0, y: -16, duration: 0.35, '
+                         f'ease: "power2.in" }}, {round(t - 0.35, 3)});')
+        if enters:
+            lines.append(f'tl.fromTo({json.dumps(["#" + e for e in enters])}, {{ opacity: 0, y: 24 }}, '
+                         f'{{ opacity: 1, y: 0, duration: 0.6, ease: "expo.out", stagger: 0.08 }}, {t});')
+        entering_html = "".join(cur["top"][e] for e in enters)
+        for eid, el in cur["elements"].items():
+            if not el["path"]:
+                continue
+            if eid not in prev["elements"]:
+                if f'id="{eid}"' not in entering_html and eid not in cur["top"]:
+                    nested += 1
+                continue
+            a, b = style_props(prev["elements"][eid]["style"]), style_props(el["style"])
+            # Siempre los dos extremos (fromTo) con los valores del diseño: si GSAP lee el de partida de un
+            # estilo en línea con var(--lima, #hex), puede interpolar hacia un color que no es.
+            src, dst = {}, {}
+            for css, js in TWEENABLE.items():
+                if a.get(css) == b.get(css):
+                    continue
+                va, vb = a.get(css), b.get(css)
+                if css == "outline":
+                    va = va.split()[-1] if va else None
+                    vb = vb.split()[-1] if vb else None
+                if va is None and vb is None:
+                    continue
+                if css in ("color", "background-color", "border-color", "outline"):
+                    va, vb = va or clear(vb), vb or clear(va)
+                elif va is None or vb is None:
+                    continue
+                src[js], dst[js] = va, vb
+            if dst:
+                lines.append(f'tl.fromTo("#{eid}", {json.dumps(src)}, {{ ...{json.dumps(dst)}, duration: 0.5, '
+                             f'ease: "power2.inOut", immediateRender: false }}, {round(t - 0.25, 3)});')
+            if prev["elements"][eid]["text"] != el["text"]:
+                lines.append(f'tl.set("#{eid}", {{ textContent: {json.dumps(el["text"], ensure_ascii=False)} }}, {t});')
+    return extra, lines, nested
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("export", help="HTML exportado de Pencil con html-css")
@@ -283,6 +383,10 @@ def main():
     p.add_argument("--width", type=int, default=1920)
     p.add_argument("--height", type=int, default=1080)
     p.add_argument("--no-fonts", action="store_true", help="no descargar fuentes")
+    p.add_argument("--at", help="con --draft: segundo en que empieza cada fotograma, separados por comas "
+                   "(p. ej. 0,7.5,15.2, cuando la voz nombra cada paso). Por defecto, tramos iguales")
+    p.add_argument("--draft", action="store_true",
+                   help="con varios fotogramas: mete los bloques de todos y escribe un borrador de animación entre estados")
     a = p.parse_args()
 
     project = Path(a.project)
@@ -294,6 +398,21 @@ def main():
         sys.exit("No hay fotogramas en el <body> del export.")
     frame = parser.frames[0]
     body = "".join(frame["html"])
+    timeline = [f'// La animación va aquí, con los ids de las capas. Ejemplo:',
+                f'// tl.from("#{parser.prefix}-...", {{ opacity: 0, y: 24, duration: 0.6, ease: "expo.out" }}, 0.2);']
+    nested = 0
+    starts = None
+    if a.at:
+        starts = [float(x) for x in a.at.split(",")]
+        if len(starts) != len(parser.frames) or starts != sorted(starts) or starts[-1] >= a.duration:
+            sys.exit(f"--at necesita {len(parser.frames)} instantes en orden y por debajo de --duration.")
+    if a.draft and len(parser.frames) > 1:
+        extra, lines, nested = draft(parser.frames, a.duration, starts)
+        body = body.rstrip()
+        if not body.endswith("</div>"):
+            sys.exit("El fotograma no acaba en </div>: no sé dónde meter los bloques que entran.")
+        body = body[:-len("</div>")] + "".join(extra) + "</div>"
+        timeline = ["// Borrador generado desde los fotogramas de Pencil: retócalo (ritmo, voz, identidad)."] + lines
 
     bases = [export.parent] + ([Path(a.pen_dir)] if a.pen_dir else [])
     pal = palette(a.tokens) if a.tokens else {}
@@ -315,8 +434,7 @@ def main():
   <script>
     (function () {{
       const tl = gsap.timeline({{ paused: true }});
-      // La animación va aquí, con los ids de las capas. Ejemplo:
-      // tl.from("#{parser.prefix}-...", {{ opacity: 0, y: 24, duration: 0.6, ease: "expo.out" }}, 0.2);
+      {chr(10).join("      " + l for l in timeline).lstrip()}
       tl.to({{}}, {{ duration: {a.duration} }}, 0);
       window.__timelines = window.__timelines || {{}};
       window.__timelines["{name}"] = tl;
@@ -349,6 +467,13 @@ def main():
                   f"{len(st['exit'][fname])} salen")
         print(f"estados: {sdest}")
         print(f"HTML de cada fotograma (para copiar las capas que entran): {ref_dir}")
+        if a.draft:
+            seg = a.duration / len(parser.frames)
+            cuts = starts[1:] if starts else [seg * i for i in range(1, len(parser.frames))]
+            print("borrador: cambios de fotograma en " + ", ".join(f"{c:.2f} s" for c in cuts))
+            if nested:
+                print(f"  {nested} capas anidadas entran dentro de un bloque que ya estaba: no están en el borrador; "
+                      f"cópialas de {ref_dir}")
     print("\nIds (capa → id):")
     for eid in ids[:40]:
         print(f"  {frame['elements'][eid]['path'] or frame['name']} → #{eid}")
