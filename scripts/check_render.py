@@ -82,9 +82,30 @@ def norm(text):
     return re.sub(r"[^a-z0-9ñ%]+", " ", t).strip()
 
 
-def found(expected, lines, joined):
+def in_order(words, frame_words, max_gap=6):
+    """Las palabras del rótulo salen en orden en el fotograma, con pocas ajenas en medio.
+
+    Un título en dos líneas con otra columna al lado se lee intercalado («Busca lo más»,
+    «espacio de significado», «cercano»): así cuenta como encontrado."""
+    i, gap = 0, 0
+    for w in frame_words:
+        if w == words[i]:
+            i, gap = i + 1, 0
+            if i == len(words):
+                return True
+        elif i:
+            gap += 1
+            if gap > max_gap:
+                i, gap = 0, 0
+    return False
+
+
+def found(expected, lines, joined, frames_words):
     e = norm(expected)
-    return e in joined or any(difflib.SequenceMatcher(None, e, norm(l)).ratio() >= 0.85 for l in lines)
+    if e in joined or any(difflib.SequenceMatcher(None, e, norm(l)).ratio() >= 0.85 for l in lines):
+        return True
+    words = e.split()
+    return len(words) > 1 and any(in_order(words, fw) for fw in frames_words)
 
 
 def mmss(t):
@@ -175,7 +196,8 @@ def main():
     if a.expect:
         joined = " ".join(norm(l) for l in all_lines)
         expected = [l.strip() for l in Path(a.expect).read_text(encoding="utf-8").splitlines() if l.strip()]
-        missing = [e for e in expected if not found(e, all_lines, joined)]
+        frames_words = [" ".join(norm(t["text"]) for t in f["text"]).split() for f in frames]
+        missing = [e for e in expected if not found(e, all_lines, joined, frames_words)]
 
     print("tramos quietos…", flush=True)
     still = freezes(a.video, a.static, a.freeze_noise)

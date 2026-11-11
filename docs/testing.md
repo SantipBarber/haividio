@@ -62,6 +62,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [x] Encuentra todos los rótulos esperados y no el inventado (control); marca el rótulo gris tachado de 5:50 (11-11, Claude).
 - [x] Sin `--timeline`, el detector adaptativo encuentra todos los cortes entre escenas de los dos primeros minutos (11-11, Claude).
 - [ ] Comparar los planos detectados en el vídeo entero con `timeline.json`.
+- [x] Un rótulo en dos líneas con otra columna al lado («Busca lo más / cercano») cuenta como encontrado; el inventado sigue sin salir (11-11, Claude, con el borrador del storyboard de Pencil).
 - [ ] Control de texto cortado: renderizar una escena con un rótulo que se salga del encuadre; debe marcarlo.
 - [ ] Control de letra pequeña: un rótulo de 20 px; debe marcarlo y uno de 32 px no.
 - [ ] Probarlo en un vídeo hablado (workflow 1) y en una demo de pantalla (workflow 5), donde el texto no es nuestro.
