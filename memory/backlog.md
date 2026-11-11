@@ -4,7 +4,8 @@
 
 - [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/other-agents.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.
 - [ ] Producir un vídeo entero con un agente que no sea Claude Code y anotar qué falla.
-- [ ] Publicar con youtubeuploader (07-11, workflow 4): crear el proyecto de Google Cloud y subir un vídeo corto de prueba como **oculto** para ver si un proyecto sin auditar lo deja privado y bloqueado.
+- [x] Publicar con youtubeuploader (07-11, workflow 4): proyecto de Google Cloud creado y prueba como oculto hecha (10-11); el vídeo de RAG, publicado. Miniatura puesta el 11-11 tras verificar el canal (PR #19).
+- [x] Publicar la app OAuth en Google Cloud (11-11): «En producción», con la marca y el sitemap; el token ya no caduca el 17-11 (PR #20, #21).
 - [x] Subir la imagen como vista previa social en los ajustes de GitHub (07-11).
 - [x] Publicar haividio.dev sola al fusionar en `main`, y `just deploy` a mano (07-11, `docs/web.md`).
 - [x] Guía para contribuir, código de conducta (Contributor Covenant 3.0), plantillas de issue y PR, y avisos privados de seguridad (08-11). Contacto: info@haividio.dev, reenviado con Email Routing.
