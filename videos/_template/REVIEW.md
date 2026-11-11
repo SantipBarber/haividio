@@ -14,6 +14,10 @@
 
 - <decisión>: cómo se cambia y cuánto cuesta.
 
+## Revisión visual (`check_render.py`)
+
+- Texto cortado, pequeño o dudoso, rótulos que no salen y tramos quietos: <minuto> · <qué>.
+
 ## Sin comprobar
 
 - <qué no se ha podido comprobar y por qué>.

@@ -74,6 +74,23 @@ ffmpeg -i out.mp4 -af ebur128=peak=true -f null -    # verify
 - When reading that JSON from a script, extract the text between the first and last brace: ffmpeg writes more text after it.
 - In zsh, `"$var:linear"` applies the `:l` modifier. Write `${var}:linear` instead.
 
+## Visual review of the render
+
+The agent does not see the video moving. [`scripts/check_render.py`](../scripts/check_render.py) gives it something to look at and a place to start, all locally:
+
+```bash
+uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
+  scripts/check_render.py out/video.mp4 --out out/review \
+  --timeline animations/<project>/timeline.json --expect labels.txt
+```
+
+- **One frame per scene**, at its end, once everything has appeared (from `timeline.json`, or by detecting shots with PySceneDetect when there is none), plus one every 10 s, or every 2 s when looking for labels. It saves them with the warnings marked in red, and a contact sheet.
+- **On-screen text** with RapidOCR, which reads Spanish well (accents, «», ¿?), at half a second per frame on an Apple Silicon Mac. It flags text touching the edge (cut off?), type under about 28 px at 1080p (estimated from the box height, which in Geist is 1 to 1.2 times the type size) and doubtful readings.
+- **Expected labels** (`--expect`, one per line): which ones do not appear in any frame.
+- **Still stretches** of 4 s or more (`freezedetect`): in an explainer, the first thing to look at if the pace drags.
+
+On the RAG video (6:42) it took 2 minutes for 218 frames. It found every label except one made up as a control, two still stretches over 6 s, and a grey, struck-through, small mono label that is hard to read. It does not decide whether something reads well: OCR still read 28 px type with the frame scaled down to 360 px wide. Nor does it see motion or the offset between a label and the voice. With PySceneDetect, the default detector found no cut between similar dark scenes; the adaptive one with a low threshold, which the script uses, found them all.
+
 ## Insert clips into an already approved video
 
 1. Cut the **picture by frame** at scene boundaries using `trim=start_frame`, then concatenate.
@@ -102,6 +119,7 @@ A frame from a low-bitrate recording enlarged 1.5 times looks blurry, even if it
 | `ebur128`, `ffprobe` | Volume, peaks, duration | The voice/music balance |
 | `duck_music.py` | Where the music gets close to the voice | That the mix sounds good |
 | SSIM, correlation, SHA | That something did not change, or which take is present | That it is good |
+| `check_render.py` | What text each scene shows, whether it touches the edge, whether it is small, where the picture stays still | That it reads well on a phone, motion |
 
 **Check the check itself.** A correlation of 0.35 looked like a failure; loading the whole audio instead of trimming with `-ss` on every attempt brought it up to 0.93–0.99. Add a control that should score low: an unrelated word scored 0.10. And measure before reporting a number: a 33 ms offset came from our own rounding.
 
