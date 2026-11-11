@@ -22,6 +22,7 @@ A manual and a workspace for making videos with AI agents. Open the terminal her
 | Animations over your explanation | video-use + HyperFrames or Remotion | [Workflow 2](docs/workflows/02-animations.en.md) |
 | Faceless explainer with voice-over | [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-faceless-video.en.md) |
 | Product demo: screen recording and cloned voice | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-product-demo.en.md) |
+| Animate frames designed in Pencil | [Pencil](https://pen.dev) + HyperFrames | [Workflow 6](docs/workflows/06-pencil-to-hyperframes.en.md) |
 | Publish to YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publish-youtube.en.md) |
 
 It works with Claude Code, Codex, OpenCode, pi and Cursor. The only paid service is ElevenLabs.

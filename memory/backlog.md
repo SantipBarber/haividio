@@ -3,7 +3,7 @@
 ## Haividio
 
 - [ ] **Santi: revisar el vídeo de RAG en YouTube** (https://youtu.be/leo1j2YyT1w): pronunciación de «Claude», «RAG» y «Spoiler»; los 4 titulares inventados del gancho; los «tics» de la barra de arreglos.
-- [ ] **Features del plugin (investigación del 11-11):** primera tirada aprobada por Santi y fusionada (#25–#28; #29 en pruebas): ducking de la música, bloques de HyperFrames en las skills (transiciones, terminal, código), revisión automática del render (PySceneDetect + RapidOCR + `freezedetect`), SRT, capítulos y miniatura desde los tiempos por palabra, y conversor de Pencil a HyperFrames. Un PR por tema. Siguen en cola: shorts verticales, voz local para borradores (Kokoro-82M, revisar licencia de las voces), versión en inglés, retención de YouTube por escena (exige reautorizar OAuth con `yt-analytics.readonly`), nube de embeddings reales, render por escena con manifiesto, música libre y transcripción local (whisper.cpp). Licencias por aclarar: Silero VAD, Parakeet v3, ACE-Step, Piper.
+- [ ] **Features del plugin (investigación del 11-11):** primera tirada aprobada por Santi y fusionada (#25–#29, #31): ducking de la música, bloques de HyperFrames en las skills (transiciones, terminal, código), revisión automática del render (PySceneDetect + RapidOCR + `freezedetect`), SRT, capítulos y miniatura desde los tiempos por palabra, y conversor de Pencil a HyperFrames. Un PR por tema. Siguen en cola: shorts verticales, voz local para borradores (Kokoro-82M, revisar licencia de las voces), versión en inglés, retención de YouTube por escena (exige reautorizar OAuth con `yt-analytics.readonly`), nube de embeddings reales, render por escena con manifiesto, música libre y transcripción local (whisper.cpp). Licencias por aclarar: Silero VAD, Parakeet v3, ACE-Step, Piper.
 - [ ] **Probarlo todo** (Santi, 11-11): plan y método en `docs/testing.md`, con una casilla por prueba de la tirada 0.3.0 (PR #25–#29). Marcar fecha y quién al probar.
 - [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/other-agents.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.
 - [ ] Producir un vídeo entero con un agente que no sea Claude Code y anotar qué falla.
@@ -52,7 +52,9 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 ## Ahora (en el Mac)
 
 - [x] Clonar el repo e instalar el plugin `video-studio` (+ hyperframes, Chrome Headless Shell, whisper-cpp, Parakeet) (ver "Empezar en tu Mac" en el README).
-- [ ] Probar el flujo **pencil.dev → HyperFrames**: diseñar 1–2 fotogramas clave de una escena en Pencil, que Claude Code los lea por MCP y los anime. Comprobar qué exporta Pencil (HTML/CSS, imágenes, tokens) y documentarlo en `docs/workflows/06-pencil-a-hyperframes.md`.
+- [x] Flujo **pencil.dev → HyperFrames** (11-11): `scripts/pencil_to_hyperframes.py`, skill `pencil-to-hyperframes` y `docs/workflows/06-pencil-to-hyperframes.md`. Probado con KF 03 del vídeo de RAG.
+- [x] Modo storyboard con un export real de Pencil (11-11): Trocear, Vectorizar y Buscar del vídeo de RAG; los cambios de la barra de pasos y del pie animados desde `states.json` coinciden con los PNG.
+- [x] Escena entera desde un storyboard con `--draft` (11-11). Falta que Santi vea el borrador en movimiento.
 - [x] (01-11, clonación instantánea; ver `docs/cloned-voice.md`.) **Clonar la voz** en ElevenLabs: grabar audio limpio, crear la voz, comprobar requisitos actuales (clonación rápida vs profesional, plan necesario). Guardar el ID de la voz en `.env`, nunca en git.
 - [ ] Elegir entre whisper-cpp y Parakeet para transcribir y **desinstalar el que no se use** (Santi, 31-10: el espacio en disco está creciendo mucho; npm y Playwright ya se limpiaron).
 - [ ] Vídeo de RAG: **más pantallas** en el pen, con el conocimiento de `sources.md` (Hugging Face, LangChain Deep Agents…) explicado para usuarios no tan avanzados (petición de Santi, 31-10).
@@ -100,4 +102,4 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 - **Biblioteca de vídeos de ingeniería de IA para la empresa de Santi** (01-11): `docs/ai-engineering-library.md`. Late chunking, para aplicarlo en sus proyectos: `videos/2026-10-31-rag-2026/apply-in-projects.md`.
 
 - Crear una pequeña librería de componentes reutilizables (barra de pasos, tarjeta de fragmento, panel de dispersión, caja LLM) para no rehacerlos en cada vídeo.
-- Workflow `05-pencil-a-hyperframes.md` y añadir la clonación de voz a la skill `faceless-video`.
+- Añadir la clonación de voz a la skill `faceless-video`.
