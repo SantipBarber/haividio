@@ -53,6 +53,14 @@ Checking that beats are in order does not prove they land in the right place: in
 ## Mix and volume
 
 - Keep music very low under the voice: 0.07 in a demo, 0.14 in an animated explainer. Use your ears. A transcript may have more trouble recognizing a proper name when there is music: treat that as a cue to listen.
+- **Ducking:** [`scripts/duck_music.py`](../scripts/duck_music.py) lowers the music only while there is voice (ffmpeg's `sidechaincompress`, with the voice as the control signal) and measures, in half-second windows, how many dB the music sits below the voice, before and after. It reads the voice clips from the HyperFrames root composition:
+
+```bash
+uv run --with numpy scripts/duck_music.py --music assets/music/bed.mp3 \
+  --hyperframes index.html --volume 0.25 --out assets/music/bed-ducked.mp3
+```
+
+  Then point the music `<audio>` at `bed-ducked.mp3`. Since the music already dips under the voice, it can take more volume (`data-volume`) and fill the pauses. In the RAG video, with a fixed volume of 0.14, the music sat only 13 dB below the voice (median); with ducking at 0.25, 23 dB, and it was 5 dB louder in the pauses. The stretches it flags, below `--min-gap` (15 dB by default, to be calibrated), are the first thing to listen to. It measures RMS, not LUFS: it does not decide whether it sounds good.
 - If a track is too short, loop it into itself (`acrossfade=d=6`).
 - Normalize in two passes with `loudnorm` to −14 LUFS and TP −1.5, and copy the video if it has not changed:
 
@@ -92,6 +100,7 @@ A frame from a low-bitrate recording enlarged 1.5 times looks blurry, even if it
 | `snapshot --at` or individual frames | What is there at that moment | The motion, the smoothness |
 | Transcript | The words | How they sound |
 | `ebur128`, `ffprobe` | Volume, peaks, duration | The voice/music balance |
+| `duck_music.py` | Where the music gets close to the voice | That the mix sounds good |
 | SSIM, correlation, SHA | That something did not change, or which take is present | That it is good |
 
 **Check the check itself.** A correlation of 0.35 looked like a failure; loading the whole audio instead of trimming with `-ss` on every attempt brought it up to 0.93–0.99. Add a control that should score low: an unrelated word scored 0.10. And measure before reporting a number: a 33 ms offset came from our own rounding.

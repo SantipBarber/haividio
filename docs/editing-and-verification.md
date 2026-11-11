@@ -53,6 +53,14 @@ Comprobar que los beats están en orden no prueba que caigan donde toca: mira el
 ## Mezcla y volumen
 
 - Música muy baja bajo la voz: 0,07 en una demo, 0,14 en un explicativo con animaciones. Lo decide un oído. Una transcripción puede entender peor un nombre propio con música: es una señal para escucharlo.
+- **Ducking:** [`scripts/duck_music.py`](../scripts/duck_music.py) baja la música solo mientras hay voz (`sidechaincompress` de ffmpeg, con la voz como señal de control) y mide, en ventanas de medio segundo, cuántos dB queda la música por debajo de la voz, antes y después. Lee los clips de voz de la composición raíz de HyperFrames:
+
+```bash
+uv run --with numpy scripts/duck_music.py --music assets/music/bed.mp3 \
+  --hyperframes index.html --volume 0.25 --out assets/music/bed-ducked.mp3
+```
+
+  Después, apunta el `<audio>` de la música a `bed-ducked.mp3`. Como la música ya baja bajo la voz, admite más volumen (`data-volume`) y llena las pausas. En el vídeo de RAG, con volumen fijo de 0,14, la música quedaba solo 13 dB por debajo de la voz (mediana); con ducking y 0,25, 23 dB, y en las pausas sonaba 5 dB más alta. Los tramos que marca, por debajo de `--min-gap` (15 dB por defecto, por calibrar), son lo primero que hay que escuchar. Mide RMS, no LUFS: no decide si suena bien.
 - Si una pista no llega, se encadena consigo misma (`acrossfade=d=6`).
 - Normaliza con `loudnorm` en dos pasadas a −14 LUFS y TP −1,5, y copia el vídeo si no cambia:
 
@@ -92,6 +100,7 @@ Un fotograma de grabación a baja tasa de bits ampliado 1,5 veces se ve borroso,
 | `snapshot --at` o fotogramas sueltos | Lo que hay en ese instante | El movimiento, la fluidez |
 | Transcripción | Las palabras | Cómo suenan |
 | `ebur128`, `ffprobe` | Volumen, picos, duración | El balance voz-música |
+| `duck_music.py` | Dónde la música queda cerca de la voz | Que la mezcla suene bien |
 | SSIM, correlación, SHA | Que algo no cambió, o qué toma hay | Que sea bueno |
 
 **Comprueba la propia comprobación.** Una correlación de 0,35 parecía un fallo; al cargar el audio entero en vez de recortarlo con `-ss` en cada intento, subió a 0,93-0,99. Añade un punto de control que deba dar bajo: una palabra ajena dio 0,10. Y mide antes de dar una cifra: un desfase de 33 ms venía de un redondeo propio.

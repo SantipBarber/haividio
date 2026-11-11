@@ -142,6 +142,7 @@ scripts/
   detect_glitches.py         Busca clics, huecos y congelaciones en un vídeo
   check_voice.py             Compara la voz con el guion (WhisperX, local)
   check_publishing.py        Valida la ficha de YouTube antes de subir y la visibilidad después
+  duck_music.py              Baja la música bajo la voz (ducking) y marca dónde la tapa
 videos/
   README.md                  Índice de vídeos
   _template/                 Copiar para cada vídeo nuevo

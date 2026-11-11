@@ -23,7 +23,7 @@ Reply in the user's language. The script and the voice-over go in the language t
 3. **Script approval** by the user. Without it, do not generate voice or animations.
 4. **Voice.** ElevenLabs TTS (voice chosen in `docs/style/identity.md`) or the user's recording cleaned with video-use. Generate one track per scene so you can adjust without redoing everything.
 5. **Animation.** One composition per scene, as long as its voice track. Apply the skill `visual-identity` to all of them. Try 1 scene first and show it before doing the rest.
-6. **Assembly and render.** Join scenes, voice, music (optional, -18 dB under the voice) and subtitles. Export 1920×1080 at 30 fps (or 1080×1920 for shorts).
+6. **Assembly and render.** Join scenes, voice, music (optional) and subtitles. For music, run `scripts/duck_music.py` so it dips under the voice and check the stretches it flags (see `docs/editing-and-verification.md`, «Mezcla y volumen»). Export 1920×1080 at 30 fps (or 1080×1920 for shorts).
 7. **Publishing.** Prepare `publishing.md` and move on to the skill `publish-youtube`.
 
 ## Tips
