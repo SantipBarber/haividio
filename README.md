@@ -20,6 +20,7 @@ Un manual y un espacio de trabajo para producir vídeos con agentes de IA. Abres
 | Animaciones sobre tu explicación | video-use + HyperFrames o Remotion | [Workflow 2](docs/workflows/02-animations.md) |
 | Explicativo sin cara, con voz en off | [HyperFrames](https://github.com/heygen-com/hyperframes) o [Remotion](https://www.remotion.dev/docs/ai/skills) + ElevenLabs | [Workflow 3](docs/workflows/03-faceless-video.md) |
 | Demo de producto: pantalla y voz clonada | Playwright + ffmpeg + HyperFrames | [Workflow 5](docs/workflows/05-product-demo.md) |
+| Animar fotogramas diseñados en Pencil | [Pencil](https://pen.dev) + HyperFrames | [Workflow 6](docs/workflows/06-pencil-to-hyperframes.md) |
 | Publicar en YouTube | [youtubeuploader](https://github.com/porjo/youtubeuploader) (YouTube Data API v3) | [Workflow 4](docs/workflows/04-publish-youtube.md) |
 
 Funciona con Claude Code, Codex, OpenCode, pi y Cursor. Lo único que se paga aparte es ElevenLabs.
@@ -146,6 +147,7 @@ scripts/
   check_publishing.py        Valida la ficha de YouTube, la miniatura y la visibilidad después de subir
   duck_music.py              Baja la música bajo la voz (ducking) y marca dónde la tapa
   make_captions.py           Subtítulos SRT y capítulos desde los tiempos de cada palabra
+  pencil_to_hyperframes.py   Convierte fotogramas de Pencil en una composición de HyperFrames
 videos/
   README.md                  Índice de vídeos
   _template/                 Copiar para cada vídeo nuevo

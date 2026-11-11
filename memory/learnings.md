@@ -42,7 +42,7 @@ Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo ap
 
 ## Pencil
 
-- 2026-10-31 · [export] `Export(ids,"png",dir)` saca PNG por fotograma (nombre = id del nodo); `Export(ids,"html-css",fichero)` saca HTML con estilos inline, posiciones absolutas, `data-pencil-name` con el nombre de cada capa y fuentes de Google por CDN. Sirve de base para HyperFrames, pero hay que añadir ids, fuentes locales y copiar los assets (las URLs de imagen quedan relativas al .pen, no al HTML).
+- 2026-10-31 · [export] `Export(ids,"png",dir)` saca PNG por fotograma (nombre = id del nodo); `Export(ids,"html-css",fichero)` saca HTML con estilos inline, posiciones absolutas, `data-pencil-name` con el nombre de cada capa y fuentes de Google por CDN. Sirve de base para HyperFrames, pero hay que añadir ids, fuentes locales y copiar los assets (en `kf03.html`, `../assets/grid.png` resuelve desde el HTML exportado, no desde el .pen). Desde el 11-11 lo hace `scripts/pencil_to_hyperframes.py` (workflow 6).
 - 2026-10-31 · [diseño] Los puntos de un scatter se generan bien con JS dentro de `execute` (semilla determinista, la misma que luego usa la animación). No hay trazo discontinuo: el radio de búsqueda va como elipse con relleno lima al 6 % y borde al 40 %.
 - 2026-10-31 · [diseño] La rejilla de puntos del fondo va como imagen (`design/assets/grid.png`, 1920×1080) en un fill de imagen; se reutiliza en HyperFrames.
 

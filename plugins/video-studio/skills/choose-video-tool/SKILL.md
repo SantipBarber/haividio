@@ -27,6 +27,7 @@ Is there recorded footage of someone talking?
 │
 └─ No → Explainer / diagrams / motion graphics / short?
          → HyperFrames (default) or Remotion + ElevenLabs voice → skill faceless-video
+         Key frames already designed in Pencil (pen.dev)? → skill pencil-to-hyperframes
          Does the user record the voice? → clean it first with video-use
 
 Always at the end → skill publish-youtube

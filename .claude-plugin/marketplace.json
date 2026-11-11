@@ -10,8 +10,8 @@
     {
       "name": "video-studio",
       "source": "./plugins/video-studio",
-      "description": "Picks the right tool for each kind of video and guides the whole workflow: editing, animation, faceless video, visual identity and publishing to YouTube. / Elige la herramienta adecuada para cada tipo de vídeo y guía el flujo completo: edición, animación, vídeo sin cara, identidad visual y publicación en YouTube.",
-      "version": "0.2.3"
+      "description": "Picks the right tool for each kind of video and guides the whole workflow: editing, animation, faceless video, Pencil designs, visual identity and publishing to YouTube. / Elige la herramienta adecuada para cada tipo de vídeo y guía el flujo completo: edición, animación, vídeo sin cara, diseños de Pencil, identidad visual y publicación en YouTube.",
+      "version": "0.3.0"
     }
   ]
 }
