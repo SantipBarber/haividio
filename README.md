@@ -135,6 +135,7 @@ docs/
   open-resources.md          Recursos con sus licencias
   other-agents.md            Codex, OpenCode, pi y Cursor
   windows.md                 Instalación y límites en Windows
+  testing.md                 Cómo se prueba cada herramienta, con su lista
   workflows/                 Un flujo por tipo de vídeo
 site/                        Página de haividio.dev, con /en en inglés (docs/web.md)
 scripts/
