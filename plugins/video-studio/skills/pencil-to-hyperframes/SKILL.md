@@ -24,7 +24,7 @@ Reply in the user's language. Full guide: `docs/workflows/06-pencil-to-hyperfram
    ```bash
    python3 scripts/pencil_to_hyperframes.py <video>/design/export/<scene>.html \
      --project <video>/animations/<project> --name <scene> --prefix <short> \
-     --pen-dir <video>/design --tokens docs/style/tokens.css --duration <s>
+     --pen-dir <video>/design --tokens docs/style/tokens.css --duration <s> [--draft --at 0,<s>,<s>]
    ```
 
    It writes `compositions/<scene>.html` with an id on every named layer (`Tracker/Paso 01` → `#<short>-tracker-paso-01`), Google fonts downloaded to `assets/fonts/` as `@font-face`, images copied to `assets/pencil/`, palette colours as `var(--name, #hex)` and an empty paused timeline registered under the scene's name. It prints the layer → id map and the mount snippet.
@@ -36,3 +36,5 @@ Reply in the user's language. Full guide: `docs/workflows/06-pencil-to-hyperfram
 If the export has several frames, the first one is the composition and the others are written as `<scene>.states.json`: for each id, what changes compared with the first frame (styles, text) and which layers enter or leave. Each frame's converted HTML, with the same ids, is in `pencil/<scene>/`: copy entering layers from there. Animate from one state to the next: move, resize or recolour the shared elements, and bring in or take out the ones that appear in only one frame. Playing the frames back to back as stills is the failure mode.
 
 For this to work, the same element must have the same layer name and parent in every frame. Ask the user to name layers meaningfully in Pencil: the ids come from those names.
+
+To start from a working scene, add `--draft` (and `--at 0,<s>,<s>` with the second each frame should start, taken from the voice's word timings): the composition gets every frame's blocks and a draft timeline that plays the storyboard as state changes. Then refine it: builds within each state (`check` flags `dead_stretch`), rhythm, sound, and nested layers the script reports as not included.
