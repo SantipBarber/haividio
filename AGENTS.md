@@ -21,6 +21,7 @@ Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/preferences.md`
 - No subas al repo archivos de vídeo/audio pesados (raw, renders). Solo guiones, código de animaciones, subtítulos (.srt), miniaturas finales y notas.
 - Las claves (ElevenLabs, Google OAuth) van en `.env`, nunca en git.
 - **El repositorio es público y acumula conocimiento general.** Antes de subir nada, quita nombres de clientes y empresas, datos, rutas personales, URLs internas y cualquier detalle de un proyecto privado. El material de un vídeo privado se queda en local, y lo que sirva a otros se generaliza en `docs/`.
+- Todo lo que entra en el plugin se prueba con material real y un control que deba fallar, y se deja escrito cómo en `docs/testing.md`.
 - En cada entrega, deja una lista de qué revisar (`videos/_template/REVIEW.md`). El agente no puede oír el audio: di qué no se ha oído ni visto en movimiento.
 - Las herramientas evolucionan rápido: si algo de `docs/tools.md` tiene más de unos meses, verifica en la web antes de dar por bueno un precio, requisito o comando.
 
