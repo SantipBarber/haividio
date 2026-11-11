@@ -46,6 +46,19 @@ Made-up demo data is fine. If something shows that should not, record or render 
 
 `publishing.json` contains the title, description with chapters, tags, language, the declarations, and, if you want to schedule it, the publication date (`publishAt`). Full format in the [tool README](https://github.com/porjo/youtubeuploader#metadata).
 
+**Subtitles, chapters and thumbnail from the project**, without transcribing or copying timestamps by hand. If the voice comes from ElevenLabs with its `.words.json`, the timing of every word is already there:
+
+```bash
+# From the folder of the HyperFrames root composition
+python3 scripts/make_captions.py srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
+python3 scripts/make_captions.py chapters --timeline timeline.json chapters.json   # "0:00 Title" lines
+python3 scripts/check_publishing.py thumb thumbnail.png --preview thumbnail-mobile.png
+```
+
+- `srt` splits into one-line phrases (42 characters, 6 s at most), preferably after punctuation or at a pause, and leaves no one-word tails. The text is the script's: with `--pron pronunciation.json`, phonetic spellings ("oce erre") go back to the written form ("OCR").
+- `chapters` takes a list `[{"title": "...", "at": "<scene id>"}]` and looks each scene up in `timeline.json` (seconds also work). On the RAG video it produced the same 10 chapters that had been worked out by hand.
+- `thumb` checks the format (JPG, PNG, GIF or BMP), the 16:9 ratio (9:16 with `--short`), 640 px minimum and 50 MB maximum through the API, and saves the thumbnail scaled down to 360 and 168 px wide: that is how it looks on a phone. If it does not read there, it does not read. YouTube now recommends 3840×2160; 1280×720 still works.
+
 ```json
 {
   "title": "Cómo funciona RAG en 2026",

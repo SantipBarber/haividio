@@ -20,9 +20,10 @@ Go through the frames (a contact sheet or the whole video), on-screen text and t
 ## 2. Prepare (`publishing.md`)
 
 - **Title:** a clear promise, no misleading clickbait; aim for ≤ 60 characters (YouTube allows 100). Propose 3 options.
-- **Description:** 2 hook lines, summary, chapters (`00:00 Intro`…) taken from the script or the transcript, sources and links. Chapters: the first at 0:00, at least 3, each ≥ 10 s; if the video is too short for that, no chapters.
+- **Description:** 2 hook lines, summary, chapters (`0:00 Intro`…), sources and links. Generate the chapter lines with `python3 scripts/make_captions.py chapters --timeline timeline.json chapters.json` when there is a HyperFrames timeline; otherwise take them from the script or the transcript. Chapters: the first at 0:00, at least 3, each ≥ 10 s; if the video is too short for that, no chapters.
 - **Tags:** 5–10 relevant ones.
-- **Thumbnail:** 1280×720, at most 4 words, with the channel's visual identity (skill `visual-identity`).
+- **Thumbnail:** 16:9, 1280×720 or more (YouTube now recommends 3840×2160), at most 4 words, with the channel's visual identity (skill `visual-identity`). Run `python3 scripts/check_publishing.py thumb thumbnail.png --preview thumbnail-mobile.png` and look at the preview: it is the size it has on a phone.
+- **Subtitles:** `python3 scripts/make_captions.py srt --hyperframes index.html --words-dir <folder of the .words.json> -o subtitles.srt` builds them from the voice's word timings, with the script's text (add `--pron` if there is a pronunciation map).
 - **Declarations:** made for kids (normally no) and synthetic content (yes if there is a cloned voice or realistic AI-generated content).
 
 ## 3. Validate

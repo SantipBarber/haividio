@@ -22,7 +22,7 @@ npx skills add remotion-dev/skills
 2. **Aprobación del guion.** No seguir sin ella.
 3. **Voz en off** con ElevenLabs TTS a partir del guion (o grabarla tú y limpiarla con video-use).
 4. **Escenas animadas** sincronizadas con la voz: diagramas, flujos de datos, comparativas, títulos. Código en `videos/<carpeta>/animations/`.
-5. **Render** a MP4 (+ subtítulos `.srt` si se quiere).
+5. **Render** a MP4. Subtítulos `.srt` y capítulos desde los tiempos de cada palabra con `scripts/make_captions.py` (workflow 4).
 6. **Miniatura**, título y descripción → `videos/<carpeta>/publishing.md`.
 7. **Publicar** (workflow 4).
 

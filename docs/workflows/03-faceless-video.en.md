@@ -22,7 +22,7 @@ npx skills add remotion-dev/skills
 2. **Script approval.** Do not continue without it.
 3. **Voice-over** with ElevenLabs TTS from the script (or record it yourself and clean it up with video-use).
 4. **Animated scenes** synchronized with the voice: diagrams, data flows, comparisons, titles. Code in `videos/<folder>/animations/`.
-5. **Render** to MP4 (+ `.srt` subtitles if desired).
+5. **Render** to MP4. `.srt` subtitles and chapters from the timing of every word with `scripts/make_captions.py` (workflow 4).
 6. **Thumbnail**, title, and description → `videos/<folder>/publishing.md`.
 7. **Publish** (workflow 4).
 

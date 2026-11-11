@@ -16,9 +16,14 @@ Después de subir, lee el fichero de -metaJSONout y comprueba que YouTube ha dej
 el vídeo con la visibilidad pedida: un proyecto de Google Cloud sin auditar lo deja
 en privado aunque se pida oculto.
 
+La miniatura: JPG, PNG, GIF o BMP; 16:9 (9:16 en un Short) y 640 px como mínimo en el
+lado corto; 50 MB como máximo por la API. Con --preview, guarda la imagen reducida al
+tamaño en que se ve en el móvil (360 y 168 px de ancho), para mirar si se lee.
+
 Uso:
     python3 scripts/check_publishing.py meta publishing.json video.mp4
     python3 scripts/check_publishing.py result upload-result.json --expect unlisted
+    python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movil.png
 
 Sale con 1 si algo no vale. Solo necesita Python 3 y ffprobe.
 """
@@ -131,6 +136,54 @@ def check_result(args) -> None:
     print(f"✔ Visibilidad: {privacy}. https://youtu.be/{video_id}")
 
 
+THUMB_MAX_BYTES = 50 * 1024 * 1024   # thumbnails.set desde el 14-09-2026 (antes, 2 MB)
+THUMB_MOBILE_BYTES = 2 * 1024 * 1024  # límite al subirla desde la app del móvil
+THUMB_FORMATS = {"png": "png", "mjpeg": "jpg", "gif": "gif", "bmp": "bmp"}
+
+
+def check_thumb(args) -> None:
+    path = Path(args.image)
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                          "stream=codec_name,width,height", "-of", "json", str(path)],
+                         capture_output=True, text=True)
+    streams = json.loads(out.stdout or "{}").get("streams") or []
+    if out.returncode or not streams:
+        sys.exit(f"✖ No se puede leer la imagen: {path}")
+    codec, w, h = streams[0]["codec_name"], streams[0]["width"], streams[0]["height"]
+    size = path.stat().st_size
+    issues, notes = [], []
+    if codec not in THUMB_FORMATS:
+        issues.append(f"formato {codec}: YouTube acepta JPG, PNG, GIF o BMP")
+    ratio, want = w / h, (9 / 16 if args.short else 16 / 9)
+    if abs(ratio - want) / want > 0.01:
+        issues.append(f"{w}×{h} no es {'9:16' if args.short else '16:9'}")
+    short_side = w if not args.short else h
+    if short_side < 640:
+        issues.append(f"{'ancho' if not args.short else 'alto'} de {short_side} px: mínimo 640")
+    elif short_side < 1280:
+        notes.append(f"{w}×{h}: se verá blanda en pantallas grandes; YouTube recomienda 3840×2160 (1280×720 como mínimo práctico)")
+    if size > THUMB_MAX_BYTES:
+        issues.append(f"{size / 1e6:.1f} MB: la API admite 50 MB como máximo")
+    elif size > THUMB_MOBILE_BYTES:
+        notes.append(f"{size / 1e6:.1f} MB: vale por la API, pero desde la app del móvil el límite es 2 MB")
+    # Vistas previas al tamaño en que se ve en el móvil: si no se lee ahí, no se lee.
+    if args.preview:
+        widths = [360, 168] if not args.short else [180, 94]
+        chain = ";".join(f"[0:v]scale={pw}:-2:flags=area,pad=iw+16:ih+16:8:8:color=0x202020[p{i}]"
+                         for i, pw in enumerate(widths))
+        chain += ";[p0][p1]xstack=inputs=2:layout=0_0|w0_0:fill=0x202020"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(path), "-filter_complex", chain,
+                        "-frames:v", "1", args.preview], check=True)
+        notes.append(f"vista previa a tamaño de móvil ({' y '.join(map(str, widths))} px de ancho): {args.preview}")
+    for n in notes:
+        print(f"· {n}")
+    if issues:
+        for i in issues:
+            print(f"✖ {i}")
+        sys.exit(1)
+    print(f"✔ Miniatura: {codec}, {w}×{h}, {size / 1e6:.2f} MB")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -143,6 +196,11 @@ def main() -> None:
     result.add_argument("result")
     result.add_argument("--expect", default="private", choices=["private", "unlisted", "public"])
     result.set_defaults(func=check_result)
+    thumb = sub.add_parser("thumb", help="valida la miniatura y saca una vista previa a tamaño de móvil")
+    thumb.add_argument("image")
+    thumb.add_argument("--short", action="store_true", help="miniatura vertical (9:16) de un Short")
+    thumb.add_argument("--preview", help="PNG donde guardar la miniatura reducida a tamaño de móvil")
+    thumb.set_defaults(func=check_thumb)
     args = parser.parse_args()
     args.func(args)
 

@@ -40,7 +40,8 @@ Más adelante:
 - [ ] Limpiar la muestra de clonación con Resemble Enhance (MIT) o DeepFilterNet. No aplicarlo a lo que genera ElevenLabs.
 - [ ] Borradores con voz local (VoxCPM2, Apache-2.0, o Qwen3-TTS) para cuadrar tiempos antes de gastar créditos.
 - [ ] Shorts verticales: composición vertical en HyperFrames; para vídeo hablado, recorte con MediaPipe.
-- [ ] Miniaturas desde código con Pillow; subtítulos SRT y capítulos desde los `.words.json`; probar títulos y miniaturas con «Test & Compare» de YouTube Studio.
+- [x] Subtítulos SRT y capítulos desde los `.words.json` (11-11, `scripts/make_captions.py`) y comprobación de la miniatura con vista previa a tamaño de móvil (`check_publishing.py thumb`). La miniatura ya se hace desde código, como composición de HyperFrames (vídeo de RAG).
+- [ ] Probar títulos y miniaturas con «Test & Compare» de YouTube Studio.
 - [ ] Documentar en `docs/other-agents.md` el MCP alojado de ElevenLabs (`https://api.elevenlabs.io/v1/mcp`, OAuth); el `elevenlabs-mcp` local está archivado desde el 20-08-2026.
 - [ ] Validar las skills con `skills-ref` (Agent Skills).
 
