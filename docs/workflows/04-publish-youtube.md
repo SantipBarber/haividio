@@ -46,6 +46,19 @@ Los datos inventados de una demo valen. Si sale algo que no debe, se vuelve a gr
 
 `publishing.json` lleva título, descripción con capítulos, etiquetas, idioma, las declaraciones y, si quieres programarlo, la fecha de publicación (`publishAt`). Formato completo en el [README de la herramienta](https://github.com/porjo/youtubeuploader#metadata).
 
+**Subtítulos, capítulos y miniatura desde el proyecto**, sin transcribir ni copiar tiempos a mano. Si la voz es de ElevenLabs con su `.words.json`, los tiempos de cada palabra ya están:
+
+```bash
+# Desde la carpeta de la composición raíz de HyperFrames
+python3 scripts/make_captions.py srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
+python3 scripts/make_captions.py chapters --timeline timeline.json chapters.json   # líneas «0:00 Título»
+python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movil.png
+```
+
+- `srt` corta en frases de una línea (42 caracteres, 6 s como máximo), mejor tras un signo de puntuación o en una pausa, y no deja colas de una palabra. El texto es el del guion: con `--pron pronunciation.json`, las grafías fonéticas («oce erre») vuelven a la escrita («OCR»).
+- `chapters` toma una lista `[{"title": "...", "at": "<id de escena>"}]` y busca cada escena en `timeline.json` (o admite segundos). En el vídeo de RAG dio los mismos 10 capítulos que se habían calculado a mano.
+- `thumb` comprueba formato (JPG, PNG, GIF o BMP), proporción 16:9 (9:16 con `--short`), 640 px como mínimo y 50 MB como máximo por la API, y guarda la miniatura reducida a 360 y 168 px de ancho: así se ve en el móvil. Si ahí no se lee, no se lee. YouTube recomienda ahora 3840×2160; 1280×720 sigue valiendo.
+
 ```json
 {
   "title": "Cómo funciona RAG en 2026",
