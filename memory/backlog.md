@@ -53,7 +53,8 @@ Descartados: Chatterbox (retirado y con marca de agua), Fish Audio S2 (licencia 
 
 - [x] Clonar el repo e instalar el plugin `video-studio` (+ hyperframes, Chrome Headless Shell, whisper-cpp, Parakeet) (ver "Empezar en tu Mac" en el README).
 - [x] Flujo **pencil.dev → HyperFrames** (11-11): `scripts/pencil_to_hyperframes.py`, skill `pencil-to-hyperframes` y `docs/workflows/06-pencil-to-hyperframes.md`. Probado con KF 03 del vídeo de RAG.
-- [ ] Probar el modo storyboard (varios fotogramas → `states.json`) con un export real de Pencil de 2 o 3 fotogramas y animar una escena entera con él.
+- [x] Modo storyboard con un export real de Pencil (11-11): Trocear, Vectorizar y Buscar del vídeo de RAG; los cambios de la barra de pasos y del pie animados desde `states.json` coinciden con los PNG.
+- [ ] Animar una escena entera desde un storyboard, incluidas las capas que entran y salen (copiadas de `pencil/<nombre>/`).
 - [x] (01-11, clonación instantánea; ver `docs/cloned-voice.md`.) **Clonar la voz** en ElevenLabs: grabar audio limpio, crear la voz, comprobar requisitos actuales (clonación rápida vs profesional, plan necesario). Guardar el ID de la voz en `.env`, nunca en git.
 - [ ] Elegir entre whisper-cpp y Parakeet para transcribir y **desinstalar el que no se use** (Santi, 31-10: el espacio en disco está creciendo mucho; npm y Playwright ya se limpiaron).
 - [ ] Vídeo de RAG: **más pantallas** en el pen, con el conocimiento de `sources.md` (Hugging Face, LangChain Deep Agents…) explicado para usuarios no tan avanzados (petición de Santi, 31-10).

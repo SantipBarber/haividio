@@ -10,7 +10,7 @@ Reply in the user's language. Full guide: `docs/workflows/06-pencil-to-hyperfram
 ## Safety with the Pencil MCP
 
 - Always pass the `.pen` file's `uri` explicitly. If the path is wrong, the MCP acts on whatever `.pen` is active, which may belong to another project.
-- Run `get_app_state` first. If the active canvas is another project's file, ask before working on a different one: another session may be using it.
+- Run `get_app_state` first. With the explicit `uri`, `execute` reads and exports that file without switching the canvas open in the app, so another project's open file is not touched.
 - Only read and export. Never edit a `.pen` file by any other means than the MCP: it corrupts it.
 
 ## Steps
@@ -33,6 +33,6 @@ Reply in the user's language. Full guide: `docs/workflows/06-pencil-to-hyperfram
 
 ## Several frames: states, not slides
 
-If the export has several frames, the first one is the composition and the others are written as `<scene>.states.json`: for each id, what changes compared with the first frame (styles, text) and which layers enter or leave. Animate from one state to the next: move, resize or recolour the shared elements, and bring in or take out the ones that appear in only one frame. Playing the frames back to back as stills is the failure mode.
+If the export has several frames, the first one is the composition and the others are written as `<scene>.states.json`: for each id, what changes compared with the first frame (styles, text) and which layers enter or leave. Each frame's converted HTML, with the same ids, is in `pencil/<scene>/`: copy entering layers from there. Animate from one state to the next: move, resize or recolour the shared elements, and bring in or take out the ones that appear in only one frame. Playing the frames back to back as stills is the failure mode.
 
 For this to work, the same element must have the same layer name and parent in every frame. Ask the user to name layers meaningfully in Pencil: the ids come from those names.

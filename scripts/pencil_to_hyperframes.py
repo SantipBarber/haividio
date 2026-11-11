@@ -19,7 +19,10 @@ este script hace:
 
 Varios fotogramas (un storyboard): el primero es la composición; los demás son
 estados del mismo diseño. Para cada elemento, por su id, <nombre>.states.json guarda
-qué cambia respecto al primero (estilos y texto) y qué elementos entran o salen. Los
+qué cambia respecto al primero (estilos y texto) y qué elementos entran o salen, y
+pencil/<nombre>/ guarda el HTML de cada fotograma, ya convertido y con los mismos
+ids, para copiar de ahí las capas que entran. Pencil exporta varios fotogramas
+dentro de un lienzo sin nombre, cada uno con su left: el script lo quita. Los
 fotogramas son estados de una animación, no diapositivas: se anima de uno a otro.
 
 Exportar desde Pencil (por MCP, con la ruta explícita del .pen):
@@ -75,7 +78,7 @@ class Frames(html.parser.HTMLParser):
         return self.frames[-1] if self.frames else None
 
     def _emit(self, text):
-        if self.frames and len(self.stack) >= 1:
+        if self.frames and any(e != "wrap" for _, _, e in self.stack):
             self.frames[-1]["html"].append(text)
 
     def handle_starttag(self, tag, attrs):
@@ -89,11 +92,18 @@ class Frames(html.parser.HTMLParser):
         if not self.in_body:
             return
         name = a.get("data-pencil-name")
-        if not self.stack:  # un fotograma de primer nivel
+        if all(e == "wrap" for _, _, e in self.stack) and name is None:
+            # Con varios fotogramas, Pencil los mete en un lienzo sin nombre: no es un fotograma.
+            self.stack.append((tag, None, "wrap"))
+            return
+        if all(e == "wrap" for _, _, e in self.stack):  # un fotograma de primer nivel
+            # Dentro del lienzo, cada fotograma lleva su left: en la composición va a 0.
+            raw = re.sub(r"\b(left|top):\s*-?[\d.]+px", r"\1: 0px", raw)
             self.frames.append({"name": name or f"Fotograma {len(self.frames) + 1}", "html": [], "elements": {}})
             self.used = {}
         if name is not None:
-            path = [n for _, n, _ in self.stack[1:] if n] + ([name] if self.stack else [])
+            inner = [x for x in self.stack if x[2] != "wrap"]
+            path = [n for _, n, _ in inner[1:] if n] + ([name] if inner else [])
             base = f"{self.prefix}-" + ("-".join(slug(p) for p in path) if path else "frame")
             count = self.used.get(base, 0) + 1
             self.used[base] = count
@@ -102,7 +112,8 @@ class Frames(html.parser.HTMLParser):
                 raw = re.sub(r"^<(\w+)", lambda m: f'<{m.group(1)} id="{eid}"', raw, count=1)
             else:
                 eid = a["id"]
-            self._frame()["elements"][eid] = {"name": name, "path": "/".join(path), "style": a.get("style", ""),
+            style = a.get("style", "") if path else re.sub(r"\b(left|top):\s*-?[\d.]+px", r"\1: 0px", a.get("style", ""))
+            self._frame()["elements"][eid] = {"name": name, "path": "/".join(path), "style": style,
                                               "text": ""}
         self.stack.append((tag, name, eid if name is not None else None))
         self._emit(raw)
@@ -122,7 +133,8 @@ class Frames(html.parser.HTMLParser):
             return
         if not self.in_body or not self.stack:
             return
-        self._emit(f"</{tag}>")
+        if self.stack[-1][2] != "wrap":
+            self._emit(f"</{tag}>")
         while self.stack:
             t = self.stack.pop()[0]
             if t == tag:
@@ -210,9 +222,13 @@ def copy_assets(text, bases, project):
 
     def sub(m):
         quote, ref = m.group(1), m.group(2)
-        if re.match(r"^(https?:|data:|assets/)", ref):
+        if re.match(r"^(https?:|data:)", ref):
             return m.group(0)
-        src = next(((b / ref).resolve() for b in bases if (b / ref).exists()), None)
+        # Pencil ha exportado la misma imagen como «../assets/x.png» (relativa al HTML) y como
+        # «assets/x.png» (relativa al .pen): se prueba en los dos sitios.
+        src = next(((b / ref).resolve() for b in bases if (b / ref).is_file()), None)
+        if src is None and (project / ref).is_file():
+            return m.group(0)
         if src is None:
             print(f"aviso: no encuentro {ref} (ni junto al export ni junto al .pen)", file=sys.stderr)
             return m.group(0)
@@ -279,8 +295,10 @@ def main():
     frame = parser.frames[0]
     body = "".join(frame["html"])
 
-    body, copied = copy_assets(body, [export.parent] + ([Path(a.pen_dir)] if a.pen_dir else []), project)
-    body, ncolors = tokenize_colors(body, palette(a.tokens) if a.tokens else {})
+    bases = [export.parent] + ([Path(a.pen_dir)] if a.pen_dir else [])
+    pal = palette(a.tokens) if a.tokens else {}
+    body, copied = copy_assets(body, bases, project)
+    body, ncolors = tokenize_colors(body, pal)
     fonts = [] if a.no_fonts else local_fonts(parser.fonts_href, project)
 
     font_css = "\n".join("    " + r for r in fonts)
@@ -314,12 +332,23 @@ def main():
     print(f"composición: {dest} · {len(ids)} capas con id · {ncolors} colores a variables · {len(copied)} imágenes")
     if len(parser.frames) > 1:
         st = states(parser.frames)
+        # El HTML de cada fotograma, ya convertido y con los mismos ids: de ahí se copian las capas que entran.
+        ref_dir = project / "pencil" / name
+        ref_dir.mkdir(parents=True, exist_ok=True)
+        st["html"] = {}
+        for i, f in enumerate(parser.frames, 1):
+            fhtml, _ = copy_assets("".join(f["html"]), bases, project)
+            fhtml, _ = tokenize_colors(fhtml, pal)
+            fpath = ref_dir / f"{i:02d}-{slug(f['name'])}.html"
+            fpath.write_text(fhtml.strip() + "\n", encoding="utf-8")
+            st["html"][f["name"]] = str(fpath.relative_to(project))
         sdest = project / "compositions" / f"{name}.states.json"
         sdest.write_text(json.dumps(st, indent=1, ensure_ascii=False), encoding="utf-8")
         for fname in st["frames"][1:]:
             print(f"  «{fname}»: {len(st['changes'][fname])} capas cambian, {len(st['enter'][fname])} entran, "
                   f"{len(st['exit'][fname])} salen")
         print(f"estados: {sdest}")
+        print(f"HTML de cada fotograma (para copiar las capas que entran): {ref_dir}")
     print("\nIds (capa → id):")
     for eid in ids[:40]:
         print(f"  {frame['elements'][eid]['path'] or frame['name']} → #{eid}")
@@ -327,7 +356,7 @@ def main():
         print(f"  … y {len(ids) - 40} más")
     print(f"""
 Para montarla en index.html:
-  <div data-composition-id="{name}" data-composition-src="compositions/{name}.html" data-start="0" data-duration="{a.duration}" data-track-index="1"></div>
+  <div id="{name}-host" data-composition-id="{name}" data-composition-src="compositions/{name}.html" data-start="0" data-duration="{a.duration}" data-track-index="1"></div>
 Después: npx hyperframes check y npx hyperframes snapshot --at <s>.""")
 
 

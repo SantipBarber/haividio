@@ -43,16 +43,16 @@ Con `--tokens docs/style/tokens.css`, además, cada color de la paleta pasa a `v
 
 ## Varios fotogramas: estados, no diapositivas
 
-Si el export trae varios fotogramas, el primero es la composición y los demás van a `<nombre>.states.json`: para cada id, qué cambia respecto al primero (estilos y texto), qué capas entran y cuáles salen. Se anima de un estado al siguiente; poner los fotogramas uno detrás de otro como imágenes es justo lo que hay que evitar (la skill `figma` de HyperFrames sigue la misma idea).
+Si el export trae varios fotogramas, el primero es la composición y los demás van a `<nombre>.states.json`: para cada id, qué cambia respecto al primero (estilos y texto), qué capas entran y cuáles salen. El HTML de cada fotograma, ya convertido y con los mismos ids, queda en `pencil/<nombre>/`: de ahí se copian las capas que entran. Pencil exporta varios fotogramas dentro de un lienzo sin nombre, cada uno desplazado a la derecha; el script lo quita. Se anima de un estado al siguiente; poner los fotogramas uno detrás de otro como imágenes es justo lo que hay que evitar (la skill `figma` de HyperFrames sigue la misma idea).
 
 Para que funcione, el mismo elemento tiene que llamarse igual y estar dentro de la misma capa en todos los fotogramas. Lo más fácil es duplicar el fotograma en Pencil y cambiar solo lo que se mueve.
 
 ## Probado
 
-Con el fotograma «KF 03 · Buscar» del vídeo de RAG: 96 capas con id, 76 colores pasados a variables, la rejilla de fondo copiada y Geist descargada. `hyperframes check` sin errores ni avisos, y el `snapshot` se diferencia del PNG de Pencil en 1 nivel de gris de 255 de media (los demás fotogramas del mismo diseño, en unos 20). El cálculo de estados está probado con dos fotogramas preparados a mano a partir del mismo export, no con un storyboard real de Pencil.
+Con el fotograma «KF 03 · Buscar» del vídeo de RAG: 96 capas con id, 76 colores pasados a variables, la rejilla de fondo copiada y Geist descargada. `hyperframes check` sin errores ni avisos, y el `snapshot` se diferencia del PNG de Pencil en 1 nivel de gris de 255 de media (los demás fotogramas del mismo diseño, en unos 20). Storyboard real: «KF 3b · Trocear», «KF 3b · Vectorizar» y «KF 03 · Buscar», exportados juntos. `states.json` recoge lo que de verdad cambia entre ellos (el paso activo de la barra pasa de 01 a 02 y a 03, y el pie cambia de texto) y qué bloques entran y salen. Animando solo esos cambios en los segundos 3 y 6, las capturas en 1, 4 y 7 s muestran la barra igual que cada PNG de Pencil; las pastillas quedan unos píxeles más estrechas por cómo se dibuja el texto.
 
 ## Cuidado
 
-- **El MCP de Pencil** no abre ficheros: si la ruta no existe, actúa sobre el `.pen` activo. Mira antes `get_app_state` y, si está abierto el de otro proyecto, pregunta antes de cambiar: puede haber otra sesión trabajando en él.
+- **El MCP de Pencil:** con la ruta explícita (`uri`) del `.pen`, `execute` lee y exporta ese fichero sin cambiar el que está abierto en la app (comprobado el 11-11 con otro proyecto abierto). Si la ruta no existe, actúa sobre el `.pen` activo: mira antes `get_app_state`.
 - **No edites un `.pen` por otra vía** que no sea el MCP: se corrompe.
 - **Las posiciones dentro de un layout flex** no salen en el HTML como coordenadas: si un elemento se mueve entre fotogramas porque cambia el layout, `states.json` lo dice como cambio de estilo del contenedor, no como `left`/`top`. Para moverlo con precisión, mídelo en el `snapshot`.

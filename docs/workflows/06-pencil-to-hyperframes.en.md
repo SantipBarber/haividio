@@ -43,16 +43,16 @@ With `--tokens docs/style/tokens.css`, every palette colour also becomes `var(--
 
 ## Several frames: states, not slides
 
-If the export has several frames, the first one is the composition and the rest go to `<name>.states.json`: for each id, what changes compared with the first frame (styles and text), which layers enter and which leave. Animate from one state to the next; playing the frames back to back as stills is exactly what to avoid (HyperFrames' `figma` skill follows the same idea).
+If the export has several frames, the first one is the composition and the rest go to `<name>.states.json`: for each id, what changes compared with the first frame (styles and text), which layers enter and which leave. Each frame's HTML, already converted and with the same ids, goes to `pencil/<name>/`: copy entering layers from there. Pencil exports several frames inside an unnamed canvas, each one shifted to the right; the script removes it. Animate from one state to the next; playing the frames back to back as stills is exactly what to avoid (HyperFrames' `figma` skill follows the same idea).
 
 For this to work, the same element must have the same name and sit inside the same layer in every frame. The easiest way is to duplicate the frame in Pencil and change only what moves.
 
 ## Tested
 
-With the "KF 03 · Buscar" frame of the RAG video: 96 layers with an id, 76 colours turned into variables, the background grid copied and Geist downloaded. `hyperframes check` with no errors or warnings, and the `snapshot` differs from the Pencil PNG by 1 grey level out of 255 on average (the other frames of the same design, by about 20). The state calculation was tested with two frames prepared by hand from the same export, not with a real Pencil storyboard.
+With the "KF 03 · Buscar" frame of the RAG video: 96 layers with an id, 76 colours turned into variables, the background grid copied and Geist downloaded. `hyperframes check` with no errors or warnings, and the `snapshot` differs from the Pencil PNG by 1 grey level out of 255 on average (the other frames of the same design, by about 20). Real storyboard: "KF 3b · Trocear", "KF 3b · Vectorizar" and "KF 03 · Buscar", exported together. `states.json` captures what actually changes between them (the active step of the bar moves from 01 to 02 to 03, and the footer text changes) and which blocks enter and leave. Animating only those changes at seconds 3 and 6, snapshots at 1, 4 and 7 s show the bar just like each Pencil PNG; the pills come out a few pixels narrower because of how the text is drawn.
 
 ## Watch out
 
-- **The Pencil MCP** does not open files: if the path does not exist, it acts on the active `.pen`. Check `get_app_state` first and, if another project's file is open, ask before switching: another session may be working on it.
+- **The Pencil MCP:** with the `.pen`'s explicit path (`uri`), `execute` reads and exports that file without changing the one open in the app (checked on 11-11 with another project open). If the path does not exist, it acts on the active `.pen`: check `get_app_state` first.
 - **Do not edit a `.pen` by any means other than the MCP:** it gets corrupted.
 - **Positions inside a flex layout** do not appear in the HTML as coordinates: if an element moves between frames because the layout changes, `states.json` reports it as a style change of the container, not as `left`/`top`. To move it precisely, measure it in the `snapshot`.
