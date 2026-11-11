@@ -2,7 +2,7 @@
 
 - **Fecha:** 2026-10-31
 - **Tipo:** sin-cara
-- **Estado:** publicado el 10-11-2026 (público, con subtítulos en español; la miniatura, pendiente de verificar el canal)
+- **Estado:** publicado el 10-11-2026 (público, con subtítulos en español; miniatura puesta el 11-11-2026, tras verificar el canal)
 - **YouTube:** https://youtu.be/leo1j2YyT1w
 
 ## Resumen
