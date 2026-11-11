@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad · Haividio</title>
+<meta name="theme-color" content="#07080B">
+<link rel="canonical" href="https://haividio.dev/privacidad/">
+<link rel="alternate" hreflang="es" href="https://haividio.dev/privacidad/">
+<link rel="alternate" hreflang="en" href="https://haividio.dev/en/privacy/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:Geist;src:url(/assets/geist.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#07080B;--line:#232733;--bar:#3A4050;--text:#F4F5F7;--muted:#9EA3B3;--lime:#D4FF3A;--pad:clamp(20px,5.6vw,72px);color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--text);font:400 clamp(17px,1.25vw,19px)/1.6 Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:.22em;text-decoration-color:var(--bar);text-decoration-thickness:1px}
+a:hover{text-decoration-color:var(--lime)}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:2px}
+main{max-width:46em;margin:0 auto;padding:clamp(36px,6vh,72px) var(--pad) 80px}
+nav{display:flex;justify-content:space-between;gap:20px;font-size:16px;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--text)}
+h1{font-weight:800;font-size:clamp(40px,7vw,72px);line-height:1;letter-spacing:-.02em;margin:clamp(40px,8vh,88px) 0 12px}
+h2{font-weight:700;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.015em;margin:44px 0 8px}
+p,li{color:var(--text)}
+.date{color:var(--muted);margin:0}
+ul{padding-left:1.2em}li{margin:.3em 0}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="/">Haividio</a><a href="/en/privacy/" hreflang="en" lang="en">English</a></nav>
+<h1>Privacidad</h1>
+<p class="date">Actualizada el 11 de noviembre de 2026</p>
+
+<h2>La web</h2>
+<p>haividio.dev es una página estática. No usa cookies, analítica ni formularios, y no guarda datos de quien la visita. Cloudflare, que la sirve, puede registrar datos técnicos de las peticiones (como la dirección IP) para seguridad y funcionamiento, según su <a href="https://www.cloudflare.com/privacypolicy/">política de privacidad</a>.</p>
+
+<h2>Haividio uploader</h2>
+<p>Haividio uploader es la autorización OAuth que usa el mantenedor de Haividio para subir sus propios vídeos a su propio canal de YouTube con la API de datos de YouTube (YouTube API Services). No es un servicio abierto a otras personas.</p>
+<ul>
+<li><strong>Qué datos usa:</strong> el permiso para subir vídeos, miniaturas y subtítulos al canal autorizado y para leer el resultado de la subida.</li>
+<li><strong>Dónde se guardan:</strong> las credenciales y el token se quedan en el ordenador del mantenedor, fuera del repositorio. No se envían a ningún servidor propio ni se comparten con terceros.</li>
+<li><strong>Cómo se revoca:</strong> desde la cuenta de Google, en <a href="https://myaccount.google.com/connections">Conexiones con terceros</a>.</li>
+</ul>
+<p>Al usar YouTube se aplican las <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:info@haividio.dev">info@haividio.dev</a></p>
+</main>
+</body>
+</html>
