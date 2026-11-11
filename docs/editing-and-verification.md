@@ -74,6 +74,23 @@ ffmpeg -i out.mp4 -af ebur128=peak=true -f null -    # comprueba
 - Al leer ese JSON desde un script, recorta entre la primera y la última llave: ffmpeg escribe texto después.
 - En zsh, `"$var:linear"` aplica el modificador `:l`. Escribe `${var}:linear`.
 
+## Revisión visual del render
+
+El agente no ve el vídeo en movimiento. [`scripts/check_render.py`](../scripts/check_render.py) le da qué mirar y por dónde empezar, todo en local:
+
+```bash
+uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
+  scripts/check_render.py out/video.mp4 --out out/review \
+  --timeline animations/<proyecto>/timeline.json --expect rotulos.txt
+```
+
+- **Un fotograma por escena**, al final, cuando ya ha aparecido todo (de `timeline.json`, o detectando los planos con PySceneDetect si no lo hay), más uno cada 10 s, o cada 2 s si se buscan rótulos. Los guarda con los avisos marcados en rojo y en una hoja de contactos.
+- **Texto en pantalla** con RapidOCR, que lee bien el español (tildes, «», ¿?), a medio segundo por fotograma en un Mac con Apple Silicon. Avisa de texto pegado al borde (¿cortado?), de letra de menos de unos 28 px en 1080p (la estima por la altura de la caja, que en Geist es de 1 a 1,2 veces la letra) y de lecturas dudosas.
+- **Rótulos esperados** (`--expect`, uno por línea): cuáles no salen en ningún fotograma.
+- **Tramos quietos** de 4 s o más (`freezedetect`): en un explicativo, lo primero que mirar si el ritmo cansa.
+
+En el vídeo de RAG (6:42) tardó 2 minutos con 218 fotogramas. Encontró todos los rótulos menos uno inventado como control, dos tramos quietos de más de 6 s y un rótulo gris, tachado y en mono pequeña que se lee mal. No decide si algo se lee bien: el OCR siguió leyendo letra de 28 px con la imagen reducida a 360 px de ancho. Tampoco ve el movimiento ni el desfase entre rótulo y voz. Con PySceneDetect, el detector por defecto no vio ningún corte entre escenas oscuras parecidas; el adaptativo con umbral bajo, que es el que usa el script, los vio todos.
+
 ## Insertar clips en un vídeo ya aprobado
 
 1. Corta la **imagen por fotogramas** en los límites de escena, con `trim=start_frame`, y concatena.
@@ -102,6 +119,7 @@ Un fotograma de grabación a baja tasa de bits ampliado 1,5 veces se ve borroso,
 | `ebur128`, `ffprobe` | Volumen, picos, duración | El balance voz-música |
 | `duck_music.py` | Dónde la música queda cerca de la voz | Que la mezcla suene bien |
 | SSIM, correlación, SHA | Que algo no cambió, o qué toma hay | Que sea bueno |
+| `check_render.py` | Qué texto hay en cada escena, si toca el borde, si es pequeño, dónde se queda quieto | Que se lea bien en el móvil, el movimiento |
 
 **Comprueba la propia comprobación.** Una correlación de 0,35 parecía un fallo; al cargar el audio entero en vez de recortarlo con `-ss` en cada intento, subió a 0,93-0,99. Añade un punto de control que deba dar bajo: una palabra ajena dio 0,10. Y mide antes de dar una cifra: un desfase de 33 ms venía de un redondeo propio.
 

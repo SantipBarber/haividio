@@ -29,7 +29,8 @@ Ya:
 - [x] **Pronunciación escrita en `eleven_v4`**: probada la IPA entre barras (`/ˈapi/`) con «API»; ganó la grafía «Api» (ver aprendizajes del 07-11). Queda por probar el alias en un diccionario de pronunciación ([guía](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices)).
 
 Después:
-- [ ] Revisión visual: un fotograma por plano con [PySceneDetect](https://www.scenedetect.com) (BSD-3) y OCR ([PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), Apache-2.0, o `ocrmac` en Mac) para comparar rótulos esperados, texto cortado, legibilidad a 360 px de ancho y desfase rótulo-voz (OCR a 10 fps contra los tiempos de WhisperX).
+- [x] Revisión visual (11-11, `scripts/check_render.py`): un fotograma por escena con PySceneDetect o `timeline.json`, OCR con RapidOCR (Apache-2.0), rótulos esperados, texto cortado o pequeño y tramos quietos con `freezedetect`. La legibilidad a 360 px no se puede medir con OCR (lee mejor que una persona).
+- [ ] Desfase rótulo-voz: OCR denso alrededor de cada rótulo esperado contra los tiempos de las palabras.
 - [ ] Si el OCR se queda corto: [Qwen3-VL-4B](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) (Apache-2.0, local) como revisor de clips en movimiento. Ya está en caché la versión MLX de 4 bits.
 - [x] Mezcla con *ducking* (11-11, `scripts/duck_music.py`): `sidechaincompress` con la voz como control y medida de voz frente a música por ventanas. Falta calibrar de oído `--min-gap` (15 dB) y el volumen (0,25 en la prueba de RAG).
 
