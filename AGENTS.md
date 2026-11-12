@@ -25,6 +25,10 @@ Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/preferences.md`
 - En cada entrega, deja una lista de qué revisar (`videos/_template/REVIEW.md`). El agente no puede oír el audio: di qué no se ha oído ni visto en movimiento.
 - Las herramientas evolucionan rápido: si algo de `docs/tools.md` tiene más de unos meses, verifica en la web antes de dar por bueno un precio, requisito o comando.
 
+## Changelog
+
+Cada PR añade su línea a `CHANGELOG.md`, en «Sin publicar», y quita de «Pendiente» lo que resuelva. Al subir la versión del plugin, «Sin publicar» pasa a ser esa versión con su fecha.
+
 ## Guías en dos idiomas
 
 Las guías de `docs/` tienen su versión en inglés al lado (`nombre.en.md`), igual que `README.en.md`. Un cambio en una guía va en las dos.
