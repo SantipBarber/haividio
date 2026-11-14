@@ -3,382 +3,392 @@
  "voice_id": "JnBnSljehAqxkcZsA6n0",
  "model_id": "eleven_v4",
  "text": "Tres: llega una pregunta. También la conviertes en vector y buscas los trozos que quedan más cerca. ¿Cuántos? Depende: en el ejemplo de Hugging Face, cinco; Anthropic recomienda veinte. No hay número mágico, se mide. Cuatro: le das esos trozos al modelo con la pregunta y le pides que responda solo con eso y que diga de dónde lo saca. Si mañana cambia un documento, lo actualizas en la biblioteca y listo. Sin reentrenar nada.",
- "duration": 28.0,
+ "spoken_text": "Tres: llega una pregunta. También la conviertes en vector y buscas los trozos que quedan más cerca. ¿Cuántos? Depende: en el ejemplo de Hugging Face, cinco; Anthropic recomienda veinte. No hay número mágico, se mide. Cuatro: le das esos trozos al modelo con la pregunta y le pides que responda solo con eso y que diga de dónde lo saca. Si mañana cambia un documento, lo actualizas en la biblioteca y listo. Sin reentrenar nada.",
+ "duration": 25.091,
  "words": [
   {
    "w": "Tres:",
    "start": 0.0,
-   "end": 0.4
+   "end": 0.364
   },
   {
    "w": "llega",
-   "start": 0.88,
-   "end": 1.12
+   "start": 0.8,
+   "end": 1.164
   },
   {
    "w": "una",
-   "start": 1.28,
-   "end": 1.36
+   "start": 1.236,
+   "end": 1.309
   },
   {
    "w": "pregunta.",
-   "start": 1.44,
-   "end": 2.0
+   "start": 1.382,
+   "end": 1.891
   },
   {
    "w": "También",
-   "start": 2.48,
-   "end": 2.8
+   "start": 2.327,
+   "end": 2.618
   },
   {
    "w": "la",
-   "start": 2.84,
-   "end": 2.88
+   "start": 2.655,
+   "end": 2.691
   },
   {
    "w": "conviertes",
-   "start": 2.96,
-   "end": 3.36
+   "start": 2.764,
+   "end": 3.127
   },
   {
    "w": "en",
-   "start": 3.44,
-   "end": 3.52
+   "start": 3.164,
+   "end": 3.2
   },
   {
    "w": "vector",
-   "start": 3.76,
-   "end": 4.0
+   "start": 3.273,
+   "end": 3.636
   },
   {
    "w": "y",
-   "start": 4.16,
-   "end": 4.24
+   "start": 3.782,
+   "end": 3.855
   },
   {
    "w": "buscas",
-   "start": 4.36,
-   "end": 4.64
+   "start": 3.964,
+   "end": 4.218
   },
   {
    "w": "los",
-   "start": 4.72,
+   "start": 4.291,
+   "end": 4.364
+  },
+  {
+   "w": "trozos",
+   "start": 4.436,
+   "end": 4.727
+  },
+  {
+   "w": "que",
+   "start": 4.764,
    "end": 4.8
   },
   {
-   "w": "trozos",
-   "start": 4.88,
-   "end": 5.2
-  },
-  {
-   "w": "que",
-   "start": 5.28,
-   "end": 5.36
-  },
-  {
    "w": "quedan",
-   "start": 5.413,
-   "end": 5.6
+   "start": 4.873,
+   "end": 5.091
   },
   {
    "w": "más",
-   "start": 5.68,
-   "end": 5.76
+   "start": 5.164,
+   "end": 5.309
   },
   {
    "w": "cerca.",
-   "start": 5.84,
-   "end": 6.48
+   "start": 5.418,
+   "end": 5.891
   },
   {
    "w": "¿Cuántos?",
-   "start": 6.72,
-   "end": 7.44
+   "start": 6.109,
+   "end": 6.727
   },
   {
    "w": "Depende:",
-   "start": 7.68,
-   "end": 8.56
+   "start": 6.909,
+   "end": 7.636
   },
   {
    "w": "en",
-   "start": 8.6,
-   "end": 8.64
+   "start": 7.709,
+   "end": 7.782
   },
   {
    "w": "el",
-   "start": 8.72,
-   "end": 8.76
+   "start": 7.818,
+   "end": 7.855
   },
   {
    "w": "ejemplo",
-   "start": 8.8,
-   "end": 9.12
+   "start": 7.891,
+   "end": 8.145
   },
   {
    "w": "de",
-   "start": 9.16,
-   "end": 9.2
+   "start": 8.218,
+   "end": 8.255
   },
   {
    "w": "Hugging",
-   "start": 9.24,
-   "end": 9.52
+   "start": 8.291,
+   "end": 8.509
   },
   {
    "w": "Face,",
-   "start": 9.6,
-   "end": 10.08
+   "start": 8.582,
+   "end": 9.018
   },
   {
    "w": "cinco;",
-   "start": 10.16,
-   "end": 10.88
+   "start": 9.091,
+   "end": 9.745
   },
   {
    "w": "Anthropic",
-   "start": 11.0,
-   "end": 11.44
+   "start": 9.855,
+   "end": 10.255
   },
   {
    "w": "recomienda",
-   "start": 11.52,
-   "end": 11.92
+   "start": 10.291,
+   "end": 10.691
   },
   {
    "w": "veinte.",
-   "start": 12.0,
-   "end": 12.8
+   "start": 10.727,
+   "end": 11.418
   },
   {
    "w": "No",
-   "start": 12.84,
-   "end": 12.88
+   "start": 11.491,
+   "end": 11.564
   },
   {
    "w": "hay",
-   "start": 12.96,
-   "end": 13.04
+   "start": 11.6,
+   "end": 11.636
   },
   {
    "w": "número",
-   "start": 13.12,
-   "end": 13.28
+   "start": 11.709,
+   "end": 11.927
   },
   {
    "w": "mágico,",
-   "start": 13.36,
-   "end": 14.0
+   "start": 11.964,
+   "end": 12.509
   },
   {
    "w": "se",
-   "start": 14.08,
-   "end": 14.16
+   "start": 12.582,
+   "end": 12.655
   },
   {
    "w": "mide.",
-   "start": 14.2,
-   "end": 14.56
+   "start": 12.727,
+   "end": 13.018
   },
   {
    "w": "Cuatro:",
-   "start": 15.36,
-   "end": 16.16
+   "start": 13.673,
+   "end": 14.4
   },
   {
    "w": "le",
-   "start": 16.24,
-   "end": 16.32
+   "start": 14.473,
+   "end": 14.582
   },
   {
    "w": "das",
-   "start": 16.4,
-   "end": 16.48
+   "start": 14.691,
+   "end": 14.727
   },
   {
    "w": "esos",
-   "start": 16.56,
-   "end": 16.72
+   "start": 14.764,
+   "end": 14.982
   },
   {
    "w": "trozos",
-   "start": 16.88,
-   "end": 17.08
+   "start": 15.055,
+   "end": 15.273
   },
   {
    "w": "al",
-   "start": 17.12,
-   "end": 17.2
+   "start": 15.345,
+   "end": 15.491
   },
   {
    "w": "modelo",
-   "start": 17.52,
-   "end": 17.6
+   "start": 15.636,
+   "end": 15.709
   },
   {
    "w": "con",
-   "start": 17.68,
-   "end": 17.72
+   "start": 15.782,
+   "end": 15.818
   },
   {
    "w": "la",
-   "start": 17.76,
-   "end": 17.84
+   "start": 15.855,
+   "end": 15.927
   },
   {
    "w": "pregunta",
-   "start": 18.0,
-   "end": 18.48
+   "start": 16.073,
+   "end": 16.509
   },
   {
    "w": "y",
-   "start": 18.56,
-   "end": 18.64
+   "start": 16.582,
+   "end": 16.618
   },
   {
    "w": "le",
-   "start": 18.72,
-   "end": 18.8
+   "start": 16.655,
+   "end": 16.727
   },
   {
    "w": "pides",
-   "start": 18.88,
-   "end": 19.04
+   "start": 16.836,
+   "end": 16.982
   },
   {
    "w": "que",
-   "start": 19.12,
-   "end": 19.24
+   "start": 17.018,
+   "end": 17.091
   },
   {
    "w": "responda",
-   "start": 19.36,
-   "end": 19.8
+   "start": 17.236,
+   "end": 17.636
   },
   {
    "w": "solo",
-   "start": 19.84,
-   "end": 20.08
+   "start": 17.673,
+   "end": 17.891
   },
   {
    "w": "con",
-   "start": 20.16,
-   "end": 20.24
+   "start": 17.964,
+   "end": 18.109
   },
   {
    "w": "eso",
-   "start": 20.48,
-   "end": 20.64
+   "start": 18.255,
+   "end": 18.4
   },
   {
    "w": "y",
-   "start": 20.68,
-   "end": 20.72
+   "start": 18.473,
+   "end": 18.509
   },
   {
    "w": "que",
-   "start": 20.8,
-   "end": 20.88
+   "start": 18.545,
+   "end": 18.618
   },
   {
    "w": "diga",
-   "start": 20.96,
-   "end": 21.12
+   "start": 18.727,
+   "end": 18.909
   },
   {
    "w": "de",
-   "start": 21.2,
-   "end": 21.24
+   "start": 18.982,
+   "end": 19.018
   },
   {
    "w": "dónde",
-   "start": 21.28,
-   "end": 21.52
+   "start": 19.055,
+   "end": 19.273
   },
   {
    "w": "lo",
-   "start": 21.6,
-   "end": 21.64
+   "start": 19.345,
+   "end": 19.382
   },
   {
    "w": "saca.",
-   "start": 21.68,
-   "end": 22.56
+   "start": 19.418,
+   "end": 20.218
   },
   {
    "w": "Si",
-   "start": 22.64,
-   "end": 22.72
+   "start": 20.291,
+   "end": 20.364
   },
   {
    "w": "mañana",
-   "start": 22.8,
-   "end": 23.0
+   "start": 20.436,
+   "end": 20.655
   },
   {
    "w": "cambia",
-   "start": 23.04,
-   "end": 23.28
+   "start": 20.764,
+   "end": 20.909
   },
   {
    "w": "un",
-   "start": 23.493,
-   "end": 23.707
+   "start": 20.945,
+   "end": 21.2
   },
   {
    "w": "documento,",
-   "start": 23.92,
-   "end": 24.12
+   "start": 21.455,
+   "end": 21.636
   },
   {
    "w": "lo",
-   "start": 24.16,
-   "end": 24.32
+   "start": 21.673,
+   "end": 21.818
   },
   {
    "w": "actualizas",
-   "start": 24.48,
-   "end": 24.76
+   "start": 21.964,
+   "end": 22.218
   },
   {
    "w": "en",
-   "start": 24.8,
-   "end": 24.84
+   "start": 22.255,
+   "end": 22.327
   },
   {
    "w": "la",
-   "start": 24.88,
-   "end": 24.96
+   "start": 22.364,
+   "end": 22.4
   },
   {
    "w": "biblioteca",
-   "start": 25.04,
-   "end": 25.6
+   "start": 22.473,
+   "end": 23.018
   },
   {
    "w": "y",
-   "start": 25.68,
-   "end": 25.8
+   "start": 23.055,
+   "end": 23.127
   },
   {
    "w": "listo.",
-   "start": 25.92,
-   "end": 26.52
+   "start": 23.345,
+   "end": 23.818
   },
   {
    "w": "Sin",
-   "start": 26.64,
-   "end": 26.72
+   "start": 23.927,
+   "end": 24.0
   },
   {
    "w": "reentrenar",
-   "start": 26.8,
-   "end": 27.36
+   "start": 24.073,
+   "end": 24.582
   },
   {
    "w": "nada.",
-   "start": 27.44,
-   "end": 28.0
+   "start": 24.727,
+   "end": 25.091
   }
- ]
+ ],
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.3,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "tempo": 1.1,
+ "credits": "171"
 }

@@ -3,317 +3,327 @@
  "voice_id": "JnBnSljehAqxkcZsA6n0",
  "model_id": "eleven_v4",
  "text": "Un modelo de lenguaje sabe muchísimo, pero no sabe nada de lo tuyo: tus contratos, tu documentación interna, el correo de ayer. Puedes pegárselo todo en el prompt, pero cuando son miles de documentos eso es caro y lento. RAG, generación aumentada con recuperación, resuelve justo eso: antes de responder, el sistema busca los trozos relevantes y se los pasa al modelo.",
- "duration": 24.16,
+ "spoken_text": "Un modelo de lenguaje sabe muchísimo, pero no sabe nada de lo tuyo: tus contratos, tu documentación interna, el correo de ayer. Puedes pegárselo todo en el prompt, pero cuando son miles de documentos eso es caro y lento. rag, generación aumentada con recuperación, resuelve justo eso: antes de responder, el sistema busca los trozos relevantes y se los pasa al modelo.",
+ "duration": 21.891,
  "words": [
   {
    "w": "Un",
    "start": 0.0,
-   "end": 0.16
+   "end": 0.145
   },
   {
    "w": "modelo",
-   "start": 0.32,
-   "end": 0.48
+   "start": 0.291,
+   "end": 0.436
   },
   {
    "w": "de",
-   "start": 0.52,
-   "end": 0.56
+   "start": 0.473,
+   "end": 0.509
   },
   {
    "w": "lenguaje",
-   "start": 0.6,
-   "end": 1.04
+   "start": 0.545,
+   "end": 1.018
   },
   {
    "w": "sabe",
-   "start": 1.08,
-   "end": 1.36
+   "start": 1.055,
+   "end": 1.309
   },
   {
    "w": "muchísimo,",
-   "start": 1.44,
-   "end": 2.48
+   "start": 1.382,
+   "end": 2.4
   },
   {
    "w": "pero",
-   "start": 2.56,
-   "end": 2.68
+   "start": 2.473,
+   "end": 2.582
   },
   {
    "w": "no",
-   "start": 2.72,
-   "end": 2.8
+   "start": 2.618,
+   "end": 2.691
   },
   {
    "w": "sabe",
-   "start": 2.88,
-   "end": 3.12
+   "start": 2.764,
+   "end": 2.982
   },
   {
    "w": "nada",
-   "start": 3.28,
-   "end": 3.52
+   "start": 3.127,
+   "end": 3.345
   },
   {
    "w": "de",
-   "start": 3.56,
-   "end": 3.6
+   "start": 3.382,
+   "end": 3.418
   },
   {
    "w": "lo",
-   "start": 3.68,
-   "end": 3.76
+   "start": 3.491,
+   "end": 3.564
   },
   {
    "w": "tuyo:",
-   "start": 3.84,
-   "end": 4.56
+   "start": 3.636,
+   "end": 4.291
   },
   {
    "w": "tus",
-   "start": 4.6,
-   "end": 4.72
+   "start": 4.327,
+   "end": 4.436
   },
   {
    "w": "contratos,",
-   "start": 4.8,
-   "end": 5.6
+   "start": 4.509,
+   "end": 5.236
   },
   {
    "w": "tu",
-   "start": 5.64,
-   "end": 5.68
+   "start": 5.273,
+   "end": 5.309
   },
   {
    "w": "documentación",
-   "start": 5.88,
-   "end": 6.32
+   "start": 5.382,
+   "end": 5.891
   },
   {
    "w": "interna,",
-   "start": 6.44,
-   "end": 7.12
+   "start": 6.0,
+   "end": 6.618
   },
   {
    "w": "el",
-   "start": 7.16,
-   "end": 7.2
+   "start": 6.655,
+   "end": 6.691
   },
   {
    "w": "correo",
-   "start": 7.28,
-   "end": 7.6
+   "start": 6.764,
+   "end": 7.055
   },
   {
    "w": "de",
-   "start": 7.64,
-   "end": 7.68
+   "start": 7.091,
+   "end": 7.127
   },
   {
    "w": "ayer.",
-   "start": 7.88,
-   "end": 8.16
+   "start": 7.309,
+   "end": 7.564
   },
   {
    "w": "Puedes",
-   "start": 8.72,
-   "end": 8.96
+   "start": 8.0,
+   "end": 8.218
   },
   {
    "w": "pegárselo",
-   "start": 9.04,
-   "end": 9.44
+   "start": 8.291,
+   "end": 8.655
   },
   {
    "w": "todo",
-   "start": 9.6,
-   "end": 9.84
+   "start": 8.8,
+   "end": 9.018
   },
   {
    "w": "en",
-   "start": 9.88,
-   "end": 9.92
+   "start": 9.055,
+   "end": 9.091
   },
   {
    "w": "el",
-   "start": 9.96,
-   "end": 10.0
+   "start": 9.127,
+   "end": 9.164
   },
   {
    "w": "prompt,",
-   "start": 10.08,
-   "end": 10.72
+   "start": 9.236,
+   "end": 9.818
   },
   {
    "w": "pero",
-   "start": 10.76,
-   "end": 10.88
+   "start": 9.891,
+   "end": 10.0
   },
   {
    "w": "cuando",
-   "start": 10.92,
-   "end": 11.12
+   "start": 10.036,
+   "end": 10.182
   },
   {
    "w": "son",
-   "start": 11.24,
-   "end": 11.36
+   "start": 10.255,
+   "end": 10.4
   },
   {
    "w": "miles",
-   "start": 11.44,
-   "end": 11.68
+   "start": 10.545,
+   "end": 10.764
   },
   {
    "w": "de",
-   "start": 11.76,
-   "end": 11.8
+   "start": 10.8,
+   "end": 10.836
   },
   {
    "w": "documentos",
-   "start": 11.84,
-   "end": 12.48
+   "start": 11.091,
+   "end": 11.491
   },
   {
    "w": "eso",
-   "start": 12.64,
-   "end": 12.8
+   "start": 11.636,
+   "end": 11.782
   },
   {
    "w": "es",
-   "start": 12.88,
-   "end": 12.96
+   "start": 11.855,
+   "end": 11.927
   },
   {
    "w": "caro",
-   "start": 13.04,
-   "end": 13.4
+   "start": 12.0,
+   "end": 12.291
   },
   {
    "w": "y",
-   "start": 13.52,
-   "end": 13.56
+   "start": 12.436,
+   "end": 12.509
   },
   {
    "w": "lento.",
-   "start": 13.6,
-   "end": 14.08
+   "start": 12.545,
+   "end": 13.018
   },
   {
    "w": "RAG,",
-   "start": 14.72,
-   "end": 15.28
+   "start": 13.6,
+   "end": 14.109
   },
   {
    "w": "generación",
-   "start": 15.4,
-   "end": 15.84
+   "start": 14.218,
+   "end": 14.545
   },
   {
    "w": "aumentada",
-   "start": 15.947,
-   "end": 16.32
+   "start": 14.582,
+   "end": 14.982
   },
   {
    "w": "con",
-   "start": 16.4,
-   "end": 16.48
+   "start": 15.055,
+   "end": 15.127
   },
   {
    "w": "recuperación,",
-   "start": 16.56,
-   "end": 17.6
+   "start": 15.2,
+   "end": 16.0
   },
   {
    "w": "resuelve",
-   "start": 17.68,
-   "end": 18.08
+   "start": 16.109,
+   "end": 16.436
   },
   {
    "w": "justo",
-   "start": 18.16,
-   "end": 18.56
+   "start": 16.509,
+   "end": 16.873
   },
   {
    "w": "eso:",
-   "start": 18.72,
-   "end": 19.36
+   "start": 16.945,
+   "end": 17.673
   },
   {
    "w": "antes",
-   "start": 19.44,
-   "end": 19.68
+   "start": 17.818,
+   "end": 17.964
   },
   {
    "w": "de",
-   "start": 19.76,
-   "end": 19.8
+   "start": 18.0,
+   "end": 18.036
   },
   {
    "w": "responder,",
-   "start": 19.84,
-   "end": 20.56
+   "start": 18.109,
+   "end": 18.691
   },
   {
    "w": "el",
-   "start": 20.6,
-   "end": 20.64
+   "start": 18.727,
+   "end": 18.764
   },
   {
    "w": "sistema",
-   "start": 20.72,
-   "end": 21.04
+   "start": 18.836,
+   "end": 19.2
   },
   {
    "w": "busca",
-   "start": 21.2,
-   "end": 21.52
+   "start": 19.273,
+   "end": 19.491
   },
   {
    "w": "los",
-   "start": 21.6,
-   "end": 21.68
+   "start": 19.564,
+   "end": 19.636
   },
   {
    "w": "trozos",
-   "start": 21.76,
-   "end": 22.0
+   "start": 19.709,
+   "end": 20.0
   },
   {
    "w": "relevantes",
-   "start": 22.24,
-   "end": 22.64
+   "start": 20.218,
+   "end": 20.582
   },
   {
    "w": "y",
-   "start": 22.72,
-   "end": 22.8
+   "start": 20.655,
+   "end": 20.727
   },
   {
    "w": "se",
-   "start": 22.88,
-   "end": 22.96
+   "start": 20.764,
+   "end": 20.8
   },
   {
    "w": "los",
-   "start": 23.04,
-   "end": 23.12
+   "start": 20.873,
+   "end": 20.945
   },
   {
    "w": "pasa",
-   "start": 23.2,
-   "end": 23.36
+   "start": 21.018,
+   "end": 21.236
   },
   {
    "w": "al",
-   "start": 23.44,
-   "end": 23.52
+   "start": 21.273,
+   "end": 21.309
   },
   {
    "w": "modelo.",
-   "start": 23.72,
-   "end": 24.16
+   "start": 21.382,
+   "end": 21.891
   }
- ]
+ ],
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.3,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "tempo": 1.1,
+ "credits": "147"
 }

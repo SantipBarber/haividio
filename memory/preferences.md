@@ -1,5 +1,9 @@
 # Preferencias de Santi
 
+- 2026-11-14 · [vídeo] El primer fotograma tiene que ser una portada (título, como la miniatura), no la animación a medias; después, transición al gancho.
+- 2026-11-14 · [voz] Pide algo de alegría y velocidad, «muy sutil»: `style` 0,3 y ×1,10. Errores leves de pronunciación en inglés («Agentic» con jota) le parecen humanos y aceptables, pero si hay toma mejor, se cambia.
+- 2026-11-14 · [voz] «vídeo» bien dicho es «vídeo», no «vidéo»; «IA» se dice «ía», todo junto, con la i suave.
+- 2026-11-14 · [publicar] Sus vídeos van en su canal **PildorIAs** (@pildorias): tutoriales cortos de IA aplicada. Antes de subir, confirmar en qué canal.
 - 2026-10-31 · [estilo] Prioridad: que sea **visual, potente y moderno**. No importa que se note que está hecho con IA; lo que no quiere es que parezca genérico.
 - 2026-10-31 · [estilo] El estilo D "moderno oscuro" (fondo negro, lima `#D4FF3A`, Geist) de la escena 3 del vídeo de RAG le gustó: "bastante bien, ahora es afinar y mejorar".
 - 2026-10-31 · [recursos] Usar recursos y referencias abiertos (Hugging Face, documentación oficial, datasets) como fuente y como material visual.

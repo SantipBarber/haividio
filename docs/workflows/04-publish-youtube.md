@@ -18,7 +18,7 @@ Alternativa si prefieres un MCP: [youtube-uploader-mcp](https://github.com/anwer
 2. Configura la pantalla de consentimiento OAuth (tipo externo) y añade tu cuenta como usuario de prueba.
 3. Crea credenciales: **ID de cliente OAuth**, tipo **aplicación web**, con la URI de redirección `http://localhost:8080/oauth2callback`.
 4. Descarga el JSON y guárdalo **fuera del repositorio**, por ejemplo en `~/.config/youtubeuploader/client_secrets.json` (en Windows, `%APPDATA%\youtubeuploader\`).
-5. La primera subida abre el navegador para autorizar el canal y guarda el permiso en el fichero que indiques con `-cache`. Guárdalo también fuera del repositorio.
+5. La primera subida abre el navegador para autorizar el canal y guarda el permiso en el fichero que indiques con `-cache`. Guárdalo también fuera del repositorio. Si la cuenta de Google tiene varios canales (cuentas de marca), Google pregunta cuál autorizar y el permiso vale **solo para ese canal**: usa un fichero de `-cache` por canal (`canal-a.token`, `canal-b.token`) y comprueba en `upload-result.json` (`snippet.channelTitle`) a qué canal ha ido.
 6. **Publica la app** en **Google Auth Platform** → **Público** (estado **En producción**). No hace falta que Google la verifique, pero el botón sigue desactivado hasta completar **Información de la marca**: nombre de la app (sin «YouTube» ni «Google»), correo de asistencia, correo de contacto del desarrollador, página principal, enlace a una política de privacidad y el dominio de ambas como dominio autorizado, verificado en Search Console con la misma cuenta. Sin logotipo, que obliga a la verificación. Al pasar a producción, vuelve a autorizar: el permiso obtenido en pruebas sigue caducando a los 7 días. Mientras está **en pruebas**, Google hace caducar el permiso a los 7 días y hay que volver a autorizar cada semana. Al autorizar una app sin verificar sale un aviso: **Configuración avanzada** → **Ir a … (no seguro)**, con la cuenta del canal.
 
 Las credenciales y el token dan acceso a tu canal: nunca en git.
@@ -99,6 +99,8 @@ python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movi
    `-notify=false` no avisa a los suscriptores, porque el vídeo aún no es público. La visibilidad sale del `privacyStatus` del JSON.
 
    **Miniatura personalizada:** solo funciona con el canal verificado por teléfono ([youtube.com/verify](https://www.youtube.com/verify)). Si no lo está, YouTube responde `403 … permissions to upload and set custom video thumbnails` y youtubeuploader **se para ahí: tampoco sube los subtítulos**, aunque el vídeo ya esté subido. Verifica el canal antes o quita `-thumbnail` y súbela después desde Studio.
+
+   El permiso que pide youtubeuploader incluye el ámbito `youtube`, no solo el de subir: con el mismo token se pueden subir los subtítulos después (`captions.insert`), cambiar la visibilidad (`videos.update` sobre `status`) o borrar un vídeo (`videos.delete`). La API **no** cambia el nombre del canal, el identificador (@) ni la foto: eso solo desde Studio → Personalización.
 
 3. **Comprueba la visibilidad** con la respuesta de YouTube:
 

@@ -1,7 +1,7 @@
 {
  "scene": "10",
  "voice_id": "onwK4e9ZLuTAKqWW03F9",
- "text": "Mi recomendación práctica. ¿Pocos documentos, menos de unas quinientas páginas? Mételos en el contexto y olvídate. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta.",
+ "text": "Mi recomendación práctica. ¿Pocos documentos, menos de unas trescientas páginas? Con un modelo frontera, mételos en el contexto y olvídate. Si usas un modelo local de ciento veintiocho mil tokens, el límite baja a menos de la mitad. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta.",
  "duration": 36.362,
  "words": [
   {
@@ -45,7 +45,7 @@
    "end": 4.458
   },
   {
-   "w": "quinientas",
+   "w": "trescientas",
    "start": 4.516,
    "end": 4.969
   },
@@ -55,7 +55,27 @@
    "end": 5.747
   },
   {
-   "w": "Mételos",
+   "w": "Con",
+   "start": 5.76,
+   "end": 5.79
+  },
+  {
+   "w": "un",
+   "start": 5.82,
+   "end": 5.85
+  },
+  {
+   "w": "modelo",
+   "start": 5.88,
+   "end": 5.91
+  },
+  {
+   "w": "frontera,",
+   "start": 5.94,
+   "end": 5.97
+  },
+  {
+   "w": "mételos",
    "start": 6.06,
    "end": 6.525
   },
@@ -83,6 +103,96 @@
    "w": "olvídate.",
    "start": 7.86,
    "end": 8.615
+  },
+  {
+   "w": "Si",
+   "start": 8.625,
+   "end": 8.643
+  },
+  {
+   "w": "usas",
+   "start": 8.648,
+   "end": 8.666
+  },
+  {
+   "w": "un",
+   "start": 8.67,
+   "end": 8.689
+  },
+  {
+   "w": "modelo",
+   "start": 8.693,
+   "end": 8.711
+  },
+  {
+   "w": "local",
+   "start": 8.716,
+   "end": 8.734
+  },
+  {
+   "w": "de",
+   "start": 8.739,
+   "end": 8.757
+  },
+  {
+   "w": "ciento",
+   "start": 8.761,
+   "end": 8.78
+  },
+  {
+   "w": "veintiocho",
+   "start": 8.784,
+   "end": 8.802
+  },
+  {
+   "w": "mil",
+   "start": 8.807,
+   "end": 8.825
+  },
+  {
+   "w": "tokens,",
+   "start": 8.829,
+   "end": 8.848
+  },
+  {
+   "w": "el",
+   "start": 8.852,
+   "end": 8.87
+  },
+  {
+   "w": "límite",
+   "start": 8.875,
+   "end": 8.893
+  },
+  {
+   "w": "baja",
+   "start": 8.898,
+   "end": 8.916
+  },
+  {
+   "w": "a",
+   "start": 8.92,
+   "end": 8.939
+  },
+  {
+   "w": "menos",
+   "start": 8.943,
+   "end": 8.961
+  },
+  {
+   "w": "de",
+   "start": 8.966,
+   "end": 8.984
+  },
+  {
+   "w": "la",
+   "start": 8.989,
+   "end": 9.007
+  },
+  {
+   "w": "mitad.",
+   "start": 9.011,
+   "end": 9.029
   },
   {
    "w": "¿Una",
@@ -344,5 +454,6 @@
    "start": 35.55,
    "end": 36.362
   }
- ]
+ ],
+ "_nota": "v3 (14-11): palabras insertadas sin audio para alinear con la frase nueva de 300 páginas; los tiempos de animación no cambian"
 }

@@ -10,16 +10,16 @@ Otras opciones que se descartaron: «RAG explicado: de la base vectorial al agen
 El RAG no ha muerto, ha cambiado de forma. En este vídeo vemos cómo funciona el RAG clásico, por qué falla en la práctica y qué técnicas se usan hoy: búsqueda híbrida, rerankers, recuperación contextual, GraphRAG y agentic RAG.
 
 Capítulos:
-00:00 ¿RAG ha muerto?
-00:24 El problema que resuelve RAG
-01:20 RAG clásico en 4 pasos
-02:34 Por qué falla el RAG ingenuo
-03:03 Búsqueda híbrida y reranker
-03:39 Recuperación contextual
-04:13 GraphRAG
-04:45 Agentic RAG
-05:29 ¿Y el contexto largo?
-06:03 Cómo elegir
+0:00 ¿RAG ha muerto?
+0:24 El problema que resuelve RAG
+1:14 RAG clásico en 4 pasos
+2:22 Por qué falla el RAG ingenuo
+2:49 Búsqueda híbrida y reranker
+3:22 Recuperación contextual
+3:52 GraphRAG
+4:21 Agentic RAG
+5:02 ¿Y el contexto largo?
+5:33 Cómo elegir
 
 Fuentes:
 - Anthropic, Contextual Retrieval: https://anthropic.com/news/contextual-retrieval
@@ -32,7 +32,7 @@ Fuentes:
 
 **Miniatura:** `miniatura.png` (fuente en `thumbnail/`): «¿RAG muerto?» y los cuatro pasos clásicos tachados, con «Ha cambiado.».
 
-**Visibilidad:** público (decidido por Santi el 10-11-2026)
+**Visibilidad:** público. v1 publicado el 10-11-2026 y retirado; v2 publicado el 14-11-2026 en el canal PildorIAs: https://youtu.be/yOc2rTw593o
 
 **Para niños:** no
 

@@ -20,8 +20,9 @@ from pathlib import Path
 HERE = Path(__file__).parent
 VOICE = HERE / "../../audio/voice"
 AUTHORING = HERE / "../../audio/voice-daniel"   # voz con la que se escribieron los tiempos
-GAP = 0.7      # silencio entre escenas
+GAP = 0.6      # silencio entre escenas (v2: 0,7 → 0,6, más ritmo)
 LEAD = 0.5     # el vídeo empieza medio segundo antes de la primera palabra
+COVER = 2.0    # v2: portada (la miniatura) antes del gancho; la voz entra después
 TAIL = 1.5     # cola tras la última palabra
 
 # escena del guion -> [(id de la composición, inicio local en la voz)]
@@ -66,7 +67,7 @@ def interp(x, xs, ys):
 
 def layout(folder, splits, hold):
     """Coloca composiciones y trozos de voz. Devuelve (escenas, clips de voz, total)."""
-    scenes, clips, t = [], [], LEAD
+    scenes, clips, t = [], [], COVER + LEAD
     for scene, parts in splits.items():
         voice = round(words_of(folder, scene)["duration"], 2)
         shift = 0.0  # pausas acumuladas dentro de esta escena
@@ -74,7 +75,7 @@ def layout(folder, splits, hold):
             last = i + 1 == len(parts)
             nxt = voice if last else parts[i + 1][1]
             seg = t + local + shift
-            start = seg if i else (0 if scene == "1" else t)
+            start = seg if i else (COVER if scene == "1" else t)
             h = hold.get(cid, 0)
             stop = (t + voice + shift + (GAP if scene != "11" else TAIL) + h) if last else (t + nxt + shift + h)
             clips.append({"id": f"voice-{scene}" + (f"-{i}" if len(parts) > 1 else ""), "scene": scene,
@@ -151,6 +152,10 @@ for ref, cur in zip(ref_scenes, scenes):
         html = html[:old.start()] + block + html[old.end():]
     f.write_text(html, encoding="utf-8")
 
+# ── Transiciones ─────────────────────────────────────────────────────────────
+WASH_PEAK, WASH_IN, WASH_OUT = 0.92, 0.2, 0.35
+cuts = [s_["start"] for s_ in scenes]  # también portada → gancho
+
 # ── Efectos de sonido ────────────────────────────────────────────────────────
 # Instante de referencia (segundo local de la composición, como en su código) -> segundo global actual.
 START = {s["id"]: s["start"] for s in scenes}
@@ -170,7 +175,7 @@ VOL = {"whoosh": 0.22, "pop": 0.3, "tick": 0.35, "impact": 0.5}
 POPS = [("chunk", 8.6), ("embed", 6.5), ("topk", 2.4), ("topk", 4.8), ("topk", 8.9),
         ("contextual", 26.0), ("contextual", 29.5), ("longcontext", 5.2)]
 sfx = []  # (fichero, segundo global en que debe sonar el golpe)
-for i, s_ in enumerate(scenes[1:]):
+for i, s_ in enumerate(scenes):
     sfx.append((f"whoosh-{i % 3 + 1}", s_["start"]))          # cada cambio de composición
 for i, (cid, local) in enumerate(POPS):
     sfx.append((f"pop-{i % 2 + 1}", at(cid, local) + 0.05))
@@ -199,8 +204,15 @@ if MUSIC_SRC.exists() and (not BED.exists() or abs(media_duration(BED) - TOTAL) 
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(MUSIC_SRC),
                     "-filter_complex", chain, "-ar", "44100", "-b:a", "160k", str(BED)], check=True)
     print(f"música: {BED.name} rehecha ({TOTAL} s)")
-music_tag = (f'      <audio id="music" class="clip" src="assets/music/bed.mp3" data-start="0" data-duration="{TOTAL}" '
-             f'data-track-index="7" data-volume="{MUSIC_VOL}"></audio>') if BED.exists() else ""
+# v2: música con ducking (scripts/duck_music.py --volume 0.2 --ratio 8 --out assets/music/bed-ducked.mp3), rehecha
+# tras cada cambio de tiempos. Si no está o no cuadra con la duración, se usa la pista sin ducking a 0,14.
+DUCKED = HERE / "assets/music/bed-ducked.mp3"
+use_ducked = DUCKED.exists() and abs(media_duration(DUCKED) - TOTAL) <= 0.2  # el mp3 puede perder unos ms al codificar
+music_src, music_vol = ("assets/music/bed-ducked.mp3", 0.2) if use_ducked else ("assets/music/bed.mp3", MUSIC_VOL)
+if not use_ducked:
+    print("música: sin ducking (falta bed-ducked.mp3 o no cuadra con la duración)")
+music_tag = (f'      <audio id="music" class="clip" src="{music_src}" data-start="0" data-duration="{TOTAL}" '
+             f'data-track-index="7" data-volume="{music_vol}"></audio>') if BED.exists() else ""
 
 tracker_from = next(s["start"] for s in scenes if s["id"] == "twomoments")
 tracker_to = next(s["start"] + s["duration"] for s in scenes if s["id"] == "generate")
@@ -229,7 +241,8 @@ sfx_tags = "\n".join(
     f'data-duration="{DUR[name]}" data-track-index="{5 + i % 2}" data-volume="{VOL[name.split("-")[0]]}"></audio>'
     for i, (name, hit) in enumerate(sorted(sfx, key=lambda x: x[1])))
 
-hosts = "\n".join(
+hosts = (f'      <div id="scene-cover" class="host" data-composition-id="cover" data-composition-src="compositions/cover.html"\n'
+         f'        data-start="0" data-duration="{COVER}" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>\n') + "\n".join(
     f'      <div id="scene-{s["id"]}" class="host" data-composition-id="{s["id"]}" '
     f'data-composition-src="compositions/{s["id"]}.html"\n'
     f'        data-start="{s["start"]}" data-duration="{s["duration"]}" data-track-index="1" '
@@ -260,6 +273,7 @@ html = f"""<!doctype html>
       #root {{ position: relative; width: 1920px; height: 1080px; font-family: "Geist", sans-serif; color: #f4f5f7; }}
       #bg {{ position: absolute; inset: 0; background-image: radial-gradient(#1c2029 1.5px, transparent 1.5px); background-size: 40px 40px; }}
       .host {{ position: absolute; inset: 0; }}
+      #wash {{ position: absolute; inset: 0; background: #07080b; opacity: 0; z-index: 5; pointer-events: none; }}
       #tracker, #fixes {{ position: absolute; left: 120px; top: 70px; display: flex; gap: 14px; z-index: 10; }}
       .step {{ font-family: "Geist Mono", monospace; font-size: 30px; color: #a3a8b8; padding: 12px 22px; border: 2px solid #232733; border-radius: 999px; }}
       .step b {{ font-weight: 500; margin-right: 10px; }}
@@ -271,6 +285,9 @@ html = f"""<!doctype html>
       <div id="bg" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0"></div>
 
 {hosts}
+
+      <!-- Transición entre composiciones: fundido corto a tinta (fade-through), bajo las barras -->
+      <div id="wash" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="8"></div>
 
       <!-- Firma del canal: barra de pasos 01–04, de la escena 3a al final de la 3c -->
       <div id="tracker" class="clip" data-start="{tracker_from}" data-duration="{round(tracker_to - tracker_from, 2)}" data-track-index="2">
@@ -315,6 +332,8 @@ html = f"""<!doctype html>
       // La barra de arreglos nace con «Primer arreglo» y se enciende con cada uno.
       tl.from("#fixes .step", {{ autoAlpha: 0, y: -20, stagger: 0.08, duration: 0.5, ease: "power3.out" }}, {fixes_from + 0.1});
 {chr(10).join(f'      activate({i}, {round(at + 0.2, 2)}, bars.fixes);' for i, at in fix_at.items())}
+      // Transiciones (v2): la tinta tapa el corte entre composiciones y se abre sobre la siguiente.
+{chr(10).join(f'      tl.fromTo("#wash", {{ opacity: 0 }}, {{ opacity: {WASH_PEAK}, duration: {WASH_IN}, ease: "power2.in" }}, {round(b - WASH_IN, 2)});' + chr(10) + f'      tl.to("#wash", {{ opacity: 0, duration: {WASH_OUT}, ease: "power2.out" }}, {b});' for b in cuts)}
       window.__timelines = window.__timelines || {{}};
       window.__timelines["main"] = tl;
     </script>

@@ -12,24 +12,23 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 - Este changelog, en español e inglés (#33, #34).
 - `scripts/tts.py`: voz con ElevenLabs, `language_code`, mapa de pronunciación y tiempos por palabra. `speed` no hace nada con `eleven_v4`: el tempo se cambia con `atempo` (#35).
+- Vídeo de RAG v2: voz nueva con pronunciaciones elegidas de oído, `style` 0,3 y ×1,10, portada al inicio, fundido a negro entre escenas, música con ducking y dos frases corregidas por empalme. Publicado en el canal PildorIAs (#37).
+- Guías: empalmar desde el silencio antes de la frase, un permiso de YouTube por canal, subir subtítulos y cambiar la visibilidad con la API, y `--video-bitrate` al renderizar con `delivery` (#37).
+
+### Arreglado
+
+- `duck_music.py` fallaba si la música con ducking salía una ventana más corta que la voz al codificar en mp3 (#37).
 
 ### Pendiente
 
 Pruebas de la 0.3.0 que faltan (casillas en `docs/testing.md`):
 
-- [ ] Oír el A/B del ducking y elegir el volumen de la música y `--min-gap`.
 - [ ] Ver el SRT generado por `make_captions.py` sobre el vídeo.
-- [ ] Ver en movimiento una transición de HyperFrames montada en una escena.
+- [ ] Ver en movimiento una transición del catálogo de HyperFrames montada en una escena (el vídeo de RAG v2 usa un fundido propio).
 - [ ] `check_render.py`: controles de texto cortado y de letra de 20 px frente a 32 px.
 - [ ] `duck_music.py`: el control a volumen 0,6, que debe fallar.
 - [ ] `pencil_to_hyperframes.py`: un diseño con `<img>`, SVG, instancias y una fuente que no sea Geist.
 - [ ] Windows, Codex y Cursor.
-
-Revisión del vídeo de RAG publicado (https://youtu.be/leo1j2YyT1w):
-
-- [ ] Pronunciación de «Claude», «RAG» y «Spoiler».
-- [ ] Los cuatro titulares inventados del gancho.
-- [ ] Los «tics» de la barra de arreglos.
 
 Siguiente tirada posible: shorts verticales, voz local para borradores (Kokoro-82M), versión en inglés de un vídeo, retención de YouTube por escena, render por escena, música libre y transcripción local con whisper.cpp.
 

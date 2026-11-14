@@ -17,6 +17,8 @@
     #root .a { left: 1276px; width: 524px; height: 110px; padding: 0 24px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; }
     #root .a .v { font-size: 38px; font-weight: 800; letter-spacing: -0.03em; }
     #root .a .s { font-family: "Geist Mono", monospace; font-size: 30px; color: #5ce1e6; margin-top: 4px; }
+    #ch-a1s { display: grid; }
+    #ch-a1s > span { grid-area: 1 / 1; }
     #ch-end { left: 120px; top: 872px; font-size: 64px; font-weight: 800; letter-spacing: -0.045em; color: #d4ff3a; white-space: nowrap; }
     #ch-end2 { color: #f4f5f7; }
   </style>
@@ -32,9 +34,9 @@
       <path data-hf-id="hf-o4wu" id="ch-b4" pathLength="1" d="M0 350 C70 350 50 555 120 555" />
     </svg>
 
-    <div data-hf-id="hf-qkne" class="abs panel q" id="ch-q1" style="top: 200px">¿Menos de unas 500 páginas?</div>
+    <div data-hf-id="hf-qkne" class="abs panel q" id="ch-q1" style="top: 200px">¿Menos de unas 300 páginas?</div>
     <svg data-hf-id="hf-h1gp" class="abs arr" id="ch-x1" style="top: 241px" viewBox="0 0 48 28" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-57nl" d="M2 14h42M32 4l12 10-12 10"/></svg>
-    <div data-hf-id="hf-m0gq" class="abs panel a" id="ch-a1" style="top: 200px"><div data-hf-id="hf-iae9" class="v">Todo al contexto</div></div>
+    <div data-hf-id="hf-m0gq" class="abs panel a" id="ch-a1" style="top: 200px"><div data-hf-id="hf-iae9" class="v">Todo al contexto</div><div class="s" id="ch-a1s"><span id="ch-a1s1">con modelo frontera</span><span id="ch-a1s2">local de 128k: la mitad</span></div></div>
 
     <div data-hf-id="hf-sroh" class="abs panel q" id="ch-q2" style="top: 360px">¿Base grande&nbsp;<span data-hf-id="hf-v7qq" id="ch-q2b">tipo FAQ o docs?</span></div>
     <svg data-hf-id="hf-7r0a" class="abs arr" id="ch-x2" style="top: 401px" viewBox="0 0 48 28" fill="none" stroke="#8b90a0" stroke-width="2.5"><path data-hf-id="hf-16vp" d="M2 14h42M32 4l12 10-12 10"/></svg>
@@ -74,9 +76,15 @@
       tl.from("#ch-kick", { autoAlpha: 0, x: -20, duration: 0.5, ease: "power2.out" }, 0.1);
       tl.from("#ch-root", { autoAlpha: 0, scale: 0.9, duration: 0.6, ease: "back.out(1.6)" }, 0.7);
       tl.from("#ch-cap", { autoAlpha: 0, y: 14, duration: 0.5, ease: "power2.out" }, 1.2);
-      // «¿Pocos documentos, menos de unas quinientas páginas?» (2.24–5.04) · «Mételos en el contexto» (6.06)
+      // «¿Pocos documentos, menos de unas trescientas páginas?» (2.24–5.04) · «Mételos en el contexto» (6.06)
       grow(0, 2.2);
       answer(0, 6.0);
+      // v3: «Con un modelo frontera» y «Si usas un modelo local de ciento veintiocho mil tokens…» (palabras insertadas en voice-daniel)
+      gsap.set("#ch-a1s2", { autoAlpha: 0 });
+      tl.from("#ch-a1s1", { autoAlpha: 0, y: 10, duration: 0.5, ease: "power2.out" }, 6.3);
+      // Este tramo va ~11 veces más lento (la frase nueva ocupa 0,4 s de referencia): duraciones mínimas.
+      tl.to("#ch-a1s1", { autoAlpha: 0, y: -10, duration: 0.02, ease: "power2.in" }, 8.695);
+      tl.fromTo("#ch-a1s2", { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: 0.035, ease: "power2.out" }, 8.718);
       // «¿Una base de conocimiento grande tipo FAQ o documentación?» (9.04–12.43)
       grow(1, 9.0);
       tl.from("#ch-q2b", { autoAlpha: 0, x: -16, duration: 0.4, ease: "power2.out" }, 11.3);
@@ -108,7 +116,7 @@
       /* warp:start (generado por build_root.py: no editar) */
       window.__timelines = window.__timelines || {};
       const warp = gsap.timeline({ paused: true });
-      const W = [[0.0,0.0],[0.209,0.24],[0.94,0.88],[2.241,1.92],[2.763,2.44],[3.796,3.28],[4.133,3.52],[4.261,3.6],[4.516,3.84],[5.039,4.24],[6.06,5.28],[6.594,5.72],[6.699,5.8],[6.827,5.92],[7.674,6.64],[7.86,6.84],[9.044,7.84],[9.474,8.12],[9.741,8.28],[9.857,8.4],[10.542,9.04],[10.948,9.52],[11.413,10.08],[12.295,10.8],[12.434,11.08],[14.269,12.16],[14.675,12.56],[14.907,12.8],[15.395,13.2],[16.068,13.56],[16.266,13.72],[17.369,14.64],[17.566,14.76],[17.682,14.88],[17.786,14.96],[18.425,15.36],[19.516,15.76],[20.863,16.72],[21.85,17.44],[22.431,17.84],[23.104,18.36],[23.359,18.56],[24.694,19.52],[25.89,20.48],[26.587,20.84],[26.703,20.96],[27.075,21.2],[28.027,22.0],[28.653,22.52],[29.443,23.2],[29.605,23.28],[29.884,23.6],[30.558,24.24],[31.161,24.8],[31.37,24.92],[31.498,25.04],[31.718,25.4],[32.508,25.76],[32.694,25.92],[32.996,26.16],[33.112,26.4],[33.843,26.72],[34.249,27.04],[34.598,27.36],[35.004,27.6],[35.132,27.72],[35.283,27.813],[35.55,28.0],[37.06,29.26]];
+      const W = [[0.0,0.0],[0.209,0.218],[0.94,0.8],[2.241,1.925],[2.763,2.216],[3.796,3.162],[4.133,3.453],[4.261,3.598],[4.516,3.889],[5.039,4.398],[5.76,5.271],[5.82,5.453],[5.88,5.562],[5.94,5.853],[6.06,6.58],[6.594,6.98],[6.699,7.053],[6.827,7.162],[7.674,7.816],[7.86,7.998],[8.625,8.98],[8.693,9.489],[8.761,10.289],[8.829,11.235],[8.898,12.423],[8.966,13.198],[9.044,14.359],[9.474,14.577],[9.741,14.796],[9.857,14.868],[10.542,15.45],[10.948,15.959],[11.413,16.468],[12.295,17.123],[12.434,17.377],[14.269,18.432],[14.675,18.723],[14.907,18.905],[15.395,19.305],[16.068,19.668],[16.266,19.741],[17.369,20.614],[17.566,20.723],[17.682,20.832],[17.786,21.014],[18.425,21.341],[19.516,21.705],[20.863,22.65],[21.85,23.377],[22.431,23.741],[23.104,24.214],[23.359,24.396],[24.694,25.276],[25.89,26.294],[26.587,26.694],[26.703,26.803],[27.075,27.094],[28.027,27.894],[28.653,28.549],[29.443,29.03],[29.605,29.103],[29.884,29.394],[30.558,29.976],[31.161,30.485],[31.37,30.63],[31.498,30.739],[31.718,30.921],[32.508,31.43],[32.694,31.576],[32.996,31.794],[33.112,31.866],[33.843,32.303],[34.249,32.594],[34.598,32.885],[35.004,33.139],[35.132,33.248],[35.283,33.321],[35.55,33.466],[36.96,34.65]];
       for (let i = 0; i < W.length - 1; i++) {
         warp.fromTo(tl, { time: W[i][0] }, { time: W[i + 1][0], duration: W[i + 1][1] - W[i][1], ease: "none", immediateRender: false }, W[i][1]);
       }
