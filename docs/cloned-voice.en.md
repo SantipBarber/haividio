@@ -60,6 +60,17 @@ if cur: words.append(cur)
 
 Save `{"text", "duration", "words"}` in a `.words.json` file next to the mp3. [`scripts/splice_voice.py`](../scripts/splice_voice.py) uses it.
 
+[`scripts/tts.py`](../scripts/tts.py) does all of this: it sends `language_code` (`es` by default), applies the pronunciation map and saves the mp3, the timings, the settings and the credits it cost.
+
+```bash
+python3 scripts/tts.py say out/test "Test text" --voice-env ELEVENLABS_VOICE_ID_MINE
+python3 scripts/tts.py file audio/voice/scene-3 scene-3.txt --pron pronunciation.json --scene 3
+```
+
+**`speed` does nothing with `eleven_v4`:** at 1.0, 1.06 and 1.1 the same 343-character text lasted 22.6, 22.6 and 22.1 s. To speed up, run `ffmpeg -i voice.mp3 -filter:a atempo=1.06 voice-fast.mp3` after generating: it keeps the pitch and costs no credits. Divide the `words.json` timings by the same factor.
+
+Without `language_code`, a word may come out with another accent of the same language: Spanish «vídeo» sounded like «vidéo».
+
 ## Pronunciation
 
 **Do not change the script.** Put spellings in a map applied only to the text sent to the voice, with per-sentence exceptions if needed. If an exception's sentence no longer appears, the script should stop before spending credits.

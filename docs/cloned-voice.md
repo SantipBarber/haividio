@@ -60,6 +60,17 @@ if cur: words.append(cur)
 
 Guarda `{"text", "duration", "words"}` en un `.words.json` junto al mp3. Es lo que usa [`scripts/splice_voice.py`](../scripts/splice_voice.py).
 
+[`scripts/tts.py`](../scripts/tts.py) lo hace todo: manda `language_code` (`es` por defecto), aplica el mapa de pronunciación y guarda el mp3, los tiempos, los ajustes y los créditos que costó.
+
+```bash
+python3 scripts/tts.py say out/prueba "Texto de prueba" --voice-env ELEVENLABS_VOICE_ID_MIA
+python3 scripts/tts.py file audio/voice/scene-3 escena-3.txt --pron pronunciation.json --scene 3
+```
+
+**`speed` no cambia nada con `eleven_v4`:** con 1,0, 1,06 y 1,1, el mismo texto de 343 caracteres duró 22,6, 22,6 y 22,1 s. Para acelerar, `ffmpeg -i voz.mp3 -filter:a atempo=1.06 voz-rapida.mp3` después de generar: no cambia el tono ni gasta créditos. Los tiempos de `words.json` se dividen por el mismo factor.
+
+Sin `language_code`, una palabra puede salir con otro acento del mismo idioma: «vídeo» sonó «vidéo».
+
 ## Pronunciación
 
 **El guion no se toca.** Las grafías van en un mapa que solo se aplica al texto enviado a la voz, con excepciones por frase si hace falta. Si la frase de una excepción ya no aparece, el script debe parar antes de gastar créditos.
