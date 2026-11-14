@@ -1,5 +1,7 @@
 # Changelog
 
+[English](CHANGELOG.en.md)
+
 Qué se añade a Haividio y qué queda pendiente. Lo más reciente, arriba. Las versiones son las del plugin `video-studio` (`plugins/video-studio/.claude-plugin/plugin.json`); entre una versión y otra, los cambios van en «Sin publicar».
 
 Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [docs/testing.md](docs/testing.md) y las ideas sin empezar, en [memory/backlog.md](memory/backlog.md).
@@ -8,6 +10,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 ### Añadido
 
+- Este changelog, en español e inglés (#33).
 - Este changelog.
 - `scripts/tts.py`: voz con ElevenLabs, `language_code`, mapa de pronunciación y tiempos por palabra. `speed` no hace nada con `eleven_v4`: el tempo se cambia con `atempo`.
 
@@ -41,7 +44,6 @@ Siguiente tirada posible: shorts verticales, voz local para borradores (Kokoro-8
 - `scripts/check_render.py`: revisa el render fotograma a fotograma por escena con PySceneDetect, RapidOCR y `freezedetect` (rótulos esperados, texto cortado o pequeño, tramos quietos) (#28, #31).
 - Plan de pruebas en `docs/testing.md`: todo lo que entra en el plugin se prueba con material real y un control que deba fallar (#30).
 - Pencil → HyperFrames: `scripts/pencil_to_hyperframes.py`, la skill `pencil-to-hyperframes` y el workflow 06, con modo storyboard y borrador de escena (`--draft --at`) (#29, #32).
-
 - Miniatura puesta en el vídeo de RAG tras verificar el canal (#19).
 - Página de privacidad de haividio.dev (es/en) y `sitemap.xml`, y guía de lo que pide Google para publicar la app OAuth de YouTube (#20, #21).
 

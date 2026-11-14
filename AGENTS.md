@@ -27,7 +27,7 @@ Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/preferences.md`
 
 ## Changelog
 
-Cada PR añade su línea a `CHANGELOG.md`, en «Sin publicar», y quita de «Pendiente» lo que resuelva. Al subir la versión del plugin, «Sin publicar» pasa a ser esa versión con su fecha.
+Cada PR añade su línea a `CHANGELOG.md` y a `CHANGELOG.en.md`, en «Sin publicar», y quita de «Pendiente» lo que resuelva. Al subir la versión del plugin, «Sin publicar» pasa a ser esa versión con su fecha.
 
 ## Guías en dos idiomas
 
