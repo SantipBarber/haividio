@@ -25,7 +25,7 @@ cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/
 
 - [x] Reads the voice clips from the composition, including split ones with `data-media-start` (11-11, Claude).
 - [x] Measures the voice-music gap before and after: 13 dB → 23 dB median (11-11, Claude).
-- [x] **Listen** and choose the volume (Santi, 14-11): volume 0.2 and `--ratio 8` in RAG video v2, "music and voice quite well balanced". The voice sits ~22 dB above at the median.
+- [x] **Listen** and choose the volume (Santi, 14-11): volume 0.2 and `--ratio 8` in RAG video v2, approved by ear. The voice sits ~22 dB above at the median.
 - [x] Render the RAG video with `bed-ducked.mp3` and listen to all of it (Santi, 14-11): no complaints about pumping.
 - [x] Fixed (14-11): when the ducked mp3 came out one window shorter than the voice, the comparison failed (`operands could not be broadcast`). The three measurements are now cut to the shortest one.
 - [ ] Control: raise the volume to 0.6; many stretches must be flagged.

@@ -32,7 +32,7 @@ Fuentes:
 
 **Miniatura:** `miniatura.png` (fuente en `thumbnail/`): «¿RAG muerto?» y los cuatro pasos clásicos tachados, con «Ha cambiado.».
 
-**Visibilidad:** público. v1 publicado el 10-11-2026 y retirado; v2 publicado el 14-11-2026 en el canal PildorIAs: https://youtu.be/yOc2rTw593o
+**Visibilidad:** público. v1 publicado el 10-11-2026 y retirado; v2 publicado el 14-11-2026: https://youtu.be/yOc2rTw593o
 
 **Para niños:** no
 

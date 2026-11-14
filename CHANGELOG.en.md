@@ -12,7 +12,7 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 
 - This changelog, in Spanish and English (#33, #34).
 - `scripts/tts.py`: ElevenLabs voice with `language_code`, a pronunciation map and word timings. `speed` does nothing with `eleven_v4`: change the tempo with `atempo` (#35).
-- RAG video v2: new voice with pronunciations chosen by ear, `style` 0.3 and ×1.10, a cover at the start, a fade to black between scenes, ducked music and two sentences fixed by splicing. Published on the PildorIAs channel (#37).
+- RAG video v2: new voice with pronunciations chosen by ear, `style` 0.3 and ×1.10, a cover at the start, a fade to black between scenes, ducked music and two sentences fixed by splicing. (#37).
 - Guides: splice from the silence before the sentence, one YouTube permission per channel, upload subtitles and change the visibility through the API, and `--video-bitrate` when rendering with `delivery` (#37).
 
 ### Fixed

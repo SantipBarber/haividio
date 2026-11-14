@@ -2,8 +2,7 @@
 
 ## Haividio
 
-- [x] Revisar el vídeo de RAG (14-11): v2 con voz nueva, portada y correcciones, publicado en PildorIAs (https://youtu.be/yOc2rTw593o); el v1 se retiró.
-- [ ] Verificar PildorIAs por teléfono y poner la miniatura del vídeo de RAG.
+- [x] Revisar el vídeo de RAG (14-11): v2 con voz nueva, portada y correcciones, publicado (https://youtu.be/yOc2rTw593o); el v1 se retiró.
 - [ ] **Features del plugin (investigación del 11-11):** primera tirada aprobada por Santi y fusionada (#25–#29, #31): ducking de la música, bloques de HyperFrames en las skills (transiciones, terminal, código), revisión automática del render (PySceneDetect + RapidOCR + `freezedetect`), SRT, capítulos y miniatura desde los tiempos por palabra, y conversor de Pencil a HyperFrames. Un PR por tema. Siguen en cola: shorts verticales, voz local para borradores (Kokoro-82M, revisar licencia de las voces), versión en inglés, retención de YouTube por escena (exige reautorizar OAuth con `yt-analytics.readonly`), nube de embeddings reales, render por escena con manifiesto, música libre y transcripción local (whisper.cpp). Licencias por aclarar: Silero VAD, Parakeet v3, ACE-Step, Piper.
 - [ ] **Probarlo todo** (Santi, 11-11): plan y método en `docs/testing.md`, con una casilla por prueba de la tirada 0.3.0 (PR #25–#29). Marcar fecha y quién al probar. Hechas el 11-11 las automáticas de cada PR y el borrador del storyboard (visto por Santi). Quedan: ver el SRT y una transición del catálogo en movimiento, los controles de texto cortado y letra pequeña, y Windows, Codex y Cursor. **Siguiente sesión:** esas pruebas o la siguiente tirada (shorts verticales, voz local, versión en inglés).
 - [x] Documentar cómo instalarlo en Codex, OpenCode, pi y Cursor (07-11, `docs/other-agents.md`). pi y OpenCode encuentran las skills; Codex y Cursor sin probar.

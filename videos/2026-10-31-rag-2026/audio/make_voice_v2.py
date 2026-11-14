@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Locución v2 del vídeo de RAG: mismas frases que la v1, con las grafías y el ritmo que eligió Santi (14-11).
+"""Locución v2 del vídeo de RAG: mismas frases que la v1, con las grafías y el ritmo elegidos de oído (14-11).
 
 - Pronunciación: pronunciation.json (Clod, ía, rag, Espóiler).
 - style 0,3 en ElevenLabs y tempo ×1,10 con atempo (speed no hace nada con eleven_v4).
