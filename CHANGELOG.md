@@ -9,6 +9,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 ### Añadido
 
 - Este changelog.
+- `scripts/tts.py`: voz con ElevenLabs, `language_code`, mapa de pronunciación y tiempos por palabra. `speed` no hace nada con `eleven_v4`: el tempo se cambia con `atempo`.
 
 ### Pendiente
 

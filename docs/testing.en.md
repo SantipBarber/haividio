@@ -78,6 +78,18 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [ ] A design with an image in an `<img>`, an SVG and a reusable component (instances).
 - [ ] A font other than Geist.
 
+## Voice — `scripts/tts.py`
+
+```bash
+python3 scripts/tts.py say RAG/audio/probes-v2/pron-video-A-video "…en el próximo vídeo…" --voice-env ELEVENLABS_VOICE_ID_SANTI
+```
+
+- [x] Generates the mp3 and `words.json` with the cloned voice and `eleven_v4`; 10 pronunciation probes and 6 pace probes for the RAG video, 0.4 credits per character (14-11, Claude).
+- [x] The map changes a standalone «IA» but not «IAs»; «phrases» apply only in their scene (14-11, Claude).
+- [x] Control: a «phrase» that does not appear in the text stops before spending credits; `--speed 1.5` is rejected (14-11, Claude).
+- [x] `--speed` does not change the duration with `eleven_v4` (14-11, Claude): measured, documented in `docs/cloned-voice.en.md`.
+- [ ] **Listen** to the probes and choose the spelling of «vídeo», «Claude», «RAG» and «Spoiler», the tempo (×1.00, ×1.06, ×1.10 with `atempo`) and `style` (0 or 0.3) (Santi).
+
 ## Before merging any PR
 
 - `claude plugin validate .` passes.
