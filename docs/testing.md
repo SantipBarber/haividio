@@ -25,7 +25,7 @@ cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/
 
 - [x] Lee los clips de voz de la composición, incluidos los partidos con `data-media-start` (11-11, Claude).
 - [x] Mide la distancia voz-música antes y después: 13 dB → 23 dB de mediana (11-11, Claude).
-- [x] **Oír** y elegir volumen (Santi, 14-11): volumen 0,2 y `--ratio 8` en el vídeo de RAG v2, «música y voz bastante bien ajustadas». La voz queda ~22 dB por encima en la mediana.
+- [x] **Oír** y elegir volumen (Santi, 14-11): volumen 0,2 y `--ratio 8` en el vídeo de RAG v2, aprobado de oído. La voz queda ~22 dB por encima en la mediana.
 - [x] Renderizar el vídeo de RAG con `bed-ducked.mp3` y oírlo entero (Santi, 14-11): sin quejas de bombeo.
 - [x] Arreglado (14-11): si el mp3 con ducking salía una ventana más corto que la voz, fallaba al comparar (`operands could not be broadcast`). Ahora se recortan las tres medidas a la más corta.
 - [ ] Control: subir el volumen a 0,6; deben salir muchos tramos marcados.

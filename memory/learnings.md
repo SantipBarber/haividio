@@ -2,7 +2,7 @@
 
 Lo más reciente arriba. Formato: `- AAAA-MM-DD · [tema] lo aprendido. Cómo aplicarlo.`
 
-- 2026-11-14 · [voz] Pruebas cortas de pronunciación dentro de la frase real, 2-3 grafías, elegidas de oído desde el móvil: ~35 créditos cada una y evitan regenerar escenas. Lo que se eligió para el vídeo de RAG: Clod, ía, rag, Espóiler, Graf rag, Eiyéntic. `style` 0,3 + `atempo` ×1,10 dio «rapidito, pero no acelerado» (169 palabras/min).
+- 2026-11-14 · [voz] Pruebas cortas de pronunciación dentro de la frase real, 2-3 grafías, elegidas de oído desde el móvil: ~35 créditos cada una y evitan regenerar escenas. Con `eleven_v4`, siglas y anglicismos suelen necesitar grafía fonética (ejemplos en `pronunciation.json` del vídeo de RAG). `style` 0,3 + `atempo` ×1,10 da más viveza sin sonar acelerado (~169 palabras/min).
 - 2026-11-14 · [voz] `eleven_v4` cambió «medio internet» por «media internet» con el texto bien escrito, y WhisperX no lo marcó. Hay que oírlo; la transcripción tampoco oye siempre bien un «Espóiler» que sí suena.
 - 2026-11-14 · [empalmes] Empalmar desde el silencio anterior a la frase, no a mitad: «entonces medio» pegado tras «Desde» sonó «desdeente entonces». `splice_voice.py phrase` usa la toma desde 0: recorta antes la frase de contexto.
 - 2026-11-14 · [hyperframes] Si la voz nueva dice más palabras que la de referencia, `build_root.py` no alinea: se insertan esas palabras en el `.words.json` de referencia con tiempos dentro del hueco. Ese tramo de animación queda muy estirado (~11×): las animaciones que caen ahí necesitan duraciones mínimas o se solapan varios segundos.
