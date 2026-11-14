@@ -10,7 +10,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 ### Añadido
 
-- Este changelog.
+- Este changelog, en español e inglés (#33).
 
 ### Pendiente
 

@@ -10,7 +10,7 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 
 ### Added
 
-- This changelog, in Spanish and English.
+- This changelog, in Spanish and English (#33).
 
 ### Pending
 
