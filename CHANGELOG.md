@@ -12,12 +12,16 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 - Este changelog, en español e inglés (#33, #34).
 - `scripts/tts.py`: voz con ElevenLabs, `language_code`, mapa de pronunciación y tiempos por palabra. `speed` no hace nada con `eleven_v4`: el tempo se cambia con `atempo` (#35).
-- Vídeo de RAG v2: voz nueva con pronunciaciones elegidas de oído, `style` 0,3 y ×1,10, portada al inicio, fundido a negro entre escenas, música con ducking y dos frases corregidas por empalme. Publicado en el canal PildorIAs (#37).
+- Vídeo de RAG v2: voz nueva con pronunciaciones elegidas de oído, `style` 0,3 y ×1,10, portada al inicio, fundido a negro entre escenas, música con ducking y dos frases corregidas por empalme. (#37).
 - Guías: empalmar desde el silencio antes de la frase, un permiso de YouTube por canal, subir subtítulos y cambiar la visibilidad con la API, y `--video-bitrate` al renderizar con `delivery` (#37).
 
 ### Arreglado
 
 - `duck_music.py` fallaba si la música con ducking salía una ventana más corta que la voz al codificar en mp3 (#37).
+
+### Cambiado
+
+- `memory/preferences.md` pasa a `memory/conventions.md`, solo con criterios generales; los gustos personales se guardan fuera del repositorio (#38).
 
 ### Pendiente
 
