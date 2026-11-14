@@ -106,5 +106,8 @@ scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
 
 - **Incluye la palabra anterior** si la palabra se pega a ella: en «por api», cortar antes de «por» cayó en silencio y cortar entre «por» y «api» no.
 - **Límite:** una toma que venía seguida de coma, pegada al final de una frase, puede sonar en suspenso. Si molesta, se pide una toma con punto solo para esa frase.
+- **Empalma desde el silencio antes de la frase.** Pegar «entonces medio» detrás del «Desde» de la locución sonó «desdeente entonces»: el corte a mitad de frase duplicó una sílaba. Con la frase entera desde «Desde», el corte cae en la pausa tras el punto anterior y no se nota.
+- **`phrase` usa la toma entera**, desde el segundo 0. Si la toma lleva delante una frase de contexto (sirve para que la entonación salga natural), recórtala antes en el silencio previo a la primera palabra que vas a usar y resta ese tiempo a su `.words.json`.
+- **La voz puede cambiar una palabra con el texto bien escrito** («medio internet» salió «media internet») y la transcripción no siempre lo detecta. Solo se pilla de oído: por eso la lista de minutos.
 - **Copia antes de empalmar.** Un primer intento dejó una escena con una sola frase, y solo se vio al compararla con el guion.
 - **Comprueba** que la duración del `.words.json` coincide con la del mp3 (`ffprobe`), y que la toma está donde dicen los tiempos.

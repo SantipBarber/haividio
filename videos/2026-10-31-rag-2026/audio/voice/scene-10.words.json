@@ -2,348 +2,468 @@
  "scene": "10",
  "voice_id": "JnBnSljehAqxkcZsA6n0",
  "model_id": "eleven_v4",
- "text": "Mi recomendación práctica. ¿Pocos documentos, menos de unas quinientas páginas? Mételos en el contexto y olvídate. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta.",
- "duration": 28.56,
+ "text": "Mi recomendación práctica. ¿Pocos documentos, menos de unas trescientas páginas? Con un modelo frontera, mételos en el contexto y olvídate. Si usas un modelo local de ciento veintiocho mil tokens, el límite baja a menos de la mitad. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta.",
+ "spoken_text": "Mi recomendación práctica. ¿Pocos documentos, menos de unas quinientas páginas? Mételos en el contexto y olvídate. ¿Una base de conocimiento grande tipo FAQ o documentación? rag con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic rag. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta.",
+ "duration": 34.048,
  "words": [
   {
    "w": "Mi",
    "start": 0.0,
-   "end": 0.16
+   "end": 0.145
   },
   {
    "w": "recomendación",
-   "start": 0.24,
-   "end": 0.8
+   "start": 0.218,
+   "end": 0.727
   },
   {
    "w": "práctica.",
-   "start": 0.88,
-   "end": 1.44
+   "start": 0.8,
+   "end": 1.309
   },
   {
    "w": "¿Pocos",
-   "start": 1.92,
-   "end": 2.16
+   "start": 1.925,
+   "end": 2.144
   },
   {
    "w": "documentos,",
-   "start": 2.44,
-   "end": 3.2
+   "start": 2.216,
+   "end": 3.089
   },
   {
    "w": "menos",
-   "start": 3.28,
-   "end": 3.44
+   "start": 3.162,
+   "end": 3.38
   },
   {
    "w": "de",
-   "start": 3.52,
-   "end": 3.56
+   "start": 3.453,
+   "end": 3.525
   },
   {
    "w": "unas",
-   "start": 3.6,
-   "end": 3.76
+   "start": 3.598,
+   "end": 3.816
   },
   {
-   "w": "quinientas",
-   "start": 3.84,
-   "end": 4.16
+   "w": "trescientas",
+   "start": 3.889,
+   "end": 4.253
   },
   {
    "w": "páginas?",
-   "start": 4.24,
-   "end": 4.8
+   "start": 4.398,
+   "end": 5.053
   },
   {
-   "w": "Mételos",
-   "start": 5.28,
-   "end": 5.68
+   "w": "Con",
+   "start": 5.271,
+   "end": 5.416
+  },
+  {
+   "w": "un",
+   "start": 5.453,
+   "end": 5.489
+  },
+  {
+   "w": "modelo",
+   "start": 5.562,
+   "end": 5.78
+  },
+  {
+   "w": "frontera,",
+   "start": 5.853,
+   "end": 6.507
+  },
+  {
+   "w": "mételos",
+   "start": 6.58,
+   "end": 6.944
   },
   {
    "w": "en",
-   "start": 5.72,
-   "end": 5.76
+   "start": 6.98,
+   "end": 7.016
   },
   {
    "w": "el",
-   "start": 5.8,
-   "end": 5.84
+   "start": 7.053,
+   "end": 7.089
   },
   {
    "w": "contexto",
-   "start": 5.92,
-   "end": 6.48
+   "start": 7.162,
+   "end": 7.671
   },
   {
    "w": "y",
-   "start": 6.64,
-   "end": 6.72
+   "start": 7.816,
+   "end": 7.889
   },
   {
    "w": "olvídate.",
-   "start": 6.84,
-   "end": 7.36
+   "start": 7.998,
+   "end": 8.725
+  },
+  {
+   "w": "Si",
+   "start": 8.98,
+   "end": 9.125
+  },
+  {
+   "w": "usas",
+   "start": 9.162,
+   "end": 9.344
+  },
+  {
+   "w": "un",
+   "start": 9.38,
+   "end": 9.416
+  },
+  {
+   "w": "modelo",
+   "start": 9.489,
+   "end": 9.707
+  },
+  {
+   "w": "local",
+   "start": 9.78,
+   "end": 10.071
+  },
+  {
+   "w": "de",
+   "start": 10.144,
+   "end": 10.216
+  },
+  {
+   "w": "ciento",
+   "start": 10.289,
+   "end": 10.507
+  },
+  {
+   "w": "veintiocho",
+   "start": 10.58,
+   "end": 10.944
+  },
+  {
+   "w": "mil",
+   "start": 11.016,
+   "end": 11.089
+  },
+  {
+   "w": "tokens,",
+   "start": 11.235,
+   "end": 11.816
+  },
+  {
+   "w": "el",
+   "start": 11.889,
+   "end": 11.962
+  },
+  {
+   "w": "límite",
+   "start": 12.035,
+   "end": 12.325
+  },
+  {
+   "w": "baja",
+   "start": 12.423,
+   "end": 12.616
+  },
+  {
+   "w": "a",
+   "start": 12.689,
+   "end": 12.835
+  },
+  {
+   "w": "menos",
+   "start": 12.907,
+   "end": 13.125
+  },
+  {
+   "w": "de",
+   "start": 13.198,
+   "end": 13.235
+  },
+  {
+   "w": "la",
+   "start": 13.271,
+   "end": 13.307
+  },
+  {
+   "w": "mitad.",
+   "start": 13.344,
+   "end": 13.925
   },
   {
    "w": "¿Una",
-   "start": 7.84,
-   "end": 8.0
+   "start": 14.359,
+   "end": 14.505
   },
   {
    "w": "base",
-   "start": 8.12,
-   "end": 8.24
+   "start": 14.577,
+   "end": 14.723
   },
   {
    "w": "de",
-   "start": 8.28,
-   "end": 8.32
+   "start": 14.796,
+   "end": 14.832
   },
   {
    "w": "conocimiento",
-   "start": 8.4,
-   "end": 8.96
+   "start": 14.868,
+   "end": 15.377
   },
   {
    "w": "grande",
-   "start": 9.04,
-   "end": 9.44
+   "start": 15.45,
+   "end": 15.814
   },
   {
    "w": "tipo",
-   "start": 9.52,
-   "end": 9.92
+   "start": 15.959,
+   "end": 16.25
   },
   {
    "w": "FAQ",
-   "start": 10.08,
-   "end": 10.72
+   "start": 16.468,
+   "end": 17.05
   },
   {
    "w": "o",
-   "start": 10.8,
-   "end": 10.88
+   "start": 17.123,
+   "end": 17.196
   },
   {
    "w": "documentación?",
-   "start": 11.08,
-   "end": 11.68
+   "start": 17.377,
+   "end": 17.923
   },
   {
    "w": "RAG",
-   "start": 12.16,
-   "end": 12.48
+   "start": 18.432,
+   "end": 18.65
   },
   {
    "w": "con",
-   "start": 12.56,
-   "end": 12.72
+   "start": 18.723,
+   "end": 18.868
   },
   {
    "w": "búsqueda",
-   "start": 12.8,
-   "end": 13.12
+   "start": 18.905,
+   "end": 19.232
   },
   {
    "w": "híbrida",
-   "start": 13.2,
-   "end": 13.52
+   "start": 19.305,
+   "end": 19.596
   },
   {
    "w": "y",
-   "start": 13.56,
-   "end": 13.6
+   "start": 19.668,
+   "end": 19.705
   },
   {
    "w": "reranker:",
-   "start": 13.72,
-   "end": 14.56
+   "start": 19.741,
+   "end": 20.541
   },
   {
    "w": "es",
-   "start": 14.64,
-   "end": 14.72
+   "start": 20.614,
+   "end": 20.687
   },
   {
    "w": "lo",
-   "start": 14.76,
-   "end": 14.8
+   "start": 20.723,
+   "end": 20.759
   },
   {
    "w": "que",
-   "start": 14.88,
-   "end": 14.92
+   "start": 20.832,
+   "end": 20.905
   },
   {
    "w": "mejor",
-   "start": 14.96,
-   "end": 15.28
+   "start": 21.014,
+   "end": 21.268
   },
   {
    "w": "relación",
-   "start": 15.36,
-   "end": 15.68
+   "start": 21.341,
+   "end": 21.632
   },
   {
    "w": "esfuerzo-resultado",
-   "start": 15.76,
-   "end": 16.64
+   "start": 21.705,
+   "end": 22.577
   },
   {
    "w": "tiene.",
-   "start": 16.72,
-   "end": 17.04
+   "start": 22.65,
+   "end": 23.159
   },
   {
    "w": "¿Muchas",
-   "start": 17.44,
-   "end": 17.76
+   "start": 23.377,
+   "end": 23.668
   },
   {
    "w": "relaciones",
-   "start": 17.84,
-   "end": 18.24
+   "start": 23.741,
+   "end": 24.105
   },
   {
    "w": "entre",
-   "start": 18.36,
-   "end": 18.48
+   "start": 24.214,
+   "end": 24.323
   },
   {
    "w": "entidades?",
-   "start": 18.56,
-   "end": 19.32
+   "start": 24.396,
+   "end": 25.087
   },
   {
    "w": "GraphRAG.",
-   "start": 19.52,
-   "end": 20.16
+   "start": 25.276,
+   "end": 25.93
   },
   {
    "w": "¿Tareas",
-   "start": 20.48,
-   "end": 20.8
+   "start": 26.294,
+   "end": 26.658
   },
   {
    "w": "de",
-   "start": 20.84,
-   "end": 20.88
+   "start": 26.694,
+   "end": 26.73
   },
   {
    "w": "varios",
-   "start": 20.96,
-   "end": 21.12
+   "start": 26.803,
+   "end": 27.021
   },
   {
    "w": "pasos?",
-   "start": 21.2,
-   "end": 21.84
+   "start": 27.094,
+   "end": 27.53
   },
   {
    "w": "Agentic",
-   "start": 22.0,
-   "end": 22.48
+   "start": 27.894,
+   "end": 28.403
   },
   {
    "w": "RAG.",
-   "start": 22.52,
-   "end": 22.88
+   "start": 28.549,
+   "end": 28.912
   },
   {
    "w": "Y",
-   "start": 23.2,
-   "end": 23.24
+   "start": 29.03,
+   "end": 29.066
   },
   {
    "w": "sobre",
-   "start": 23.28,
-   "end": 23.52
+   "start": 29.103,
+   "end": 29.321
   },
   {
    "w": "todo:",
-   "start": 23.6,
-   "end": 23.92
+   "start": 29.394,
+   "end": 29.685
   },
   {
    "w": "empieza",
-   "start": 24.24,
-   "end": 24.72
+   "start": 29.976,
+   "end": 30.412
   },
   {
    "w": "por",
-   "start": 24.8,
-   "end": 24.88
+   "start": 30.485,
+   "end": 30.557
   },
   {
    "w": "lo",
-   "start": 24.92,
-   "end": 24.96
+   "start": 30.63,
+   "end": 30.703
   },
   {
    "w": "más",
-   "start": 25.04,
-   "end": 25.2
+   "start": 30.739,
+   "end": 30.848
   },
   {
    "w": "simple",
-   "start": 25.4,
-   "end": 25.6
+   "start": 30.921,
+   "end": 31.285
   },
   {
    "w": "y",
-   "start": 25.76,
-   "end": 25.84
+   "start": 31.43,
+   "end": 31.503
   },
   {
    "w": "sube",
-   "start": 25.92,
-   "end": 26.12
+   "start": 31.576,
+   "end": 31.757
   },
   {
    "w": "de",
-   "start": 26.16,
-   "end": 26.24
+   "start": 31.794,
+   "end": 31.83
   },
   {
    "w": "nivel",
-   "start": 26.4,
-   "end": 26.56
+   "start": 31.866,
+   "end": 32.157
   },
   {
    "w": "solo",
-   "start": 26.72,
-   "end": 26.96
+   "start": 32.303,
+   "end": 32.521
   },
   {
    "w": "cuando",
-   "start": 27.04,
-   "end": 27.28
+   "start": 32.594,
+   "end": 32.812
   },
   {
    "w": "midas",
-   "start": 27.36,
-   "end": 27.52
+   "start": 32.885,
+   "end": 33.103
   },
   {
    "w": "que",
-   "start": 27.6,
-   "end": 27.68
+   "start": 33.139,
+   "end": 33.176
   },
   {
    "w": "te",
-   "start": 27.72,
-   "end": 27.76
+   "start": 33.248,
+   "end": 33.285
   },
   {
    "w": "hace",
-   "start": 27.813,
-   "end": 27.92
+   "start": 33.321,
+   "end": 33.394
   },
   {
    "w": "falta.",
-   "start": 28.0,
-   "end": 28.56
+   "start": 33.466,
+   "end": 34.048
   }
- ]
+ ],
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.3,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "tempo": 1.1,
+ "credits": "175"
 }

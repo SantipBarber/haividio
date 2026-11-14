@@ -167,6 +167,9 @@ def main():
         gain = 20 * np.log10(a.volume)
         before = rms_db(pcm(a.music)) + gain
         after = rms_db(pcm(ducked)) + gain
+    # Al codificar en mp3, la música con ducking puede salir una ventana más corta que la voz.
+    k = min(len(v), len(before), len(after))
+    v, before, after = v[:k], before[:k], after[:k]
 
     active, gap_before = gaps(v, before, a.voice_floor)
     _, gap_after = gaps(v, after, a.voice_floor)

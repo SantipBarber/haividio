@@ -68,7 +68,7 @@
 **Fuente:** https://akitaonrails.com/en/2026/04/06/rag-is-dead-long-context/ · https://www.callmissed.com/blog/rag-best-practices-2026 · https://hamel.dev/blog/posts/evals-faq/is-rag-dead.html
 
 ### Escena 10 — Cómo elegir (8:30–9:05)
-**Voz:** "Mi recomendación práctica. ¿Pocos documentos, menos de unas quinientas páginas? Mételos en el contexto y olvídate. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta."
+**Voz:** "Mi recomendación práctica. ¿Pocos documentos, menos de unas trescientas páginas? Con un modelo frontera, mételos en el contexto y olvídate. Si usas un modelo local de ciento veintiocho mil tokens, el límite baja a menos de la mitad. ¿Una base de conocimiento grande tipo FAQ o documentación? RAG con búsqueda híbrida y reranker: es lo que mejor relación esfuerzo-resultado tiene. ¿Muchas relaciones entre entidades? GraphRAG. ¿Tareas de varios pasos? Agentic RAG. Y sobre todo: empieza por lo más simple y sube de nivel solo cuando midas que te hace falta."
 **Visual:** árbol de decisión de 4 ramas que se construye rama a rama; la rama "empieza simple" se resalta con el color de acento.
 **Fuente:** https://gitcode.csdn.net/6a29183410ee7a33f27a54d3.html
 

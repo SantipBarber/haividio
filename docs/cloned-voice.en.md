@@ -106,5 +106,8 @@ scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
 
 - **Include the previous word** if it runs into the target word: in «por api», cutting before «por» landed in silence, while cutting between «por» and «api» did not.
 - **Limit:** a take that continues after a comma and is attached to the end of a sentence can sound unfinished. If it is distracting, request a take with a full stop for that sentence only.
+- **Splice from the silence before the sentence.** Pasting "entonces medio" right after the narration's "Desde" sounded "desdeente entonces": the mid-sentence cut doubled a syllable. With the whole sentence from "Desde", the cut lands in the pause after the previous full stop and goes unnoticed.
+- **`phrase` uses the whole take**, from second 0. If the take starts with a context sentence (useful for natural intonation), trim it first at the silence before the first word you want and subtract that time in its `.words.json`.
+- **The voice can change a word that is spelled correctly** ("medio internet" came out as "media internet") and transcription does not always catch it. Only listening catches it: hence the list of timestamps.
 - **Copy before splicing.** A first attempt left a scene with only one sentence; this was only noticed when it was compared with the script.
 - **Check** that the `.words.json` duration matches the mp3 duration (`ffprobe`), and that the take is where the timings say it is.

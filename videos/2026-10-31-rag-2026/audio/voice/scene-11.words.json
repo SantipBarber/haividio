@@ -3,132 +3,142 @@
  "voice_id": "JnBnSljehAqxkcZsA6n0",
  "model_id": "eleven_v4",
  "text": "El RAG no ha muerto, ha madurado. Si quieres que en el próximo vídeo montemos uno de estos paso a paso, dímelo en los comentarios.",
- "duration": 8.16,
+ "spoken_text": "El rag no ha muerto, ha madurado. Si quieres que en el próximo vídeo montemos uno de estos paso a paso, dímelo en los comentarios.",
+ "duration": 7.491,
  "words": [
   {
    "w": "El",
    "start": 0.0,
-   "end": 0.16
+   "end": 0.145
   },
   {
    "w": "RAG",
-   "start": 0.24,
-   "end": 0.56
+   "start": 0.218,
+   "end": 0.436
   },
   {
    "w": "no",
-   "start": 0.64,
-   "end": 0.72
+   "start": 0.509,
+   "end": 0.582
   },
   {
    "w": "ha",
-   "start": 0.76,
-   "end": 0.8
+   "start": 0.618,
+   "end": 0.655
   },
   {
    "w": "muerto,",
-   "start": 0.88,
-   "end": 1.68
+   "start": 0.727,
+   "end": 1.455
   },
   {
    "w": "ha",
-   "start": 1.72,
-   "end": 1.76
+   "start": 1.527,
+   "end": 1.6
   },
   {
    "w": "madurado.",
-   "start": 1.84,
-   "end": 2.68
+   "start": 1.673,
+   "end": 2.182
   },
   {
    "w": "Si",
-   "start": 2.96,
-   "end": 3.04
+   "start": 2.618,
+   "end": 2.691
   },
   {
    "w": "quieres",
-   "start": 3.12,
-   "end": 3.36
+   "start": 2.764,
+   "end": 2.982
   },
   {
    "w": "que",
-   "start": 3.4,
-   "end": 3.44
+   "start": 3.018,
+   "end": 3.055
   },
   {
    "w": "en",
-   "start": 3.48,
-   "end": 3.52
+   "start": 3.091,
+   "end": 3.127
   },
   {
    "w": "el",
-   "start": 3.6,
-   "end": 3.68
+   "start": 3.2,
+   "end": 3.273
   },
   {
    "w": "próximo",
-   "start": 3.72,
-   "end": 4.08
+   "start": 3.309,
+   "end": 3.636
   },
   {
    "w": "vídeo",
-   "start": 4.16,
-   "end": 4.4
+   "start": 3.709,
+   "end": 3.927
   },
   {
    "w": "montemos",
-   "start": 4.52,
-   "end": 4.88
+   "start": 4.036,
+   "end": 4.436
   },
   {
    "w": "uno",
-   "start": 4.96,
-   "end": 5.04
+   "start": 4.509,
+   "end": 4.655
   },
   {
    "w": "de",
-   "start": 5.08,
-   "end": 5.12
+   "start": 4.727,
+   "end": 4.8
   },
   {
    "w": "estos",
-   "start": 5.2,
-   "end": 5.52
+   "start": 4.909,
+   "end": 5.091
   },
   {
    "w": "paso",
-   "start": 5.68,
-   "end": 5.92
+   "start": 5.236,
+   "end": 5.455
   },
   {
    "w": "a",
-   "start": 5.96,
-   "end": 6.0
+   "start": 5.491,
+   "end": 5.527
   },
   {
    "w": "paso,",
-   "start": 6.08,
-   "end": 6.64
+   "start": 5.6,
+   "end": 6.109
   },
   {
    "w": "dímelo",
-   "start": 6.72,
-   "end": 7.04
+   "start": 6.182,
+   "end": 6.473
   },
   {
    "w": "en",
-   "start": 7.08,
-   "end": 7.12
+   "start": 6.509,
+   "end": 6.545
   },
   {
    "w": "los",
-   "start": 7.16,
-   "end": 7.2
+   "start": 6.582,
+   "end": 6.618
   },
   {
    "w": "comentarios.",
-   "start": 7.28,
-   "end": 8.16
+   "start": 6.691,
+   "end": 7.491
   }
- ]
+ ],
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.3,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "tempo": 1.1,
+ "credits": "52"
 }

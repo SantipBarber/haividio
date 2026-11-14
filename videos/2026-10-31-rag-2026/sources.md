@@ -49,6 +49,7 @@ https://www.anthropic.com/news/contextual-retrieval
 
 - Definición simple: "RAG is a method that retrieves relevant information from a knowledge base and appends it to the user's prompt".
 - **Si tu base cabe en ~200.000 tokens (~500 páginas), no necesitas RAG**: mete todo en el prompt (con prompt caching es más rápido y barato).
+  - v2 (14-11): las 500 páginas de Anthropic suponen ~400 tokens por página (páginas cortas, en inglés). Documentación técnica en español: ~500 palabras y ~650–700 tokens por página, así que 200.000 tokens ≈ **300 páginas**. Con un modelo local de 128.000 tokens, y dejando sitio a la pregunta y la respuesta, menos de la mitad (~150).
 - Problema del trozo huérfano: "The company's revenue grew by 3% over the previous quarter." ¿Qué empresa? ¿Qué trimestre?
 - Fallos de recuperación (top-20): 5,7 % → 3,7 % (−35 %, embeddings contextuales) → 2,9 % (−49 %, + BM25) → 1,9 % (−67 %, + reranker).
 - BM25 = búsqueda por coincidencia exacta de palabras; clave para códigos de error e identificadores.

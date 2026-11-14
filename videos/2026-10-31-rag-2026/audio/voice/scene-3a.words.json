@@ -3,132 +3,142 @@
  "voice_id": "JnBnSljehAqxkcZsA6n0",
  "model_id": "eleven_v4",
  "text": "Un RAG tiene dos momentos. Primero preparas la biblioteca, una sola vez. Después, cada vez que alguien pregunta, buscas en ella. Empecemos por la preparación.",
- "duration": 10.72,
+ "spoken_text": "Un rag tiene dos momentos. Primero preparas la biblioteca, una sola vez. Después, cada vez que alguien pregunta, buscas en ella. Empecemos por la preparación.",
+ "duration": 9.818,
  "words": [
   {
    "w": "Un",
    "start": 0.0,
-   "end": 0.16
+   "end": 0.218
   },
   {
    "w": "RAG",
-   "start": 0.24,
-   "end": 0.56
+   "start": 0.364,
+   "end": 0.509
   },
   {
    "w": "tiene",
-   "start": 0.6,
+   "start": 0.582,
    "end": 0.8
   },
   {
    "w": "dos",
-   "start": 0.96,
-   "end": 1.12
+   "start": 0.945,
+   "end": 1.091
   },
   {
    "w": "momentos.",
-   "start": 1.2,
-   "end": 1.84
+   "start": 1.164,
+   "end": 1.891
   },
   {
    "w": "Primero",
-   "start": 2.24,
-   "end": 2.56
+   "start": 2.109,
+   "end": 2.4
   },
   {
    "w": "preparas",
-   "start": 2.64,
-   "end": 3.04
+   "start": 2.473,
+   "end": 2.836
   },
   {
    "w": "la",
-   "start": 3.08,
-   "end": 3.12
+   "start": 2.873,
+   "end": 2.909
   },
   {
    "w": "biblioteca,",
-   "start": 3.2,
-   "end": 4.08
+   "start": 2.982,
+   "end": 3.782
   },
   {
    "w": "una",
-   "start": 4.16,
-   "end": 4.32
+   "start": 3.891,
+   "end": 4.0
   },
   {
    "w": "sola",
-   "start": 4.36,
-   "end": 4.56
+   "start": 4.036,
+   "end": 4.218
   },
   {
    "w": "vez.",
-   "start": 4.72,
-   "end": 5.12
+   "start": 4.364,
+   "end": 4.727
   },
   {
    "w": "Después,",
-   "start": 5.36,
-   "end": 6.16
+   "start": 4.945,
+   "end": 5.6
   },
   {
    "w": "cada",
-   "start": 6.24,
-   "end": 6.4
+   "start": 5.636,
+   "end": 5.818
   },
   {
    "w": "vez",
-   "start": 6.48,
-   "end": 6.56
+   "start": 5.891,
+   "end": 5.964
   },
   {
    "w": "que",
-   "start": 6.64,
-   "end": 6.72
+   "start": 6.036,
+   "end": 6.109
   },
   {
    "w": "alguien",
-   "start": 6.8,
-   "end": 7.0
+   "start": 6.182,
+   "end": 6.364
   },
   {
    "w": "pregunta,",
-   "start": 7.04,
-   "end": 7.76
+   "start": 6.4,
+   "end": 7.055
   },
   {
    "w": "buscas",
-   "start": 7.88,
-   "end": 8.16
+   "start": 7.164,
+   "end": 7.418
   },
   {
    "w": "en",
-   "start": 8.24,
-   "end": 8.32
+   "start": 7.455,
+   "end": 7.491
   },
   {
    "w": "ella.",
-   "start": 8.44,
-   "end": 8.64
+   "start": 7.564,
+   "end": 8.036
   },
   {
    "w": "Empecemos",
-   "start": 9.12,
-   "end": 9.6
+   "start": 8.291,
+   "end": 8.8
   },
   {
    "w": "por",
-   "start": 9.64,
-   "end": 9.68
+   "start": 8.873,
+   "end": 8.945
   },
   {
    "w": "la",
-   "start": 9.76,
-   "end": 9.84
+   "start": 8.982,
+   "end": 9.018
   },
   {
    "w": "preparación.",
-   "start": 9.92,
-   "end": 10.72
+   "start": 9.091,
+   "end": 9.818
   }
- ]
+ ],
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.75,
+  "style": 0.3,
+  "use_speaker_boost": true,
+  "speed": 1.0
+ },
+ "tempo": 1.1,
+ "credits": "63"
 }

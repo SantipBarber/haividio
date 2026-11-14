@@ -1,0 +1,39 @@
+<template>
+  <style>
+    /* Portada: la miniatura del vídeo a 1920×1080 (×1,5), completa desde el primer fotograma. */
+    #root { position: absolute; inset: 0; font-family: "Geist", sans-serif; color: #f4f5f7; }
+    #cv-all { position: absolute; inset: 0; transform-origin: 960px 540px; }
+    #cv-hl { position: absolute; left: 120px; top: 150px; font-size: 252px; font-weight: 800; letter-spacing: -0.055em; line-height: 0.92; }
+    #cv-hl .dead { color: #ff6b4a; }
+    #cv-pipe { position: absolute; left: 1155px; top: 225px; display: flex; flex-direction: column; gap: 33px; }
+    #cv-pipe .box { width: 645px; padding: 36px 45px; background: #0f1116; border: 4px solid #2c303c; border-radius: 27px;
+      font-family: "Geist Mono", monospace; font-size: 60px; font-weight: 500; color: #a3a8b8; }
+    #cv-pipe .box b { color: #f4f5f7; font-weight: 500; margin-right: 27px; }
+    #cv-x { position: absolute; left: 982px; top: 582px; width: 990px; height: 24px; background: #ff6b4a; border-radius: 10px; transform: rotate(-40deg); }
+    #cv-tag { position: absolute; left: 120px; bottom: 120px; font-size: 96px; font-weight: 800; letter-spacing: -0.04em; color: #d4ff3a; }
+  </style>
+
+  <div id="root" data-composition-id="cover" data-width="1920" data-height="1080">
+    <div id="cv-all">
+      <div id="cv-hl">¿RAG<br /><span class="dead">muerto?</span></div>
+      <div id="cv-pipe">
+        <div class="box"><b>01</b>Trocear</div>
+        <div class="box"><b>02</b>Vectorizar</div>
+        <div class="box"><b>03</b>Buscar</div>
+        <div class="box"><b>04</b>Generar</div>
+      </div>
+      <i id="cv-x"></i>
+      <div id="cv-tag">Ha cambiado.</div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      // Todo está en pantalla en el fotograma 0; solo un acercamiento lento hasta la transición.
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cv-all", { scale: 1 }, { scale: 1.035, duration: 2.4, ease: "none" }, 0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["cover"] = tl;
+    })();
+  </script>
+</template>
