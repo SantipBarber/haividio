@@ -42,7 +42,6 @@ Commit messages, in Spanish or English, say what changes ("Check the voice again
 
 ## What a PR does not touch
 
-- `memory/preferences.md`: the maintainer's preferences for their own videos.
 - `videos/`: the maintainer's videos. If you want to show one of yours made with Haividio, open an issue and we will link it.
 
 ## Security issues

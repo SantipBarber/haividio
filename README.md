@@ -125,7 +125,7 @@ README.en.md                 Este README en inglés
 package.json                 Paquete de pi (pi install)
 justfile                     Recetas: just deploy publica la página
 wrangler.jsonc               Configuración de la página en Cloudflare
-memory/                      Aprendizajes, preferencias y pendientes
+memory/                      Aprendizajes, criterios y pendientes
 .claude-plugin/              Marketplace de plugins
 plugins/video-studio/        Plugin de Claude Code con las skills
 docs/

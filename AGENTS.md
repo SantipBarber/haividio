@@ -4,7 +4,7 @@ Este repositorio, Haividio, es la base de conocimiento y el espacio de trabajo d
 
 ## Memoria (siempre)
 
-Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/preferences.md` y `memory/backlog.md`. Durante el trabajo, anota ahí lo que aprendas, lo que Santi decida y lo que quede pendiente (reglas en `memory/README.md`).
+Al empezar cualquier sesión, lee `memory/learnings.md`, `memory/conventions.md` y `memory/backlog.md`. Durante el trabajo, anota ahí lo que aprendas, los criterios generales que se decidan y lo que quede pendiente (reglas en `memory/README.md`). **Los gustos y decisiones personales** (voz, pronunciaciones elegidas, canal, marcas, estilo propio) no van al repositorio: se guardan en el sitio privado que indique quien hace el vídeo.
 
 ## Antes de empezar cualquier vídeo
 

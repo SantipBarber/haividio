@@ -19,6 +19,10 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 
 - `duck_music.py` failed when the ducked music came out one window shorter than the voice after mp3 encoding (#37).
 
+### Changed
+
+- `memory/preferences.md` becomes `memory/conventions.md`, with general criteria only; personal preferences are kept outside the repository (#38).
+
 ### Pending
 
 0.3.0 tests still to do (checkboxes in `docs/testing.md`):

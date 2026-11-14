@@ -19,6 +19,10 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 - `duck_music.py` fallaba si la música con ducking salía una ventana más corta que la voz al codificar en mp3 (#37).
 
+### Cambiado
+
+- `memory/preferences.md` pasa a `memory/conventions.md`, solo con criterios generales; los gustos personales se guardan fuera del repositorio (#38).
+
 ### Pendiente
 
 Pruebas de la 0.3.0 que faltan (casillas en `docs/testing.md`):

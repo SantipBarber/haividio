@@ -42,7 +42,6 @@ Los mensajes de commit, en español o en inglés, dicen qué cambia («Comprobar
 
 ## Qué no toca un PR
 
-- `memory/preferences.md`: son los gustos del mantenedor para sus vídeos.
 - `videos/`: son los vídeos del mantenedor. Si quieres enseñar uno tuyo hecho con Haividio, abre un issue y lo enlazamos.
 
 ## Problemas de seguridad
