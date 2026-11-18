@@ -18,6 +18,7 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 ### Fixed
 
 - `duck_music.py` failed when the ducked music came out one window shorter than the voice after mp3 encoding (#37).
+- `.gitignore`: pronunciation probes, loose takes for splicing and backup copies of word timings stay local.
 
 ### Changed
 

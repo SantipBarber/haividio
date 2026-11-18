@@ -38,3 +38,11 @@ videos/*/audio/voice-v*/
 # Respuesta de youtubeuploader (-metaJSONout)
 upload-result.json
 __pycache__/
+
+# Pruebas de pronunciación y tomas sueltas para empalmes (solo en local)
+videos/*/audio/probes*/
+videos/*/audio/takes*/
+# Copias de tiempos por palabra antes de regenerar o empalmar
+*.bak.words.json
+*.pre-*.words.json
+*.v[0-9]*.words.json
