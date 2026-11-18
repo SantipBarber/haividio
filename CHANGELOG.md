@@ -18,6 +18,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 ### Arreglado
 
 - `duck_music.py` fallaba si la música con ducking salía una ventana más corta que la voz al codificar en mp3 (#37).
+- `.gitignore`: las pruebas de pronunciación, las tomas sueltas para empalmes y las copias de tiempos por palabra se quedan en local.
 
 ### Cambiado
 
