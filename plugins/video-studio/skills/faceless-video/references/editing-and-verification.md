@@ -1,5 +1,7 @@
 <!-- Copy of docs/editing-and-verification.en.md. Edit it there and run scripts/sync_skill_references.py. -->
 
+**Before using this guide:** `<skill-dir>` is the folder that contains this `references/` folder. If a script in `<skill-dir>/scripts/` that this guide names is missing, stop and tell the user which one, and suggest reinstalling the skill. Do not rewrite it, do not do its step by hand, and do not search for, download or use a copy from anywhere else (another folder, the repository, the web). Stop even if you cannot ask the user: end with that message.
+
 # Editing with voice timings and verification
 
 Techniques tested while editing a product demo with a cloned voice. The complete workflow is in [workflow 5](https://github.com/SantipBarber/haividio/blob/main/docs/workflows/05-product-demo.en.md).

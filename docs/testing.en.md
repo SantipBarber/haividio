@@ -79,6 +79,16 @@ uv run plugins/video-studio/skills/faceless-video/scripts/check_render.py \
 - [ ] A design with an image in an `<img>`, an SVG and a reusable component (instances).
 - [ ] A font other than Geist.
 
+### Activation of `faceless-video` and stopping when a script is missing
+
+Claude Code (Sonnet), empty folder, request in Spanish without naming the skill, `claude -p --plugin-dir` with and without the `scripts/` folders (24 Nov, Claude).
+
+- [x] Without scripts: it loads the skill and stops 11 out of 11 (ducking, review and both). Control with the previous description: 0 of 4; it does not load the skill and uses copies from other folders on the computer.
+- [x] The `references/` guide read on its own, without scripts or plugin: it stops 3 out of 3. Control without the sentence: 0 of 3; it does the work by hand with ffmpeg.
+- [x] With scripts: 3 out of 3 produce the music and the review. The content has not been heard or watched.
+- [x] It does not take activations from `talking-video` (6 of 6), `choose-video-tool` (3 of 3), `publish-youtube` (10 of 10) or `visual-identity` (2 of 2). A first version, with «revisa el vídeo ya montado» as an example, took over the review before YouTube (3 of 3).
+- [ ] This activation with other agents and models.
+
 ## Voice — `scripts/tts.py`
 
 ```bash
