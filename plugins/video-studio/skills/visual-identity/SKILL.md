@@ -7,15 +7,17 @@ description: Applies the channel's visual identity (palette, typefaces, motion, 
 
 Reply in the user's language.
 
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too.
+
 ## Source of truth
 
-Read `docs/style/identity.md` in the `haividio` repo. Copy `docs/style/tokens.css` to the project's `assets/` and link it from the HyperFrames root composition (or turn it into constants in Remotion). Besides the palette, it sets the theme tokens (`--bg`, `--surface`, `--fg`, `--brand`, `--accent`, `--font-body`…) that HyperFrames catalog components read, so they come out in the channel's colours and Geist instead of Inter. If the identity is still "direction to be chosen", ask the user which one to use before animating.
+If the project has its own identity (in the `haividio` repo, `docs/style/identity.md` and `docs/style/tokens.css`), use it. Otherwise, start from `references/identity.md` and `references/tokens.css`. Copy the tokens file to the project's `assets/` and link it from the HyperFrames root composition (or turn it into constants in Remotion). Besides the palette, it sets the theme tokens (`--bg`, `--surface`, `--fg`, `--brand`, `--accent`, `--font-body`…) that HyperFrames catalog components read, so they come out in the channel's colours and Geist instead of Inter. If the identity is still "direction to be chosen", ask the user which one to use before animating.
 
 ## Before delivering any scene, check
 
 - [ ] Only palette colours, and the accent only for what matters (≤ 10 % of the screen).
 - [ ] Only the guide's typefaces; no Inter, Poppins or Roboto.
-- [ ] Nothing that looks like a generic template: real data and resources (docs/open-resources.md) are better than filler icons.
+- [ ] Nothing that looks like a generic template: real data and resources (`references/open-resources.md`) are better than filler icons.
 - [ ] Motion rhythm consistent with the chosen direction, without the same fade+slide repeated everywhere.
 - [ ] ≤ 8 words of on-screen text at a time.
 - [ ] The channel signature appears where it belongs (intro, chapter header, transition).
@@ -37,4 +39,4 @@ Same background and accent as the video, at most 4 words, a single dominant visu
 
 ## Evolution
 
-If the user corrects something about the style ("less red", "slower"), propose updating `docs/style/identity.md` so the correction also applies to the next videos.
+If the user corrects something about the style ("less red", "slower"), propose updating the project's identity file (`docs/style/identity.md`; create it from `references/identity.md` if there is none, never edit the installed skill) so the correction also applies to the next videos.

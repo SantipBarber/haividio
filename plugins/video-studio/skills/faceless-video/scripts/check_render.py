@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10,<3.14"
+# dependencies = ["numpy", "scenedetect[opencv]", "rapidocr", "onnxruntime"]
+# ///
 """Revisión visual de un render: qué texto hay en pantalla, si se corta, si es pequeño y dónde se queda quieto.
 
 El agente no ve el vídeo en movimiento. Este script le da algo que mirar y una lista
@@ -12,7 +16,7 @@ de sitios a los que ir primero:
    - texto pequeño: estima el tamaño de letra por la altura de la caja de OCR (en
      Geist, entre 1 y 1,2 veces la letra; se toma 1, así que la estimación no se
      queda corta) y avisa por debajo de --min-text (28 px, el mínimo de
-     docs/style/identity.md), con lo que mediría en un móvil de 360 px de ancho,
+     la identidad visual), con lo que mediría en un móvil de 360 px de ancho,
    - lectura dudosa (confianza baja: texto borroso, cortado o tapado).
 3. Rótulos esperados (--expect, uno por línea): cuáles no aparecen en ningún fotograma.
 4. Tramos quietos: la imagen no cambia en --static segundos o más (freezedetect de
@@ -26,8 +30,7 @@ seguía leyendo letra de 28 px), así que «se lee» no es «se lee bien en el m
 Tampoco ve el movimiento ni mide el desfase entre rótulo y voz.
 
 Uso:
-    uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \\
-        scripts/check_render.py out/video.mp4 --out out/review \\
+    uv run scripts/check_render.py out/video.mp4 --out out/review \\
         [--timeline animations/<proyecto>/timeline.json] [--expect rotulos.txt]
 
 Sale con 1 si hay texto cortado o rótulos esperados que no aparecen.

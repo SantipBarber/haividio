@@ -5,7 +5,9 @@ description: Prepares and uploads a video to YouTube - review of what is on scre
 
 # Publish to YouTube
 
-Reply in the user's language. Title, description and tags go in the video's language. Full guide: `docs/workflows/04-publish-youtube.md`.
+Reply in the user's language. Title, description and tags go in the video's language. Full guide: `references/04-publish-youtube.md`.
+
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too.
 
 ## Rules
 
@@ -20,10 +22,10 @@ Go through the frames (a contact sheet or the whole video), on-screen text and t
 ## 2. Prepare (`publishing.md`)
 
 - **Title:** a clear promise, no misleading clickbait; aim for ≤ 60 characters (YouTube allows 100). Propose 3 options.
-- **Description:** 2 hook lines, summary, chapters (`0:00 Intro`…), sources and links. Generate the chapter lines with `python3 scripts/make_captions.py chapters --timeline timeline.json chapters.json` when there is a HyperFrames timeline; otherwise take them from the script or the transcript. Chapters: the first at 0:00, at least 3, each ≥ 10 s; if the video is too short for that, no chapters.
+- **Description:** 2 hook lines, summary, chapters (`0:00 Intro`…), sources and links. Generate the chapter lines with `python3 <skill-dir>/scripts/make_captions.py chapters --timeline timeline.json chapters.json` when there is a HyperFrames timeline; otherwise take them from the script or the transcript. Chapters: the first at 0:00, at least 3, each ≥ 10 s; if the video is too short for that, no chapters.
 - **Tags:** 5–10 relevant ones.
-- **Thumbnail:** 16:9, 1280×720 or more (YouTube now recommends 3840×2160), at most 4 words, with the channel's visual identity (skill `visual-identity`). Run `python3 scripts/check_publishing.py thumb thumbnail.png --preview thumbnail-mobile.png` and look at the preview: it is the size it has on a phone.
-- **Subtitles:** `python3 scripts/make_captions.py srt --hyperframes index.html --words-dir <folder of the .words.json> -o subtitles.srt` builds them from the voice's word timings, with the script's text (add `--pron` if there is a pronunciation map).
+- **Thumbnail:** 16:9, 1280×720 or more (YouTube now recommends 3840×2160), at most 4 words, with the channel's visual identity (skill `visual-identity`). Run `python3 <skill-dir>/scripts/check_publishing.py thumb thumbnail.png --preview thumbnail-mobile.png` and look at the preview: it is the size it has on a phone.
+- **Subtitles:** `python3 <skill-dir>/scripts/make_captions.py srt --hyperframes index.html --words-dir <folder of the .words.json> -o subtitles.srt` builds them from the voice's word timings, with the script's text (add `--pron` if there is a pronunciation map).
 - **Declarations:** made for kids (normally no) and synthetic content (yes if there is a cloned voice or realistic AI-generated content).
 
 ## 3. Validate
@@ -31,7 +33,7 @@ Go through the frames (a contact sheet or the whole video), on-screen text and t
 Write `publishing.json` (title, description, tags, `privacyStatus`, `madeForKids`, `containsSyntheticMedia`, `categoryId`, `language`; example in the guide) and run:
 
 ```bash
-python3 scripts/check_publishing.py meta publishing.json video.mp4
+python3 <skill-dir>/scripts/check_publishing.py meta publishing.json video.mp4
 ```
 
 Fix what it flags and repeat until ✔.
@@ -41,11 +43,11 @@ Fix what it flags and repeat until ✔.
 1. Check that `youtubeuploader -version` works and that the credentials exist. If not, guide the setup with the guide, including publishing the OAuth app (in testing mode the token expires after 7 days).
 2. Show the metadata and the review findings and **ask for explicit confirmation**.
 3. Upload with `-metaJSON publishing.json -metaJSONout upload-result.json -notify=false`, plus `-thumbnail` and `-caption` if available. Custom thumbnails need a phone-verified channel: if YouTube answers 403 for the thumbnail, youtubeuploader stops before the subtitles, so add them afterwards (Studio or `captions.insert`).
-4. Run `python3 scripts/check_publishing.py result upload-result.json --expect <private|unlisted>`. If YouTube left it with another visibility (unaudited project), say so and do not hand out the link.
+4. Run `python3 <skill-dir>/scripts/check_publishing.py result upload-result.json --expect <private|unlisted>`. If YouTube left it with another visibility (unaudited project), say so and do not hand out the link.
 5. Return the link and ask the user to review it in YouTube Studio.
 
 Without API access, hand over the mp4, the `.srt` and the metadata with the guide's steps for uploading by hand through Studio.
 
 ## When done
 
-Write down the link and the date in the video's `README.md` and in the index `videos/README.md`. Do not commit `upload-result.json`.
+Write down the link and the date in the video's `README.md` and, in the `haividio` repo, in the index `videos/README.md`. Do not commit `upload-result.json`.

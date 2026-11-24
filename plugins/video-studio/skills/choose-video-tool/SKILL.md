@@ -7,6 +7,8 @@ description: Decides which tool to use for a video (editing takes, adding animat
 
 Reply in the user's language.
 
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too.
+
 Before recommending, ask at most two questions if it is not clear:
 1. Is there the user's own footage (camera or voice), or does the video start from scratch?
 2. Does it need visual review on a timeline, or is the final result enough?
@@ -23,7 +25,7 @@ Is there recorded footage of someone talking?
 │               → add Palmier Pro (macOS 26 + Apple Silicon) or Velorn
 │
 ├─ Demo of an application with screen recording and a cloned voice?
-│       → Playwright + ffmpeg + HyperFrames → docs/workflows/05-product-demo.md
+│       → Playwright + ffmpeg + HyperFrames → references/05-product-demo.md
 │
 └─ No → Explainer / diagrams / motion graphics / short?
          → HyperFrames (default) or Remotion + ElevenLabs voice → skill faceless-video
@@ -56,7 +58,7 @@ Whenever there are animations → skill visual-identity
 ```bash
 # Editing takes
 brew install ffmpeg
-# Windows: winget install Gyan.FFmpeg  (see docs/windows.md)
+# Windows: winget install Gyan.FFmpeg  (see references/windows.md)
 git clone https://github.com/browser-use/video-use ~/tools/video-use
 ln -s ~/tools/video-use ~/.claude/skills/video-use   # + ELEVENLABS_API_KEY in .env
 
@@ -72,4 +74,4 @@ claude mcp add --transport http palmier-pro http://127.0.0.1:19789/mcp   # macOS
 
 - Check prices and requirements on the web if the information is more than a few months old: this ecosystem changes every month.
 - Recommend a single main option and at most one alternative; do not list the whole catalogue.
-- If the work is in the `haividio` repo, each tool is detailed in `docs/tools.md` and the workflows in `docs/workflows/`; every guide has an English version (`.en.md`) next to the Spanish one.
+- Each tool is detailed in `references/tools.md`. Inside the `haividio` repo, the guides are in `docs/` in Spanish and English.

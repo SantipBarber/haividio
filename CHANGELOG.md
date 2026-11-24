@@ -22,6 +22,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 ### Cambiado
 
+- Skills: cada una lleva sus scripts (con dependencias PEP 723) y las guías que cita, para funcionar fuera del repositorio. `scripts/sync_skill_references.py` mantiene las copias.
 - `memory/preferences.md` pasa a `memory/conventions.md`, solo con criterios generales; los gustos personales se guardan fuera del repositorio (#38).
 
 ### Pendiente

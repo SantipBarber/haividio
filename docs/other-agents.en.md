@@ -30,7 +30,7 @@ To use the skills outside the repository, link them into each agent's global fol
 
 pi installs the repository as a package: it reads the `pi` field in `package.json`, which points to the skills. Run `pi update` to update. With the symlink, just run `git pull` in the repository.
 
-Outside the repository, the agent has the skills but not `AGENTS.md`, the memory or the guides. To produce a complete video, work inside the repository.
+Each skill carries in its folder the scripts it runs (`scripts/`) and the guides it cites (`references/`, English copies of `docs/`). Outside the repository, the agent does not have `AGENTS.md`, the memory or the other guides. The scripts with dependencies (`duck_music.py`, `check_render.py`) run with [uv](https://docs.astral.sh/uv/). To produce a complete video, work inside the repository.
 
 ## What has been tested
 

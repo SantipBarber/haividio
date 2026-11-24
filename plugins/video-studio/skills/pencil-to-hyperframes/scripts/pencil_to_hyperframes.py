@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 """Convierte fotogramas exportados de Pencil (pen.dev) en una composición de HyperFrames lista para animar.
 
 Pencil exporta HTML con estilos en línea, posiciones absolutas y el nombre de cada capa
@@ -33,7 +37,7 @@ Exportar desde Pencil (por MCP, con la ruta explícita del .pen):
 
 Uso:
     python3 scripts/pencil_to_hyperframes.py frames.html --project animations/mi-video \\
-        --name buscar --pen-dir design/ --tokens docs/style/tokens.css [--duration 8] [--draft [--at 0,3.2,6.5]]
+        --name buscar --pen-dir design/ --tokens references/tokens.css [--duration 8] [--draft [--at 0,3.2,6.5]]
 
 Escribe compositions/<nombre>.html (y <nombre>.states.json si hay más de un fotograma)
 e imprime el fragmento para montarla en index.html. Solo necesita Python 3; descargar

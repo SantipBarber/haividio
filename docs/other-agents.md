@@ -30,7 +30,7 @@ Para usar las skills fuera del repositorio, enlázalas en la carpeta global de c
 
 pi instala el repositorio como paquete: lee el campo `pi` de `package.json`, que apunta a las skills. Para actualizar, `pi update`. Con el enlace simbólico, basta un `git pull` en el repositorio.
 
-Fuera del repositorio, el agente tiene las skills pero no `AGENTS.md`, ni la memoria, ni las guías. Para producir un vídeo completo, trabaja dentro del repositorio.
+Cada skill lleva en su carpeta los scripts que ejecuta (`scripts/`) y las guías que cita (`references/`, copias en inglés de `docs/`). Fuera del repositorio, el agente no tiene `AGENTS.md`, ni la memoria, ni el resto de guías. Los scripts con dependencias (`duck_music.py`, `check_render.py`) se ejecutan con [uv](https://docs.astral.sh/uv/). Para producir un vídeo completo, trabaja dentro del repositorio.
 
 ## Qué se ha probado
 

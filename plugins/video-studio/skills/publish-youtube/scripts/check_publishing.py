@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 """Comprueba la ficha de un vídeo antes y después de subirlo a YouTube con youtubeuploader.
 
 Antes de subir, valida el JSON que se le pasa con -metaJSON contra las reglas de

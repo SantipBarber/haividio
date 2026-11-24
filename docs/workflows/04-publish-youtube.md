@@ -50,9 +50,9 @@ Los datos inventados de una demo valen. Si sale algo que no debe, se vuelve a gr
 
 ```bash
 # Desde la carpeta de la composición raíz de HyperFrames
-python3 scripts/make_captions.py srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
-python3 scripts/make_captions.py chapters --timeline timeline.json chapters.json   # líneas «0:00 Título»
-python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movil.png
+python3 plugins/video-studio/skills/publish-youtube/scripts/make_captions.py srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
+python3 plugins/video-studio/skills/publish-youtube/scripts/make_captions.py chapters --timeline timeline.json chapters.json   # líneas «0:00 Título»
+python3 plugins/video-studio/skills/publish-youtube/scripts/check_publishing.py thumb miniatura.png --preview miniatura-movil.png
 ```
 
 - `srt` corta en frases de una línea (42 caracteres, 6 s como máximo), mejor tras un signo de puntuación o en una pausa, y no deja colas de una palabra. El texto es el del guion: con `--pron pronunciation.json`, las grafías fonéticas («oce erre») vuelven a la escrita («OCR»).
@@ -77,7 +77,7 @@ python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movi
 1. **Valida la ficha** contra las reglas de YouTube y contra el vídeo real:
 
    ```bash
-   python3 scripts/check_publishing.py meta publishing.json video.mp4
+   python3 plugins/video-studio/skills/publish-youtube/scripts/check_publishing.py meta publishing.json video.mp4
    ```
 
    Comprueba que el vídeo se lee entero; el título (una línea, 100 caracteres como máximo) y la descripción (5000 bytes), sin `<` ni `>`, que YouTube rechaza; las etiquetas (500 caracteres en total); los capítulos (el primero en 0:00, al menos 3, en orden y de 10 s o más, o YouTube no los muestra); que la visibilidad no es pública, y que están las dos declaraciones. Corrige lo que marque y repite hasta el ✔.
@@ -105,7 +105,7 @@ python3 scripts/check_publishing.py thumb miniatura.png --preview miniatura-movi
 3. **Comprueba la visibilidad** con la respuesta de YouTube:
 
    ```bash
-   python3 scripts/check_publishing.py result upload-result.json --expect private   # o unlisted
+   python3 plugins/video-studio/skills/publish-youtube/scripts/check_publishing.py result upload-result.json --expect private   # o unlisted
    ```
 
    Si no coincide, no repartas el enlace (ver el apartado siguiente).

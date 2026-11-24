@@ -2,7 +2,7 @@
 
 *[Español](06-pencil-to-hyperframes.md)*
 
-Tools: [Pencil](https://pen.dev) (pen.dev, with its MCP) + `scripts/pencil_to_hyperframes.py` + HyperFrames. Skill: `pencil-to-hyperframes`.
+Tools: [Pencil](https://pen.dev) (pen.dev, with its MCP) + `plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py` + HyperFrames. Skill: `pencil-to-hyperframes`.
 
 ## Idea
 
@@ -32,7 +32,7 @@ With `--tokens docs/style/tokens.css`, every palette colour also becomes `var(--
 3. **Convert:**
 
    ```bash
-   python3 scripts/pencil_to_hyperframes.py <video>/design/export/search.html \
+   python3 plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py <video>/design/export/search.html \
      --project <video>/animations/<project> --name search --prefix kf \
      --pen-dir <video>/design --tokens docs/style/tokens.css --duration 8
    ```

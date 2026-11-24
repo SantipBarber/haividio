@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = []
+# ///
 """Subtítulos SRT y capítulos de YouTube a partir de los tiempos de cada palabra.
 
 Las voces de ElevenLabs se guardan con un `.words.json` al lado (formato
