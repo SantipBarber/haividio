@@ -1,6 +1,6 @@
 ---
 name: faceless-video
-description: Produces faceless videos (animated explainers, technical outreach, shorts) from scratch - research, scene-by-scene script, voice-over, animations with HyperFrames or Remotion, render and subtitles. Also when the user writes in Spanish, e.g. "vídeo sin cara", "vídeo explicativo", "hazme un short", "guion por escenas", "vídeo animado con voz en off".
+description: Produces faceless videos (animated explainers, technical outreach, shorts) from scratch - research, scene-by-scene script, voice-over, animations with HyperFrames or Remotion, render and subtitles. Use it too for a single step on a video that is already edited - lowering (ducking) background music under a voice-over, or the visual review of a render (cut-off or small text, missing labels, still stretches). Not the review before publishing to YouTube (skill publish-youtube). Also when the user writes in Spanish, e.g. "vídeo sin cara", "vídeo explicativo", "hazme un short", "guion por escenas", "vídeo animado con voz en off", "baja la música cuando habla la voz", "busca textos cortados o tramos quietos en el render".
 ---
 
 # Faceless video

@@ -27,6 +27,17 @@ COPIES = {
     "visual-identity": ["docs/style/identity.en.md", "docs/style/tokens.css", "docs/open-resources.en.md"],
 }
 
+# Aviso para quien lee la guía sin haber cargado antes el SKILL.md
+STOP = {
+    "faceless-video": (
+        "**Before using this guide:** `<skill-dir>` is the folder that contains this `references/` folder. "
+        "If a script in `<skill-dir>/scripts/` that this guide names is missing, stop and tell the user which one, "
+        "and suggest reinstalling the skill. Do not rewrite it, do not do its step by hand, and do not search for, "
+        "download or use a copy from anywhere else (another folder, the repository, the web). "
+        "Stop even if you cannot ask the user: end with that message.\n\n"
+    ),
+}
+
 
 def target(src: str) -> str:
     return posixpath.basename(src).replace(".en.md", ".md")
@@ -54,7 +65,8 @@ def render(skill: str, src: str) -> str:
     text = re.sub(r"(?<!blob/main/)" + re.escape(own), "<skill-dir>/", text)
     # Comillas en los comandos: la carpeta de la skill puede llevar espacios
     text = re.sub(r"(?<=\s)<skill-dir>/[\w./-]+", r'"\g<0>"', text)
-    return f"<!-- Copy of {src}. Edit it there and run scripts/sync_skill_references.py. -->\n\n{text}"
+    stop = STOP.get(skill, "") if "<skill-dir>/scripts/" in text else ""
+    return f"<!-- Copy of {src}. Edit it there and run scripts/sync_skill_references.py. -->\n\n{stop}{text}"
 
 
 def main():

@@ -23,6 +23,7 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 ### Changed
 
 - Skills: each one carries its scripts (with PEP 723 dependencies) and the guides it cites, so they work outside the repository. `scripts/sync_skill_references.py` keeps the copies up to date.
+- `faceless-video`: it also activates to duck music under the voice or review an already edited render, and its guide says to stop if a script is missing.
 - `memory/preferences.md` becomes `memory/conventions.md`, with general criteria only; personal preferences are kept outside the repository (#38).
 
 ### Pending

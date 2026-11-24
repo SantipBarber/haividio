@@ -23,6 +23,7 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 ### Cambiado
 
 - Skills: cada una lleva sus scripts (con dependencias PEP 723) y las guías que cita, para funcionar fuera del repositorio. `scripts/sync_skill_references.py` mantiene las copias.
+- `faceless-video`: se activa también para bajar la música bajo la voz o revisar un render ya montado, y su guía pide parar si falta un script.
 - `memory/preferences.md` pasa a `memory/conventions.md`, solo con criterios generales; los gustos personales se guardan fuera del repositorio (#38).
 
 ### Pendiente
