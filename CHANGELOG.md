@@ -8,6 +8,21 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 
 ## Sin publicar
 
+### Pendiente
+
+Pruebas de la 0.3.0 que faltan (casillas en `docs/testing.md`):
+
+- [ ] Ver el SRT generado por `make_captions.py` sobre el vídeo.
+- [ ] Ver en movimiento una transición del catálogo de HyperFrames montada en una escena (el vídeo de RAG v2 usa un fundido propio).
+- [ ] `check_render.py`: controles de texto cortado y de letra de 20 px frente a 32 px.
+- [ ] `duck_music.py`: el control a volumen 0,6, que debe fallar.
+- [ ] `pencil_to_hyperframes.py`: un diseño con `<img>`, SVG, instancias y una fuente que no sea Geist.
+- [ ] Windows, Codex y Cursor.
+
+Siguiente tirada posible: shorts verticales, voz local para borradores (Kokoro-82M), versión en inglés de un vídeo, retención de YouTube por escena, render por escena, música libre y transcripción local con whisper.cpp.
+
+## 0.4.0 — 2026-11-24
+
 ### Añadido
 
 - Este changelog, en español e inglés (#33, #34).
@@ -25,19 +40,6 @@ Cada PR fusionado añade aquí una línea. El detalle de cada prueba está en [d
 - Skills: cada una lleva sus scripts (con dependencias PEP 723) y las guías que cita, para funcionar fuera del repositorio. `scripts/sync_skill_references.py` mantiene las copias.
 - `faceless-video`: se activa también para bajar la música bajo la voz o revisar un render ya montado, y su guía pide parar si falta un script.
 - `memory/preferences.md` pasa a `memory/conventions.md`, solo con criterios generales; los gustos personales se guardan fuera del repositorio (#38).
-
-### Pendiente
-
-Pruebas de la 0.3.0 que faltan (casillas en `docs/testing.md`):
-
-- [ ] Ver el SRT generado por `make_captions.py` sobre el vídeo.
-- [ ] Ver en movimiento una transición del catálogo de HyperFrames montada en una escena (el vídeo de RAG v2 usa un fundido propio).
-- [ ] `check_render.py`: controles de texto cortado y de letra de 20 px frente a 32 px.
-- [ ] `duck_music.py`: el control a volumen 0,6, que debe fallar.
-- [ ] `pencil_to_hyperframes.py`: un diseño con `<img>`, SVG, instancias y una fuente que no sea Geist.
-- [ ] Windows, Codex y Cursor.
-
-Siguiente tirada posible: shorts verticales, voz local para borradores (Kokoro-82M), versión en inglés de un vídeo, retención de YouTube por escena, render por escena, música libre y transcripción local con whisper.cpp.
 
 ## 0.3.0 — 2026-11-11
 
