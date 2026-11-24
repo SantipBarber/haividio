@@ -16,10 +16,10 @@ Paths are relative to the repository root; `RAG` is `videos/2026-10-31-rag-2026`
 
 ## Plugin 0.3.0 (PRs #25 to #29)
 
-### Music ducking — `scripts/duck_music.py` (#25)
+### Music ducking — `plugins/video-studio/skills/faceless-video/scripts/duck_music.py` (#25)
 
 ```bash
-cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/music/bed.mp3 \
+cd RAGV && uv run ../../../../plugins/video-studio/skills/faceless-video/scripts/duck_music.py --music assets/music/bed.mp3 \
   --hyperframes index.html --volume 0.25 --out /tmp/bed-ducked.mp3
 ```
 
@@ -40,10 +40,10 @@ cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/
 ### Subtitles, chapters and thumbnail (#27)
 
 ```bash
-cd RAGV && python3 ../../../../scripts/make_captions.py srt --hyperframes index.html \
+cd RAGV && python3 ../../../../plugins/video-studio/skills/publish-youtube/scripts/make_captions.py srt --hyperframes index.html \
   --words-dir ../../audio/voice -o /tmp/rag.srt
-python3 scripts/make_captions.py chapters --timeline RAGV/timeline.json chapters.json
-python3 scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/thumbnail-mobile.png
+python3 plugins/video-studio/skills/publish-youtube/scripts/make_captions.py chapters --timeline RAGV/timeline.json chapters.json
+python3 plugins/video-studio/skills/publish-youtube/scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/thumbnail-mobile.png
 ```
 
 - [x] The SRT has the same text as the hand-made one; no line over 42 characters; no one-word tails (11-11, Claude).
@@ -53,10 +53,10 @@ python3 scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/thumb
 - [ ] **Watch** the new SRT over the video (on YouTube as unlisted or in a player) and check that no subtitle comes early or lingers.
 - [ ] Upload a 3840×2160 thumbnail through the API (the new 50 MB limit) on a test video.
 
-### Visual review of the render — `scripts/check_render.py` (#28)
+### Visual review of the render — `plugins/video-studio/skills/faceless-video/scripts/check_render.py` (#28)
 
 ```bash
-uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/check_render.py \
+uv run plugins/video-studio/skills/faceless-video/scripts/check_render.py \
   RAG/out/rag-video-v4.mp4 --out /tmp/review --timeline RAGV/timeline.json --expect labels.txt
 ```
 
@@ -69,7 +69,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [ ] Try it on a talking-head video (workflow 1) and a screen demo (workflow 5), where the text is not ours.
 - [ ] Try it on Windows (RapidOCR and PySceneDetect claim to work; not checked).
 
-### Pencil → HyperFrames — `scripts/pencil_to_hyperframes.py` (#29)
+### Pencil → HyperFrames — `plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py` (#29)
 
 - [x] One frame (KF 03 of the RAG video): `hyperframes check` with no errors and the snapshot differs from the Pencil PNG by 1 grey level out of 255 on average (11-11, Claude).
 - [x] The `pencil-to-hyperframes` skill triggers from a request in Spanish (11-11, Claude).

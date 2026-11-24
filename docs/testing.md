@@ -16,10 +16,10 @@ Las rutas son relativas a la raíz del repositorio; `RAG` es `videos/2026-10-31-
 
 ## Plugin 0.3.0 (PR #25 a #29)
 
-### Ducking de la música — `scripts/duck_music.py` (#25)
+### Ducking de la música — `plugins/video-studio/skills/faceless-video/scripts/duck_music.py` (#25)
 
 ```bash
-cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/music/bed.mp3 \
+cd RAGV && uv run ../../../../plugins/video-studio/skills/faceless-video/scripts/duck_music.py --music assets/music/bed.mp3 \
   --hyperframes index.html --volume 0.25 --out /tmp/bed-ducked.mp3
 ```
 
@@ -40,10 +40,10 @@ cd RAGV && uv run --with numpy ../../../../scripts/duck_music.py --music assets/
 ### Subtítulos, capítulos y miniatura (#27)
 
 ```bash
-cd RAGV && python3 ../../../../scripts/make_captions.py srt --hyperframes index.html \
+cd RAGV && python3 ../../../../plugins/video-studio/skills/publish-youtube/scripts/make_captions.py srt --hyperframes index.html \
   --words-dir ../../audio/voice -o /tmp/rag.srt
-python3 scripts/make_captions.py chapters --timeline RAGV/timeline.json chapters.json
-python3 scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/miniatura-movil.png
+python3 plugins/video-studio/skills/publish-youtube/scripts/make_captions.py chapters --timeline RAGV/timeline.json chapters.json
+python3 plugins/video-studio/skills/publish-youtube/scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/miniatura-movil.png
 ```
 
 - [x] El SRT tiene el mismo texto que el hecho a mano; ninguna línea pasa de 42 caracteres; sin colas de una palabra (11-11, Claude).
@@ -53,10 +53,10 @@ python3 scripts/check_publishing.py thumb RAG/miniatura.png --preview /tmp/minia
 - [ ] **Ver** el SRT nuevo sobre el vídeo (en YouTube como no listado o en un reproductor) y comprobar que ningún subtítulo se adelanta ni se queda colgado.
 - [ ] Subir una miniatura de 3840×2160 por la API (el límite nuevo de 50 MB) en un vídeo de prueba.
 
-### Revisión visual del render — `scripts/check_render.py` (#28)
+### Revisión visual del render — `plugins/video-studio/skills/faceless-video/scripts/check_render.py` (#28)
 
 ```bash
-uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/check_render.py \
+uv run plugins/video-studio/skills/faceless-video/scripts/check_render.py \
   RAG/out/rag-video-v4.mp4 --out /tmp/review --timeline RAGV/timeline.json --expect rotulos.txt
 ```
 
@@ -69,7 +69,7 @@ uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime scripts/c
 - [ ] Probarlo en un vídeo hablado (workflow 1) y en una demo de pantalla (workflow 5), donde el texto no es nuestro.
 - [ ] Probarlo en Windows (RapidOCR y PySceneDetect dicen funcionar; sin comprobar).
 
-### Pencil → HyperFrames — `scripts/pencil_to_hyperframes.py` (#29)
+### Pencil → HyperFrames — `plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py` (#29)
 
 - [x] Un fotograma (KF 03 del vídeo de RAG): `hyperframes check` sin errores y la captura difiere del PNG de Pencil en 1 nivel de gris de 255 de media (11-11, Claude).
 - [x] La skill `pencil-to-hyperframes` se activa con una petición en español (11-11, Claude).

@@ -53,10 +53,10 @@ Comprobar que los beats están en orden no prueba que caigan donde toca: mira el
 ## Mezcla y volumen
 
 - Música muy baja bajo la voz: 0,07 en una demo, 0,14 en un explicativo con animaciones. Lo decide un oído. Una transcripción puede entender peor un nombre propio con música: es una señal para escucharlo.
-- **Ducking:** [`scripts/duck_music.py`](../scripts/duck_music.py) baja la música solo mientras hay voz (`sidechaincompress` de ffmpeg, con la voz como señal de control) y mide, en ventanas de medio segundo, cuántos dB queda la música por debajo de la voz, antes y después. Lee los clips de voz de la composición raíz de HyperFrames:
+- **Ducking:** [`plugins/video-studio/skills/faceless-video/scripts/duck_music.py`](../plugins/video-studio/skills/faceless-video/scripts/duck_music.py) baja la música solo mientras hay voz (`sidechaincompress` de ffmpeg, con la voz como señal de control) y mide, en ventanas de medio segundo, cuántos dB queda la música por debajo de la voz, antes y después. Lee los clips de voz de la composición raíz de HyperFrames:
 
 ```bash
-uv run --with numpy scripts/duck_music.py --music assets/music/bed.mp3 \
+uv run plugins/video-studio/skills/faceless-video/scripts/duck_music.py --music assets/music/bed.mp3 \
   --hyperframes index.html --volume 0.25 --out assets/music/bed-ducked.mp3
 ```
 
@@ -76,11 +76,10 @@ ffmpeg -i out.mp4 -af ebur128=peak=true -f null -    # comprueba
 
 ## Revisión visual del render
 
-El agente no ve el vídeo en movimiento. [`scripts/check_render.py`](../scripts/check_render.py) le da qué mirar y por dónde empezar, todo en local:
+El agente no ve el vídeo en movimiento. [`plugins/video-studio/skills/faceless-video/scripts/check_render.py`](../plugins/video-studio/skills/faceless-video/scripts/check_render.py) le da qué mirar y por dónde empezar, todo en local:
 
 ```bash
-uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
-  scripts/check_render.py out/video.mp4 --out out/review \
+uv run plugins/video-studio/skills/faceless-video/scripts/check_render.py out/video.mp4 --out out/review \
   --timeline animations/<proyecto>/timeline.json --expect rotulos.txt
 ```
 

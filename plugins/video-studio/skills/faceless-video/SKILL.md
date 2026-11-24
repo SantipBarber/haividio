@@ -7,6 +7,8 @@ description: Produces faceless videos (animated explainers, technical outreach, 
 
 Reply in the user's language. The script and the voice-over go in the language the user asks for the video.
 
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too. If a script this skill names is missing, stop and tell the user which one, and suggest reinstalling the skill. Do not rewrite it, do not do its step by hand, and do not search for, download or use a copy from anywhere else (another folder, the repository, the web). Stop even if you cannot ask the user: end with that message. Scripts run with `uv run` declare their own dependencies ([uv](https://docs.astral.sh/uv/) installs them the first time, which needs network).
+
 ## Phases (do not skip the approval)
 
 1. **Research.** Look for current sources on the topic; note the URLs in the script. Every concrete fact (figures, names, dates) needs a source.
@@ -21,9 +23,9 @@ Reply in the user's language. The script and the voice-over go in the language t
 
    Pace: ~150 words per minute in Spanish (measure the real pace of the chosen voice). Hook in the first 15 s. One idea per scene.
 3. **Script approval** by the user. Without it, do not generate voice or animations.
-4. **Voice.** ElevenLabs TTS (voice chosen in `docs/style/identity.md`) or the user's recording cleaned with video-use. Generate one track per scene so you can adjust without redoing everything.
+4. **Voice.** ElevenLabs TTS (the voice set in the project's identity, skill `visual-identity`, or the one the user chooses) or the user's recording cleaned with video-use. Generate one track per scene so you can adjust without redoing everything.
 5. **Animation.** One composition per scene, as long as its voice track. Apply the skill `visual-identity` to all of them, and look in the HyperFrames catalog before building a chart, a transition or a code scene by hand. Try 1 scene first and show it before doing the rest.
-6. **Assembly and render.** Join scenes, voice, music (optional) and subtitles. For music, run `scripts/duck_music.py` so it dips under the voice and check the stretches it flags (see `docs/editing-and-verification.md`, «Mezcla y volumen»). Export 1920×1080 at 30 fps (or 1080×1920 for shorts); with HyperFrames, the final render goes with `-q delivery --video-bitrate 8M` (without the bitrate, flat dark scenes came out at 0.5 Mbps). Open on a cover (the title, like the thumbnail) for the first 1–2 s, not on an animation halfway through. Then run `scripts/check_render.py` on the render (see `docs/editing-and-verification.md`, «Revisión visual del render»), look at its contact sheet and put what it flags in `REVIEW.md` before showing the video.
+6. **Assembly and render.** Join scenes, voice, music (optional) and subtitles. For music, run `uv run "<skill-dir>/scripts/duck_music.py"` so it dips under the voice and check the stretches it flags (see `references/editing-and-verification.md`, "Mix and volume"). Export 1920×1080 at 30 fps (or 1080×1920 for shorts); with HyperFrames, the final render goes with `-q delivery --video-bitrate 8M` (without the bitrate, flat dark scenes came out at 0.5 Mbps). Open on a cover (the title, like the thumbnail) for the first 1–2 s, not on an animation halfway through. Then run `uv run "<skill-dir>/scripts/check_render.py"` on the render (see `references/editing-and-verification.md`, "Visual review of the render"), look at its contact sheet and put what it flags in `REVIEW.md` before showing the video.
 7. **Publishing.** Prepare `publishing.md` and move on to the skill `publish-youtube`.
 
 ## Tips

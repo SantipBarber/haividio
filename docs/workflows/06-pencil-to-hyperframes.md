@@ -2,7 +2,7 @@
 
 *[English](06-pencil-to-hyperframes.en.md)*
 
-Herramientas: [Pencil](https://pen.dev) (pen.dev, con su MCP) + `scripts/pencil_to_hyperframes.py` + HyperFrames. Skill: `pencil-to-hyperframes`.
+Herramientas: [Pencil](https://pen.dev) (pen.dev, con su MCP) + `plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py` + HyperFrames. Skill: `pencil-to-hyperframes`.
 
 ## Idea
 
@@ -32,10 +32,12 @@ Con `--tokens docs/style/tokens.css`, además, cada color de la paleta pasa a `v
 3. **Convertir:**
 
    ```bash
-   python3 scripts/pencil_to_hyperframes.py <vídeo>/design/export/buscar.html \
+   python3 plugins/video-studio/skills/pencil-to-hyperframes/scripts/pencil_to_hyperframes.py <vídeo>/design/export/buscar.html \
      --project <vídeo>/animations/<proyecto> --name buscar --prefix kf \
      --pen-dir <vídeo>/design --tokens docs/style/tokens.css --duration 8
    ```
+
+   Pasa el export donde ya esté, sin copiarlo, y en `--project` la carpeta del proyecto tal cual; `<vídeo>/animations/<proyecto>` es solo la ruta por defecto.
 
    Imprime la lista capa → id y el fragmento para montar la escena en `index.html`.
 4. **Comprobar antes de animar:** `npx hyperframes check` y un `snapshot`, comparado con el PNG de Pencil.

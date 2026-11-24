@@ -128,6 +128,8 @@ wrangler.jsonc               Configuración de la página en Cloudflare
 memory/                      Aprendizajes, criterios y pendientes
 .claude-plugin/              Marketplace de plugins
 plugins/video-studio/        Plugin de Claude Code con las skills
+  skills/*/scripts/          Scripts que ejecuta cada skill (música, render, subtítulos, YouTube, Pencil)
+  skills/*/references/       Copias de las guías de docs/ que cita cada skill
 docs/
   style/identity.md          Identidad visual (paleta, tipografía, movimiento)
   tools.md                   Catálogo de herramientas
@@ -142,12 +144,8 @@ site/                        Página de haividio.dev, con /en en inglés (docs/w
 scripts/
   splice_voice.py            Sustituye frases o palabras de una locución sin regenerarla
   detect_glitches.py         Busca clics, huecos y congelaciones en un vídeo
+  sync_skill_references.py   Copia a las skills las guías de docs/ que citan (--check comprueba)
   check_voice.py             Compara la voz con el guion (WhisperX, local)
-  check_render.py            Revisión visual: texto en pantalla, cortado o pequeño, y tramos quietos
-  check_publishing.py        Valida la ficha de YouTube, la miniatura y la visibilidad después de subir
-  duck_music.py              Baja la música bajo la voz (ducking) y marca dónde la tapa
-  make_captions.py           Subtítulos SRT y capítulos desde los tiempos de cada palabra
-  pencil_to_hyperframes.py   Convierte fotogramas de Pencil en una composición de HyperFrames
 videos/
   README.md                  Índice de vídeos
   _template/                 Copiar para cada vídeo nuevo

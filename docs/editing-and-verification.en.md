@@ -53,10 +53,10 @@ Checking that beats are in order does not prove they land in the right place: in
 ## Mix and volume
 
 - Keep music very low under the voice: 0.07 in a demo, 0.14 in an animated explainer. Use your ears. A transcript may have more trouble recognizing a proper name when there is music: treat that as a cue to listen.
-- **Ducking:** [`scripts/duck_music.py`](../scripts/duck_music.py) lowers the music only while there is voice (ffmpeg's `sidechaincompress`, with the voice as the control signal) and measures, in half-second windows, how many dB the music sits below the voice, before and after. It reads the voice clips from the HyperFrames root composition:
+- **Ducking:** [`plugins/video-studio/skills/faceless-video/scripts/duck_music.py`](../plugins/video-studio/skills/faceless-video/scripts/duck_music.py) lowers the music only while there is voice (ffmpeg's `sidechaincompress`, with the voice as the control signal) and measures, in half-second windows, how many dB the music sits below the voice, before and after. It reads the voice clips from the HyperFrames root composition:
 
 ```bash
-uv run --with numpy scripts/duck_music.py --music assets/music/bed.mp3 \
+uv run plugins/video-studio/skills/faceless-video/scripts/duck_music.py --music assets/music/bed.mp3 \
   --hyperframes index.html --volume 0.25 --out assets/music/bed-ducked.mp3
 ```
 
@@ -76,11 +76,10 @@ ffmpeg -i out.mp4 -af ebur128=peak=true -f null -    # verify
 
 ## Visual review of the render
 
-The agent does not see the video moving. [`scripts/check_render.py`](../scripts/check_render.py) gives it something to look at and a place to start, all locally:
+The agent does not see the video moving. [`plugins/video-studio/skills/faceless-video/scripts/check_render.py`](../plugins/video-studio/skills/faceless-video/scripts/check_render.py) gives it something to look at and a place to start, all locally:
 
 ```bash
-uv run --with "scenedetect[opencv]" --with rapidocr --with onnxruntime \
-  scripts/check_render.py out/video.mp4 --out out/review \
+uv run plugins/video-studio/skills/faceless-video/scripts/check_render.py out/video.mp4 --out out/review \
   --timeline animations/<project>/timeline.json --expect labels.txt
 ```
 

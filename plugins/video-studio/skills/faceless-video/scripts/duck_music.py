@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["numpy"]
+# ///
 """Baja la música cuando habla la voz (ducking) y mide si la tapa.
 
 Hace dos cosas:
@@ -19,9 +23,9 @@ data-media-start) o se da a mano: un fichero, o varios clips con su instante de
 inicio en el vídeo («escena.mp3@23.52»).
 
 Uso:
-    uv run --with numpy scripts/duck_music.py --music assets/music/bed.mp3 \\
+    uv run scripts/duck_music.py --music assets/music/bed.mp3 \\
         --hyperframes index.html --volume 0.14 --out assets/music/bed-ducked.mp3
-    uv run --with numpy scripts/duck_music.py --music bed.mp3 \\
+    uv run scripts/duck_music.py --music bed.mp3 \\
         --voice scene-1.mp3@0 --voice scene-2.mp3@23.52 --volume 0.14 [--report informe.json]
 
 Ajustes del compresor (valores de partida): --threshold 0.02 (−34 dBFS de voz),
