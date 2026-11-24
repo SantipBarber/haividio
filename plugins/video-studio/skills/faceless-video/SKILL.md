@@ -7,7 +7,7 @@ description: Produces faceless videos (animated explainers, technical outreach, 
 
 Reply in the user's language. The script and the voice-over go in the language the user asks for the video.
 
-**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too. If a script this skill names is missing, stop and tell the user which one: do not rewrite it and do not do its step by hand. Scripts run with `uv run` declare their own dependencies ([uv](https://docs.astral.sh/uv/) installs them the first time, which needs network).
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too. If a script this skill names is missing, stop and tell the user which one, and suggest reinstalling the skill. Do not rewrite it, do not do its step by hand, and do not search for, download or use a copy from anywhere else (another folder, the repository, the web). Stop even if you cannot ask the user: end with that message. Scripts run with `uv run` declare their own dependencies ([uv](https://docs.astral.sh/uv/) installs them the first time, which needs network).
 
 ## Phases (do not skip the approval)
 
