@@ -50,9 +50,9 @@ Made-up demo data is fine. If something shows that should not, record or render 
 
 ```bash
 # From the folder of the HyperFrames root composition
-python3 <skill-dir>/scripts/make_captions.py srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
-python3 <skill-dir>/scripts/make_captions.py chapters --timeline timeline.json chapters.json   # "0:00 Title" lines
-python3 <skill-dir>/scripts/check_publishing.py thumb thumbnail.png --preview thumbnail-mobile.png
+python3 "<skill-dir>/scripts/make_captions.py" srt --hyperframes index.html --words-dir ../../audio/voice -o subtitles.srt
+python3 "<skill-dir>/scripts/make_captions.py" chapters --timeline timeline.json chapters.json   # "0:00 Title" lines
+python3 "<skill-dir>/scripts/check_publishing.py" thumb thumbnail.png --preview thumbnail-mobile.png
 ```
 
 - `srt` splits into one-line phrases (42 characters, 6 s at most), preferably after punctuation or at a pause, and leaves no one-word tails. The text is the script's: with `--pron pronunciation.json`, phonetic spellings ("oce erre") go back to the written form ("OCR").
@@ -77,7 +77,7 @@ python3 <skill-dir>/scripts/check_publishing.py thumb thumbnail.png --preview th
 1. **Validate the metadata** against YouTube's rules and the actual video:
 
    ```bash
-   python3 <skill-dir>/scripts/check_publishing.py meta publishing.json video.mp4
+   python3 "<skill-dir>/scripts/check_publishing.py" meta publishing.json video.mp4
    ```
 
    It checks that the video can be read in full; the title (one line, at most 100 characters) and description (5000 bytes), without `<` or `>`, which YouTube rejects; the tags (500 characters in total); the chapters (the first at 0:00, at least 3, in order and 10 s or longer, or YouTube does not show them); that visibility is not public; and that both declarations are present. Fix what it flags and repeat until ✔.
@@ -105,7 +105,7 @@ python3 <skill-dir>/scripts/check_publishing.py thumb thumbnail.png --preview th
 3. **Check the visibility** with YouTube's response:
 
    ```bash
-   python3 <skill-dir>/scripts/check_publishing.py result upload-result.json --expect private   # or unlisted
+   python3 "<skill-dir>/scripts/check_publishing.py" result upload-result.json --expect private   # or unlisted
    ```
 
    If it does not match, do not share the link (see the next section).

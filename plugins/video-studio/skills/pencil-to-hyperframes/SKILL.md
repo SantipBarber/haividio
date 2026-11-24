@@ -7,7 +7,7 @@ description: Turns frames designed in Pencil (pen.dev) into HyperFrames composit
 
 Reply in the user's language. Full guide: `references/06-pencil-to-hyperframes.md`.
 
-**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too.
+**Paths:** `<skill-dir>` is the folder that contains this `SKILL.md`. Replace it with that folder's absolute path in every command, and run the commands from the user's project folder. Files in `references/` are in that folder too. If a script this skill names is missing, stop and tell the user which one: do not rewrite it and do not do its step by hand.
 
 ## Safety with the Pencil MCP
 
@@ -24,10 +24,12 @@ Reply in the user's language. Full guide: `references/06-pencil-to-hyperframes.m
 3. **Convert:**
 
    ```bash
-   python3 <skill-dir>/scripts/pencil_to_hyperframes.py <video>/design/export/<scene>.html \
-     --project <video>/animations/<project> --name <scene> --prefix <short> \
-     --pen-dir <video>/design --tokens <skill-dir>/references/tokens.css --duration <s> [--draft --at 0,<s>,<s>]
+   python3 "<skill-dir>/scripts/pencil_to_hyperframes.py" <export>.html \
+     --project <project> --name <scene> --prefix <short> \
+     --pen-dir <video>/design --tokens "<skill-dir>/references/tokens.css" --duration <s> [--draft --at 0,<s>,<s>]
    ```
+
+   `<export>.html` is the exported file where it already is: if it exists elsewhere, pass that path and do not copy it. `<project>` is the project folder the user gives, exactly as given, with no subfolders added; only if they give none, use `<video>/animations/<project>`.
 
    If the project has its own `tokens.css`, pass that one instead.
 

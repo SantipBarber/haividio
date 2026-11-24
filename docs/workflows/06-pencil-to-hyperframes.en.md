@@ -37,6 +37,8 @@ With `--tokens docs/style/tokens.css`, every palette colour also becomes `var(--
      --pen-dir <video>/design --tokens docs/style/tokens.css --duration 8
    ```
 
+   Pass the export where it already is, without copying it, and in `--project` the project folder exactly as given; `<video>/animations/<project>` is only the default.
+
    It prints the layer → id list and the snippet to mount the scene in `index.html`.
 4. **Check before animating:** `npx hyperframes check` and a `snapshot`, compared with the Pencil PNG.
 5. **Animate** by id in the composition's timeline, with the `visual-identity` skill and the voice as in workflow 3.

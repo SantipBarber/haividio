@@ -17,7 +17,7 @@ Pencil exports HTML with inline styles, absolute positions and each layer's name
 | Images | Copies the ones the design uses to `assets/pencil/` and rewrites the paths. It looks for them next to the exported HTML and next to the `.pen`. |
 | Wrapper | `<template>`, `#root` with `data-composition-id` and an empty timeline registered in `window.__timelines`. |
 
-With `--tokens <skill-dir>/references/tokens.css`, every palette colour also becomes `var(--lime, #D4FF3A)`: if the identity changes, the imported scenes change too.
+With `--tokens "<skill-dir>/references/tokens.css"`, every palette colour also becomes `var(--lime, #D4FF3A)`: if the identity changes, the imported scenes change too.
 
 ## Steps
 
@@ -32,10 +32,12 @@ With `--tokens <skill-dir>/references/tokens.css`, every palette colour also bec
 3. **Convert:**
 
    ```bash
-   python3 <skill-dir>/scripts/pencil_to_hyperframes.py <video>/design/export/search.html \
+   python3 "<skill-dir>/scripts/pencil_to_hyperframes.py" <video>/design/export/search.html \
      --project <video>/animations/<project> --name search --prefix kf \
-     --pen-dir <video>/design --tokens <skill-dir>/references/tokens.css --duration 8
+     --pen-dir <video>/design --tokens "<skill-dir>/references/tokens.css" --duration 8
    ```
+
+   Pass the export where it already is, without copying it, and in `--project` the project folder exactly as given; `<video>/animations/<project>` is only the default.
 
    It prints the layer → id list and the snippet to mount the scene in `index.html`.
 4. **Check before animating:** `npx hyperframes check` and a `snapshot`, compared with the Pencil PNG.

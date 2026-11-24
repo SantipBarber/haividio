@@ -56,7 +56,7 @@ Checking that beats are in order does not prove they land in the right place: in
 - **Ducking:** [`<skill-dir>/scripts/duck_music.py`](https://github.com/SantipBarber/haividio/blob/main/plugins/video-studio/skills/faceless-video/scripts/duck_music.py) lowers the music only while there is voice (ffmpeg's `sidechaincompress`, with the voice as the control signal) and measures, in half-second windows, how many dB the music sits below the voice, before and after. It reads the voice clips from the HyperFrames root composition:
 
 ```bash
-uv run <skill-dir>/scripts/duck_music.py --music assets/music/bed.mp3 \
+uv run "<skill-dir>/scripts/duck_music.py" --music assets/music/bed.mp3 \
   --hyperframes index.html --volume 0.25 --out assets/music/bed-ducked.mp3
 ```
 
@@ -79,7 +79,7 @@ ffmpeg -i out.mp4 -af ebur128=peak=true -f null -    # verify
 The agent does not see the video moving. [`<skill-dir>/scripts/check_render.py`](https://github.com/SantipBarber/haividio/blob/main/plugins/video-studio/skills/faceless-video/scripts/check_render.py) gives it something to look at and a place to start, all locally:
 
 ```bash
-uv run <skill-dir>/scripts/check_render.py out/video.mp4 --out out/review \
+uv run "<skill-dir>/scripts/check_render.py" out/video.mp4 --out out/review \
   --timeline animations/<project>/timeline.json --expect labels.txt
 ```
 

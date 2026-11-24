@@ -52,6 +52,8 @@ def render(skill: str, src: str) -> str:
         text = text.replace("docs/style/tokens.css", "<skill-dir>/references/tokens.css")
     own = f"plugins/video-studio/skills/{skill}/"
     text = re.sub(r"(?<!blob/main/)" + re.escape(own), "<skill-dir>/", text)
+    # Comillas en los comandos: la carpeta de la skill puede llevar espacios
+    text = re.sub(r"(?<=\s)<skill-dir>/[\w./-]+", r'"\g<0>"', text)
     return f"<!-- Copy of {src}. Edit it there and run scripts/sync_skill_references.py. -->\n\n{text}"
 
 
