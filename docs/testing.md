@@ -89,10 +89,23 @@ Claude Code (Sonnet), carpeta vacía, encargo en español sin nombrar la skill, 
 - [x] No quita activaciones a `talking-video` (6 de 6), `choose-video-tool` (3 de 3), `publish-youtube` (10 de 10) ni `visual-identity` (2 de 2). Una primera versión, con «revisa el vídeo ya montado» como ejemplo, se llevaba la revisión previa a YouTube (3 de 3).
 - [ ] Esta activación con otros agentes y modelos.
 
-## Voz — `scripts/tts.py`
+### Scripts de voz y cortes dentro de las skills
+
+Audio sintético, carpeta con espacios y «ñ», macOS (25-11, Claude).
+
+- [x] `tts.py` (Python 3.9): sin clave, con `--speed 1.5` o con una «phrase» que no está, para antes de llamar a la API. No se ha generado voz, para no gastar créditos.
+- [x] `check_voice.py`: 0 diferencias con el texto bueno; control con una palabra de más en el guion, la encuentra.
+- [x] `splice_voice.py` (Python 3.9): cambia la frase y deja copia; control con una frase que no está, para.
+- [x] `detect_glitches.py`: nada en el audio sano; control con hueco de 60 ms, clic y congelación, los encuentra. Misma salida que antes de moverlo.
+- [x] Claude Code (Sonnet), pi y OpenCode (GLM), tres encargos: con scripts, 9 de 9. Sin scripts, paran 8 de 9; pi no cargó la skill para empalmar. Con esos pasos en la descripción, para 3 de 3 (Claude y OpenCode, 1 de 1).
+- [x] La descripción nueva no quita encargos: `talking-video` 4 de 4, `publish-youtube` 2 de 2, `choose-video-tool` 2 de 2 (Sonnet).
+- [ ] **Oír** un empalme hecho desde la skill.
+- [ ] Instalar de cero WhisperX en otro equipo y en Windows.
+
+## Voz — `plugins/video-studio/skills/faceless-video/scripts/tts.py`
 
 ```bash
-python3 scripts/tts.py say RAG/audio/probes-v2/pron-video-A-video "…en el próximo vídeo…" --voice-env ELEVENLABS_VOICE_ID_SANTI
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py say RAG/audio/probes-v2/pron-video-A-video "…en el próximo vídeo…" --voice-env ELEVENLABS_VOICE_ID_SANTI
 ```
 
 - [x] Genera mp3 y `words.json` con la voz clonada y `eleven_v4`; 10 pruebas de pronunciación y 6 de ritmo del vídeo de RAG, 0,4 créditos por carácter (14-11, Claude).

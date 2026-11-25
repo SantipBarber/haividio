@@ -23,7 +23,7 @@ def make(scene):
     text = src["text"]
     raw = HERE / f"voice-v2-raw/scene-{scene}"
     raw.parent.mkdir(exist_ok=True)
-    subprocess.run([sys.executable, str(ROOT / "scripts/tts.py"), "say", str(raw), text,
+    subprocess.run([sys.executable, str(ROOT / "plugins/video-studio/skills/faceless-video/scripts/tts.py"), "say", str(raw), text,
                     "--pron", str(HERE.parent / "pronunciation.json"), "--scene", scene,
                     "--style", str(STYLE), "--voice-env", "ELEVENLABS_VOICE_ID_SANTI"], check=True, cwd=ROOT)
     spoken = json.loads(Path(f"{raw}.words.json").read_text(encoding="utf-8"))

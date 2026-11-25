@@ -46,8 +46,8 @@ Comprobar que los beats están en orden no prueba que caigan donde toca: mira el
 
 - **El punto medio entre dos palabras no siempre es silencio.** 9 de 99 cortes cayeron en plena voz (−15 a −32 dB) y se oyeron. Busca el mínimo de nivel en ±90 ms y funde 15 ms a cada lado.
 - **La voz no siempre para tras «:» o una coma:** 18 cortes en plena voz estaban ahí, casi todos tras los dos puntos.
-- **Después de montar, mide:** `silencedetect` para silencios largos (−35 dB, 0,6 s) y [`scripts/detect_glitches.py`](../scripts/detect_glitches.py) para clics y huecos cortos. Da candidatos, no veredictos.
-- **Y compara con el guion:** [`scripts/check_voice.py`](../scripts/check_voice.py) transcribe el vídeo final con WhisperX y lista las palabras perdidas, cambiadas o añadidas, con su instante. En un vídeo de 8 minutos con música tardó 3 minutos en un Mac con Apple Silicon y dejó 3 avisos que escuchar; los números («veinte» frente a «20») los separa aparte. Guarda también el instante real de cada palabra, para comprobar rótulos.
+- **Después de montar, mide:** `silencedetect` para silencios largos (−35 dB, 0,6 s) y [`plugins/video-studio/skills/talking-video/scripts/detect_glitches.py`](../plugins/video-studio/skills/talking-video/scripts/detect_glitches.py) para clics y huecos cortos. Da candidatos, no veredictos.
+- **Y compara con el guion:** [`plugins/video-studio/skills/faceless-video/scripts/check_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/check_voice.py) transcribe el vídeo final con WhisperX y lista las palabras perdidas, cambiadas o añadidas, con su instante. En un vídeo de 8 minutos con música tardó 3 minutos en un Mac con Apple Silicon y dejó 3 avisos que escuchar; los números («veinte» frente a «20») los separa aparte. Guarda también el instante real de cada palabra, para comprobar rótulos.
 - **Lo que ninguna de las dos ve:** un corte limpio de 150 ms dentro de una palabra. En la prueba no dejó clic ni hueco, y la transcripción salió igual. Comparar la duración de las palabras tampoco sirve: el alineador mueve hasta 0,3 s el inicio de una palabra tras una pausa, en una copia sana.
 
 ## Mezcla y volumen

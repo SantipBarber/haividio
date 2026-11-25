@@ -89,10 +89,23 @@ Claude Code (Sonnet), empty folder, request in Spanish without naming the skill,
 - [x] It does not take activations from `talking-video` (6 of 6), `choose-video-tool` (3 of 3), `publish-youtube` (10 of 10) or `visual-identity` (2 of 2). A first version, with «revisa el vídeo ya montado» as an example, took over the review before YouTube (3 of 3).
 - [ ] This activation with other agents and models.
 
-## Voice — `scripts/tts.py`
+### Voice and cut scripts inside the skills
+
+Synthetic audio, folder with spaces and «ñ», macOS (25 Nov, Claude).
+
+- [x] `tts.py` (Python 3.9): without a key, with `--speed 1.5` or with a "phrase" that is not there, it stops before calling the API. No voice was generated, to avoid spending credits.
+- [x] `check_voice.py`: 0 differences with the right text; control with an extra word in the script, it finds it.
+- [x] `splice_voice.py` (Python 3.9): it replaces the sentence and keeps a copy; control with a sentence that is not there, it stops.
+- [x] `detect_glitches.py`: nothing in the healthy audio; control with a 60 ms gap, a click and a freeze, it finds them. Same output as before moving it.
+- [x] Claude Code (Sonnet), pi and OpenCode (GLM), three requests: with scripts, 9 out of 9. Without scripts, 8 out of 9 stop; pi did not load the skill to splice. With those steps in the description, it stops 3 out of 3 (Claude and OpenCode, 1 of 1).
+- [x] The new description does not take requests: `talking-video` 4 of 4, `publish-youtube` 2 of 2, `choose-video-tool` 2 of 2 (Sonnet).
+- [ ] **Listen** to a splice made from the skill.
+- [ ] Install WhisperX from scratch on another computer and on Windows.
+
+## Voice — `plugins/video-studio/skills/faceless-video/scripts/tts.py`
 
 ```bash
-python3 scripts/tts.py say RAG/audio/probes-v2/pron-video-A-video "…en el próximo vídeo…" --voice-env ELEVENLABS_VOICE_ID_SANTI
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py say RAG/audio/probes-v2/pron-video-A-video "…en el próximo vídeo…" --voice-env ELEVENLABS_VOICE_ID_SANTI
 ```
 
 - [x] Generates the mp3 and `words.json` with the cloned voice and `eleven_v4`; 10 pronunciation probes and 6 pace probes for the RAG video, 0.4 credits per character (14-11, Claude).

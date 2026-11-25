@@ -21,7 +21,7 @@ SKILLS = ROOT / "plugins/video-studio/skills"
 GITHUB = "https://github.com/SantipBarber/haividio/blob/main/"
 COPIES = {
     "choose-video-tool": ["docs/workflows/05-product-demo.en.md", "docs/windows.en.md", "docs/tools.en.md"],
-    "faceless-video": ["docs/editing-and-verification.en.md"],
+    "faceless-video": ["docs/editing-and-verification.en.md", "docs/cloned-voice.en.md"],
     "pencil-to-hyperframes": ["docs/workflows/06-pencil-to-hyperframes.en.md", "docs/style/tokens.css"],
     "publish-youtube": ["docs/workflows/04-publish-youtube.en.md"],
     "visual-identity": ["docs/style/identity.en.md", "docs/style/tokens.css", "docs/open-resources.en.md"],

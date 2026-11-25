@@ -10,7 +10,7 @@ No measurement can replace listening. A transcript tells you whether **the words
 
 | Check | What it can tell you | What it cannot tell you |
 |---|---|---|
-| Transcript against the script: [`scripts/check_voice.py`](../scripts/check_voice.py) (WhisperX, local and free) or Scribe | Changed, missing or misunderstood words («Medí acierto» was transcribed as «Medía cierto»; this was fixed by changing the text) | Accent: it normalizes and writes «API» or «Odoo» however they are pronounced. It does warn when an acronym written as a word («Api») lasts too long and sounds spelled out. It also cannot detect a clean cut inside a word |
+| Transcript against the script: [`plugins/video-studio/skills/faceless-video/scripts/check_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/check_voice.py) (WhisperX, local and free) or Scribe | Changed, missing or misunderstood words («Medí acierto» was transcribed as «Medía cierto»; this was fixed by changing the text) | Accent: it normalizes and writes «API» or «Odoo» however they are pronounced. It does warn when an acronym written as a word («Api») lasts too long and sounds spelled out. It also cannot detect a clean cut inside a word |
 | Duration and level of each word | Truncated words, unusual timings | Whether a pronunciation is good: 5 mispronounced instances were indistinguishable from the other 15 |
 | Correlation against the approved take | Whether the selected take is the one that ended up in the video | Whether the take sounds good |
 | A person listening | Everything else | — |
@@ -58,13 +58,13 @@ for c, s, e in zip(a["characters"], a["character_start_times_seconds"], a["chara
 if cur: words.append(cur)
 ```
 
-Save `{"text", "duration", "words"}` in a `.words.json` file next to the mp3. [`scripts/splice_voice.py`](../scripts/splice_voice.py) uses it.
+Save `{"text", "duration", "words"}` in a `.words.json` file next to the mp3. [`plugins/video-studio/skills/faceless-video/scripts/splice_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/splice_voice.py) uses it.
 
-[`scripts/tts.py`](../scripts/tts.py) does all of this: it sends `language_code` (`es` by default), applies the pronunciation map and saves the mp3, the timings, the settings and the credits it cost.
+[`plugins/video-studio/skills/faceless-video/scripts/tts.py`](../plugins/video-studio/skills/faceless-video/scripts/tts.py) does all of this: it sends `language_code` (`es` by default), applies the pronunciation map and saves the mp3, the timings, the settings and the credits it cost.
 
 ```bash
-python3 scripts/tts.py say out/test "Test text" --voice-env ELEVENLABS_VOICE_ID_MINE
-python3 scripts/tts.py file audio/voice/scene-3 scene-3.txt --pron pronunciation.json --scene 3
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py say out/test "Test text" --voice-env ELEVENLABS_VOICE_ID_MINE
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py file audio/voice/scene-3 scene-3.txt --pron pronunciation.json --scene 3
 ```
 
 **`speed` does nothing with `eleven_v4`:** at 1.0, 1.06 and 1.1 the same 343-character text lasted 22.6, 22.6 and 22.1 s. To speed up, run `ffmpeg -i voice.mp3 -filter:a atempo=1.06 voice-fast.mp3` after generating: it keeps the pitch and costs no credits. Divide the `words.json` timings by the same factor.
@@ -95,13 +95,13 @@ What a speaker from Spain chose by ear, as a starting point rather than a rule:
 
 ## Splice instead of regenerating
 
-Regenerating a scene changes everything already approved. [`scripts/splice_voice.py`](../scripts/splice_voice.py) replaces only what is needed, without spending credits:
+Regenerating a scene changes everything already approved. [`plugins/video-studio/skills/faceless-video/scripts/splice_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/splice_voice.py) replaces only what is needed, without spending credits:
 
 ```bash
 # An entire phrase
-scripts/splice_voice.py phrase audio/scene-3 audio/approved-take "Tardó unos" "cargada."
+python3 plugins/video-studio/skills/faceless-video/scripts/splice_voice.py phrase audio/scene-3 audio/approved-take "Tardó unos" "cargada."
 # The same words from one take in several sentences
-scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
+python3 plugins/video-studio/skills/faceless-video/scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
 ```
 
 - **Include the previous word** if it runs into the target word: in «por api», cutting before «por» landed in silence, while cutting between «por» and «api» did not.

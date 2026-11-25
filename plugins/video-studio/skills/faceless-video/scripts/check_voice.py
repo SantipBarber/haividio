@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10,<3.14"
+# dependencies = ["whisperx==3.8.6"]
+# ///
 """Comprueba una locución con WhisperX, en local y sin coste.
 
 Transcribe el audio y lo compara palabra a palabra con el texto esperado:
@@ -17,12 +21,8 @@ prueba, 150 ms quitados en mitad de «proveedor» no cambiaron la transcripción
 (y comparar duraciones de palabras con el alineador dio hasta 0,3 s de ruido
 en una copia sana, así que no sirve para eso).
 
-Instalación (una vez, fuera del repositorio):
-    uv venv ~/.local/share/haividio/whisperx --python 3.12
-    uv pip install --python ~/.local/share/haividio/whisperx/bin/python whisperx==3.8.6
-
-Uso:
-    ~/.local/share/haividio/whisperx/bin/python scripts/check_voice.py voz.mp3 \\
+Uso (uv instala WhisperX la primera vez; son varios GB con los modelos):
+    uv run check_voice.py voz.mp3 \\
         --words voz.words.json [--pron pronunciation.json]
     ... check_voice.py final.mp4 --text guion.txt
 

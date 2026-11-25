@@ -21,6 +21,12 @@ Pruebas de la 0.3.0 que faltan (casillas en `docs/testing.md`):
 
 Siguiente tirada posible: shorts verticales, voz local para borradores (Kokoro-82M), versión en inglés de un vídeo, retención de YouTube por escena, render por escena, música libre y transcripción local con whisper.cpp.
 
+## 0.5.0 — 2026-11-25
+
+### Cambiado
+
+- `tts`, `check_voice` y `splice_voice` pasan a la skill `faceless-video`, con la guía de voz clonada, y `detect_glitches`, a `talking-video`. Con dependencias PEP 723.
+
 ## 0.4.0 — 2026-11-24
 
 ### Añadido

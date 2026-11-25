@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.9"
+# dependencies = []
+# ///
 """Sustituye un trozo de una locución por una toma ya aprobada, sin gastar créditos de voz.
 
 Trabaja con un mp3 y su .words.json al lado: {"text": ..., "duration": ..., "words": [{"w", "start", "end"}]}.

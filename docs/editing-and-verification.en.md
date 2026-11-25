@@ -46,8 +46,8 @@ Checking that beats are in order does not prove they land in the right place: in
 
 - **The midpoint between two words is not always silence.** 9 of 99 cuts landed in the middle of speech (−15 to −32 dB) and were audible. Find the lowest level within ±90 ms and crossfade 15 ms on each side.
 - **The voice does not always stop after «:» or a comma:** 18 cuts in the middle of speech were there, almost all after colons.
-- **After editing, measure:** `silencedetect` for long silences (−35 dB, 0.6 s) and [`scripts/detect_glitches.py`](../scripts/detect_glitches.py) for clicks and short gaps. They provide candidates, not verdicts.
-- **Also compare with the script:** [`scripts/check_voice.py`](../scripts/check_voice.py) transcribes the final video with WhisperX and lists missing, changed or added words with their timestamps. On an 8-minute video with music, it took 3 minutes on an Apple Silicon Mac and produced 3 warnings to listen to; it lists numbers separately («veinte» versus «20»). It also saves the actual timestamp of each word, for checking titles.
+- **After editing, measure:** `silencedetect` for long silences (−35 dB, 0.6 s) and [`plugins/video-studio/skills/talking-video/scripts/detect_glitches.py`](../plugins/video-studio/skills/talking-video/scripts/detect_glitches.py) for clicks and short gaps. They provide candidates, not verdicts.
+- **Also compare with the script:** [`plugins/video-studio/skills/faceless-video/scripts/check_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/check_voice.py) transcribes the final video with WhisperX and lists missing, changed or added words with their timestamps. On an 8-minute video with music, it took 3 minutes on an Apple Silicon Mac and produced 3 warnings to listen to; it lists numbers separately («veinte» versus «20»). It also saves the actual timestamp of each word, for checking titles.
 - **What neither detects:** a clean 150 ms cut inside a word. In the test it caused no click or gap, and the transcript was unchanged. Comparing word duration does not work either: after a pause, the aligner can shift the start of a word by up to 0.3 s in an unedited copy.
 
 ## Mix and volume
