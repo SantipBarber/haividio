@@ -21,6 +21,12 @@ Every merged PR adds a line here. The detail of each test is in [docs/testing.en
 
 Possible next batch: vertical shorts, local voice for drafts (Kokoro-82M), an English version of a video, YouTube retention per scene, per-scene rendering, royalty-free music and local transcription with whisper.cpp.
 
+## 0.5.0 — 2026-11-25
+
+### Changed
+
+- `tts`, `check_voice` and `splice_voice` move to the `faceless-video` skill, with the cloned voice guide, and `detect_glitches` to `talking-video`. With PEP 723 dependencies.
+
 ## 0.4.0 — 2026-11-24
 
 ### Added

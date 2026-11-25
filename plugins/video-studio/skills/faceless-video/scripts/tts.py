@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.9"
+# dependencies = []
+# ///
 """Genera voz con ElevenLabs y guarda el mp3 y los tiempos de cada palabra.
 
 Escribe <salida>.mp3 y <salida>.words.json con el formato que usan check_voice.py,

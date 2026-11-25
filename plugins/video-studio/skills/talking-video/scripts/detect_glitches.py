@@ -1,16 +1,23 @@
+#!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["numpy"]
+# ///
 """Detecta microcortes en un vídeo: saltos y caídas de audio, y congelaciones de imagen. Solo lee.
 
-Da candidatos para revisar, no veredictos. Uso: uv run --with numpy scripts/detect_glitches.py <vídeo>
+Da candidatos para revisar, no veredictos. Uso: uv run detect_glitches.py <vídeo>. Requiere ffmpeg.
 """
+import argparse
 import re
 import subprocess
-import sys
 
 import numpy as np
 
-V = sys.argv[1]
+ap = argparse.ArgumentParser(description=__doc__)
+ap.add_argument("video")
+V = ap.parse_args().video
 SR = 16000
-raw = subprocess.run(["ffmpeg", "-v", "error", "-i", V, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True).stdout
+raw = subprocess.run(["ffmpeg", "-v", "error", "-i", V, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
 a = np.frombuffer(raw, dtype=np.float32)
 print(f"audio {len(a) / SR:.1f} s")
 

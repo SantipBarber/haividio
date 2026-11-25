@@ -10,7 +10,7 @@ Ninguna medida sustituye a oírlo. Una transcripción dice si **las palabras** s
 
 | Comprobación | Sirve para | No sirve para |
 |---|---|---|
-| Transcripción contra el guion: [`scripts/check_voice.py`](../scripts/check_voice.py) (WhisperX, local y gratis) o Scribe | Palabras cambiadas, perdidas o que se entienden mal («Medí acierto» salía «Medía cierto»; se arregló cambiando el texto) | Acento: normaliza y escribe «API» o «Odoo» se digan como se digan. Avisa, eso sí, de una sigla escrita como palabra («Api») que dura demasiado y parece deletreada. Tampoco ve un corte limpio dentro de una palabra |
+| Transcripción contra el guion: [`plugins/video-studio/skills/faceless-video/scripts/check_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/check_voice.py) (WhisperX, local y gratis) o Scribe | Palabras cambiadas, perdidas o que se entienden mal («Medí acierto» salía «Medía cierto»; se arregló cambiando el texto) | Acento: normaliza y escribe «API» o «Odoo» se digan como se digan. Avisa, eso sí, de una sigla escrita como palabra («Api») que dura demasiado y parece deletreada. Tampoco ve un corte limpio dentro de una palabra |
 | Duración y nivel de cada palabra | Palabras truncadas, tiempos raros | Saber si una pronunciación es buena: 5 apariciones mal dichas no se distinguían de las otras 15 |
 | Correlación contra la toma aprobada | Saber que la toma elegida es la que acabó en el vídeo | Juzgar si esa toma suena bien |
 | Oído de una persona | Todo lo demás | — |
@@ -58,13 +58,13 @@ for c, s, e in zip(a["characters"], a["character_start_times_seconds"], a["chara
 if cur: words.append(cur)
 ```
 
-Guarda `{"text", "duration", "words"}` en un `.words.json` junto al mp3. Es lo que usa [`scripts/splice_voice.py`](../scripts/splice_voice.py).
+Guarda `{"text", "duration", "words"}` en un `.words.json` junto al mp3. Es lo que usa [`plugins/video-studio/skills/faceless-video/scripts/splice_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/splice_voice.py).
 
-[`scripts/tts.py`](../scripts/tts.py) lo hace todo: manda `language_code` (`es` por defecto), aplica el mapa de pronunciación y guarda el mp3, los tiempos, los ajustes y los créditos que costó.
+[`plugins/video-studio/skills/faceless-video/scripts/tts.py`](../plugins/video-studio/skills/faceless-video/scripts/tts.py) lo hace todo: manda `language_code` (`es` por defecto), aplica el mapa de pronunciación y guarda el mp3, los tiempos, los ajustes y los créditos que costó.
 
 ```bash
-python3 scripts/tts.py say out/prueba "Texto de prueba" --voice-env ELEVENLABS_VOICE_ID_MIA
-python3 scripts/tts.py file audio/voice/scene-3 escena-3.txt --pron pronunciation.json --scene 3
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py say out/prueba "Texto de prueba" --voice-env ELEVENLABS_VOICE_ID_MIA
+python3 plugins/video-studio/skills/faceless-video/scripts/tts.py file audio/voice/scene-3 escena-3.txt --pron pronunciation.json --scene 3
 ```
 
 **`speed` no cambia nada con `eleven_v4`:** con 1,0, 1,06 y 1,1, el mismo texto de 343 caracteres duró 22,6, 22,6 y 22,1 s. Para acelerar, `ffmpeg -i voz.mp3 -filter:a atempo=1.06 voz-rapida.mp3` después de generar: no cambia el tono ni gasta créditos. Los tiempos de `words.json` se dividen por el mismo factor.
@@ -95,13 +95,13 @@ Lo que eligió de oído un hablante de español de España, como punto de partid
 
 ## Empalmar en vez de regenerar
 
-Regenerar una escena cambia todo lo ya aprobado. [`scripts/splice_voice.py`](../scripts/splice_voice.py) sustituye solo lo necesario, sin gastar créditos:
+Regenerar una escena cambia todo lo ya aprobado. [`plugins/video-studio/skills/faceless-video/scripts/splice_voice.py`](../plugins/video-studio/skills/faceless-video/scripts/splice_voice.py) sustituye solo lo necesario, sin gastar créditos:
 
 ```bash
 # Una frase entera
-scripts/splice_voice.py phrase audio/scene-3 audio/approved-take "Tardó unos" "cargada."
+python3 plugins/video-studio/skills/faceless-video/scripts/splice_voice.py phrase audio/scene-3 audio/approved-take "Tardó unos" "cargada."
 # Las mismas palabras de una toma, en varias frases
-scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
+python3 plugins/video-studio/skills/faceless-video/scripts/splice_voice.py word audio/scene-3 audio/approved-take "por api" all
 ```
 
 - **Incluye la palabra anterior** si la palabra se pega a ella: en «por api», cortar antes de «por» cayó en silencio y cortar entre «por» y «api» no.
